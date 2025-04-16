@@ -21,27 +21,6 @@
     "text": "Selected Work\nEinstein, A., Podolsky, B., & Rosen, N. (1935). Can quantum-mechanical description of physical reality be considered complete?. Physical review, 47(10), 777. [pdf] [code and data]   \n\n\n\n\n\n\nEinstein, A. (1965). Concerning an heuristic point of view toward the emission and transformation of light. American Journal of Physics, 33(5), 367. [pdf]"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Order By\n       Default\n         \n        \n         \n          Title\n        \n         \n          Team\n        \n         \n          Funder\n        \n         \n          Description\n        \n         \n          Start\n        \n         \n          End\n        \n         \n          Funding\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n \n\n\nTitle\n\n\nTeam\n\n\nFunder\n\n\nDescription\n\n\nFunding\n\n\nStart\n\n\nEnd\n\n\n\n\n\n\n\n\n\nExploring \n\n\nAcademic Website\n\n\nFunder\n\n\nThe goal of this project is to investigate .\n\n\n$0\n\n\n2024\n\n\n2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/news-title/index.html",
-    "href": "posts/news-title/index.html",
-    "title": "News item",
-    "section": "",
-    "text": "About the news"
-  },
-  {
-    "objectID": "posts/news-title/index.html#summary",
-    "href": "posts/news-title/index.html#summary",
-    "title": "News item",
-    "section": "",
-    "text": "About the news"
-  },
-  {
     "objectID": "posts/paper-title/index.html#abstract",
     "href": "posts/paper-title/index.html#abstract",
     "title": "Can quantum-mechanical description of physical reality be considered complete?",
@@ -84,11 +63,25 @@
     "text": "Class 3\n\n\n\n\n\nSpring 2025,   Spring 2024\nClass 3 introduction."
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
     "section": "",
-    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
+    "text": "PhD Candidate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPI\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "people.html#team",
+    "href": "people.html#team",
+    "title": "People",
+    "section": "",
+    "text": "PhD Candidate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPI\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "people.html#alumni",
+    "href": "people.html#alumni",
+    "title": "People",
+    "section": "Alumni",
+    "text": "Alumni\n\n\n   \n     \n     \n       Order By\n       Default\n         \n        \n         \n          Name\n        \n         \n          Role\n        \n         \n          Started\n        \n         \n          Ended\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n \n\n\nName\n\n\nRole\n\n\nStarted\n\n\nEnded\n\n\n\n\n\n\n\n\n\nKapil\n\n\nPhD Candidate\n\n\n2021\n\n\n*\n\n\n\n\n\n\n\nPI Name\n\n\nPI\n\n\n \n\n\n \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -119,24 +112,31 @@
     "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nQuarto Academic Website Examples and Tips\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\nJun 24, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\nAll Posts »"
   },
   {
-    "objectID": "people.html",
-    "href": "people.html",
-    "title": "People",
+    "objectID": "posts/news-title/index.html",
+    "href": "posts/news-title/index.html",
+    "title": "News item",
     "section": "",
-    "text": "PhD Candidate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPI\n\n\n\n\n\n\n\nNo matching items"
+    "text": "About the news"
   },
   {
-    "objectID": "people.html#team",
-    "href": "people.html#team",
-    "title": "People",
+    "objectID": "posts/news-title/index.html#summary",
+    "href": "posts/news-title/index.html#summary",
+    "title": "News item",
     "section": "",
-    "text": "PhD Candidate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPI\n\n\n\n\n\n\n\nNo matching items"
+    "text": "About the news"
   },
   {
-    "objectID": "people.html#alumni",
-    "href": "people.html#alumni",
-    "title": "People",
-    "section": "Alumni",
-    "text": "Alumni\n\n\n   \n     \n     \n       Order By\n       Default\n         \n        \n         \n          Name\n        \n         \n          Role\n        \n         \n          Started\n        \n         \n          Ended\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n \n\n\nName\n\n\nRole\n\n\nStarted\n\n\nEnded\n\n\n\n\n\n\n\n\n\nKapil\n\n\nPhD Candidate\n\n\n2021\n\n\n*\n\n\n\n\n\n\n\nPI Name\n\n\nPI\n\n\n \n\n\n \n\n\n\n\n\nNo matching items"
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Order By\n       Default\n         \n        \n         \n          Title\n        \n         \n          Team\n        \n         \n          Funder\n        \n         \n          Description\n        \n         \n          Start\n        \n         \n          End\n        \n         \n          Funding\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n \n\n\nTitle\n\n\nTeam\n\n\nFunder\n\n\nDescription\n\n\nFunding\n\n\nStart\n\n\nEnd\n\n\n\n\n\n\n\n\n\nExploring \n\n\nAcademic Website\n\n\nFunder\n\n\nThe goal of this project is to investigate .\n\n\n$0\n\n\n2024\n\n\n2025\n\n\n\n\n\nNo matching items"
   }
 ]

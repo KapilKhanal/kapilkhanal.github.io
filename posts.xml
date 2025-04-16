@@ -14,15 +14,15 @@
 <title>Kapil Khanal</title>
 <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts.html</link>
 </image>
-<generator>quarto-1.5.56</generator>
-<lastBuildDate>Tue, 15 Oct 2024 04:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.43</generator>
+<lastBuildDate>Tue, 15 Oct 2024 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Quarto Academic Website Examples and Tips</title>
   <link>https://github.com/KapilKhanal/kapilkhanal.github.io/</link>
   <description>Examples and tips for Quarto Academic Website</description>
   <category>news</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/</guid>
-  <pubDate>Tue, 15 Oct 2024 04:00:00 GMT</pubDate>
+  <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder4.JPG" medium="image"/>
 </item>
 <item>
@@ -52,7 +52,7 @@ https://quarto.org/docs/authoring/includes.html
   <category>event</category>
   <category>presentation</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/event-title/</guid>
-  <pubDate>Tue, 03 Sep 2024 04:00:00 GMT</pubDate>
+  <pubDate>Tue, 03 Sep 2024 00:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder2.JPG" medium="image"/>
 </item>
 <item>
@@ -84,7 +84,7 @@ https://quarto.org/docs/authoring/includes.html
  ]]></description>
   <category>news</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/news-title/</guid>
-  <pubDate>Mon, 24 Jun 2024 04:00:00 GMT</pubDate>
+  <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder1.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -146,7 +146,7 @@ Complete?”</span> <em>Physical Review</em> 47 (7938): 777–80. <a href="https
 </div></div></section></div> ]]></description>
   <category>paper</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/paper-title/</guid>
-  <pubDate>Wed, 15 May 1935 04:00:00 GMT</pubDate>
+  <pubDate>Wed, 15 May 1935 00:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/paper-title/featured.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
