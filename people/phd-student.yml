@@ -1,0 +1,10 @@
+    - path: https://drganghe.github.io/quarto-academic-website-template
+      image: "/files/profiles/profile2.JPG"
+      title: "Kapil"
+      lastname: "Khanal"
+#      author: 
+      subtitle: "PhD Candidate"
+#      date: "2024-03-12"
+      categories: [PhD Candidate] 
+      started: "2021"
+      ended: "*"
