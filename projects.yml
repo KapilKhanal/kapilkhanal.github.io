@@ -1,0 +1,13 @@
+
+    - path: https://www.nsf.gov/ 
+      image: https://new.nsf.gov/themes/custom/nsf_theme/components/sdc-components/molecules/logo/logo-desktop.svg
+      title: "Exploring "
+      author: Academic Website
+      subtitle: "Funder"
+      description: "The goal of this project is to investigate ."
+      started: "2024"
+      ended: "2025"
+      funding: "$0"
+#      date: "2022-10-26"
+#      categories: [] 
+
