@@ -69,7 +69,12 @@ listing:
 
 **About Me**  
 
-I am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging computational modeling, high-performance computing (HPC), and interdisciplinary approaches to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on developing innovative solutions for offshore systems to support the Blue Economy and combat climate change.  
+I am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging computational modeling, optimization, simulatios and interdisciplinary approaches to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on developing innovative solutions for offshore systems.
+
+
+With a Master's degree in Systems Engineering and ongoing PhD work, I aim to bridge theory and applications for large scale systems. 
+
+## Experience
 
 Highlights of my experience include:  
 - **Researcher and PhD Candidate**: Advancing knowledge in multidisciplinary design optimization (MDO) and computational hydrodynamics.  
@@ -78,15 +83,13 @@ Highlights of my experience include:
 - **ATPESC Trainee**: Selected for the prestigious Argonne Training Program on Extreme-Scale Computing, where I honed skills in cutting-edge computational science.  
 - **Industry Experience**: As a data analyst at Fastenal, I developed quantitative models to drive business decisions.  
 
-With a Master's degree in Systems Engineering and ongoing PhD work, I aim to bridge theory and application, fostering sustainable engineering solutions through computational innovation.
-
-## Experience
-
-- Researcher, Univerisity
 
 ## Education
 
-- PhD, Univerisity
+- Systems, PhD Candidate, Cornell University
+- Systems Engineering, MS, Cornell University
+- Mathematics and Data Science, BS, Winona State University
+
 
 :::
 
