@@ -67,17 +67,18 @@ listing:
 
 :::{#hero-heading}
 
-I'm a [Quarto Academeic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io).
+**About Me**  
 
-I'm a template that you can fork to build your own website with easy adaptation and deployment.
+I am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging computational modeling, high-performance computing (HPC), and interdisciplinary approaches to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on developing innovative solutions for offshore systems to support the Blue Economy and combat climate change.  
 
-1. Star this repository so you can easily come back to the template  
-1. Folk this tempate and rename it to `yourgithubusername.github.io`  
-1. Update and edit `_quarto.yml` file for website setup  
-1. Update and add contents to `/posts`, `teaching.qmd`, `projects.yml`, and `people.qmd` and `/people` as needed.
-1. [Render and preview](https://quarto.org/docs/websites/) your website and [publish](https://quarto.org/docs/publishing/github-pages.html) it to your GitHub.
-1. Polish and fix any issues  
-1. Enjoy your website!
+Highlights of my experience include:  
+- **Researcher and PhD Candidate**: Advancing knowledge in multidisciplinary design optimization (MDO) and computational hydrodynamics.  
+- **Graduate Internships**: At Sandia National Laboratories, I worked on differentiable hydrodynamics using Julia for PDE-constrained optimization.  
+- **Teaching Assistant**: Supported the MDO course at Cornell, focusing on integrating creativity and rigorous optimization methodologies to design complex engineering systems.  
+- **ATPESC Trainee**: Selected for the prestigious Argonne Training Program on Extreme-Scale Computing, where I honed skills in cutting-edge computational science.  
+- **Industry Experience**: As a data analyst at Fastenal, I developed quantitative models to drive business decisions.  
+
+With a Master's degree in Systems Engineering and ongoing PhD work, I aim to bridge theory and application, fostering sustainable engineering solutions through computational innovation.
 
 ## Experience
 
