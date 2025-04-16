@@ -1,7 +1,7 @@
 ---
 title: "Kapil Khanal, PhD Candidate"
 description-meta: "Website "
-image: "files/profiles/profile1.JPG"
+image: "files/profiles/me.JPG"
 page-navigation: false
 toc: false
 #sidebar: false
