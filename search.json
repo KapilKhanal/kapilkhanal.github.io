@@ -21,39 +21,32 @@
     "text": "I recently submitted a paper to the ASME 2025 International Design Engineering Technical Conferences & Computers and Information in Engineering Conference (IDETC/CIE), to be held in Anahiem, California, from August 17-20, 2025.\nBelow is the abstract for the submission.\n\n\nAbstract\nWave energy conversion requires optimal design and control strategies to maximize energy extraction. Optimization approaches such as control co-design optimize plant design and the control strategies together. Several existing approaches use heuristic methods that do not scale well with high-dimensional design spaces. A gradient-based approach scales better than the heuristic method, for which the integrated model should be able to provide not just the output but its sensitivity with respect to the inputs. Currently, these different numerical solvers are used in isolation, thus making heuristic optimizers a natural choice.\nThis study develops a differentiable model integrating boundary element methods (BEM) for hydrodynamic modeling with pseudo-spectral optimal control techniques to optimize power take-off (PTO) forces under dynamic constraints for maximizing electrical power per volume of a point absorber wave energy converter (WEC). This model is useful for the large-scale gradient-based optimization of the electrical power.\nDiscussion and derivation of the semi-analytic adjoint for the hydrodynamics solver, non-linear parametric sensitivity for the trajectory optimization, and the calculation of the coupled derivative using unified derivative equations is presented. A nested formulation of the control co-design approach within a multidisciplinary design optimization architecture is created for the differentiable wave-to-wire model. Preliminary numerical experiment and verification of the sensitivities is conducted for the differentiable wave-to-wire model for a heaving point absorber WEC."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Kapil Khanal",
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software & Projects",
     "section": "",
-    "text": "Differentiable Programming to Engineer Complex Systems.\n\n\n\n\n\n\n\n\nI am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on modeling and optimizing large scale renewable energy systems.\nWith a Master’s degree in Systems Engineering and ongoing PhD work, I am to bridge theory and applications for large-scale systems.\n\n\n\n\n\n\nBridging Research and Industry\n\n\n\nUpon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.\n\nView My CV   Connect on LinkedIn   Send an Email (kapil.khanal at cornell dot edu)"
+    "text": "This page highlights the software projects and computational tools I have developed and contributed to. These projects reflect my interest in creating robust, scalable, and efficient solutions for complex engineering and scientific problems.\nMore details and project listings will be added here soon.\n\n\nFeatured Projects\n\n\nMarineHydro.jl\nA Boundary Element Method (BEM) solver written in Julia, designed for hydrodynamic analysis within a fully differentiable programming paradigm. It leverages automatic differentiation for efficient gradient computation.\n\n\nMDO Framework for WECs\nAn open-source framework built on OpenMDAO for the Multidisciplinary Design Optimization of Wave Energy Converters (WECs). This project integrates hydrodynamic, structural, and control system models.\n\n\nopenFlash\nAn open-source framework built to simulate the hydrodynamics of wave energy converters using matched eigenfunction expansion methods."
   },
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Kapil Khanal",
+    "objectID": "publications.html#publications-and-conference-papers",
+    "href": "publications.html#publications-and-conference-papers",
+    "title": "Publications",
+    "section": "Publications and Conference Papers",
+    "text": "Publications and Conference Papers\nKhanal, K., Michelén Ströfer, C. A., Ancellin, M., & Haji, M. (2024). Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis of Wave-Structure Interactions. Applied Ocean Research, Submitted.\nKhanal, K., & Haji, M. N. (2024). Multi-Objective Multidisciplinary Optimization of Wave Energy Converter Array Layout and Controls. https://dx.doi.org/10.2139/ssrn.4891821\nMcCabe, R., Khanal, K., & Haji, M. (2024). Open-source toolbox for semi-analytical hydrodynamic coefficients via the matched eigenfunction expansion method. UMERC Conference, August 7, Duluth, Minnesota.\nKhanal, K., & Haji, M. N. (2022, October 25). Multidisciplinary Design Optimization for Novel Offshore Systems. Presentation at the openMDAO Workshop, NASA Glenn Research Center, Cleveland, Ohio.\nKhanal, K., McCabe, R., & Haji, M. N. (2023). Gradient-Based Design Optimization of Concentric Cylindrical Offshore Structures. Proceedings of the SIAM Conference on Optimization (OP23), May 31, Seattle, Washington.\nKhanal, K., Vitale, O., DeGoede, N., & Haji, M. (2023, October 4-6). Multi-objective Multidisciplinary Optimization of Wave Energy Converter Array Configurations and Controls. University Marine Energy Research Community 2023 Conference, Durham, NH, USA."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "I am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on modeling and optimizing large scale renewable energy systems.\nWith a Master’s degree in Systems Engineering and ongoing PhD work, I am to bridge theory and applications for large-scale systems.\n\n\n\n\n\n\nBridging Research and Industry\n\n\n\nUpon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.\n\nView My CV   Connect on LinkedIn   Send an Email (kapil.khanal at cornell dot edu)"
+    "text": "Order By\n      Default\n      \n      \n      \n        Title\n      \n      \n        Team\n      \n      \n        Funder\n      \n      \n        Description\n      \n      \n        Start\n      \n      \n        End\n      \n      \n        Funding\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nTitle\n\n\n\nTeam\n\n\n\nFunder\n\n\n\nDescription\n\n\n\nFunding\n\n\n\nStart\n\n\n\nEnd\n\n\n\n\n\n\n\n\n\n\n\nExploring \n\n\nAcademic Website\n\n\nFunder\n\n\nThe goal of this project is to investigate .\n\n\n$0\n\n\n2024\n\n\n2025\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html#research-focus",
-    "href": "index.html#research-focus",
-    "title": "Kapil Khanal",
-    "section": "Research Focus",
-    "text": "Research Focus\nMy research architects the next generation of complex engineered systems by fusing advanced computational methods. I operate at the confluence of Multidisciplinary Design Optimization (MDO) and Scientific Machine Learning, with a focus on creating novel frameworks for Differentiable Hydrodynamics and other physical simulations. Central to my approach is the use of Adjoint-Based Sensitivity Analysis to enable efficient, large-scale PDE-Constrained Optimization. Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures."
-  },
-  {
-    "objectID": "index.html#recent-posts",
-    "href": "index.html#recent-posts",
-    "title": "Kapil Khanal",
-    "section": "Recent Posts",
-    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nDifferentiable Wave-to-Wire Model for Wave Energy Converter Optimization\n\n\nSubmission to the ASME 2025 IDETC/CIE Conference\n\n\n\nJul 26, 2024\n\n\n\n\n\n\n\n\n\n\n\nGradient-Based Optimization for Large Systems\n\n\nA Deep Dive into MDO Architectures, Solvers, and Simulators\n\n\n\nJul 26, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nA Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems\n\n\nMy PhD Research Proposal\n\n\n\nJan 15, 2024\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
-  },
-  {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "What’s New & Updated",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDifferentiable Wave-to-Wire Model for Wave Energy Converter Optimization\n\n\nSubmission to the ASME 2025 IDETC/CIE Conference\n\n\n\nconference\n\nresearch\n\noptimization\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nGradient-Based Optimization for Large Systems\n\n\nA Deep Dive into MDO Architectures, Solvers, and Simulators\n\n\n\nMDO\n\noptimization\n\nresearch\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nA Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems\n\n\nMy PhD Research Proposal\n\n\n\nresearch\n\noptimization\n\nhydrodynamics\n\nthesis\n\n\n\nDeveloping a differentiable boundary element method solver for hydrodynamic shape optimization of offshore structures using automatic differentiation and adjoint methods\n\n\n\n\n\nJan 15, 2024\n\n\nKapil Khanal\n\n\n\n\n\nNo matching items"
+    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
   },
   {
     "objectID": "people.html",
@@ -77,25 +70,39 @@
     "text": "Alumni\n\n\n   \n    \n    \n      Order By\n      Default\n      \n      \n      \n        Name\n      \n      \n        Role\n      \n      \n        Started\n      \n      \n        Ended\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nName\n\n\n\nRole\n\n\n\nStarted\n\n\n\nEnded\n\n\n\n\n\n\n\n\n\n\n\nKapil\n\n\nPhD Candidate\n\n\n2021\n\n\n*\n\n\n\n\n\n\n\n\n\nPI Name\n\n\nPI\n\n\n \n\n\n \n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "What’s New & Updated",
     "section": "",
-    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDifferentiable Wave-to-Wire Model for Wave Energy Converter Optimization\n\n\nSubmission to the ASME 2025 IDETC/CIE Conference\n\n\n\nconference\n\nresearch\n\noptimization\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nGradient-Based Optimization for Large Systems\n\n\nA Deep Dive into MDO Architectures, Solvers, and Simulators\n\n\n\nMDO\n\noptimization\n\nresearch\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nA Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems\n\n\nMy PhD Research Proposal\n\n\n\nresearch\n\noptimization\n\nhydrodynamics\n\nthesis\n\n\n\nDeveloping a differentiable boundary element method solver for hydrodynamic shape optimization of offshore structures using automatic differentiation and adjoint methods\n\n\n\n\n\nJan 15, 2024\n\n\nKapil Khanal\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kapil Khanal",
     "section": "",
-    "text": "Order By\n      Default\n      \n      \n      \n        Title\n      \n      \n        Team\n      \n      \n        Funder\n      \n      \n        Description\n      \n      \n        Start\n      \n      \n        End\n      \n      \n        Funding\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nTitle\n\n\n\nTeam\n\n\n\nFunder\n\n\n\nDescription\n\n\n\nFunding\n\n\n\nStart\n\n\n\nEnd\n\n\n\n\n\n\n\n\n\n\n\nExploring \n\n\nAcademic Website\n\n\nFunder\n\n\nThe goal of this project is to investigate .\n\n\n$0\n\n\n2024\n\n\n2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Differentiable Programming to Engineer Complex Systems.\n\n\n\n\n\n\n\n\nI am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on modeling and optimizing large scale renewable energy systems.\nWith a Master’s degree in Systems Engineering and ongoing PhD work, I am to bridge theory and applications for large-scale systems.\n\n\n\n\n\n\n💼 Bridging Research and Industry\n\n\n\nUpon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.\n\nView My CV   Connect on LinkedIn   Explore My GitHub"
   },
   {
-    "objectID": "publications.html#publications-and-conference-papers",
-    "href": "publications.html#publications-and-conference-papers",
-    "title": "Publications",
-    "section": "Publications and Conference Papers",
-    "text": "Publications and Conference Papers\nKhanal, K., Michelén Ströfer, C. A., Ancellin, M., & Haji, M. (2024). Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis of Wave-Structure Interactions. Applied Ocean Research, Submitted.\nKhanal, K., & Haji, M. N. (2024). Multi-Objective Multidisciplinary Optimization of Wave Energy Converter Array Layout and Controls. https://dx.doi.org/10.2139/ssrn.4891821\nMcCabe, R., Khanal, K., & Haji, M. (2024). Open-source toolbox for semi-analytical hydrodynamic coefficients via the matched eigenfunction expansion method. UMERC Conference, August 7, Duluth, Minnesota.\nKhanal, K., & Haji, M. N. (2022, October 25). Multidisciplinary Design Optimization for Novel Offshore Systems. Presentation at the openMDAO Workshop, NASA Glenn Research Center, Cleveland, Ohio.\nKhanal, K., McCabe, R., & Haji, M. N. (2023). Gradient-Based Design Optimization of Concentric Cylindrical Offshore Structures. Proceedings of the SIAM Conference on Optimization (OP23), May 31, Seattle, Washington.\nKhanal, K., Vitale, O., DeGoede, N., & Haji, M. (2023, October 4-6). Multi-objective Multidisciplinary Optimization of Wave Energy Converter Array Configurations and Controls. University Marine Energy Research Community 2023 Conference, Durham, NH, USA."
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Kapil Khanal",
+    "section": "",
+    "text": "I am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on modeling and optimizing large scale renewable energy systems.\nWith a Master’s degree in Systems Engineering and ongoing PhD work, I am to bridge theory and applications for large-scale systems.\n\n\n\n\n\n\n💼 Bridging Research and Industry\n\n\n\nUpon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.\n\nView My CV   Connect on LinkedIn   Explore My GitHub"
+  },
+  {
+    "objectID": "index.html#research-focus",
+    "href": "index.html#research-focus",
+    "title": "Kapil Khanal",
+    "section": "Research Focus",
+    "text": "Research Focus\nMy research architects the next generation of complex engineered systems by fusing advanced computational methods. I operate at the confluence of Multidisciplinary Design Optimization (MDO) and Scientific Machine Learning, with a focus on creating novel frameworks for Differentiable Hydrodynamics and other physical simulations. Central to my approach is the use of Adjoint-Based Sensitivity Analysis to enable efficient, large-scale PDE-Constrained Optimization. Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures."
+  },
+  {
+    "objectID": "index.html#recent-posts",
+    "href": "index.html#recent-posts",
+    "title": "Kapil Khanal",
+    "section": "Recent Posts",
+    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nDifferentiable Wave-to-Wire Model for Wave Energy Converter Optimization\n\n\nSubmission to the ASME 2025 IDETC/CIE Conference\n\n\n\nJul 26, 2024\n\n\n\n\n\n\n\n\n\n\n\nGradient-Based Optimization for Large Systems\n\n\nA Deep Dive into MDO Architectures, Solvers, and Simulators\n\n\n\nJul 26, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nA Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems\n\n\nMy PhD Research Proposal\n\n\n\nJan 15, 2024\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
   },
   {
     "objectID": "teaching.html",
