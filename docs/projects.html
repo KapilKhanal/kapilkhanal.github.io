@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-author','listing-subtitle','listing-description','listing-funding','listing-started','listing-ended',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-image","listing-title","listing-author","listing-subtitle","listing-description","listing-started","listing-ended","listing-funding"],
+      searchColumns: ["listing-image","listing-subtitle","listing-author","listing-description","listing-started","listing-ended","listing-funding","listing-title"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -243,13 +243,13 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
-<span class="menu-text">Group</span></a>
+    <a class="nav-link" href="./software.html"> 
+<span class="menu-text">Software</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./files/nsf-biosketch.pdf"> 
+    <a class="nav-link" href="./files/kapil_resume.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -317,14 +317,11 @@ window.Quarto = {
       <option value="index" data-direction="asc">Default</option>
       <option value="listing-image" data-direction="asc">
       </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
+      <option value="listing-subtitle" data-direction="asc">
+        Funder
       </option>
       <option value="listing-author" data-direction="asc">
         Team
-      </option>
-      <option value="listing-subtitle" data-direction="asc">
-        Funder
       </option>
       <option value="listing-description" data-direction="asc">
         Description
@@ -337,6 +334,9 @@ window.Quarto = {
       </option>
       <option value="listing-funding" data-direction="asc">
         Funding
+      </option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
       </option>
     </select>
   </div>
@@ -385,27 +385,55 @@ window.Quarto = {
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-title-sort="Exploring ">
+<tr data-index="0">
 <td>
-<span class="listing-image"><img loading="lazy" src="https://new.nsf.gov/themes/custom/nsf_theme/components/sdc-components/molecules/logo/logo-desktop.svg" style="height: 30px;"></span>
+<span class="listing-image"><img loading="lazy" src="https://www.sandia.gov/images/sandia-logo.svg" style="height: 30px;"></span>
 </td>
 <td>
-<a href="https://www.nsf.gov/" class="title listing-title">Exploring </a>
+<a href="Sandia National Laboratories" class="title listing-title">&nbsp;</a>
 </td>
 <td>
-<span class="listing-author">Academic Website</span>
+<span class="listing-author">Kapil Khanal, Dr.&nbsp;Maha Haji, Dr.&nbsp;Carlos , Dr.&nbsp;Mattheiu</span>
 </td>
 <td>
-<span class="listing-subtitle">Funder</span>
+<span class="listing-subtitle">Sandia National Laboratories</span>
 </td>
 <td>
-<span class="listing-description">The goal of this project is to investigate .</span>
+<span class="listing-description">Seedling I and II: A Framework for Differentiable Hydrodynamics</span>
 </td>
 <td>
-<span class="listing-funding">$0</span>
+<span class="listing-funding">$200,000</span>
 </td>
 <td>
-<span class="listing-started">2024</span>
+<span class="listing-started">2023 - Present</span>
+</td>
+<td>
+<span class="listing-ended">Present</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-title-sort="AWS Cloud Credit for Research">
+<td>
+<span class="listing-image"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" style="height: 30px;"></span>
+</td>
+<td>
+<a href="https://aws.amazon.com/research-credits/" class="title listing-title">AWS Cloud Credit for Research</a>
+</td>
+<td>
+<span class="listing-author">Kapil Khanal</span>
+</td>
+<td>
+<span class="listing-subtitle">Amazon Web Services (AWS)</span>
+</td>
+<td>
+<span class="listing-description">Amazon Web Services (AWS) Cloud Credit for Computaitonal Research</span>
+</td>
+<td>
+<span class="listing-funding">$5,000</span>
+</td>
+<td>
+<span class="listing-started">2023</span>
 </td>
 <td>
 <span class="listing-ended">2025</span>

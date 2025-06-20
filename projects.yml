@@ -1,13 +1,19 @@
+- path: Sandia National Laboratories
+  image: https://www.sandia.gov/images/sandia-logo.svg
+  subtitle: "Sandia National Laboratories"
+  author: "Kapil Khanal, Dr. Maha Haji, Dr. Carlos , Dr. Mattheiu"
+  description: "Seedling I and II: A Framework for Differentiable Hydrodynamics"
+  started: "2023 - Present"
+  ended: "Present"
+  funding: "$200,000"
 
-    - path: https://www.nsf.gov/ 
-      image: https://new.nsf.gov/themes/custom/nsf_theme/components/sdc-components/molecules/logo/logo-desktop.svg
-      title: "Exploring "
-      author: Academic Website
-      subtitle: "Funder"
-      description: "The goal of this project is to investigate ."
-      started: "2024"
-      ended: "2025"
-      funding: "$0"
-#      date: "2022-10-26"
-#      categories: [] 
+- path: https://aws.amazon.com/research-credits/
+  image: https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg
+  title: "AWS Cloud Credit for Research"
+  author: "Kapil Khanal"
+  subtitle: "Amazon Web Services (AWS)"
+  description: "Amazon Web Services (AWS) Cloud Credit for Computaitonal Research"
+  started: "2023"
+  ended: "2025"
+  funding: "$5,000"
 

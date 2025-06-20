@@ -8,16 +8,16 @@
     ]
   },
   {
-    "listing": "/projects.html",
-    "items": []
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/idetc-2025-submission/index.html",
       "/posts/gradient-based-optimization/index.html",
       "/posts/differentiable-hydrodynamics-framework/index.html"
     ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": []
   },
   {
     "listing": "/people.html",
