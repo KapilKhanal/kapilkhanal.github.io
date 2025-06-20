@@ -84,9 +84,9 @@ listing:
 <div id="particles-js"></div>
   
 :::{.hero-content}
-# Architecting Systems with Gradients
+# Architecting Large-Scale Systems
 
-**Bridging Differentiable Programming and Machine Learning to Engineer Complex Systems.**
+**Differentiable Programming to Engineer Complex Systems.**
 :::
 
 :::{.container .about-section}
@@ -99,7 +99,7 @@ listing:
 :::{.g-col-12 .g-col-md-8}
 ## About Me
 
-I am a <span style="color: #B31B1B;">**doctoral candidate at Cornell University**</span>, specializing in <span style="color: #34568B;">**systems design**</span>, <span style="color: #34568B;">**engineering**</span>, and <span style="color: #34568B;">**optimization**</span>. My work focuses on leveraging **computational modeling**, **optimization****interdisciplinary approaches** to advance <span style="color: #3A7D44;">**sustainable technologies**</span>. As a member of the **Symbiotic Engineering and Analysis (SEA) Lab**, I collaborate on developing innovative solutions for offshore systems
+I am a <span style="color: #B31B1B;">**doctoral candidate at Cornell University**</span>, specializing in <span style="color: #34568B;">**systems design**</span>, <span style="color: #34568B;">**engineering**</span>, and <span style="color: #34568B;">**optimization**</span>. My work focuses on leveraging **computational modeling**, **optimization****interdisciplinary approaches** to advance <span style="color: #3A7D44;">**sustainable technologies**</span>. As a member of the **Symbiotic Engineering and Analysis (SEA) Lab**, I collaborate on modeling and optimizing large scale renewable energy systems.
 
 With a Master's degree in <span style="color: #34568B;">**Systems Engineering**</span> and ongoing PhD work, I aim to bridge <span style="color: #3A7D44;">**theory and applications**</span> for <span style="color: #34568B;">**large-scale systems**</span>.
 

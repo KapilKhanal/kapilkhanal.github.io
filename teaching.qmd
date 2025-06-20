@@ -8,12 +8,12 @@ title-block-banner: false
 
 ::: {.grid}
 
-::: {.g-col-12 .g-col-md-2}
-![](files/images/corpower-ocean.jpg)
-*Image: [CorPower Ocean](https://corpowerocean.com/)*
+::: {.g-col-12 .g-col-md-4}
+![](files/images/mdo.png)
+*Image: [openmdao](https://openmdao.org/)*
 :::
 
-::: {.g-col-12 .g-col-md-10}
+::: {.g-col-12 .g-col-md-8}
 
 **Course**: Multidisciplinary Design Optimization  
 **Institution**: Cornell University  
@@ -24,9 +24,9 @@ title-block-banner: false
 **Course Overview**: This course presents a rigorous, quantitative multidisciplinary design methodology that incorporates the creative side of the design process. Through a topic of your choice, students learn how to use multidisciplinary design optimization (MDO) to create advanced and complex engineering systems that must be competitive in performance and life-cycle value.
 
 **Key Focus Areas**:
-- Multidisciplinary character of engineering systems
-- Design of complex systems  
-- Tools for optimization
+-**Multidisciplinary character of engineering systems**
+-**Design of complex systems**  
+-**Tools for optimization**
 
 **Course Structure**: Students work in small teams on a term project to apply MDO principles to design and optimize an engineering system of their choice.
 
