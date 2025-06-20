@@ -13,7 +13,7 @@ A computational architecture for Multidisciplinary Design Optimization (MDO) is 
 
 Simulators and solvers are required to either compute the performance of the system through some physics (numerical simulation) or resolve non-linear feedback coupling between subsystems (non-linear equation solvers). A system where all the subsystems agree on their input and output (including any shared variables) is necessary for the system to be optimal and feasible. The coordination of the variables can, however, be done in numerous ways that involve solvers and/or optimizers. Many architectures that arise due to these choices are briefly discussed in later sections.
 
-For offshore systems, marine hydrodynamics solvers (like the boundary element method) are required. The choice of solvers, however, depends on the strength of the coupling between two subsystems. In this thesis, a Newton solver is used to converge the feedback coupling when necessary.
+For offshore systems, marine hydrodynamics solvers (like the boundary element method) are required. The choice of solvers, however, depends on the strength of the coupling between two subsystems. In this post, a Newton solver is used to converge the feedback coupling when necessary.
 
 ### MDO 'Stack'
 
@@ -24,8 +24,10 @@ $$F:\{\mathcal{O}, \mathcal{M}, \mathcal{S}\}$$
 where $\mathcal{M}$ is the set of simulators, $\mathcal{O}$ is the choice of optimizer, and $\mathcal{S}$ is the set of solvers.
 
 The performance $\mathcal{P}(\mathcal{F})$ depends on:
+
 - The compatibility of $\mathcal{M}$ and $\mathcal{S}$ with $\mathcal{O}$.
 - The computational efficiency of $\mathcal{F}$, defined by the time $T(\mathcal{F})$ and accuracy $A(\mathcal{F})$.
+- The convergence of the optimization problem.
 
 Gradient-based optimizers ($\mathcal{O}_{\nabla}$) achieve superior performance ($\mathcal{P}(\mathcal{F}_{\nabla}) > \mathcal{P}(\mathcal{F}_{\neg \nabla})$) when $\mathcal{M}$ and $\mathcal{S}$ are differentiable. However, the practical challenges of computing gradients for certain simulators and solvers remain a significant limitation.
 
@@ -52,7 +54,7 @@ A robust and widely adopted method for calculating gradients in numerical code i
 
 Starting with the PDE of a physical process, many frameworks can be used. If the system includes only one discipline, a relevant simulation or PDE code can be used on its own. If there are multiple disciplines, then either a joint discretization of that PDE (e.g., using FEM) is needed, or a way to couple them together if such a joint discretization is complicated or unavailable. Commercial finite element frameworks (like COMSOL Multiphysics) are robust for many coupled physics problems, such as aero-structural interactions.
 
-However, when there is a need to couple a diverse set of numerical codes—such as a boundary element method or an explicit equation coupled with other disciplines—such unified frameworks are limited. A framework where a heterogeneous set of solvers can be used in a plug-and-play style is highly desirable. This also avoids the need for new discretizations of the coupled problem if the system model has additional subsystems or if the fidelity of a simulation changes. This thesis adopts this modular architecture approach where any $s \in \mathcal{S}$ can be easily used.
+However, when there is a need to couple a diverse set of numerical codes—such as a boundary element method or an explicit equation coupled with other disciplines—such unified frameworks are limited. A framework where a heterogeneous set of solvers can be used in a plug-and-play style is highly desirable. This also avoids the need for new discretizations of the coupled problem if the system model has additional subsystems or if the fidelity of a simulation changes. This post advocates to adopt this modular architecture approach where any $s \in \mathcal{S}$ can be easily used.
 
 ### Computational Graph and Unified Derivative Equation
 
