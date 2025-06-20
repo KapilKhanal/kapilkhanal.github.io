@@ -78,7 +78,7 @@
 </section>
 <section id="computational-graph-and-unified-derivative-equation" class="level3">
 <h3 class="anchored" data-anchor-id="computational-graph-and-unified-derivative-equation">Computational Graph and Unified Derivative Equation</h3>
-<p>Multiple fields independently concluded that gradient-based methods scale well and utilized adjoint-based optimization. Backpropagation, as discussed by LeCun et al., shows the connection between optimal control and neural networks and how backpropagating errors scales the training of neural nets.</p>
+<p>Multiple fields independently concluded that gradient-based methods scale well and utilized adjoint-based optimization. Backpropagation, as discussed by LeCun et al., shows the connection between optimal control and <span style="color: #B31B1B;"><strong>neural networks</strong></span> and how backpropagating errors scales the training of <span style="color: #B31B1B;"><strong>neural nets</strong></span>.</p>
 <p>Design optimization in complex engineering systems, from neural networks to physical structures, encounters two principal challenges:</p>
 <ol type="1">
 <li><strong>Large Number of Design Variables</strong>: These systems involve numerous “knobs” to tune—such as weights and biases in neural networks or geometric and material properties in physical systems.</li>
@@ -91,7 +91,7 @@
 <li><strong>Physical Systems</strong>: Optimizing systems like airplanes or offshore wind turbines introduces a different complexity. These designs involve thousands of variables, each influencing coupled physics simulations (CFD, structural mechanics, etc.). Each simulation is computationally expensive, making the design process resource-intensive.</li>
 </ul>
 <p>To overcome these challenges, reviewing the literature from both fields reveals that <strong>adjoint-based methods</strong> are widely utilized. However, each discipline has optimized gradient computation to suit its specific tasks. In machine learning, computational graphs are a common framework for implementing backpropagation using dynamic programming and the chain rule. In MDO, the same objective is achieved by solving a linear system, where backpropagation can be viewed as a special case that employs linear solvers to solve that system efficiently. The work of LeCun, Hwang, and Martins and others has helped unify these approaches, showing how various methods like automatic differentiation (AD) and adjoint methods can be derived from a single cohesive formulation by viewing any system as a non-linear system and utilizing the implicit function theorem.</p>
-<p>In this post, I discussed a comparison between these two different breeds of thinking about adjoint calculations using a canonical MDO Sellar problem.</p>
+<p>In this post, I discussed how two different fields, machine learning and MDO, have converged on the same approach to scale the system optimization using gradients.</p>
 <!-- ### MDO Architectures for Offshore Systems
 
 A comparison between monolithic and distributed optimization architectures is performed in this section. Among many, the two most common architectures, Multidisciplinary Feasible (MDF) and Collaborative Optimization (CO), are used to showcase how these architectures could be adopted for the design optimization of offshore structures.  -->

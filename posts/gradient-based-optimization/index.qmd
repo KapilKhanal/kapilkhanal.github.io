@@ -58,7 +58,7 @@ However, when there is a need to couple a diverse set of numerical codes—such 
 
 ### Computational Graph and Unified Derivative Equation
 
-Multiple fields independently concluded that gradient-based methods scale well and utilized adjoint-based optimization. Backpropagation, as discussed by LeCun et al., shows the connection between optimal control and neural networks and how backpropagating errors scales the training of neural nets.
+Multiple fields independently concluded that gradient-based methods scale well and utilized adjoint-based optimization. Backpropagation, as discussed by LeCun et al., shows the connection between optimal control and <span style="color: #B31B1B;">**neural networks**</span> and how backpropagating errors scales the training of <span style="color: #B31B1B;">**neural nets**</span>.
 
 Design optimization in complex engineering systems, from neural networks to physical structures, encounters two principal challenges:
 
@@ -72,7 +72,7 @@ Design optimization in complex engineering systems, from neural networks to phys
 
 To overcome these challenges, reviewing the literature from both fields reveals that **adjoint-based methods** are widely utilized. However, each discipline has optimized gradient computation to suit its specific tasks. In machine learning, computational graphs are a common framework for implementing backpropagation using dynamic programming and the chain rule. In MDO, the same objective is achieved by solving a linear system, where backpropagation can be viewed as a special case that employs linear solvers to solve that system efficiently. The work of LeCun, Hwang, and Martins and others has helped unify these approaches, showing how various methods like automatic differentiation (AD) and adjoint methods can be derived from a single cohesive formulation by viewing any system as a non-linear system and utilizing the implicit function theorem.
 
-In this post, I discussed a comparison between these two different breeds of thinking about adjoint calculations using a canonical MDO Sellar problem.
+In this post, I discussed how two different fields, machine learning and MDO, have converged on the same approach to scale the system optimization using gradients.
 
 <!-- ### MDO Architectures for Offshore Systems
 
