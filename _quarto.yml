@@ -44,7 +44,7 @@ website:
 
     right: 
       - text: CV
-        href: files/nsf-biosketch.pdf
+        href: files/kapil_resume.pdf
       - icon: github
         href: https://github.com/KapilKhanal/kapilkhanal.github.io
         target: _blank

@@ -1,97 +1,132 @@
 ---
-title: "Kapil Khanal, PhD Candidate"
-description-meta: "Website "
+title: "Kapil Khanal"
+description-meta: "Bridging Differentiable Programming and Engineering"
 image: "files/profiles/profile1.JPG"
 page-navigation: false
 toc: false
-#sidebar: false
 page-layout: full
-
-about:
-  id: hero-heading
-  template: trestles
-  image-width: 70%
-  links:
-    - icon: sun
-      text: Lab
-      href: https://www.github.com
-      target: _blank
-    - icon: globe
-      text: Uprofile
-      href: https://baruch.cuny.edu
-      target: _blank
-    - icon: envelope
-      text: E-mail
-      href: mailto:email@gmail.com    
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
-      target: _blank
-    - icon: youtube
-      text: YouTube
-      href: https://www.youtube.com     
-      target: _blank 
-    - text: "{{< ai orcid >}} ORCID"   # use academic icons, "" are needed, you also need to install the fontawesome extension
-      href: https://orcid.org
-      target: _blank
-    - text: "{{< ai clarivate >}} Web of Science"
-      href: https://www.webofscience.com  
-      target: _blank
-    - text: "{{< ai scopus >}} Scopus"
-      href: https://www.scopus.com
-      target: _blank
-    - text: "{{< ai google-scholar >}} Google Scholar"
-      href: https://scholar.google.com
-      target: _blank
-#    - text: "{{< ai researchgate >}} Research Gate"
-#      href: https://www.researchgate.net
-#      target: _blank
 
 listing:
   - id: recent-posts
     contents: 
       - posts
-      - posts/post-links.yml
     exclude:
       title: ""
     type: grid
     max-items: 3
-#    image-height: 150px
-    page-size: 3 #set same as max-times to remove the page number setting
+    page-size: 3
     fields: [image, date, title, subtitle]
     max-description-length: 75
-    sort: 
-      - "date desc"
-      - "title asc"
+    sort: "date desc"
 ---
 
-:::{#hero-heading}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
-**About Me**  
+.hero-section-with-particles {
+  position: relative;
+  background-color: #FFFFFF; /* White background */
+  overflow: hidden;
+  padding-bottom: 60px; /* Add padding to contain the 'About Me' section */
+}
 
-I am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging computational modeling, optimization, simulatios and interdisciplinary approaches to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on developing innovative solutions for offshore systems.
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
 
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 20px 40px; /* Reduced top padding */
+  font-family: 'Montserrat', sans-serif;
+}
 
-With a Master's degree in Systems Engineering and ongoing PhD work, I aim to bridge theory and applications for large scale systems. 
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
 
-## Experience
+.hero-content p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 700;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #34495e;
+}
 
-Highlights of my experience include:  
-- **Researcher and PhD Candidate**: Advancing knowledge in multidisciplinary design optimization (MDO) and computational hydrodynamics.  
-- **Graduate Internships**: At Sandia National Laboratories, I worked on differentiable hydrodynamics using Julia for PDE-constrained optimization.  
-- **Teaching Assistant**: Supported the MDO course at Cornell, focusing on integrating creativity and rigorous optimization methodologies to design complex engineering systems.  
-- **ATPESC Trainee**: Selected for the prestigious Argonne Training Program on Extreme-Scale Computing, where I honed skills in cutting-edge computational science.  
-- **Industry Experience**: As a data analyst at Fastenal, I developed quantitative models to drive business decisions.  
+.about-section {
+  position: relative;
+  z-index: 1;
+  color: #2c3e50;
+  font-family: 'Montserrat', sans-serif;
+}
 
+.about-section h2 {
+  text-align: left;
+}
 
-## Education
+.content-section {
+  background: white;
+  padding: 40px 0;
+}
+</style>
 
-- Systems, PhD Candidate, Cornell University
-- Systems Engineering, MS, Cornell University
-- Mathematics and Data Science, BS, Winona State University
+:::{.hero-section-with-particles}
+<div id="particles-js"></div>
+  
+:::{.hero-content}
+# Architecting Systems with Gradients
 
+**Bridging Differentiable Programming and Machine Learning to Engineer Complex Systems.**
+:::
+
+:::{.container .about-section}
+:::{.grid}
+
+:::{.g-col-12 .g-col-md-4}
+![](files/profiles/profile1.JPG){.img-fluid .rounded-circle}
+:::
+
+:::{.g-col-12 .g-col-md-8}
+## About Me
+
+I am a <span style="color: #B31B1B;">**doctoral candidate at Cornell University**</span>, specializing in <span style="color: #34568B;">**systems design**</span>, <span style="color: #34568B;">**engineering**</span>, and <span style="color: #34568B;">**optimization**</span>. My work focuses on leveraging **computational modeling**, **optimization****interdisciplinary approaches** to advance <span style="color: #3A7D44;">**sustainable technologies**</span>. As a member of the **Symbiotic Engineering and Analysis (SEA) Lab**, I collaborate on developing innovative solutions for offshore systems
+
+With a Master's degree in <span style="color: #34568B;">**Systems Engineering**</span> and ongoing PhD work, I aim to bridge <span style="color: #3A7D44;">**theory and applications**</span> for <span style="color: #34568B;">**large-scale systems**</span>.
+
+[My CV](files/kapil_resume.pdf){.btn .btn-primary}
+[Contact Me](mailto:email@gmail.com){.btn .btn-secondary}
+:::
 
 :::
+:::
+:::
+
+<div class="content-section">
+<div class="container">
+
+---
+
+## Research Focus
+
+My research lives at the intersection of:
+- **Multidisciplinary Design Optimization (MDO)**
+- **Differentiable Hydrodynamics & PDE-Constrained Optimization**
+- **Adjoint-Based Sensitivity Analysis**
+- **Scientific Machine Learning**
+
+I develop and apply gradient-based optimization methods to complex engineering problems, from renewable energy systems to aerospace structures.
+
+---
 
 ## Recent Posts
 Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd)
@@ -100,3 +135,9 @@ Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News
 :::
 
 <p align="right">[All Posts »](/posts.qmd)</p>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="files/includes/particles-config.js"></script>

@@ -36,7 +36,17 @@ Offshore structures like spar buoys (vertical cylindrical structures) can be rea
 
 The response motion of offshore structures is calculated using hydrodynamic coefficients such as added mass and damping. These coefficients characterize the geometry of floating structures. A transfer function called the **Response Amplitude Operator (RAO)** linearly relates sea motion to floating body motion.
 
+## Boundary Element Method
 **Boundary Element Methods (BEM)** are used to calculate hydrodynamic coefficients, relying on linear potential flow theory where the exact Green's function and its derivative are known [@BEMcomparison]. BEM-based PDE solvers [@babarit_theoretical_2015] are typically accurate for most geometries and can be coupled for shape optimization within a design framework. Depending on system requirements, we may want to minimize or maximize body response to waves—minimizing motion for wind turbines while maximizing motion for wave energy converters.
+
+
+Hydrodynamics of floating bodies is typically modeled using linear potential flow theory. Since the domain is unbounded, boundary element methods are used, requiring only boundary discretization—the surface geometry is meshed with quadrilateral panels.
+
+For each frequency of ocean waves the structure encounters, diffraction and radiation problems are solved to calculate hydrodynamic coefficients. The solution of velocity potential and radiation/diffraction forces is computed in the frequency domain.
+
+Computational cost increases with geometry discretization and the number of wave frequencies and headings. Typically, numerical complexity of BEM codes is proportional to $O(N^2)$ or $O(N^3)$ with $N$ as the number of mesh panels. The Green function is computed $O(N^2)$ times to set up the linear system, which is solved either by iterative methods with $O(N^2)$ complexity or Gauss elimination with $O(N^3)$ complexity [@BEMcomparison].
+
+This limits integration within optimization loops, especially for large-scale optimization based on heuristic methods. The solution is to minimize function evaluations in optimization. Gradient-based optimization explores design space more efficiently (fewer evaluations) to reach locally optimal points
 
 ### Differentiable Hydrodynamics
 
@@ -45,6 +55,13 @@ Coupling numerical solvers within optimization is computationally costly. Shape 
 **Gradient-based optimization** is preferred for large-scale optimization with many design variables and costly function evaluations. Coupling numerical solvers in gradient-based optimization requires gradients of solver output with respect to all inputs. While this has been implemented for CFD [@DAFoam], no implementation of **differentiable hydrodynamics** (differentiable BEM) exists.
 
 Among various gradient calculation methods, **adjoint-based methods** are accurate and efficient for inverse design problems. Adjoint methods are widely used in optimal control and aerodynamic shape optimization [@jameson] as well as design optimization [@Adjoint_intro], but haven't been applied to BEM-based hydrodynamics shape optimization.
+
+### Coupled Derivatives
+
+For multidisciplinary design optimization, **Modular Analysis and Unified Derivatives (MAUD)** architecture couples derivatives from several subsystems. MAUD formulates the multidisciplinary model as a nonlinear system of equations, leading to a linear equation that unifies all derivative computation methods [@maud]. Each subsystem can provide numerical or analytical gradients.
+
+**OpenMDAO** [@Gray2019a], a tool developed by NASA, implements this framework. I plan to integrate newly developed BEM adjoints into this framework. Currently, I integrate BEM in OpenMDAO using numerical derivatives approximated through finite differences [@novelOpenMDAO]. Since this scales linearly with the number of design variables and accuracy deteriorates for nonlinear problems, it's not appropriate for multidisciplinary analysis and optimization. My thesis aims to solve this problem.
+
 
 #### Understanding Adjoint Methods
 
@@ -209,22 +226,6 @@ The proposed framework will:
 Creating a differentiable boundary element method (BEM) solver will enable modern and complex workflows in offshore system design and optimization. **Differentiability** will allow for novel methods such as **adjoint-based multidisciplinary optimization** and more accurate data-driven methods such as **physics-informed machine learning**.
 
 These capabilities will significantly reduce the design cycle for early design studies of novel offshore systems.
-
-### Coupled Derivatives
-
-For multidisciplinary design optimization, **Modular Analysis and Unified Derivatives (MAUD)** architecture couples derivatives from several subsystems. MAUD formulates the multidisciplinary model as a nonlinear system of equations, leading to a linear equation that unifies all derivative computation methods [@maud]. Each subsystem can provide numerical or analytical gradients.
-
-**OpenMDAO** [@Gray2019a], a tool developed by NASA, implements this framework. I plan to integrate newly developed BEM adjoints into this framework. Currently, I integrate BEM in OpenMDAO using numerical derivatives approximated through finite differences [@novelOpenMDAO]. Since this scales linearly with the number of design variables and accuracy deteriorates for nonlinear problems, it's not appropriate for multidisciplinary analysis and optimization. My thesis aims to solve this problem.
-
-## Boundary Element Method
-
-Hydrodynamics of floating bodies is typically modeled using linear potential flow theory. Since the domain is unbounded, boundary element methods are used, requiring only boundary discretization—the surface geometry is meshed with quadrilateral panels.
-
-For each frequency of ocean waves the structure encounters, diffraction and radiation problems are solved to calculate hydrodynamic coefficients. The solution of velocity potential and radiation/diffraction forces is computed in the frequency domain.
-
-Computational cost increases with geometry discretization and the number of wave frequencies and headings. Typically, numerical complexity of BEM codes is proportional to $O(N^2)$ or $O(N^3)$ with $N$ as the number of mesh panels. The Green function is computed $O(N^2)$ times to set up the linear system, which is solved either by iterative methods with $O(N^2)$ complexity or Gauss elimination with $O(N^3)$ complexity [@BEMcomparison].
-
-This limits integration within optimization loops, especially for large-scale optimization based on heuristic methods. The solution is to minimize function evaluations in optimization. Gradient-based optimization explores design space more efficiently (fewer evaluations) to reach locally optimal points.
 
 ## Research Phases
 

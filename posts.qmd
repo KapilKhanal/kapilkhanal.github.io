@@ -1,5 +1,5 @@
 ---
-title: "What’s New & Updated"
+title: "What's New & Updated"
 subtitle: "Posts about papers, events, news, and more"
 description-meta: "Posts about papers, events, news, and more"
 listing: 
@@ -12,7 +12,6 @@ listing:
   feed: true
   contents: 
       - posts
-      - posts/post-links.yml
 #      categories: [] 
 
 #page-layout: full
