@@ -1,26 +1,24 @@
 [
   {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/event-title/index.html",
-      "/posts/news-title/index.html",
-      "/posts/paper-title/index.html"
-    ]
+    "listing": "/projects.html",
+    "items": []
   },
   {
     "listing": "/people.html",
     "items": []
   },
   {
-    "listing": "/index.html",
+    "listing": "/posts.html",
     "items": [
-      "/posts/event-title/index.html",
-      "/posts/news-title/index.html",
-      "/posts/paper-title/index.html"
+      "/posts/gradient-based-optimization/index.html",
+      "/posts/differentiable-hydrodynamics-framework/index.html"
     ]
   },
   {
-    "listing": "/projects.html",
-    "items": []
+    "listing": "/index.html",
+    "items": [
+      "/posts/gradient-based-optimization/index.html",
+      "/posts/differentiable-hydrodynamics-framework/index.html"
+    ]
   }
 ]
