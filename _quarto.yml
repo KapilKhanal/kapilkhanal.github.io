@@ -39,8 +39,8 @@ website:
         menu:        
         - text: Presentations
           href: posts.qmd#category=presentation                   
-      - text: Group
-        href: people.qmd
+      - text: Software
+        href: software.qmd
 
     right: 
       - text: CV

@@ -1,0 +1,34 @@
+---
+title: "Software & Projects"
+subtitle: "A collection of tools, libraries, and projects I've developed."
+page-layout: full
+---
+
+This page highlights the software projects and computational tools I have developed and contributed to. These projects reflect my interest in creating robust, scalable, and efficient solutions for complex engineering and scientific problems.
+
+More details and project listings will be added here soon.
+
+***
+
+### Featured Projects
+
+:::{.grid}
+
+::: {.g-col-12 .g-col-md-6}
+#### [MarineHydro.jl](https://github.com/symbiotic-engineering/MarineHydro.jl)
+A Boundary Element Method (BEM) solver written in Julia, designed for hydrodynamic analysis within a fully differentiable programming paradigm. It leverages automatic differentiation for efficient gradient computation.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+#### MDO Framework for WECs
+An open-source framework built on OpenMDAO for the Multidisciplinary Design Optimization of Wave Energy Converters (WECs). This project integrates hydrodynamic, structural, and control system models.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+#### openFlash
+An open-source framework built to simulate the hydrodynamics of wave energy converters using matched eigenfunction expansion methods.
+:::
+
+
+:::
+</rewritten_file> 

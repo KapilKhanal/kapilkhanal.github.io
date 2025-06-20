@@ -43,7 +43,7 @@ listing:
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 60px 20px 30px; /* Reduced top padding */
+  padding: 40px 20px 30px; /* Reduced top padding */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -104,11 +104,11 @@ I am a <span style="color: #B31B1B;">**doctoral candidate at Cornell University*
 With a Master's degree in <span style="color: #34568B;">**Systems Engineering**</span> and ongoing PhD work, I am to bridge <span style="color: #3A7D44;">**theory and applications**</span> for <span style="color: #34568B;">**large-scale systems**</span>.
 
 :::{.callout-note icon=false style="margin-top: 25px;"}
-### Bridging Research and Industry
-Upon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.
+### 💼 Bridging Research and Industry
+Upon completing my PhD, I am **seeking full-time industry roles** where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.
 
 <div style="margin-top: 15px;">
-[View My CV](files/kapil_resume.pdf){.btn .btn-primary} &nbsp; [Connect on LinkedIn](https://www.linkedin.com/in/kapilkhanal/){.btn .btn-secondary} &nbsp; [Send an Email](mailto:kapil.khanal@cornell.edu){.btn .btn-info}
+[View My CV](files/kapil_resume.pdf){.btn .btn-primary} &nbsp; [Connect on LinkedIn](https://www.linkedin.com/in/kapilkhanal/){.btn .btn-secondary} &nbsp; [Explore My GitHub](https://github.com/KapilKhanal){.btn .btn-dark}
 </div>
 :::
 
