@@ -43,7 +43,7 @@ listing:
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 60px 20px 40px; /* Reduced top padding */
+  padding: 60px 20px 30px; /* Reduced top padding */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -99,12 +99,19 @@ listing:
 :::{.g-col-12 .g-col-md-8}
 ## About Me
 
-I am a <span style="color: #B31B1B;">**doctoral candidate at Cornell University**</span>, specializing in <span style="color: #34568B;">**systems design**</span>, <span style="color: #34568B;">**engineering**</span>, and <span style="color: #34568B;">**optimization**</span>. My work focuses on leveraging **computational modeling**, **optimization****interdisciplinary approaches** to advance <span style="color: #3A7D44;">**sustainable technologies**</span>. As a member of the **Symbiotic Engineering and Analysis (SEA) Lab**, I collaborate on modeling and optimizing large scale renewable energy systems.
+I am a <span style="color: #B31B1B;">**doctoral candidate at Cornell University**</span>, specializing in <span style="color: #34568B;">**systems design**</span>, <span style="color: #34568B;">**engineering**</span>, and <span style="color: #34568B;">**optimization**</span>. My work focuses on leveraging **modeling**, **optimization**, and **computational techniques** to advance <span style="color: #3A7D44;">**sustainable technologies**</span>. As a member of the **Symbiotic Engineering and Analysis (SEA) Lab**, I collaborate on modeling and optimizing large scale renewable energy systems.
 
-With a Master's degree in <span style="color: #34568B;">**Systems Engineering**</span> and ongoing PhD work, I aim to bridge <span style="color: #3A7D44;">**theory and applications**</span> for <span style="color: #34568B;">**large-scale systems**</span>.
+With a Master's degree in <span style="color: #34568B;">**Systems Engineering**</span> and ongoing PhD work, I am to bridge <span style="color: #3A7D44;">**theory and applications**</span> for <span style="color: #34568B;">**large-scale systems**</span>.
 
-[My CV](files/kapil_resume.pdf){.btn .btn-primary}
-[Contact Me](mailto:email@gmail.com){.btn .btn-secondary}
+:::{.callout-note icon=false style="margin-top: 25px;"}
+### Bridging Research and Industry
+Upon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.
+
+<div style="margin-top: 15px;">
+[View My CV](files/kapil_resume.pdf){.btn .btn-primary} &nbsp; [Connect on LinkedIn](https://www.linkedin.com/in/kapilkhanal/){.btn .btn-secondary} &nbsp; [Send an Email](mailto:kapil.khanal@cornell.edu){.btn .btn-info}
+</div>
+:::
+
 :::
 
 :::
@@ -118,13 +125,7 @@ With a Master's degree in <span style="color: #34568B;">**Systems Engineering**<
 
 ## Research Focus
 
-My research lives at the intersection of:
-- **Multidisciplinary Design Optimization (MDO)**
-- **Differentiable Hydrodynamics & PDE-Constrained Optimization**
-- **Adjoint-Based Sensitivity Analysis**
-- **Scientific Machine Learning**
-
-I develop and apply gradient-based optimization methods to complex engineering problems, from renewable energy systems to aerospace structures.
+My research architects the next generation of complex engineered systems by fusing advanced computational methods. I operate at the confluence of **Multidisciplinary Design Optimization (MDO)** and **Scientific Machine Learning**, with a focus on creating novel frameworks for **Differentiable Hydrodynamics** and other physical simulations. Central to my approach is the use of **Adjoint-Based Sensitivity Analysis** to enable efficient, large-scale **PDE-Constrained Optimization**. Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures.
 
 ---
 

@@ -1,0 +1,23 @@
+---
+title: "Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization"
+subtitle: "Submission to the ASME 2025 IDETC/CIE Conference"
+author: "Kapil Khanal"
+date: "2024-07-26"
+categories: [conference, research, optimization]
+tags: [MDO, wave energy, BEM, control co-design, differentiable programming]
+image: "/files/images/placeholder3.JPG"
+---
+
+I recently submitted a paper to the **ASME 2025 International Design Engineering Technical Conferences & Computers and Information in Engineering Conference (IDETC/CIE)**, to be held in Anahiem, California, from August 17-20, 2025.
+
+Below is the abstract for the submission.
+
+***
+
+### Abstract
+
+Wave energy conversion requires optimal design and control strategies to maximize energy extraction. Optimization approaches such as control co-design optimize plant design and the control strategies together. Several existing approaches use heuristic methods that do not scale well with high-dimensional design spaces. A gradient-based approach scales better than the heuristic method, for which the integrated model should be able to provide not just the output but its sensitivity with respect to the inputs. Currently, these different numerical solvers are used in isolation, thus making heuristic optimizers a natural choice.
+
+This study develops a **differentiable model** integrating boundary element methods (BEM) for hydrodynamic modeling with **pseudo-spectral optimal control** techniques to optimize power take-off (PTO) forces under dynamic constraints for maximizing electrical power per volume of a point absorber wave energy converter (WEC). This model is useful for the large-scale gradient-based optimization of the electrical power.
+
+Discussion and derivation of the **semi-analytic adjoint for the hydrodynamics solver**, non-linear parametric sensitivity for the trajectory optimization, and the calculation of the coupled derivative using unified derivative equations is presented. A nested formulation of the control co-design approach within a multidisciplinary design optimization architecture is created for the differentiable wave-to-wire model. Preliminary numerical experiment and verification of the sensitivities is conducted for the differentiable wave-to-wire model for a heaving point absorber WEC. 

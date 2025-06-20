@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Gang He">
-<meta name="description" content="Bridging Differentiable Programming and Engineering">
+<meta name="dcterms.date" content="2024-07-26">
+<meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
 
-<title>Kapil Khanal</title>
+<title>Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization – Kapil Khanal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,27 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -131,42 +101,15 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Kapil Khanal">
-<meta property="og:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/files/profiles/profile1.JPG">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization – Kapil Khanal">
+<meta property="og:description" content="Submission to the ASME 2025 IDETC/CIE Conference">
+<meta property="og:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder3.JPG">
 <meta property="og:site_name" content="Kapil Khanal">
-<meta name="twitter:title" content="Kapil Khanal">
-<meta name="twitter:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/files/profiles/profile1.JPG">
+<meta name="twitter:title" content="Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization – Kapil Khanal">
+<meta name="twitter:description" content="Submission to the ASME 2025 IDETC/CIE Conference">
+<meta name="twitter:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder3.JPG">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -177,7 +120,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kapil Khanal</span>
     </a>
   </div>
@@ -193,15 +136,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=news">
+    <a class="dropdown-item" href="../../posts.html#category=news">
  <span class="dropdown-text">News</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts.html#category=event">
+    <a class="dropdown-item" href="../../posts.html#category=event">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./contact.html">
+    <a class="dropdown-item" href="../../contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
     </ul>
@@ -212,21 +155,21 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
         <li>
-    <a class="dropdown-item" href="./publications.html">
+    <a class="dropdown-item" href="../../publications.html">
  <span class="dropdown-text">List of Publication</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts.html#category=paper">
+    <a class="dropdown-item" href="../../posts.html#category=paper">
  <span class="dropdown-text">Selected Papers</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects.html">
+    <a class="dropdown-item" href="../../projects.html">
  <span class="dropdown-text">Grants</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -235,19 +178,19 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-outreach">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=presentation">
+    <a class="dropdown-item" href="../../posts.html#category=presentation">
  <span class="dropdown-text">Presentations</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link" href="../../people.html"> 
 <span class="menu-text">Group</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./files/kapil_resume.pdf"> 
+    <a class="nav-link" href="../../files/kapil_resume.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -260,7 +203,7 @@ window.Quarto = {
 <span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -277,23 +220,49 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Kapil Khanal</h1>
-</div>
+<h1 class="title">Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization</h1>
+<p class="subtitle lead">Submission to the ASME 2025 IDETC/CIE Conference</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">conference</div>
+    <div class="quarto-category">research</div>
+    <div class="quarto-category">optimization</div>
+  </div>
+  </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kapil Khanal </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 26, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -303,195 +272,17 @@ window.Quarto = {
 </header>
 
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
-
-.hero-section-with-particles {
-  position: relative;
-  background-color: #FFFFFF; /* White background */
-  overflow: hidden;
-  padding-bottom: 60px; /* Add padding to contain the 'About Me' section */
-}
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 60px 20px 30px; /* Reduced top padding */
-  font-family: 'Montserrat', sans-serif;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  font-weight: 700;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #34495e;
-}
-
-.about-section {
-  position: relative;
-  z-index: 1;
-  color: #2c3e50;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.about-section h2 {
-  text-align: left;
-}
-
-.content-section {
-  background: white;
-  padding: 40px 0;
-}
-</style>
-<div class="hero-section-with-particles">
-<div id="particles-js">
-
-</div>
-<section id="architecting-large-scale-systems" class="level1 hero-content">
-<h1>Architecting Large-Scale Systems</h1>
-<p><strong>Differentiable Programming to Engineer Complex Systems.</strong></p>
-</section>
-<div class="container about-section">
-<div class="grid">
-<div class="g-col-12 g-col-md-4">
-<p><img src="files/profiles/profile1.JPG" class="img-fluid rounded-circle"></p>
-</div>
-<section id="about-me" class="level2 g-col-12 g-col-md-8">
-<h2 class="anchored" data-anchor-id="about-me">About Me</h2>
-<p>I am a <span style="color: #B31B1B;"><strong>doctoral candidate at Cornell University</strong></span>, specializing in <span style="color: #34568B;"><strong>systems design</strong></span>, <span style="color: #34568B;"><strong>engineering</strong></span>, and <span style="color: #34568B;"><strong>optimization</strong></span>. My work focuses on leveraging <strong>modeling</strong>, <strong>optimization</strong>, and <strong>computational techniques</strong> to advance <span style="color: #3A7D44;"><strong>sustainable technologies</strong></span>. As a member of the <strong>Symbiotic Engineering and Analysis (SEA) Lab</strong>, I collaborate on modeling and optimizing large scale renewable energy systems.</p>
-<p>With a Master’s degree in <span style="color: #34568B;"><strong>Systems Engineering</strong></span> and ongoing PhD work, I am to bridge <span style="color: #3A7D44;"><strong>theory and applications</strong></span> for <span style="color: #34568B;"><strong>large-scale systems</strong></span>.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled" style="margin-top: 25px;">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Bridging Research and Industry
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Upon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.</p>
-<div style="margin-top: 15px;">
-<p><a href="files/kapil_resume.pdf" class="btn btn-primary">View My CV</a> &nbsp; <a href="https://www.linkedin.com/in/kapilkhanal/" class="btn btn-secondary">Connect on LinkedIn</a> &nbsp; <script type="text/javascript">
-<!--
-h='&#x63;&#x6f;&#114;&#110;&#x65;&#108;&#108;&#46;&#x65;&#100;&#x75;';a='&#64;';n='&#x6b;&#x61;&#112;&#x69;&#108;&#46;&#x6b;&#104;&#x61;&#110;&#x61;&#108;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail btn btn-info">'+'&#x53;&#x65;&#110;&#100;&#32;&#x61;&#110;&#32;&#x45;&#x6d;&#x61;&#x69;&#108;'+'<\/'+'a'+'>');
-// -->
-</script><noscript>Send an Email (kapil.khanal at cornell dot edu)</noscript></p>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</div>
-<div class="content-section">
-<div class="container">
+<p>I recently submitted a paper to the <strong>ASME 2025 International Design Engineering Technical Conferences &amp; Computers and Information in Engineering Conference (IDETC/CIE)</strong>, to be held in Anahiem, California, from August 17-20, 2025.</p>
+<p>Below is the abstract for the submission.</p>
 <hr>
-<section id="research-focus" class="level2">
-<h2 class="anchored" data-anchor-id="research-focus">Research Focus</h2>
-<p>My research architects the next generation of complex engineered systems by fusing advanced computational methods. I operate at the confluence of <strong>Multidisciplinary Design Optimization (MDO)</strong> and <strong>Scientific Machine Learning</strong>, with a focus on creating novel frameworks for <strong>Differentiable Hydrodynamics</strong> and other physical simulations. Central to my approach is the use of <strong>Adjoint-Based Sensitivity Analysis</strong> to enable efficient, large-scale <strong>PDE-Constrained Optimization</strong>. Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures.</p>
-<hr>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
+<p>Wave energy conversion requires optimal design and control strategies to maximize energy extraction. Optimization approaches such as control co-design optimize plant design and the control strategies together. Several existing approaches use heuristic methods that do not scale well with high-dimensional design spaces. A gradient-based approach scales better than the heuristic method, for which the integrated model should be able to provide not just the output but its sensitivity with respect to the inputs. Currently, these different numerical solvers are used in isolation, thus making heuristic optimizers a natural choice.</p>
+<p>This study develops a <strong>differentiable model</strong> integrating boundary element methods (BEM) for hydrodynamic modeling with <strong>pseudo-spectral optimal control</strong> techniques to optimize power take-off (PTO) forces under dynamic constraints for maximizing electrical power per volume of a point absorber wave energy converter (WEC). This model is useful for the large-scale gradient-based optimization of the electrical power.</p>
+<p>Discussion and derivation of the <strong>semi-analytic adjoint for the hydrodynamics solver</strong>, non-linear parametric sensitivity for the trajectory optimization, and the calculation of the coupled derivative using unified derivative equations is presented. A nested formulation of the control co-design approach within a multidisciplinary design optimization architecture is created for the differentiable wave-to-wire model. Preliminary numerical experiment and verification of the sensitivities is conducted for the differentiable wave-to-wire model for a heaving point absorber WEC.</p>
+
+
 </section>
-<section id="recent-posts" class="level2">
-<h2 class="anchored" data-anchor-id="recent-posts">Recent Posts</h2>
-<p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29uZmVyZW5jZSUyQ3Jlc2VhcmNoJTJDb3B0aW1pemF0aW9u" data-listing-date-sort="1721970000000" data-listing-file-modified-sort="1750445147191" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="253">
-<a href="./posts/idetc-2025-submission/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/placeholder3.JPG" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization
-</h5>
-<div class="card-subtitle listing-subtitle">
-Submission to the ASME 2025 IDETC/CIE Conference
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 26, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="TURPJTJDb3B0aW1pemF0aW9uJTJDcmVzZWFyY2g=" data-listing-date-sort="1721970000000" data-listing-file-modified-sort="1750441429340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1185">
-<a href="./posts/gradient-based-optimization/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Gradient-Based Optimization for Large Systems
-</h5>
-<div class="card-subtitle listing-subtitle">
-A Deep Dive into MDO Architectures, Solvers, and Simulators
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 26, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cmVzZWFyY2glMkNvcHRpbWl6YXRpb24lMkNoeWRyb2R5bmFtaWNzJTJDdGhlc2lz" data-listing-date-sort="1705298400000" data-listing-file-modified-sort="1750443035489" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2508">
-<a href="./posts/differentiable-hydrodynamics-framework/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/differentiable-hydrodynamics-framework/MDO.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems
-</h5>
-<div class="card-subtitle listing-subtitle">
-My PhD Research Proposal
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jan 15, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p align="right">
-<a href="./posts.html">All Posts »</a>
-</p>
-</section>
-</div>
-</div>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="files/includes/particles-config.js"></script>
-
-
-
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -922,7 +713,7 @@ Jan 15, 2024
 </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank">
+    <a class="nav-link" href="../../posts.xml" target="_blank">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>
