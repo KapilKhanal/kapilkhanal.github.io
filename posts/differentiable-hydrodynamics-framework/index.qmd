@@ -1,0 +1,269 @@
+---
+title: "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems"
+subtitle: "My PhD Research Proposal"
+description: "Developing a differentiable boundary element method solver for hydrodynamic shape optimization of offshore structures using automatic differentiation and adjoint methods"
+author: "Kapil Khanal"
+date: 2024-01-15
+categories: [research, optimization, hydrodynamics, thesis]
+tags: [differentiable programming, MDO, BEM, automatic differentiation, offshore systems]
+image: MDO.png
+draft: false
+---
+
+## Introduction
+
+Optimizing the levelized cost of electricity for floating offshore wind turbines (FOWTs) and wave energy parks involves analyzing multiple coupled subsystems including geometry, aerodynamics, and hydrodynamics. In complex engineered systems, the solution of governing equations in one subsystem changes the input for another subsystem. As the saying goes in engineering: "everything influences everything else" [@mdo_1993]. This creates design tradeoffs between several subsystems, necessitating an integrated multidisciplinary analysis approach.
+
+**Multidisciplinary Design Optimization (MDO)** is a field of engineering that focuses on using numerical optimization and solvers for designing systems involving multiple coupled disciplines or subsystems [@mdobook]. Research has shown that sequential optimization of coupled subsystems usually results in sub-optimal designs, while an MDO approach leads to system-optimal solutions [@mdo_1993].
+
+## Motivation for a Differentiable Framework
+
+Offshore and marine energy systems are inherently complex coupled systems. Currently, no integrated framework exists for offshore structures that supports both hydrodynamic simulation and shape optimization. This represents a significant bottleneck for design studies and optimization efforts. The adoption of MDO-based approaches should be encouraged to increase accessibility for further research [@roadmapNREL].
+
+In multidisciplinary design optimization, changes in one subsystem propagate across other subsystems. For example, a change in the mean position of a floating body alters the waterline and waterplane area, requiring recalculation of hydrodynamic coefficients. Similarly, research on novel multipurpose platforms [@Multipurpose] would benefit from such a framework.
+
+The framework I'm developing is intended to serve as:
+- A tool for early design studies in the conceptual phase
+- A plugin for other MDO applications where hydrodynamics analysis is coupled
+
+## Multidisciplinary Design Optimization
+
+### Hydrodynamic Shape Optimization
+
+MDO of offshore structures involves shape perturbation and optimization. Different underwater shapes of floating bodies respond differently to incoming ocean waves, making shape optimization crucial for offshore platform design.
+
+Offshore structures like spar buoys (vertical cylindrical structures) can be reasonably modeled using analytical approximations [@Haghi_2014; @morison_force_1950]. However, these analytical approaches are not feasible for non-standard geometries—those obtained after perturbing a base shape, usually described using splines. Efficient shape parameterization and numerical solvers explore the design space much better [@mdobook]. In MDO, shapes are typically perturbed to be compatible with other subsystems, with B-splines (CAD geometry) being preferred [@Samareh_2001].
+
+The response motion of offshore structures is calculated using hydrodynamic coefficients such as added mass and damping. These coefficients characterize the geometry of floating structures. A transfer function called the **Response Amplitude Operator (RAO)** linearly relates sea motion to floating body motion.
+
+**Boundary Element Methods (BEM)** are used to calculate hydrodynamic coefficients, relying on linear potential flow theory where the exact Green's function and its derivative are known [@BEMcomparison]. BEM-based PDE solvers [@babarit_theoretical_2015] are typically accurate for most geometries and can be coupled for shape optimization within a design framework. Depending on system requirements, we may want to minimize or maximize body response to waves—minimizing motion for wind turbines while maximizing motion for wave energy converters.
+
+### Differentiable Hydrodynamics
+
+Coupling numerical solvers within optimization is computationally costly. Shape optimization with many design variables requires an efficient way to calculate both the response and its gradient. Researchers often rely on reduced-order models to approximate hydrodynamic response and heuristic methods for optimization. However, heuristic methods don't scale well for large-scale optimization, and reduced-order models lack the accuracy of full simulations.
+
+**Gradient-based optimization** is preferred for large-scale optimization with many design variables and costly function evaluations. Coupling numerical solvers in gradient-based optimization requires gradients of solver output with respect to all inputs. While this has been implemented for CFD [@DAFoam], no implementation of **differentiable hydrodynamics** (differentiable BEM) exists.
+
+Among various gradient calculation methods, **adjoint-based methods** are accurate and efficient for inverse design problems. Adjoint methods are widely used in optimal control and aerodynamic shape optimization [@jameson] as well as design optimization [@Adjoint_intro], but haven't been applied to BEM-based hydrodynamics shape optimization.
+
+#### Understanding Adjoint Methods
+
+Adjoint methods provide an elegant way to compute gradients of objective functions with respect to many design variables at a computational cost that is essentially independent of the number of design variables. This is particularly valuable for shape optimization problems where we may have hundreds or thousands of design variables.
+
+**The key insight** of adjoint methods is that instead of computing $\frac{\partial x}{\partial \theta}$ directly (which would require solving the system for each design variable), we solve a single adjoint equation to obtain the sensitivity of the objective function.
+
+For our BEM optimization problem:
+
+$$\begin{aligned}
+\min_{\theta,x} \quad & J(S(\theta), x(\theta); \theta ) \\
+\textrm{s.t.} \quad R(\theta)=  & K(\theta)\times x(\theta) - B(\theta) = 0 \\
+\end{aligned}$$
+
+The total derivative of the objective function with respect to design variables is:
+
+$$\frac{dJ}{d\theta} = \frac{\partial J}{\partial \theta} + \frac{\partial J}{\partial x}\frac{\partial x}{\partial \theta}$$
+
+Using the constraint equation $R(\theta) = K(\theta)x(\theta) - B(\theta) = 0$, we can derive:
+
+$$\frac{\partial R}{\partial \theta} = \frac{\partial K}{\partial \theta}x + K\frac{\partial x}{\partial \theta} - \frac{\partial B}{\partial \theta} = 0$$
+
+Solving for $\frac{\partial x}{\partial \theta}$:
+
+$$\frac{\partial x}{\partial \theta} = K^{-1}\left(\frac{\partial B}{\partial \theta} - \frac{\partial K}{\partial \theta}x\right)$$
+
+Substituting back into the total derivative:
+
+$$\frac{dJ}{d\theta} = \frac{\partial J}{\partial \theta} + \frac{\partial J}{\partial x}K^{-1}\left(\frac{\partial B}{\partial \theta} - \frac{\partial K}{\partial \theta}x\right)$$
+
+**The adjoint variable** $\lambda$ is defined as the solution to:
+
+$$K^T\lambda = \left(\frac{\partial J}{\partial x}\right)^T$$
+
+This leads to the elegant expression:
+
+$$\frac{dJ}{d\theta} = \frac{\partial J}{\partial \theta} + \lambda^T\left(\frac{\partial B}{\partial \theta} - \frac{\partial K}{\partial \theta}x\right)$$
+
+**Computational advantage**: Instead of solving $N$ forward problems (one for each design variable), we solve:
+1. One forward problem: $Kx = B$
+2. One adjoint problem: $K^T\lambda = \left(\frac{\partial J}{\partial x}\right)^T$
+
+This gives us gradients with respect to all design variables at the cost of just two linear system solves, regardless of the number of design variables.
+
+#### Automatic Differentiation in Practice
+
+**Automatic Differentiation (AD)** is a technique that automatically computes derivatives of functions implemented in computer code. Unlike symbolic differentiation (which manipulates mathematical expressions) or finite differences (which approximates derivatives), AD computes exact derivatives by applying the chain rule systematically through the computational graph.
+
+**Two main modes of AD**:
+
+1. **Forward Mode AD**: Computes directional derivatives by propagating derivatives forward through the computation. For a function $f: \mathbb{R}^n \rightarrow \mathbb{R}^m$, forward mode computes $J \cdot v$ where $J$ is the Jacobian and $v$ is a direction vector.
+
+2. **Reverse Mode AD**: Computes gradients by propagating adjoints backward through the computation. For a scalar function $f: \mathbb{R}^n \rightarrow \mathbb{R}$, reverse mode computes $\nabla f$ at the cost of approximately 2-4 function evaluations, regardless of $n$.
+
+**For our BEM solver**, reverse mode AD is particularly attractive because:
+- We typically have many design variables (shape parameters) but few objectives
+- The computational cost is independent of the number of design variables
+- It naturally computes the adjoint variables needed for our optimization
+
+**Implementation considerations**:
+
+1. **Language choice**: Julia and JAX are excellent choices because they:
+   - Support automatic differentiation natively
+   - Provide high-performance numerical computing
+   - Enable just-in-time compilation for efficiency
+   - Offer parallel computing capabilities
+
+2. **Computational graph**: The BEM solver must be implemented in a way that maintains a differentiable computational graph:
+   - All operations must be differentiable
+   - Control flow must be handled carefully
+   - Linear solvers must be differentiable (or replaced with differentiable alternatives)
+
+3. **Memory considerations**: Reverse mode AD requires storing intermediate values for the backward pass, which can be memory-intensive for large problems.
+
+#### Discrete vs. Continuous Adjoint
+
+**Continuous adjoint** methods derive adjoint equations from the continuous governing equations (PDEs) before discretization. This approach:
+- Provides analytical expressions for adjoint equations
+- May be more efficient for certain problems
+- Requires careful treatment of boundary conditions
+- Is problem-specific and requires manual derivation
+
+**Discrete adjoint** methods work with the discretized equations and use automatic differentiation to compute the required derivatives. This approach:
+- Is more general and applicable to many problems
+- Automatically handles complex discretization schemes
+- Requires less manual derivation
+- Can be less efficient but is more robust
+
+**For our BEM solver**, discrete adjoint with automatic differentiation is preferred because:
+- It handles the complex Green's function evaluations automatically
+- It works with any objective function without manual derivation
+- It integrates seamlessly with existing optimization frameworks
+- It provides exact gradients (up to numerical precision)
+
+#### Challenges and Solutions
+
+**Challenge 1: Dense Linear Systems**
+BEM methods solve dense linear systems, which are computationally expensive. Solutions include:
+- Using iterative solvers with preconditioning
+- Implementing matrix-free methods where possible
+- Leveraging parallel computing for large problems
+
+**Challenge 2: Complex-valued Computations**
+Hydrodynamic problems involve complex numbers (frequency domain analysis). AD frameworks must handle complex differentiation correctly:
+- Using Wirtinger calculus for complex derivatives
+- Ensuring proper handling of complex conjugates
+- Maintaining numerical stability
+
+**Challenge 3: Green's Function Evaluation**
+The free-surface Green's function is computationally expensive and involves special functions. Solutions include:
+- Implementing efficient evaluation algorithms
+- Using approximation methods for early design iterations
+- Leveraging GPU acceleration where possible
+
+**Challenge 4: Integration with Optimization Frameworks**
+The differentiable BEM solver must integrate with MDO frameworks like OpenMDAO:
+- Providing consistent interfaces for gradient computation
+- Handling the coupling between different subsystems
+- Ensuring numerical stability across the entire optimization
+
+## Optimization Problem Statement
+
+The hydrodynamic optimization problem can be expressed in general form as:
+
+$$\begin{aligned}
+\min_{\theta,x} \quad & J(S(\theta), x(\theta); \theta ) \\
+\textrm{s.t.} \quad R(\theta)=  & K(\theta)\times x(\theta) - B(\theta) = 0 \\
+\end{aligned}$$
+
+Where:
+- $x$ is the state variable vector (e.g., source distribution)
+- $\theta$ represents mesh parameters (design variables)
+- $(K, S)$ are influence matrices (complex-valued) from free surface Green's function evaluation and its derivative
+- $J$ is the objective function (e.g., Response Amplitude Operator)
+
+In this optimization, residuals from **dense linear systems** are driven to zero iteratively using linear solvers:
+
+$$R = K x - B$$
+
+Where $K$ is the square influence matrix between mesh panels ($N \times N$), $B$ represents boundary conditions for diffraction and radiation problems, and $N$ is the number of mesh panels. $K$, $X$, and $B$ are explicitly related to mesh parameters $(\theta)$. The objective function thus depends both explicitly and implicitly on mesh parameters $(\theta)$.
+
+For multidisciplinary design optimization including hydrodynamic optimization, the number of design variables increases further to account for system objectives and subsystem couplings.
+
+For inverse design problems like this, calculating the gradient $\frac{d J}{d\theta}$ involves computing $\frac{\partial B}{\partial \theta}$, $\frac{\partial K}{\partial \theta}$, $\frac{\partial x}{\partial \theta}$, and $\frac{\partial J}{\partial \theta}$—which is only possible through automatic differentiation of the BEM solver.
+
+## My Research Contribution
+
+When coupling BEM with other analyses, numerical derivatives such as finite differences can be used [@novelOpenMDAO]. I have already implemented this as the first version of my framework, but it has issues with accuracy and convergence and may not scale well for large numbers of design variables.
+
+In contrast, the **adjoint method** requires only 2 solves of the linear system to obtain accurate gradients with respect to many design variables. A differentiable hydrodynamics solver is required to construct the adjoint equation.
+
+Adjoint equations to minimize wave resistance of surface ships were derived by Ragab through continuous adjoint formulation [@Ragab_2004]. However, this isn't directly applicable to many offshore structures where different functionals (motions) are optimized. Unlike continuous formulation, **discrete adjoint-based derivation using automatic differentiation** is applicable to many objectives as long as they're programmed in a language supporting automatic differentiation [@Adjoint_intro].
+
+**My thesis aims to implement a differentiable multidisciplinary design optimization framework that integrates gradient-based optimization for large-scale offshore systems.**
+
+The proposed framework will:
+
+1. **Implement a differentiable solver for hydrodynamics analysis**
+2. **Derive, implement, and integrate adjoint-based shape optimization for offshore structures**
+3. **Demonstrate differentiability and present case studies on optimization of novel offshore systems**
+
+Creating a differentiable boundary element method (BEM) solver will enable modern and complex workflows in offshore system design and optimization. **Differentiability** will allow for novel methods such as **adjoint-based multidisciplinary optimization** and more accurate data-driven methods such as **physics-informed machine learning**.
+
+These capabilities will significantly reduce the design cycle for early design studies of novel offshore systems.
+
+### Coupled Derivatives
+
+For multidisciplinary design optimization, **Modular Analysis and Unified Derivatives (MAUD)** architecture couples derivatives from several subsystems. MAUD formulates the multidisciplinary model as a nonlinear system of equations, leading to a linear equation that unifies all derivative computation methods [@maud]. Each subsystem can provide numerical or analytical gradients.
+
+**OpenMDAO** [@Gray2019a], a tool developed by NASA, implements this framework. I plan to integrate newly developed BEM adjoints into this framework. Currently, I integrate BEM in OpenMDAO using numerical derivatives approximated through finite differences [@novelOpenMDAO]. Since this scales linearly with the number of design variables and accuracy deteriorates for nonlinear problems, it's not appropriate for multidisciplinary analysis and optimization. My thesis aims to solve this problem.
+
+## Boundary Element Method
+
+Hydrodynamics of floating bodies is typically modeled using linear potential flow theory. Since the domain is unbounded, boundary element methods are used, requiring only boundary discretization—the surface geometry is meshed with quadrilateral panels.
+
+For each frequency of ocean waves the structure encounters, diffraction and radiation problems are solved to calculate hydrodynamic coefficients. The solution of velocity potential and radiation/diffraction forces is computed in the frequency domain.
+
+Computational cost increases with geometry discretization and the number of wave frequencies and headings. Typically, numerical complexity of BEM codes is proportional to $O(N^2)$ or $O(N^3)$ with $N$ as the number of mesh panels. The Green function is computed $O(N^2)$ times to set up the linear system, which is solved either by iterative methods with $O(N^2)$ complexity or Gauss elimination with $O(N^3)$ complexity [@BEMcomparison].
+
+This limits integration within optimization loops, especially for large-scale optimization based on heuristic methods. The solution is to minimize function evaluations in optimization. Gradient-based optimization explores design space more efficiently (fewer evaluations) to reach locally optimal points.
+
+## Research Phases
+
+### Phase 1: Discrete Adjoint Implementation
+
+The **first phase** involves deriving and setting up discrete adjoint equations for BEM. We'll use automatic differentiation to obtain partial sensitivities required in the equation by implementing the BEM method in either **Julia** or **Jax**, as they support automatic differentiation in a discretize-then-optimize scheme.
+
+These libraries and programming languages support:
+- **Automatic Differentiation (AD)**
+- **Parallelism**
+- **Just-in-time (JIT) compilation**
+
+Gradient calculations need to be performed through the iterative solver employed to solve dense linear systems in BEM methods.
+
+This method relies on known exact expressions of Green's function. Mathematical expressions and numerical methods for free-surface Green's function of linearized wave-structure problems in deep water and frequency domain are investigated [@Xie_2020]. Other methods, such as approximating free-surface Green's function using deep learning, can also be explored for early design iterations when speed is more important than accuracy.
+
+### Phase 2: MDO Framework Integration
+
+The **second phase** integrates differentiable BEM into the MDO framework. Extensions could include supporting more accurate **physics-informed machine learning** [@three_NN_PDEs]. 
+
+BEM methods require solving dense linear systems. The re-implementation will use algorithms best suited for dense matrices. A **differentiable solver** would provide required gradients for optimization and neural network-based approximation. Simulators implemented with automatic differentiation can be used inside machine learning models to construct more accurate reduced-order models [@solver_in_loop].
+
+### Expected A-Exam Scope
+
+I plan to take an A-exam in Spring 2024, presenting the differentiable version of the solver that derives discrete adjoints for the hydrodynamic solver using automatic differentiation in Jax or Julia.
+
+An optimization study of simple geometry (such as a compound cylinder) with analytical derivation through eigenfunction expansion will be conducted for gradient verification. Gradients will be compared with finite differences for geometries where analytical gradients are unavailable.
+
+## Tentative Thesis Chapters
+
+1. **Multidisciplinary Design Optimization of Offshore Systems** - Literature review
+2. **Boundary Element Method for Calculating Hydrodynamic Coefficients**
+3. **Adjoint and Automatic Differentiation of BEM Solver**
+4. **Case Studies and Applications of a Differentiable Solver**
+
+## Keywords
+
+Differentiable Hydrodynamics, Multidisciplinary Design Optimization, Automatic Differentiation, Discrete Adjoint Method, Boundary Element Method, Potential Flow, Panel Code
+
+---
+
+*This research is conducted as part of my PhD in Systems Engineering at Cornell University, under the supervision of Dr. Maha Haji in the Symbiotic Engineering and Analysis Lab.* 

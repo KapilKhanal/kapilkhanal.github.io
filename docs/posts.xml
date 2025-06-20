@@ -14,140 +14,335 @@
 <title>Kapil Khanal</title>
 <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts.html</link>
 </image>
-<generator>quarto-1.5.56</generator>
-<lastBuildDate>Tue, 15 Oct 2024 04:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Tue, 15 Oct 2024 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Quarto Academic Website Examples and Tips</title>
   <link>https://github.com/KapilKhanal/kapilkhanal.github.io/</link>
   <description>Examples and tips for Quarto Academic Website</description>
   <category>news</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/</guid>
-  <pubDate>Tue, 15 Oct 2024 04:00:00 GMT</pubDate>
+  <pubDate>Tue, 15 Oct 2024 05:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder4.JPG" medium="image"/>
 </item>
 <item>
-  <title>Event item</title>
-  <dc:creator>Event </dc:creator>
-  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/event-title/</link>
+  <title>Gradient-Based Optimization for Large Systems</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/gradient-based-optimization/</link>
   <description><![CDATA[ 
 
 
 
 
-<p><a href="https://drganghe.github.io/quarto-academic-website-template/"><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder2.JPG" class="img-fluid" style="width:90.0%"></a></p>
-<!--Include social share buttons-->
-<!-- 
-AddToAny check more: https://www.addtoany.com/buttons/for/website 
-Using includes will make edits easier, will only need to add or remove button here if needed.
-https://quarto.org/docs/authoring/includes.html
--->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
-</div>
-<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+<section id="multidisciplinary-design-optimization-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="multidisciplinary-design-optimization-architecture">Multidisciplinary Design Optimization Architecture</h2>
+<p>A computational architecture for Multidisciplinary Design Optimization (MDO) is composed of three primary components: <strong>solvers</strong> (e.g., Newton), <strong>simulators</strong> (or emulators, PDE solvers, closed-form expressions), and <strong>optimizers</strong> (e.g., IPOPT, Genetic Algorithm). The performance and efficiency of the overall system are directly influenced by the selection and interaction of these components.</p>
+<p>Simulators and solvers are required to either compute the performance of the system through some physics (numerical simulation) or resolve non-linear feedback coupling between subsystems (non-linear equation solvers). A system where all the subsystems agree on their input and output (including any shared variables) is necessary for the system to be optimal and feasible. The coordination of the variables can, however, be done in numerous ways that involve solvers and/or optimizers. Many architectures that arise due to these choices are briefly discussed in later sections.</p>
+<p>For offshore systems, marine hydrodynamics solvers (like the boundary element method) are required. The choice of solvers, however, depends on the strength of the coupling between two subsystems. In this thesis, a Newton solver is used to converge the feedback coupling when necessary.</p>
+<section id="mdo-stack" class="level3">
+<h3 class="anchored" data-anchor-id="mdo-stack">MDO ‘Stack’</h3>
+<p>The MDO system can be represented as a set:</p>
+<p><img src="https://latex.codecogs.com/png.latex?F:%5C%7B%5Cmathcal%7BO%7D,%20%5Cmathcal%7BM%7D,%20%5Cmathcal%7BS%7D%5C%7D"></p>
+<p>where <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BM%7D"> is the set of simulators, <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BO%7D"> is the choice of optimizer, and <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BS%7D"> is the set of solvers.</p>
+<p>The performance <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BP%7D(%5Cmathcal%7BF%7D)"> depends on: - The compatibility of <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BM%7D"> and <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BS%7D"> with <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BO%7D">. - The computational efficiency of <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D">, defined by the time <img src="https://latex.codecogs.com/png.latex?T(%5Cmathcal%7BF%7D)"> and accuracy <img src="https://latex.codecogs.com/png.latex?A(%5Cmathcal%7BF%7D)">.</p>
+<p>Gradient-based optimizers (<img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BO%7D_%7B%5Cnabla%7D">) achieve superior performance (<img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BP%7D(%5Cmathcal%7BF%7D_%7B%5Cnabla%7D)%20%3E%20%5Cmathcal%7BP%7D(%5Cmathcal%7BF%7D_%7B%5Cneg%20%5Cnabla%7D)">) when <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BM%7D"> and <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BS%7D"> are differentiable. However, the practical challenges of computing gradients for certain simulators and solvers remain a significant limitation.</p>
+</section>
+<section id="choice-of-optimizer" class="level3">
+<h3 class="anchored" data-anchor-id="choice-of-optimizer">Choice of Optimizer</h3>
+<p>Let <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D"> represent the multidisciplinary optimization problem, where each problem <img src="https://latex.codecogs.com/png.latex?p%20%5Cin%20%5Cmathcal%7BF%7D"> is defined by a set of variables (design, shared, target), constraints (including consistency constraints), and objectives (one or many). The optimizer is a function <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BO%7D:%20%5Cmathcal%7BF%7D%20%5Cto%20%5Cmathcal%7BR%7D">, where <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BR%7D"> is the space of feasible solutions.</p>
+<p>Optimizers commonly used in MDO problems can be broadly categorized into:</p>
+<ol type="1">
+<li><strong>Gradient-Based Optimizers</strong> (<img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BO%7D_%7B%5Cnabla%7D">): These optimizers leverage the gradient <img src="https://latex.codecogs.com/png.latex?%5Cnabla%20f"> of the objective function <img src="https://latex.codecogs.com/png.latex?f"> to iteratively find a minimum. The preference for gradient-based methods arises from their superior convergence speed when gradients are available and computationally inexpensive. However, obtaining gradients can be challenging:
+<ul>
+<li>Certain simulator software <img src="https://latex.codecogs.com/png.latex?S:%20%5Cmathcal%7BX%7D%20%5Cto%20%5Cmathcal%7BY%7D">, where <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BX%7D"> is the input space and <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BY%7D"> is the output space, may not inherently provide differentiable mappings.</li>
+<li>Numerical approximations such as finite differences (<img src="https://latex.codecogs.com/png.latex?%5Cnabla%20f%20%5Capprox%20%5Cfrac%7B%5CDelta%20f%7D%7B%5CDelta%20x%7D">) may introduce errors and computational overhead when differentiating this class of simulators.</li>
+</ul></li>
+<li><strong>Gradient-Free Optimizers</strong> (<img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BO%7D_%7B%5Cneg%20%5Cnabla%7D">): These include evolutionary algorithms and heuristic methods that do not require gradient information. Evolutionary strategies are stochastic and derivative-free. While easier to use and robust for non-differentiable problems (think black-box type problems), they often lack the efficiency of <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BO%7D_%7B%5Cnabla%7D"> for high-dimensional spaces.</li>
+</ol>
+</section>
+<section id="choice-of-solvers-and-simulators" class="level3">
+<h3 class="anchored" data-anchor-id="choice-of-solvers-and-simulators">Choice of Solvers and Simulators</h3>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BS%7D"> is the set of solvers and <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BM%7D"> is the set of simulators needed for the MDO problems. The choices <img src="https://latex.codecogs.com/png.latex?s%20%5Cin%20%5Cmathcal%7BS%7D"> and <img src="https://latex.codecogs.com/png.latex?m%20%5Cin%20%5Cmathcal%7BM%7D"> affect the feasibility and convergence of the optimization problem. For instance:</p>
+<ul>
+<li>A simulator <img src="https://latex.codecogs.com/png.latex?m"> that provides closed-form solutions is often preferable for gradient-based methods because of the ease of differentiating symbolic expressions. This, however, often means that a lower-fidelity model of the physics is used.</li>
+<li>A solver <img src="https://latex.codecogs.com/png.latex?s"> is usually selected for its ability to resolve non-linear coupling. A differentiation of the solver algorithm is not needed; only the derivative at the solution of the solver is needed, which is referred to as implicit differentiation.</li>
+</ul>
+<p>A robust and widely adopted method for calculating gradients in numerical code is <strong>differentiable programming</strong>, where automatic differentiation is commonly used.</p>
+<p>Starting with the PDE of a physical process, many frameworks can be used. If the system includes only one discipline, a relevant simulation or PDE code can be used on its own. If there are multiple disciplines, then either a joint discretization of that PDE (e.g., using FEM) is needed, or a way to couple them together if such a joint discretization is complicated or unavailable. Commercial finite element frameworks (like COMSOL Multiphysics) are robust for many coupled physics problems, such as aero-structural interactions.</p>
+<p>However, when there is a need to couple a diverse set of numerical codes—such as a boundary element method or an explicit equation coupled with other disciplines—such unified frameworks are limited. A framework where a heterogeneous set of solvers can be used in a plug-and-play style is highly desirable. This also avoids the need for new discretizations of the coupled problem if the system model has additional subsystems or if the fidelity of a simulation changes. This thesis adopts this modular architecture approach where any <img src="https://latex.codecogs.com/png.latex?s%20%5Cin%20%5Cmathcal%7BS%7D"> can be easily used.</p>
+</section>
+<section id="computational-graph-and-unified-derivative-equation" class="level3">
+<h3 class="anchored" data-anchor-id="computational-graph-and-unified-derivative-equation">Computational Graph and Unified Derivative Equation</h3>
+<p>Multiple fields independently concluded that gradient-based methods scale well and utilized adjoint-based optimization. Backpropagation, as discussed by LeCun et al., shows the connection between optimal control and neural networks and how backpropagating errors scales the training of neural nets.</p>
+<p>Design optimization in complex engineering systems, from neural networks to physical structures, encounters two principal challenges:</p>
+<ol type="1">
+<li><strong>Large Number of Design Variables</strong>: These systems involve numerous “knobs” to tune—such as weights and biases in neural networks or geometric and material properties in physical systems.</li>
+<li><strong>High Computational Cost</strong>: The computation required to evaluate these systems often lacks scalability, creating a bottleneck.</li>
+</ol>
+<section id="neural-networks-vs.-physical-systems" class="level4">
+<h4 class="anchored" data-anchor-id="neural-networks-vs.-physical-systems">Neural Networks vs.&nbsp;Physical Systems</h4>
+<ul>
+<li><strong>Neural Networks</strong>: The core computation involves evaluating affine transformations followed by nonlinear activation functions. These operations must be performed billions of times during training. The sheer volume of operations makes scaling these systems challenging, despite the simplicity of individual computations.</li>
+<li><strong>Physical Systems</strong>: Optimizing systems like airplanes or offshore wind turbines introduces a different complexity. These designs involve thousands of variables, each influencing coupled physics simulations (CFD, structural mechanics, etc.). Each simulation is computationally expensive, making the design process resource-intensive.</li>
+</ul>
+<p>To overcome these challenges, reviewing the literature from both fields reveals that <strong>adjoint-based methods</strong> are widely utilized. However, each discipline has optimized gradient computation to suit its specific tasks. In machine learning, computational graphs are a common framework for implementing backpropagation using dynamic programming and the chain rule. In MDO, the same objective is achieved by solving a linear system, where backpropagation can be viewed as a special case that employs linear solvers to solve that system efficiently. The work of LeCun, Hwang, and Martins, Edelman, and others has helped unify these approaches, showing how various methods like automatic differentiation (AD) and adjoint methods can be derived from a single cohesive formulation by viewing any system as a non-linear system and utilizing the implicit function theorem.</p>
+<p>In this post, I discussed a comparison between these two different breeds of thinking about adjoint calculations using a canonical MDO Sellar problem.</p>
+<!-- ### MDO Architectures for Offshore Systems
+
+A comparison between monolithic and distributed optimization architectures is performed in this section. Among many, the two most common architectures, Multidisciplinary Feasible (MDF) and Collaborative Optimization (CO), are used to showcase how these architectures could be adopted for the design optimization of offshore structures.  -->
 
 
-
- ]]></description>
-  <category>event</category>
-  <category>presentation</category>
-  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/event-title/</guid>
-  <pubDate>Tue, 03 Sep 2024 04:00:00 GMT</pubDate>
-  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder2.JPG" medium="image"/>
-</item>
-<item>
-  <title>News item</title>
-  <dc:creator>News </dc:creator>
-  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/news-title/</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>About the news</p>
-<!--Include social share buttons-->
-<!-- 
-AddToAny check more: https://www.addtoany.com/buttons/for/website 
-Using includes will make edits easier, will only need to add or remove button here if needed.
-https://quarto.org/docs/authoring/includes.html
--->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
-</div>
-<script async="" src="https://static.addtoany.com/menu/page.js"></script>
-
-
+</section>
+</section>
 </section>
 
  ]]></description>
-  <category>news</category>
-  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/news-title/</guid>
-  <pubDate>Mon, 24 Jun 2024 04:00:00 GMT</pubDate>
-  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder1.jpg" medium="image" type="image/jpeg"/>
+  <category>MDO</category>
+  <category>optimization</category>
+  <category>research</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/gradient-based-optimization/</guid>
+  <pubDate>Fri, 26 Jul 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Can quantum-mechanical description of physical reality be considered complete?</title>
-  <dc:creator>Albert Einstein</dc:creator>
-  <dc:creator>Boris Podolsky</dc:creator>
-  <dc:creator>Nathan Rosen</dc:creator>
-  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/paper-title/</link>
+  <title>A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/differentiable-hydrodynamics-framework/</link>
   <description><![CDATA[ 
 
 
 
 
-<!--Include academic icons or bottons-->
-<!-- 
-Load Academicons v1: https://jpswalsh.github.io/academicons/
--->
-<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></p>
-<p><link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></p>
-<!---
-The following code are needed to show dimension citation and altmetrics.
-https://api.altmetric.com/embeds.html
-https://badge.dimensions.ai/
---->
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Optimizing the levelized cost of electricity for floating offshore wind turbines (FOWTs) and wave energy parks involves analyzing multiple coupled subsystems including geometry, aerodynamics, and hydrodynamics. In complex engineered systems, the solution of governing equations in one subsystem changes the input for another subsystem. As the saying goes in engineering: “everything influences everything else” <span class="citation" data-cites="mdo_1993">(Sobieszczanski-Sobieski and Haftka 1993)</span>. This creates design tradeoffs between several subsystems, necessitating an integrated multidisciplinary analysis approach.</p>
+<p><strong>Multidisciplinary Design Optimization (MDO)</strong> is a field of engineering that focuses on using numerical optimization and solvers for designing systems involving multiple coupled disciplines or subsystems <span class="citation" data-cites="mdobook">(Martins and Lambe 2013)</span>. Research has shown that sequential optimization of coupled subsystems usually results in sub-optimal designs, while an MDO approach leads to system-optimal solutions <span class="citation" data-cites="mdo_1993">(Sobieszczanski-Sobieski and Haftka 1993)</span>.</p>
 </section>
-<section id="links" class="level2">
-<h2 class="anchored" data-anchor-id="links">Links</h2>
-<p>Published <a href="https://journals.aps.org/pr/pdf/10.1103/PhysRev.47.777">paper</a></p>
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1103/PhysRev.47.777"></div>
+<section id="motivation-for-a-differentiable-framework" class="level2">
+<h2 class="anchored" data-anchor-id="motivation-for-a-differentiable-framework">Motivation for a Differentiable Framework</h2>
+<p>Offshore and marine energy systems are inherently complex coupled systems. Currently, no integrated framework exists for offshore structures that supports both hydrodynamic simulation and shape optimization. This represents a significant bottleneck for design studies and optimization efforts. The adoption of MDO-based approaches should be encouraged to increase accessibility for further research <span class="citation" data-cites="roadmapNREL">(Musial et al. 2020)</span>.</p>
+<p>In multidisciplinary design optimization, changes in one subsystem propagate across other subsystems. For example, a change in the mean position of a floating body alters the waterline and waterplane area, requiring recalculation of hydrodynamic coefficients. Similarly, research on novel multipurpose platforms <span class="citation" data-cites="Multipurpose">(Perez-Collazo, Greaves, and Iglesias 2015)</span> would benefit from such a framework.</p>
+<p>The framework I’m developing is intended to serve as: - A tool for early design studies in the conceptual phase - A plugin for other MDO applications where hydrodynamics analysis is coupled</p>
+</section>
+<section id="multidisciplinary-design-optimization" class="level2">
+<h2 class="anchored" data-anchor-id="multidisciplinary-design-optimization">Multidisciplinary Design Optimization</h2>
+<section id="hydrodynamic-shape-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="hydrodynamic-shape-optimization">Hydrodynamic Shape Optimization</h3>
+<p>MDO of offshore structures involves shape perturbation and optimization. Different underwater shapes of floating bodies respond differently to incoming ocean waves, making shape optimization crucial for offshore platform design.</p>
+<p>Offshore structures like spar buoys (vertical cylindrical structures) can be reasonably modeled using analytical approximations <span class="citation" data-cites="Haghi_2014 morison_force_1950">(Haghi, Sabbagh-Yazdi, and Ghalandari 2014; Morison, Johnson, and Schaaf 1950)</span>. However, these analytical approaches are not feasible for non-standard geometries—those obtained after perturbing a base shape, usually described using splines. Efficient shape parameterization and numerical solvers explore the design space much better <span class="citation" data-cites="mdobook">(Martins and Lambe 2013)</span>. In MDO, shapes are typically perturbed to be compatible with other subsystems, with B-splines (CAD geometry) being preferred <span class="citation" data-cites="Samareh_2001">(Samareh 2001)</span>.</p>
+<p>The response motion of offshore structures is calculated using hydrodynamic coefficients such as added mass and damping. These coefficients characterize the geometry of floating structures. A transfer function called the <strong>Response Amplitude Operator (RAO)</strong> linearly relates sea motion to floating body motion.</p>
+<p><strong>Boundary Element Methods (BEM)</strong> are used to calculate hydrodynamic coefficients, relying on linear potential flow theory where the exact Green’s function and its derivative are known <span class="citation" data-cites="BEMcomparison">(Babarit and Delhommeau 2011)</span>. BEM-based PDE solvers <span class="citation" data-cites="babarit_theoretical_2015">(Babarit 2015)</span> are typically accurate for most geometries and can be coupled for shape optimization within a design framework. Depending on system requirements, we may want to minimize or maximize body response to waves—minimizing motion for wind turbines while maximizing motion for wave energy converters.</p>
+</section>
+<section id="differentiable-hydrodynamics" class="level3">
+<h3 class="anchored" data-anchor-id="differentiable-hydrodynamics">Differentiable Hydrodynamics</h3>
+<p>Coupling numerical solvers within optimization is computationally costly. Shape optimization with many design variables requires an efficient way to calculate both the response and its gradient. Researchers often rely on reduced-order models to approximate hydrodynamic response and heuristic methods for optimization. However, heuristic methods don’t scale well for large-scale optimization, and reduced-order models lack the accuracy of full simulations.</p>
+<p><strong>Gradient-based optimization</strong> is preferred for large-scale optimization with many design variables and costly function evaluations. Coupling numerical solvers in gradient-based optimization requires gradients of solver output with respect to all inputs. While this has been implemented for CFD <span class="citation" data-cites="DAFoam">(He et al. 2020)</span>, no implementation of <strong>differentiable hydrodynamics</strong> (differentiable BEM) exists.</p>
+<p>Among various gradient calculation methods, <strong>adjoint-based methods</strong> are accurate and efficient for inverse design problems. Adjoint methods are widely used in optimal control and aerodynamic shape optimization <span class="citation" data-cites="jameson">(Jameson 1988)</span> as well as design optimization <span class="citation" data-cites="Adjoint_intro">(Giles and Pierce 2000)</span>, but haven’t been applied to BEM-based hydrodynamics shape optimization.</p>
+<section id="understanding-adjoint-methods" class="level4">
+<h4 class="anchored" data-anchor-id="understanding-adjoint-methods">Understanding Adjoint Methods</h4>
+<p>Adjoint methods provide an elegant way to compute gradients of objective functions with respect to many design variables at a computational cost that is essentially independent of the number of design variables. This is particularly valuable for shape optimization problems where we may have hundreds or thousands of design variables.</p>
+<p><strong>The key insight</strong> of adjoint methods is that instead of computing <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpartial%20x%7D%7B%5Cpartial%20%5Ctheta%7D"> directly (which would require solving the system for each design variable), we solve a single adjoint equation to obtain the sensitivity of the objective function.</p>
+<p>For our BEM optimization problem:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Baligned%7D%0A%5Cmin_%7B%5Ctheta,x%7D%20%5Cquad%20&amp;%20J(S(%5Ctheta),%20x(%5Ctheta);%20%5Ctheta%20)%20%5C%5C%0A%5Ctextrm%7Bs.t.%7D%20%5Cquad%20R(%5Ctheta)=%20%20&amp;%20K(%5Ctheta)%5Ctimes%20x(%5Ctheta)%20-%20B(%5Ctheta)%20=%200%20%5C%5C%0A%5Cend%7Baligned%7D"></p>
+<p>The total derivative of the objective function with respect to design variables is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7BdJ%7D%7Bd%5Ctheta%7D%20=%20%5Cfrac%7B%5Cpartial%20J%7D%7B%5Cpartial%20%5Ctheta%7D%20+%20%5Cfrac%7B%5Cpartial%20J%7D%7B%5Cpartial%20x%7D%5Cfrac%7B%5Cpartial%20x%7D%7B%5Cpartial%20%5Ctheta%7D"></p>
+<p>Using the constraint equation <img src="https://latex.codecogs.com/png.latex?R(%5Ctheta)%20=%20K(%5Ctheta)x(%5Ctheta)%20-%20B(%5Ctheta)%20=%200">, we can derive:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpartial%20R%7D%7B%5Cpartial%20%5Ctheta%7D%20=%20%5Cfrac%7B%5Cpartial%20K%7D%7B%5Cpartial%20%5Ctheta%7Dx%20+%20K%5Cfrac%7B%5Cpartial%20x%7D%7B%5Cpartial%20%5Ctheta%7D%20-%20%5Cfrac%7B%5Cpartial%20B%7D%7B%5Cpartial%20%5Ctheta%7D%20=%200"></p>
+<p>Solving for <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpartial%20x%7D%7B%5Cpartial%20%5Ctheta%7D">:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpartial%20x%7D%7B%5Cpartial%20%5Ctheta%7D%20=%20K%5E%7B-1%7D%5Cleft(%5Cfrac%7B%5Cpartial%20B%7D%7B%5Cpartial%20%5Ctheta%7D%20-%20%5Cfrac%7B%5Cpartial%20K%7D%7B%5Cpartial%20%5Ctheta%7Dx%5Cright)"></p>
+<p>Substituting back into the total derivative:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7BdJ%7D%7Bd%5Ctheta%7D%20=%20%5Cfrac%7B%5Cpartial%20J%7D%7B%5Cpartial%20%5Ctheta%7D%20+%20%5Cfrac%7B%5Cpartial%20J%7D%7B%5Cpartial%20x%7DK%5E%7B-1%7D%5Cleft(%5Cfrac%7B%5Cpartial%20B%7D%7B%5Cpartial%20%5Ctheta%7D%20-%20%5Cfrac%7B%5Cpartial%20K%7D%7B%5Cpartial%20%5Ctheta%7Dx%5Cright)"></p>
+<p><strong>The adjoint variable</strong> <img src="https://latex.codecogs.com/png.latex?%5Clambda"> is defined as the solution to:</p>
+<p><img src="https://latex.codecogs.com/png.latex?K%5ET%5Clambda%20=%20%5Cleft(%5Cfrac%7B%5Cpartial%20J%7D%7B%5Cpartial%20x%7D%5Cright)%5ET"></p>
+<p>This leads to the elegant expression:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7BdJ%7D%7Bd%5Ctheta%7D%20=%20%5Cfrac%7B%5Cpartial%20J%7D%7B%5Cpartial%20%5Ctheta%7D%20+%20%5Clambda%5ET%5Cleft(%5Cfrac%7B%5Cpartial%20B%7D%7B%5Cpartial%20%5Ctheta%7D%20-%20%5Cfrac%7B%5Cpartial%20K%7D%7B%5Cpartial%20%5Ctheta%7Dx%5Cright)"></p>
+<p><strong>Computational advantage</strong>: Instead of solving <img src="https://latex.codecogs.com/png.latex?N"> forward problems (one for each design variable), we solve: 1. One forward problem: <img src="https://latex.codecogs.com/png.latex?Kx%20=%20B"> 2. One adjoint problem: <img src="https://latex.codecogs.com/png.latex?K%5ET%5Clambda%20=%20%5Cleft(%5Cfrac%7B%5Cpartial%20J%7D%7B%5Cpartial%20x%7D%5Cright)%5ET"></p>
+<p>This gives us gradients with respect to all design variables at the cost of just two linear system solves, regardless of the number of design variables.</p>
+</section>
+<section id="automatic-differentiation-in-practice" class="level4">
+<h4 class="anchored" data-anchor-id="automatic-differentiation-in-practice">Automatic Differentiation in Practice</h4>
+<p><strong>Automatic Differentiation (AD)</strong> is a technique that automatically computes derivatives of functions implemented in computer code. Unlike symbolic differentiation (which manipulates mathematical expressions) or finite differences (which approximates derivatives), AD computes exact derivatives by applying the chain rule systematically through the computational graph.</p>
+<p><strong>Two main modes of AD</strong>:</p>
+<ol type="1">
+<li><p><strong>Forward Mode AD</strong>: Computes directional derivatives by propagating derivatives forward through the computation. For a function <img src="https://latex.codecogs.com/png.latex?f:%20%5Cmathbb%7BR%7D%5En%20%5Crightarrow%20%5Cmathbb%7BR%7D%5Em">, forward mode computes <img src="https://latex.codecogs.com/png.latex?J%20%5Ccdot%20v"> where <img src="https://latex.codecogs.com/png.latex?J"> is the Jacobian and <img src="https://latex.codecogs.com/png.latex?v"> is a direction vector.</p></li>
+<li><p><strong>Reverse Mode AD</strong>: Computes gradients by propagating adjoints backward through the computation. For a scalar function <img src="https://latex.codecogs.com/png.latex?f:%20%5Cmathbb%7BR%7D%5En%20%5Crightarrow%20%5Cmathbb%7BR%7D">, reverse mode computes <img src="https://latex.codecogs.com/png.latex?%5Cnabla%20f"> at the cost of approximately 2-4 function evaluations, regardless of <img src="https://latex.codecogs.com/png.latex?n">.</p></li>
+</ol>
+<p><strong>For our BEM solver</strong>, reverse mode AD is particularly attractive because: - We typically have many design variables (shape parameters) but few objectives - The computational cost is independent of the number of design variables - It naturally computes the adjoint variables needed for our optimization</p>
+<p><strong>Implementation considerations</strong>:</p>
+<ol type="1">
+<li><strong>Language choice</strong>: Julia and JAX are excellent choices because they:
+<ul>
+<li>Support automatic differentiation natively</li>
+<li>Provide high-performance numerical computing</li>
+<li>Enable just-in-time compilation for efficiency</li>
+<li>Offer parallel computing capabilities</li>
+</ul></li>
+<li><strong>Computational graph</strong>: The BEM solver must be implemented in a way that maintains a differentiable computational graph:
+<ul>
+<li>All operations must be differentiable</li>
+<li>Control flow must be handled carefully</li>
+<li>Linear solvers must be differentiable (or replaced with differentiable alternatives)</li>
+</ul></li>
+<li><strong>Memory considerations</strong>: Reverse mode AD requires storing intermediate values for the backward pass, which can be memory-intensive for large problems.</li>
+</ol>
+</section>
+<section id="discrete-vs.-continuous-adjoint" class="level4">
+<h4 class="anchored" data-anchor-id="discrete-vs.-continuous-adjoint">Discrete vs.&nbsp;Continuous Adjoint</h4>
+<p><strong>Continuous adjoint</strong> methods derive adjoint equations from the continuous governing equations (PDEs) before discretization. This approach: - Provides analytical expressions for adjoint equations - May be more efficient for certain problems - Requires careful treatment of boundary conditions - Is problem-specific and requires manual derivation</p>
+<p><strong>Discrete adjoint</strong> methods work with the discretized equations and use automatic differentiation to compute the required derivatives. This approach: - Is more general and applicable to many problems - Automatically handles complex discretization schemes - Requires less manual derivation - Can be less efficient but is more robust</p>
+<p><strong>For our BEM solver</strong>, discrete adjoint with automatic differentiation is preferred because: - It handles the complex Green’s function evaluations automatically - It works with any objective function without manual derivation - It integrates seamlessly with existing optimization frameworks - It provides exact gradients (up to numerical precision)</p>
+</section>
+<section id="challenges-and-solutions" class="level4">
+<h4 class="anchored" data-anchor-id="challenges-and-solutions">Challenges and Solutions</h4>
+<p><strong>Challenge 1: Dense Linear Systems</strong> BEM methods solve dense linear systems, which are computationally expensive. Solutions include: - Using iterative solvers with preconditioning - Implementing matrix-free methods where possible - Leveraging parallel computing for large problems</p>
+<p><strong>Challenge 2: Complex-valued Computations</strong> Hydrodynamic problems involve complex numbers (frequency domain analysis). AD frameworks must handle complex differentiation correctly: - Using Wirtinger calculus for complex derivatives - Ensuring proper handling of complex conjugates - Maintaining numerical stability</p>
+<p><strong>Challenge 3: Green’s Function Evaluation</strong> The free-surface Green’s function is computationally expensive and involves special functions. Solutions include: - Implementing efficient evaluation algorithms - Using approximation methods for early design iterations - Leveraging GPU acceleration where possible</p>
+<p><strong>Challenge 4: Integration with Optimization Frameworks</strong> The differentiable BEM solver must integrate with MDO frameworks like OpenMDAO: - Providing consistent interfaces for gradient computation - Handling the coupling between different subsystems - Ensuring numerical stability across the entire optimization</p>
+</section>
+</section>
+</section>
+<section id="optimization-problem-statement" class="level2">
+<h2 class="anchored" data-anchor-id="optimization-problem-statement">Optimization Problem Statement</h2>
+<p>The hydrodynamic optimization problem can be expressed in general form as:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Baligned%7D%0A%5Cmin_%7B%5Ctheta,x%7D%20%5Cquad%20&amp;%20J(S(%5Ctheta),%20x(%5Ctheta);%20%5Ctheta%20)%20%5C%5C%0A%5Ctextrm%7Bs.t.%7D%20%5Cquad%20R(%5Ctheta)=%20%20&amp;%20K(%5Ctheta)%5Ctimes%20x(%5Ctheta)%20-%20B(%5Ctheta)%20=%200%20%5C%5C%0A%5Cend%7Baligned%7D"></p>
+<p>Where: - <img src="https://latex.codecogs.com/png.latex?x"> is the state variable vector (e.g., source distribution) - <img src="https://latex.codecogs.com/png.latex?%5Ctheta"> represents mesh parameters (design variables) - <img src="https://latex.codecogs.com/png.latex?(K,%20S)"> are influence matrices (complex-valued) from free surface Green’s function evaluation and its derivative - <img src="https://latex.codecogs.com/png.latex?J"> is the objective function (e.g., Response Amplitude Operator)</p>
+<p>In this optimization, residuals from <strong>dense linear systems</strong> are driven to zero iteratively using linear solvers:</p>
+<p><img src="https://latex.codecogs.com/png.latex?R%20=%20K%20x%20-%20B"></p>
+<p>Where <img src="https://latex.codecogs.com/png.latex?K"> is the square influence matrix between mesh panels (<img src="https://latex.codecogs.com/png.latex?N%20%5Ctimes%20N">), <img src="https://latex.codecogs.com/png.latex?B"> represents boundary conditions for diffraction and radiation problems, and <img src="https://latex.codecogs.com/png.latex?N"> is the number of mesh panels. <img src="https://latex.codecogs.com/png.latex?K">, <img src="https://latex.codecogs.com/png.latex?X">, and <img src="https://latex.codecogs.com/png.latex?B"> are explicitly related to mesh parameters <img src="https://latex.codecogs.com/png.latex?(%5Ctheta)">. The objective function thus depends both explicitly and implicitly on mesh parameters <img src="https://latex.codecogs.com/png.latex?(%5Ctheta)">.</p>
+<p>For multidisciplinary design optimization including hydrodynamic optimization, the number of design variables increases further to account for system objectives and subsystem couplings.</p>
+<p>For inverse design problems like this, calculating the gradient <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Bd%20J%7D%7Bd%5Ctheta%7D"> involves computing <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpartial%20B%7D%7B%5Cpartial%20%5Ctheta%7D">, <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpartial%20K%7D%7B%5Cpartial%20%5Ctheta%7D">, <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpartial%20x%7D%7B%5Cpartial%20%5Ctheta%7D">, and <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpartial%20J%7D%7B%5Cpartial%20%5Ctheta%7D">—which is only possible through automatic differentiation of the BEM solver.</p>
+</section>
+<section id="my-research-contribution" class="level2">
+<h2 class="anchored" data-anchor-id="my-research-contribution">My Research Contribution</h2>
+<p>When coupling BEM with other analyses, numerical derivatives such as finite differences can be used <span class="citation" data-cites="novelOpenMDAO">(Khanal and Haji 2023)</span>. I have already implemented this as the first version of my framework, but it has issues with accuracy and convergence and may not scale well for large numbers of design variables.</p>
+<p>In contrast, the <strong>adjoint method</strong> requires only 2 solves of the linear system to obtain accurate gradients with respect to many design variables. A differentiable hydrodynamics solver is required to construct the adjoint equation.</p>
+<p>Adjoint equations to minimize wave resistance of surface ships were derived by Ragab through continuous adjoint formulation <span class="citation" data-cites="Ragab_2004">(Ragab and Nayfeh 2004)</span>. However, this isn’t directly applicable to many offshore structures where different functionals (motions) are optimized. Unlike continuous formulation, <strong>discrete adjoint-based derivation using automatic differentiation</strong> is applicable to many objectives as long as they’re programmed in a language supporting automatic differentiation <span class="citation" data-cites="Adjoint_intro">(Giles and Pierce 2000)</span>.</p>
+<p><strong>My thesis aims to implement a differentiable multidisciplinary design optimization framework that integrates gradient-based optimization for large-scale offshore systems.</strong></p>
+<p>The proposed framework will:</p>
+<ol type="1">
+<li><strong>Implement a differentiable solver for hydrodynamics analysis</strong></li>
+<li><strong>Derive, implement, and integrate adjoint-based shape optimization for offshore structures</strong></li>
+<li><strong>Demonstrate differentiability and present case studies on optimization of novel offshore systems</strong></li>
+</ol>
+<p>Creating a differentiable boundary element method (BEM) solver will enable modern and complex workflows in offshore system design and optimization. <strong>Differentiability</strong> will allow for novel methods such as <strong>adjoint-based multidisciplinary optimization</strong> and more accurate data-driven methods such as <strong>physics-informed machine learning</strong>.</p>
+<p>These capabilities will significantly reduce the design cycle for early design studies of novel offshore systems.</p>
+<section id="coupled-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="coupled-derivatives">Coupled Derivatives</h3>
+<p>For multidisciplinary design optimization, <strong>Modular Analysis and Unified Derivatives (MAUD)</strong> architecture couples derivatives from several subsystems. MAUD formulates the multidisciplinary model as a nonlinear system of equations, leading to a linear equation that unifies all derivative computation methods <span class="citation" data-cites="maud">(Hwang and Martins 2018)</span>. Each subsystem can provide numerical or analytical gradients.</p>
+<p><strong>OpenMDAO</strong> <span class="citation" data-cites="Gray2019a">(Gray et al. 2019)</span>, a tool developed by NASA, implements this framework. I plan to integrate newly developed BEM adjoints into this framework. Currently, I integrate BEM in OpenMDAO using numerical derivatives approximated through finite differences <span class="citation" data-cites="novelOpenMDAO">(Khanal and Haji 2023)</span>. Since this scales linearly with the number of design variables and accuracy deteriorates for nonlinear problems, it’s not appropriate for multidisciplinary analysis and optimization. My thesis aims to solve this problem.</p>
+</section>
+</section>
+<section id="boundary-element-method" class="level2">
+<h2 class="anchored" data-anchor-id="boundary-element-method">Boundary Element Method</h2>
+<p>Hydrodynamics of floating bodies is typically modeled using linear potential flow theory. Since the domain is unbounded, boundary element methods are used, requiring only boundary discretization—the surface geometry is meshed with quadrilateral panels.</p>
+<p>For each frequency of ocean waves the structure encounters, diffraction and radiation problems are solved to calculate hydrodynamic coefficients. The solution of velocity potential and radiation/diffraction forces is computed in the frequency domain.</p>
+<p>Computational cost increases with geometry discretization and the number of wave frequencies and headings. Typically, numerical complexity of BEM codes is proportional to <img src="https://latex.codecogs.com/png.latex?O(N%5E2)"> or <img src="https://latex.codecogs.com/png.latex?O(N%5E3)"> with <img src="https://latex.codecogs.com/png.latex?N"> as the number of mesh panels. The Green function is computed <img src="https://latex.codecogs.com/png.latex?O(N%5E2)"> times to set up the linear system, which is solved either by iterative methods with <img src="https://latex.codecogs.com/png.latex?O(N%5E2)"> complexity or Gauss elimination with <img src="https://latex.codecogs.com/png.latex?O(N%5E3)"> complexity <span class="citation" data-cites="BEMcomparison">(Babarit and Delhommeau 2011)</span>.</p>
+<p>This limits integration within optimization loops, especially for large-scale optimization based on heuristic methods. The solution is to minimize function evaluations in optimization. Gradient-based optimization explores design space more efficiently (fewer evaluations) to reach locally optimal points.</p>
+</section>
+<section id="research-phases" class="level2">
+<h2 class="anchored" data-anchor-id="research-phases">Research Phases</h2>
+<section id="phase-1-discrete-adjoint-implementation" class="level3">
+<h3 class="anchored" data-anchor-id="phase-1-discrete-adjoint-implementation">Phase 1: Discrete Adjoint Implementation</h3>
+<p>The <strong>first phase</strong> involves deriving and setting up discrete adjoint equations for BEM. We’ll use automatic differentiation to obtain partial sensitivities required in the equation by implementing the BEM method in either <strong>Julia</strong> or <strong>Jax</strong>, as they support automatic differentiation in a discretize-then-optimize scheme.</p>
+<p>These libraries and programming languages support: - <strong>Automatic Differentiation (AD)</strong> - <strong>Parallelism</strong> - <strong>Just-in-time (JIT) compilation</strong></p>
+<p>Gradient calculations need to be performed through the iterative solver employed to solve dense linear systems in BEM methods.</p>
+<p>This method relies on known exact expressions of Green’s function. Mathematical expressions and numerical methods for free-surface Green’s function of linearized wave-structure problems in deep water and frequency domain are investigated <span class="citation" data-cites="Xie_2020">(Xie and Liu 2020)</span>. Other methods, such as approximating free-surface Green’s function using deep learning, can also be explored for early design iterations when speed is more important than accuracy.</p>
+</section>
+<section id="phase-2-mdo-framework-integration" class="level3">
+<h3 class="anchored" data-anchor-id="phase-2-mdo-framework-integration">Phase 2: MDO Framework Integration</h3>
+<p>The <strong>second phase</strong> integrates differentiable BEM into the MDO framework. Extensions could include supporting more accurate <strong>physics-informed machine learning</strong> <span class="citation" data-cites="three_NN_PDEs">(Raissi, Perdikaris, and Karniadakis 2019)</span>.</p>
+<p>BEM methods require solving dense linear systems. The re-implementation will use algorithms best suited for dense matrices. A <strong>differentiable solver</strong> would provide required gradients for optimization and neural network-based approximation. Simulators implemented with automatic differentiation can be used inside machine learning models to construct more accurate reduced-order models <span class="citation" data-cites="solver_in_loop">(Brunton, Proctor, and Kutz 2020)</span>.</p>
+</section>
+<section id="expected-a-exam-scope" class="level3">
+<h3 class="anchored" data-anchor-id="expected-a-exam-scope">Expected A-Exam Scope</h3>
+<p>I plan to take an A-exam in Spring 2024, presenting the differentiable version of the solver that derives discrete adjoints for the hydrodynamic solver using automatic differentiation in Jax or Julia.</p>
+<p>An optimization study of simple geometry (such as a compound cylinder) with analytical derivation through eigenfunction expansion will be conducted for gradient verification. Gradients will be compared with finite differences for geometries where analytical gradients are unavailable.</p>
+</section>
+</section>
+<section id="tentative-thesis-chapters" class="level2">
+<h2 class="anchored" data-anchor-id="tentative-thesis-chapters">Tentative Thesis Chapters</h2>
+<ol type="1">
+<li><strong>Multidisciplinary Design Optimization of Offshore Systems</strong> - Literature review</li>
+<li><strong>Boundary Element Method for Calculating Hydrodynamic Coefficients</strong></li>
+<li><strong>Adjoint and Automatic Differentiation of BEM Solver</strong></li>
+<li><strong>Case Studies and Applications of a Differentiable Solver</strong></li>
+</ol>
+</section>
+<section id="keywords" class="level2">
+<h2 class="anchored" data-anchor-id="keywords">Keywords</h2>
+<p>Differentiable Hydrodynamics, Multidisciplinary Design Optimization, Automatic Differentiation, Discrete Adjoint Method, Boundary Element Method, Potential Flow, Panel Code</p>
+<hr>
+<p><em>This research is conducted as part of my PhD in Systems Engineering at Cornell University, under the supervision of Dr.&nbsp;Maha Haji in the Symbiotic Engineering and Analysis Lab.</em></p>
 
-<span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-hide-zero-citations="true" data-style="small_circle"></span><script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{einstein1935,
-  author = {Einstein, Albert and Podolsky, Boris and Rosen, Nathan},
-  title = {Can Quantum-Mechanical Description of Physical Reality Be
-    Considered Complete?},
-  journal = {Physical Review},
-  volume = {47},
-  number = {7938},
-  pages = {777-80},
-  date = {1935-05-15},
-  url = {https://journals.aps.org/pr/pdf/10.1103/PhysRev.47.777},
-  doi = {10.1103/PhysRev.47.777},
-  langid = {en}
-}
-</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-einstein1935" class="csl-entry quarto-appendix-citeas">
-Einstein, Albert, Boris Podolsky, and Nathan Rosen. 1935. <span>“Can
-Quantum-Mechanical Description of Physical Reality Be Considered
-Complete?”</span> <em>Physical Review</em> 47 (7938): 777–80. <a href="https://doi.org/10.1103/PhysRev.47.777">https://doi.org/10.1103/PhysRev.47.777</a>.
-</div></div></section></div> ]]></description>
-  <category>paper</category>
-  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/paper-title/</guid>
-  <pubDate>Wed, 15 May 1935 04:00:00 GMT</pubDate>
-  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/paper-title/featured.jpg" medium="image" type="image/jpeg"/>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-babarit_theoretical_2015" class="csl-entry">
+Babarit, Aurélien. 2015. <span>“Theoretical and Numerical Aspects of the Open Source BEM Solver NEMOH.”</span> <em>Proceedings of the 11th European Wave and Tidal Energy Conference</em>.
+</div>
+<div id="ref-BEMcomparison" class="csl-entry">
+Babarit, Aurélien, and Gérard Delhommeau. 2011. <span>“Comparison of Boundary Element Method and Finite Element Method for Hydrodynamic Analysis of Floating Bodies.”</span> <em>Engineering Analysis with Boundary Elements</em> 35 (3): 419–28.
+</div>
+<div id="ref-solver_in_loop" class="csl-entry">
+Brunton, Steven L, Joshua L Proctor, and J Nathan Kutz. 2020. <span>“Neural Networks as Surrogate Models for Simulations in Engineering.”</span> <em>Annual Review of Fluid Mechanics</em> 52: 477–508.
+</div>
+<div id="ref-Adjoint_intro" class="csl-entry">
+Giles, Michael B, and Niles A Pierce. 2000. <span>“An Introduction to the Adjoint Approach to Design.”</span> <em>Flow, Turbulence and Combustion</em> 65 (3): 393–415.
+</div>
+<div id="ref-Gray2019a" class="csl-entry">
+Gray, Justin S, John T Hwang, Joaquim RR Martins, Kenneth T Moore, and Bret A Naylor. 2019. <span>“OpenMDAO: An Open-Source Framework for Multidisciplinary Design, Analysis, and Optimization.”</span> <em>Structural and Multidisciplinary Optimization</em> 59 (4): 1075–1104.
+</div>
+<div id="ref-Haghi_2014" class="csl-entry">
+Haghi, Reza, Saeed-Reza Sabbagh-Yazdi, and Mohammad Ghalandari. 2014. <span>“Hydrodynamic Analysis of Spar-Type Floating Offshore Wind Turbines.”</span> <em>Ocean Engineering</em> 89: 1–10.
+</div>
+<div id="ref-DAFoam" class="csl-entry">
+He, Ping, Charles A Mader, Joaquim RR Martins, and Kevin J Maki. 2020. <span>“DAFoam: An Open-Source Adjoint Framework for Multidisciplinary Design Optimization with OpenFOAM.”</span> <em>AIAA Journal</em> 58 (3): 1304–19.
+</div>
+<div id="ref-maud" class="csl-entry">
+Hwang, John T, and Joaquim RR Martins. 2018. <span>“Modular Analysis and Unified Derivatives.”</span> <em>Structural and Multidisciplinary Optimization</em> 57 (3): 1079–1107.
+</div>
+<div id="ref-jameson" class="csl-entry">
+Jameson, Antony. 1988. <span>“Aerodynamic Design via Control Theory.”</span> <em>Journal of Scientific Computing</em> 3 (3): 233–60.
+</div>
+<div id="ref-novelOpenMDAO" class="csl-entry">
+Khanal, Kapil, and Maha Haji. 2023. <span>“Novel OpenMDAO Framework for Multidisciplinary Design Optimization of Offshore Systems.”</span> <em>Proceedings of the ASME 2023 42nd International Conference on Ocean, Offshore and Arctic Engineering</em>.
+</div>
+<div id="ref-mdobook" class="csl-entry">
+Martins, Joaquim RR, and Andrew B Lambe. 2013. <em>Multidisciplinary Design Optimization: State of the Art</em>. SIAM.
+</div>
+<div id="ref-morison_force_1950" class="csl-entry">
+Morison, James R, James W Johnson, and Stephen A Schaaf. 1950. <span>“The Force Exerted by Surface Waves on Piles.”</span> <em>Journal of Petroleum Technology</em> 2 (05): 149–54.
+</div>
+<div id="ref-roadmapNREL" class="csl-entry">
+Musial, Walter, Philipp Beiter, Paul Spitsen, and Jake Nunemaker. 2020. <span>“Offshore Wind Energy Roadmap.”</span> <em>National Renewable Energy Laboratory</em>.
+</div>
+<div id="ref-Multipurpose" class="csl-entry">
+Perez-Collazo, Carlos, Deborah Greaves, and Gregorio Iglesias. 2015. <span>“Multipurpose Platforms for Marine Renewable Energy.”</span> <em>Renewable and Sustainable Energy Reviews</em> 54: 784–97.
+</div>
+<div id="ref-Ragab_2004" class="csl-entry">
+Ragab, Saad A, and Ali H Nayfeh. 2004. <span>“Adjoint-Based Optimization of Wave Resistance.”</span> <em>Journal of Ship Research</em> 48 (1): 1–15.
+</div>
+<div id="ref-three_NN_PDEs" class="csl-entry">
+Raissi, Maziar, Paris Perdikaris, and George E Karniadakis. 2019. <span>“Physics-Informed Neural Networks: A Deep Learning Framework for Solving Forward and Inverse Problems Involving Nonlinear Partial Differential Equations.”</span> <em>Journal of Computational Physics</em> 378: 686–707.
+</div>
+<div id="ref-Samareh_2001" class="csl-entry">
+Samareh, Jamshid A. 2001. <span>“Survey of Shape Parameterization Techniques for High-Fidelity Multidisciplinary Shape Optimization.”</span> <em>AIAA Journal</em> 39 (5): 877–84.
+</div>
+<div id="ref-mdo_1993" class="csl-entry">
+Sobieszczanski-Sobieski, Jaroslaw, and Raphael T Haftka. 1993. <span>“Multidisciplinary Design Optimization: An Emerging New Engineering Discipline.”</span> <em>Advances in Structural Optimization</em>, 483–96.
+</div>
+<div id="ref-Xie_2020" class="csl-entry">
+Xie, Zhiming, and Yuming Liu. 2020. <span>“Mathematical Expressions and Numerical Methods for the Free-Surface Green Function of the Linearized Wave-Structure Problem.”</span> <em>Journal of Engineering Mathematics</em> 120 (1): 1–25.
+</div>
+</div></section></div> ]]></description>
+  <category>research</category>
+  <category>optimization</category>
+  <category>hydrodynamics</category>
+  <category>thesis</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/differentiable-hydrodynamics-framework/</guid>
+  <pubDate>Mon, 15 Jan 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/differentiable-hydrodynamics-framework/MDO.png" medium="image" type="image/png" height="115" width="144"/>
 </item>
 </channel>
 </rss>

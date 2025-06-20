@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Gang He">
+<meta name="dcterms.date" content="2024-01-15">
+<meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
+
+<title>A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems – Kapil Khanal</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '', { 'anonymize_ip': true});
+</script>
+
+<!-- 
+Load Academicons v1: https://jpswalsh.github.io/academicons/
+-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+<!---
+The following code are needed to show dimension citation and altmetrics.
+https://api.altmetric.com/embeds.html
+https://badge.dimensions.ai/
+--->
+
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems – Kapil Khanal">
+<meta property="og:description" content="Developing a differentiable boundary element method solver for hydrodynamic shape optimization of offshore structures using automatic differentiation and adjoint methods">
+<meta property="og:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/differentiable-hydrodynamics-framework/MDO.png">
+<meta property="og:site_name" content="Kapil Khanal">
+<meta property="og:image:height" content="818">
+<meta property="og:image:width" content="1024">
+<meta name="twitter:title" content="A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems – Kapil Khanal">
+<meta name="twitter:description" content="Developing a differentiable boundary element method solver for hydrodynamic shape optimization of offshore structures using automatic differentiation and adjoint methods">
+<meta name="twitter:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/differentiable-hydrodynamics-framework/MDO.png">
+<meta name="twitter:image-height" content="818">
+<meta name="twitter:image-width" content="1024">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Kapil Khanal</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../../posts.html#category=news">
+ <span class="dropdown-text">News</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts.html#category=event">
+ <span class="dropdown-text">Events</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../contact.html">
+ <span class="dropdown-text">Contact</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="../../publications.html">
+ <span class="dropdown-text">List of Publication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts.html#category=paper">
+ <span class="dropdown-text">Selected Papers</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects.html">
+ <span class="dropdown-text">Grants</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outreach" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Outreach</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-outreach">    
+        <li>
+    <a class="dropdown-item" href="../../posts.html#category=presentation">
+ <span class="dropdown-text">Presentations</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../people.html"> 
+<span class="menu-text">Group</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../files/nsf-biosketch.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/KapilKhanal/kapilkhanal.github.io" target="_blank"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://bsky.app" target="_blank"> 
+<span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#motivation-for-a-differentiable-framework" id="toc-motivation-for-a-differentiable-framework" class="nav-link" data-scroll-target="#motivation-for-a-differentiable-framework">Motivation for a Differentiable Framework</a></li>
+  <li><a href="#multidisciplinary-design-optimization" id="toc-multidisciplinary-design-optimization" class="nav-link" data-scroll-target="#multidisciplinary-design-optimization">Multidisciplinary Design Optimization</a>
+  <ul class="collapse">
+  <li><a href="#hydrodynamic-shape-optimization" id="toc-hydrodynamic-shape-optimization" class="nav-link" data-scroll-target="#hydrodynamic-shape-optimization">Hydrodynamic Shape Optimization</a></li>
+  <li><a href="#differentiable-hydrodynamics" id="toc-differentiable-hydrodynamics" class="nav-link" data-scroll-target="#differentiable-hydrodynamics">Differentiable Hydrodynamics</a></li>
+  </ul></li>
+  <li><a href="#optimization-problem-statement" id="toc-optimization-problem-statement" class="nav-link" data-scroll-target="#optimization-problem-statement">Optimization Problem Statement</a></li>
+  <li><a href="#my-research-contribution" id="toc-my-research-contribution" class="nav-link" data-scroll-target="#my-research-contribution">My Research Contribution</a>
+  <ul class="collapse">
+  <li><a href="#coupled-derivatives" id="toc-coupled-derivatives" class="nav-link" data-scroll-target="#coupled-derivatives">Coupled Derivatives</a></li>
+  </ul></li>
+  <li><a href="#boundary-element-method" id="toc-boundary-element-method" class="nav-link" data-scroll-target="#boundary-element-method">Boundary Element Method</a></li>
+  <li><a href="#research-phases" id="toc-research-phases" class="nav-link" data-scroll-target="#research-phases">Research Phases</a>
+  <ul class="collapse">
+  <li><a href="#phase-1-discrete-adjoint-implementation" id="toc-phase-1-discrete-adjoint-implementation" class="nav-link" data-scroll-target="#phase-1-discrete-adjoint-implementation">Phase 1: Discrete Adjoint Implementation</a></li>
+  <li><a href="#phase-2-mdo-framework-integration" id="toc-phase-2-mdo-framework-integration" class="nav-link" data-scroll-target="#phase-2-mdo-framework-integration">Phase 2: MDO Framework Integration</a></li>
+  <li><a href="#expected-a-exam-scope" id="toc-expected-a-exam-scope" class="nav-link" data-scroll-target="#expected-a-exam-scope">Expected A-Exam Scope</a></li>
+  </ul></li>
+  <li><a href="#tentative-thesis-chapters" id="toc-tentative-thesis-chapters" class="nav-link" data-scroll-target="#tentative-thesis-chapters">Tentative Thesis Chapters</a></li>
+  <li><a href="#keywords" id="toc-keywords" class="nav-link" data-scroll-target="#keywords">Keywords</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems</h1>
+<p class="subtitle lead">My PhD Research Proposal</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">research</div>
+    <div class="quarto-category">optimization</div>
+    <div class="quarto-category">hydrodynamics</div>
+    <div class="quarto-category">thesis</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Developing a differentiable boundary element method solver for hydrodynamic shape optimization of offshore structures using automatic differentiation and adjoint methods
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kapil Khanal </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 15, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Optimizing the levelized cost of electricity for floating offshore wind turbines (FOWTs) and wave energy parks involves analyzing multiple coupled subsystems including geometry, aerodynamics, and hydrodynamics. In complex engineered systems, the solution of governing equations in one subsystem changes the input for another subsystem. As the saying goes in engineering: “everything influences everything else” <span class="citation" data-cites="mdo_1993">(<a href="#ref-mdo_1993" role="doc-biblioref">Sobieszczanski-Sobieski and Haftka 1993</a>)</span>. This creates design tradeoffs between several subsystems, necessitating an integrated multidisciplinary analysis approach.</p>
+<p><strong>Multidisciplinary Design Optimization (MDO)</strong> is a field of engineering that focuses on using numerical optimization and solvers for designing systems involving multiple coupled disciplines or subsystems <span class="citation" data-cites="mdobook">(<a href="#ref-mdobook" role="doc-biblioref">Martins and Lambe 2013</a>)</span>. Research has shown that sequential optimization of coupled subsystems usually results in sub-optimal designs, while an MDO approach leads to system-optimal solutions <span class="citation" data-cites="mdo_1993">(<a href="#ref-mdo_1993" role="doc-biblioref">Sobieszczanski-Sobieski and Haftka 1993</a>)</span>.</p>
+</section>
+<section id="motivation-for-a-differentiable-framework" class="level2">
+<h2 class="anchored" data-anchor-id="motivation-for-a-differentiable-framework">Motivation for a Differentiable Framework</h2>
+<p>Offshore and marine energy systems are inherently complex coupled systems. Currently, no integrated framework exists for offshore structures that supports both hydrodynamic simulation and shape optimization. This represents a significant bottleneck for design studies and optimization efforts. The adoption of MDO-based approaches should be encouraged to increase accessibility for further research <span class="citation" data-cites="roadmapNREL">(<a href="#ref-roadmapNREL" role="doc-biblioref">Musial et al. 2020</a>)</span>.</p>
+<p>In multidisciplinary design optimization, changes in one subsystem propagate across other subsystems. For example, a change in the mean position of a floating body alters the waterline and waterplane area, requiring recalculation of hydrodynamic coefficients. Similarly, research on novel multipurpose platforms <span class="citation" data-cites="Multipurpose">(<a href="#ref-Multipurpose" role="doc-biblioref">Perez-Collazo, Greaves, and Iglesias 2015</a>)</span> would benefit from such a framework.</p>
+<p>The framework I’m developing is intended to serve as: - A tool for early design studies in the conceptual phase - A plugin for other MDO applications where hydrodynamics analysis is coupled</p>
+</section>
+<section id="multidisciplinary-design-optimization" class="level2">
+<h2 class="anchored" data-anchor-id="multidisciplinary-design-optimization">Multidisciplinary Design Optimization</h2>
+<section id="hydrodynamic-shape-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="hydrodynamic-shape-optimization">Hydrodynamic Shape Optimization</h3>
+<p>MDO of offshore structures involves shape perturbation and optimization. Different underwater shapes of floating bodies respond differently to incoming ocean waves, making shape optimization crucial for offshore platform design.</p>
+<p>Offshore structures like spar buoys (vertical cylindrical structures) can be reasonably modeled using analytical approximations <span class="citation" data-cites="Haghi_2014 morison_force_1950">(<a href="#ref-Haghi_2014" role="doc-biblioref">Haghi, Sabbagh-Yazdi, and Ghalandari 2014</a>; <a href="#ref-morison_force_1950" role="doc-biblioref">Morison, Johnson, and Schaaf 1950</a>)</span>. However, these analytical approaches are not feasible for non-standard geometries—those obtained after perturbing a base shape, usually described using splines. Efficient shape parameterization and numerical solvers explore the design space much better <span class="citation" data-cites="mdobook">(<a href="#ref-mdobook" role="doc-biblioref">Martins and Lambe 2013</a>)</span>. In MDO, shapes are typically perturbed to be compatible with other subsystems, with B-splines (CAD geometry) being preferred <span class="citation" data-cites="Samareh_2001">(<a href="#ref-Samareh_2001" role="doc-biblioref">Samareh 2001</a>)</span>.</p>
+<p>The response motion of offshore structures is calculated using hydrodynamic coefficients such as added mass and damping. These coefficients characterize the geometry of floating structures. A transfer function called the <strong>Response Amplitude Operator (RAO)</strong> linearly relates sea motion to floating body motion.</p>
+<p><strong>Boundary Element Methods (BEM)</strong> are used to calculate hydrodynamic coefficients, relying on linear potential flow theory where the exact Green’s function and its derivative are known <span class="citation" data-cites="BEMcomparison">(<a href="#ref-BEMcomparison" role="doc-biblioref">Babarit and Delhommeau 2011</a>)</span>. BEM-based PDE solvers <span class="citation" data-cites="babarit_theoretical_2015">(<a href="#ref-babarit_theoretical_2015" role="doc-biblioref">Babarit 2015</a>)</span> are typically accurate for most geometries and can be coupled for shape optimization within a design framework. Depending on system requirements, we may want to minimize or maximize body response to waves—minimizing motion for wind turbines while maximizing motion for wave energy converters.</p>
+</section>
+<section id="differentiable-hydrodynamics" class="level3">
+<h3 class="anchored" data-anchor-id="differentiable-hydrodynamics">Differentiable Hydrodynamics</h3>
+<p>Coupling numerical solvers within optimization is computationally costly. Shape optimization with many design variables requires an efficient way to calculate both the response and its gradient. Researchers often rely on reduced-order models to approximate hydrodynamic response and heuristic methods for optimization. However, heuristic methods don’t scale well for large-scale optimization, and reduced-order models lack the accuracy of full simulations.</p>
+<p><strong>Gradient-based optimization</strong> is preferred for large-scale optimization with many design variables and costly function evaluations. Coupling numerical solvers in gradient-based optimization requires gradients of solver output with respect to all inputs. While this has been implemented for CFD <span class="citation" data-cites="DAFoam">(<a href="#ref-DAFoam" role="doc-biblioref">He et al. 2020</a>)</span>, no implementation of <strong>differentiable hydrodynamics</strong> (differentiable BEM) exists.</p>
+<p>Among various gradient calculation methods, <strong>adjoint-based methods</strong> are accurate and efficient for inverse design problems. Adjoint methods are widely used in optimal control and aerodynamic shape optimization <span class="citation" data-cites="jameson">(<a href="#ref-jameson" role="doc-biblioref">Jameson 1988</a>)</span> as well as design optimization <span class="citation" data-cites="Adjoint_intro">(<a href="#ref-Adjoint_intro" role="doc-biblioref">Giles and Pierce 2000</a>)</span>, but haven’t been applied to BEM-based hydrodynamics shape optimization.</p>
+<section id="understanding-adjoint-methods" class="level4">
+<h4 class="anchored" data-anchor-id="understanding-adjoint-methods">Understanding Adjoint Methods</h4>
+<p>Adjoint methods provide an elegant way to compute gradients of objective functions with respect to many design variables at a computational cost that is essentially independent of the number of design variables. This is particularly valuable for shape optimization problems where we may have hundreds or thousands of design variables.</p>
+<p><strong>The key insight</strong> of adjoint methods is that instead of computing <span class="math inline">\(\frac{\partial x}{\partial \theta}\)</span> directly (which would require solving the system for each design variable), we solve a single adjoint equation to obtain the sensitivity of the objective function.</p>
+<p>For our BEM optimization problem:</p>
+<p><span class="math display">\[\begin{aligned}
+\min_{\theta,x} \quad &amp; J(S(\theta), x(\theta); \theta ) \\
+\textrm{s.t.} \quad R(\theta)=  &amp; K(\theta)\times x(\theta) - B(\theta) = 0 \\
+\end{aligned}\]</span></p>
+<p>The total derivative of the objective function with respect to design variables is:</p>
+<p><span class="math display">\[\frac{dJ}{d\theta} = \frac{\partial J}{\partial \theta} + \frac{\partial J}{\partial x}\frac{\partial x}{\partial \theta}\]</span></p>
+<p>Using the constraint equation <span class="math inline">\(R(\theta) = K(\theta)x(\theta) - B(\theta) = 0\)</span>, we can derive:</p>
+<p><span class="math display">\[\frac{\partial R}{\partial \theta} = \frac{\partial K}{\partial \theta}x + K\frac{\partial x}{\partial \theta} - \frac{\partial B}{\partial \theta} = 0\]</span></p>
+<p>Solving for <span class="math inline">\(\frac{\partial x}{\partial \theta}\)</span>:</p>
+<p><span class="math display">\[\frac{\partial x}{\partial \theta} = K^{-1}\left(\frac{\partial B}{\partial \theta} - \frac{\partial K}{\partial \theta}x\right)\]</span></p>
+<p>Substituting back into the total derivative:</p>
+<p><span class="math display">\[\frac{dJ}{d\theta} = \frac{\partial J}{\partial \theta} + \frac{\partial J}{\partial x}K^{-1}\left(\frac{\partial B}{\partial \theta} - \frac{\partial K}{\partial \theta}x\right)\]</span></p>
+<p><strong>The adjoint variable</strong> <span class="math inline">\(\lambda\)</span> is defined as the solution to:</p>
+<p><span class="math display">\[K^T\lambda = \left(\frac{\partial J}{\partial x}\right)^T\]</span></p>
+<p>This leads to the elegant expression:</p>
+<p><span class="math display">\[\frac{dJ}{d\theta} = \frac{\partial J}{\partial \theta} + \lambda^T\left(\frac{\partial B}{\partial \theta} - \frac{\partial K}{\partial \theta}x\right)\]</span></p>
+<p><strong>Computational advantage</strong>: Instead of solving <span class="math inline">\(N\)</span> forward problems (one for each design variable), we solve: 1. One forward problem: <span class="math inline">\(Kx = B\)</span> 2. One adjoint problem: <span class="math inline">\(K^T\lambda = \left(\frac{\partial J}{\partial x}\right)^T\)</span></p>
+<p>This gives us gradients with respect to all design variables at the cost of just two linear system solves, regardless of the number of design variables.</p>
+</section>
+<section id="automatic-differentiation-in-practice" class="level4">
+<h4 class="anchored" data-anchor-id="automatic-differentiation-in-practice">Automatic Differentiation in Practice</h4>
+<p><strong>Automatic Differentiation (AD)</strong> is a technique that automatically computes derivatives of functions implemented in computer code. Unlike symbolic differentiation (which manipulates mathematical expressions) or finite differences (which approximates derivatives), AD computes exact derivatives by applying the chain rule systematically through the computational graph.</p>
+<p><strong>Two main modes of AD</strong>:</p>
+<ol type="1">
+<li><p><strong>Forward Mode AD</strong>: Computes directional derivatives by propagating derivatives forward through the computation. For a function <span class="math inline">\(f: \mathbb{R}^n \rightarrow \mathbb{R}^m\)</span>, forward mode computes <span class="math inline">\(J \cdot v\)</span> where <span class="math inline">\(J\)</span> is the Jacobian and <span class="math inline">\(v\)</span> is a direction vector.</p></li>
+<li><p><strong>Reverse Mode AD</strong>: Computes gradients by propagating adjoints backward through the computation. For a scalar function <span class="math inline">\(f: \mathbb{R}^n \rightarrow \mathbb{R}\)</span>, reverse mode computes <span class="math inline">\(\nabla f\)</span> at the cost of approximately 2-4 function evaluations, regardless of <span class="math inline">\(n\)</span>.</p></li>
+</ol>
+<p><strong>For our BEM solver</strong>, reverse mode AD is particularly attractive because: - We typically have many design variables (shape parameters) but few objectives - The computational cost is independent of the number of design variables - It naturally computes the adjoint variables needed for our optimization</p>
+<p><strong>Implementation considerations</strong>:</p>
+<ol type="1">
+<li><strong>Language choice</strong>: Julia and JAX are excellent choices because they:
+<ul>
+<li>Support automatic differentiation natively</li>
+<li>Provide high-performance numerical computing</li>
+<li>Enable just-in-time compilation for efficiency</li>
+<li>Offer parallel computing capabilities</li>
+</ul></li>
+<li><strong>Computational graph</strong>: The BEM solver must be implemented in a way that maintains a differentiable computational graph:
+<ul>
+<li>All operations must be differentiable</li>
+<li>Control flow must be handled carefully</li>
+<li>Linear solvers must be differentiable (or replaced with differentiable alternatives)</li>
+</ul></li>
+<li><strong>Memory considerations</strong>: Reverse mode AD requires storing intermediate values for the backward pass, which can be memory-intensive for large problems.</li>
+</ol>
+</section>
+<section id="discrete-vs.-continuous-adjoint" class="level4">
+<h4 class="anchored" data-anchor-id="discrete-vs.-continuous-adjoint">Discrete vs.&nbsp;Continuous Adjoint</h4>
+<p><strong>Continuous adjoint</strong> methods derive adjoint equations from the continuous governing equations (PDEs) before discretization. This approach: - Provides analytical expressions for adjoint equations - May be more efficient for certain problems - Requires careful treatment of boundary conditions - Is problem-specific and requires manual derivation</p>
+<p><strong>Discrete adjoint</strong> methods work with the discretized equations and use automatic differentiation to compute the required derivatives. This approach: - Is more general and applicable to many problems - Automatically handles complex discretization schemes - Requires less manual derivation - Can be less efficient but is more robust</p>
+<p><strong>For our BEM solver</strong>, discrete adjoint with automatic differentiation is preferred because: - It handles the complex Green’s function evaluations automatically - It works with any objective function without manual derivation - It integrates seamlessly with existing optimization frameworks - It provides exact gradients (up to numerical precision)</p>
+</section>
+<section id="challenges-and-solutions" class="level4">
+<h4 class="anchored" data-anchor-id="challenges-and-solutions">Challenges and Solutions</h4>
+<p><strong>Challenge 1: Dense Linear Systems</strong> BEM methods solve dense linear systems, which are computationally expensive. Solutions include: - Using iterative solvers with preconditioning - Implementing matrix-free methods where possible - Leveraging parallel computing for large problems</p>
+<p><strong>Challenge 2: Complex-valued Computations</strong> Hydrodynamic problems involve complex numbers (frequency domain analysis). AD frameworks must handle complex differentiation correctly: - Using Wirtinger calculus for complex derivatives - Ensuring proper handling of complex conjugates - Maintaining numerical stability</p>
+<p><strong>Challenge 3: Green’s Function Evaluation</strong> The free-surface Green’s function is computationally expensive and involves special functions. Solutions include: - Implementing efficient evaluation algorithms - Using approximation methods for early design iterations - Leveraging GPU acceleration where possible</p>
+<p><strong>Challenge 4: Integration with Optimization Frameworks</strong> The differentiable BEM solver must integrate with MDO frameworks like OpenMDAO: - Providing consistent interfaces for gradient computation - Handling the coupling between different subsystems - Ensuring numerical stability across the entire optimization</p>
+</section>
+</section>
+</section>
+<section id="optimization-problem-statement" class="level2">
+<h2 class="anchored" data-anchor-id="optimization-problem-statement">Optimization Problem Statement</h2>
+<p>The hydrodynamic optimization problem can be expressed in general form as:</p>
+<p><span class="math display">\[\begin{aligned}
+\min_{\theta,x} \quad &amp; J(S(\theta), x(\theta); \theta ) \\
+\textrm{s.t.} \quad R(\theta)=  &amp; K(\theta)\times x(\theta) - B(\theta) = 0 \\
+\end{aligned}\]</span></p>
+<p>Where: - <span class="math inline">\(x\)</span> is the state variable vector (e.g., source distribution) - <span class="math inline">\(\theta\)</span> represents mesh parameters (design variables) - <span class="math inline">\((K, S)\)</span> are influence matrices (complex-valued) from free surface Green’s function evaluation and its derivative - <span class="math inline">\(J\)</span> is the objective function (e.g., Response Amplitude Operator)</p>
+<p>In this optimization, residuals from <strong>dense linear systems</strong> are driven to zero iteratively using linear solvers:</p>
+<p><span class="math display">\[R = K x - B\]</span></p>
+<p>Where <span class="math inline">\(K\)</span> is the square influence matrix between mesh panels (<span class="math inline">\(N \times N\)</span>), <span class="math inline">\(B\)</span> represents boundary conditions for diffraction and radiation problems, and <span class="math inline">\(N\)</span> is the number of mesh panels. <span class="math inline">\(K\)</span>, <span class="math inline">\(X\)</span>, and <span class="math inline">\(B\)</span> are explicitly related to mesh parameters <span class="math inline">\((\theta)\)</span>. The objective function thus depends both explicitly and implicitly on mesh parameters <span class="math inline">\((\theta)\)</span>.</p>
+<p>For multidisciplinary design optimization including hydrodynamic optimization, the number of design variables increases further to account for system objectives and subsystem couplings.</p>
+<p>For inverse design problems like this, calculating the gradient <span class="math inline">\(\frac{d J}{d\theta}\)</span> involves computing <span class="math inline">\(\frac{\partial B}{\partial \theta}\)</span>, <span class="math inline">\(\frac{\partial K}{\partial \theta}\)</span>, <span class="math inline">\(\frac{\partial x}{\partial \theta}\)</span>, and <span class="math inline">\(\frac{\partial J}{\partial \theta}\)</span>—which is only possible through automatic differentiation of the BEM solver.</p>
+</section>
+<section id="my-research-contribution" class="level2">
+<h2 class="anchored" data-anchor-id="my-research-contribution">My Research Contribution</h2>
+<p>When coupling BEM with other analyses, numerical derivatives such as finite differences can be used <span class="citation" data-cites="novelOpenMDAO">(<a href="#ref-novelOpenMDAO" role="doc-biblioref">Khanal and Haji 2023</a>)</span>. I have already implemented this as the first version of my framework, but it has issues with accuracy and convergence and may not scale well for large numbers of design variables.</p>
+<p>In contrast, the <strong>adjoint method</strong> requires only 2 solves of the linear system to obtain accurate gradients with respect to many design variables. A differentiable hydrodynamics solver is required to construct the adjoint equation.</p>
+<p>Adjoint equations to minimize wave resistance of surface ships were derived by Ragab through continuous adjoint formulation <span class="citation" data-cites="Ragab_2004">(<a href="#ref-Ragab_2004" role="doc-biblioref">Ragab and Nayfeh 2004</a>)</span>. However, this isn’t directly applicable to many offshore structures where different functionals (motions) are optimized. Unlike continuous formulation, <strong>discrete adjoint-based derivation using automatic differentiation</strong> is applicable to many objectives as long as they’re programmed in a language supporting automatic differentiation <span class="citation" data-cites="Adjoint_intro">(<a href="#ref-Adjoint_intro" role="doc-biblioref">Giles and Pierce 2000</a>)</span>.</p>
+<p><strong>My thesis aims to implement a differentiable multidisciplinary design optimization framework that integrates gradient-based optimization for large-scale offshore systems.</strong></p>
+<p>The proposed framework will:</p>
+<ol type="1">
+<li><strong>Implement a differentiable solver for hydrodynamics analysis</strong></li>
+<li><strong>Derive, implement, and integrate adjoint-based shape optimization for offshore structures</strong></li>
+<li><strong>Demonstrate differentiability and present case studies on optimization of novel offshore systems</strong></li>
+</ol>
+<p>Creating a differentiable boundary element method (BEM) solver will enable modern and complex workflows in offshore system design and optimization. <strong>Differentiability</strong> will allow for novel methods such as <strong>adjoint-based multidisciplinary optimization</strong> and more accurate data-driven methods such as <strong>physics-informed machine learning</strong>.</p>
+<p>These capabilities will significantly reduce the design cycle for early design studies of novel offshore systems.</p>
+<section id="coupled-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="coupled-derivatives">Coupled Derivatives</h3>
+<p>For multidisciplinary design optimization, <strong>Modular Analysis and Unified Derivatives (MAUD)</strong> architecture couples derivatives from several subsystems. MAUD formulates the multidisciplinary model as a nonlinear system of equations, leading to a linear equation that unifies all derivative computation methods <span class="citation" data-cites="maud">(<a href="#ref-maud" role="doc-biblioref">Hwang and Martins 2018</a>)</span>. Each subsystem can provide numerical or analytical gradients.</p>
+<p><strong>OpenMDAO</strong> <span class="citation" data-cites="Gray2019a">(<a href="#ref-Gray2019a" role="doc-biblioref">Gray et al. 2019</a>)</span>, a tool developed by NASA, implements this framework. I plan to integrate newly developed BEM adjoints into this framework. Currently, I integrate BEM in OpenMDAO using numerical derivatives approximated through finite differences <span class="citation" data-cites="novelOpenMDAO">(<a href="#ref-novelOpenMDAO" role="doc-biblioref">Khanal and Haji 2023</a>)</span>. Since this scales linearly with the number of design variables and accuracy deteriorates for nonlinear problems, it’s not appropriate for multidisciplinary analysis and optimization. My thesis aims to solve this problem.</p>
+</section>
+</section>
+<section id="boundary-element-method" class="level2">
+<h2 class="anchored" data-anchor-id="boundary-element-method">Boundary Element Method</h2>
+<p>Hydrodynamics of floating bodies is typically modeled using linear potential flow theory. Since the domain is unbounded, boundary element methods are used, requiring only boundary discretization—the surface geometry is meshed with quadrilateral panels.</p>
+<p>For each frequency of ocean waves the structure encounters, diffraction and radiation problems are solved to calculate hydrodynamic coefficients. The solution of velocity potential and radiation/diffraction forces is computed in the frequency domain.</p>
+<p>Computational cost increases with geometry discretization and the number of wave frequencies and headings. Typically, numerical complexity of BEM codes is proportional to <span class="math inline">\(O(N^2)\)</span> or <span class="math inline">\(O(N^3)\)</span> with <span class="math inline">\(N\)</span> as the number of mesh panels. The Green function is computed <span class="math inline">\(O(N^2)\)</span> times to set up the linear system, which is solved either by iterative methods with <span class="math inline">\(O(N^2)\)</span> complexity or Gauss elimination with <span class="math inline">\(O(N^3)\)</span> complexity <span class="citation" data-cites="BEMcomparison">(<a href="#ref-BEMcomparison" role="doc-biblioref">Babarit and Delhommeau 2011</a>)</span>.</p>
+<p>This limits integration within optimization loops, especially for large-scale optimization based on heuristic methods. The solution is to minimize function evaluations in optimization. Gradient-based optimization explores design space more efficiently (fewer evaluations) to reach locally optimal points.</p>
+</section>
+<section id="research-phases" class="level2">
+<h2 class="anchored" data-anchor-id="research-phases">Research Phases</h2>
+<section id="phase-1-discrete-adjoint-implementation" class="level3">
+<h3 class="anchored" data-anchor-id="phase-1-discrete-adjoint-implementation">Phase 1: Discrete Adjoint Implementation</h3>
+<p>The <strong>first phase</strong> involves deriving and setting up discrete adjoint equations for BEM. We’ll use automatic differentiation to obtain partial sensitivities required in the equation by implementing the BEM method in either <strong>Julia</strong> or <strong>Jax</strong>, as they support automatic differentiation in a discretize-then-optimize scheme.</p>
+<p>These libraries and programming languages support: - <strong>Automatic Differentiation (AD)</strong> - <strong>Parallelism</strong> - <strong>Just-in-time (JIT) compilation</strong></p>
+<p>Gradient calculations need to be performed through the iterative solver employed to solve dense linear systems in BEM methods.</p>
+<p>This method relies on known exact expressions of Green’s function. Mathematical expressions and numerical methods for free-surface Green’s function of linearized wave-structure problems in deep water and frequency domain are investigated <span class="citation" data-cites="Xie_2020">(<a href="#ref-Xie_2020" role="doc-biblioref">Xie and Liu 2020</a>)</span>. Other methods, such as approximating free-surface Green’s function using deep learning, can also be explored for early design iterations when speed is more important than accuracy.</p>
+</section>
+<section id="phase-2-mdo-framework-integration" class="level3">
+<h3 class="anchored" data-anchor-id="phase-2-mdo-framework-integration">Phase 2: MDO Framework Integration</h3>
+<p>The <strong>second phase</strong> integrates differentiable BEM into the MDO framework. Extensions could include supporting more accurate <strong>physics-informed machine learning</strong> <span class="citation" data-cites="three_NN_PDEs">(<a href="#ref-three_NN_PDEs" role="doc-biblioref">Raissi, Perdikaris, and Karniadakis 2019</a>)</span>.</p>
+<p>BEM methods require solving dense linear systems. The re-implementation will use algorithms best suited for dense matrices. A <strong>differentiable solver</strong> would provide required gradients for optimization and neural network-based approximation. Simulators implemented with automatic differentiation can be used inside machine learning models to construct more accurate reduced-order models <span class="citation" data-cites="solver_in_loop">(<a href="#ref-solver_in_loop" role="doc-biblioref">Brunton, Proctor, and Kutz 2020</a>)</span>.</p>
+</section>
+<section id="expected-a-exam-scope" class="level3">
+<h3 class="anchored" data-anchor-id="expected-a-exam-scope">Expected A-Exam Scope</h3>
+<p>I plan to take an A-exam in Spring 2024, presenting the differentiable version of the solver that derives discrete adjoints for the hydrodynamic solver using automatic differentiation in Jax or Julia.</p>
+<p>An optimization study of simple geometry (such as a compound cylinder) with analytical derivation through eigenfunction expansion will be conducted for gradient verification. Gradients will be compared with finite differences for geometries where analytical gradients are unavailable.</p>
+</section>
+</section>
+<section id="tentative-thesis-chapters" class="level2">
+<h2 class="anchored" data-anchor-id="tentative-thesis-chapters">Tentative Thesis Chapters</h2>
+<ol type="1">
+<li><strong>Multidisciplinary Design Optimization of Offshore Systems</strong> - Literature review</li>
+<li><strong>Boundary Element Method for Calculating Hydrodynamic Coefficients</strong></li>
+<li><strong>Adjoint and Automatic Differentiation of BEM Solver</strong></li>
+<li><strong>Case Studies and Applications of a Differentiable Solver</strong></li>
+</ol>
+</section>
+<section id="keywords" class="level2">
+<h2 class="anchored" data-anchor-id="keywords">Keywords</h2>
+<p>Differentiable Hydrodynamics, Multidisciplinary Design Optimization, Automatic Differentiation, Discrete Adjoint Method, Boundary Element Method, Potential Flow, Panel Code</p>
+<hr>
+<p><em>This research is conducted as part of my PhD in Systems Engineering at Cornell University, under the supervision of Dr.&nbsp;Maha Haji in the Symbiotic Engineering and Analysis Lab.</em></p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-babarit_theoretical_2015" class="csl-entry" role="listitem">
+Babarit, Aurélien. 2015. <span>“Theoretical and Numerical Aspects of the Open Source BEM Solver NEMOH.”</span> <em>Proceedings of the 11th European Wave and Tidal Energy Conference</em>.
+</div>
+<div id="ref-BEMcomparison" class="csl-entry" role="listitem">
+Babarit, Aurélien, and Gérard Delhommeau. 2011. <span>“Comparison of Boundary Element Method and Finite Element Method for Hydrodynamic Analysis of Floating Bodies.”</span> <em>Engineering Analysis with Boundary Elements</em> 35 (3): 419–28.
+</div>
+<div id="ref-solver_in_loop" class="csl-entry" role="listitem">
+Brunton, Steven L, Joshua L Proctor, and J Nathan Kutz. 2020. <span>“Neural Networks as Surrogate Models for Simulations in Engineering.”</span> <em>Annual Review of Fluid Mechanics</em> 52: 477–508.
+</div>
+<div id="ref-Adjoint_intro" class="csl-entry" role="listitem">
+Giles, Michael B, and Niles A Pierce. 2000. <span>“An Introduction to the Adjoint Approach to Design.”</span> <em>Flow, Turbulence and Combustion</em> 65 (3): 393–415.
+</div>
+<div id="ref-Gray2019a" class="csl-entry" role="listitem">
+Gray, Justin S, John T Hwang, Joaquim RR Martins, Kenneth T Moore, and Bret A Naylor. 2019. <span>“OpenMDAO: An Open-Source Framework for Multidisciplinary Design, Analysis, and Optimization.”</span> <em>Structural and Multidisciplinary Optimization</em> 59 (4): 1075–1104.
+</div>
+<div id="ref-Haghi_2014" class="csl-entry" role="listitem">
+Haghi, Reza, Saeed-Reza Sabbagh-Yazdi, and Mohammad Ghalandari. 2014. <span>“Hydrodynamic Analysis of Spar-Type Floating Offshore Wind Turbines.”</span> <em>Ocean Engineering</em> 89: 1–10.
+</div>
+<div id="ref-DAFoam" class="csl-entry" role="listitem">
+He, Ping, Charles A Mader, Joaquim RR Martins, and Kevin J Maki. 2020. <span>“DAFoam: An Open-Source Adjoint Framework for Multidisciplinary Design Optimization with OpenFOAM.”</span> <em>AIAA Journal</em> 58 (3): 1304–19.
+</div>
+<div id="ref-maud" class="csl-entry" role="listitem">
+Hwang, John T, and Joaquim RR Martins. 2018. <span>“Modular Analysis and Unified Derivatives.”</span> <em>Structural and Multidisciplinary Optimization</em> 57 (3): 1079–1107.
+</div>
+<div id="ref-jameson" class="csl-entry" role="listitem">
+Jameson, Antony. 1988. <span>“Aerodynamic Design via Control Theory.”</span> <em>Journal of Scientific Computing</em> 3 (3): 233–60.
+</div>
+<div id="ref-novelOpenMDAO" class="csl-entry" role="listitem">
+Khanal, Kapil, and Maha Haji. 2023. <span>“Novel OpenMDAO Framework for Multidisciplinary Design Optimization of Offshore Systems.”</span> <em>Proceedings of the ASME 2023 42nd International Conference on Ocean, Offshore and Arctic Engineering</em>.
+</div>
+<div id="ref-mdobook" class="csl-entry" role="listitem">
+Martins, Joaquim RR, and Andrew B Lambe. 2013. <em>Multidisciplinary Design Optimization: State of the Art</em>. SIAM.
+</div>
+<div id="ref-morison_force_1950" class="csl-entry" role="listitem">
+Morison, James R, James W Johnson, and Stephen A Schaaf. 1950. <span>“The Force Exerted by Surface Waves on Piles.”</span> <em>Journal of Petroleum Technology</em> 2 (05): 149–54.
+</div>
+<div id="ref-roadmapNREL" class="csl-entry" role="listitem">
+Musial, Walter, Philipp Beiter, Paul Spitsen, and Jake Nunemaker. 2020. <span>“Offshore Wind Energy Roadmap.”</span> <em>National Renewable Energy Laboratory</em>.
+</div>
+<div id="ref-Multipurpose" class="csl-entry" role="listitem">
+Perez-Collazo, Carlos, Deborah Greaves, and Gregorio Iglesias. 2015. <span>“Multipurpose Platforms for Marine Renewable Energy.”</span> <em>Renewable and Sustainable Energy Reviews</em> 54: 784–97.
+</div>
+<div id="ref-Ragab_2004" class="csl-entry" role="listitem">
+Ragab, Saad A, and Ali H Nayfeh. 2004. <span>“Adjoint-Based Optimization of Wave Resistance.”</span> <em>Journal of Ship Research</em> 48 (1): 1–15.
+</div>
+<div id="ref-three_NN_PDEs" class="csl-entry" role="listitem">
+Raissi, Maziar, Paris Perdikaris, and George E Karniadakis. 2019. <span>“Physics-Informed Neural Networks: A Deep Learning Framework for Solving Forward and Inverse Problems Involving Nonlinear Partial Differential Equations.”</span> <em>Journal of Computational Physics</em> 378: 686–707.
+</div>
+<div id="ref-Samareh_2001" class="csl-entry" role="listitem">
+Samareh, Jamshid A. 2001. <span>“Survey of Shape Parameterization Techniques for High-Fidelity Multidisciplinary Shape Optimization.”</span> <em>AIAA Journal</em> 39 (5): 877–84.
+</div>
+<div id="ref-mdo_1993" class="csl-entry" role="listitem">
+Sobieszczanski-Sobieski, Jaroslaw, and Raphael T Haftka. 1993. <span>“Multidisciplinary Design Optimization: An Emerging New Engineering Discipline.”</span> <em>Advances in Structural Optimization</em>, 483–96.
+</div>
+<div id="ref-Xie_2020" class="csl-entry" role="listitem">
+Xie, Zhiming, and Yuming Liu. 2020. <span>“Mathematical Expressions and Numerical Methods for the Free-Surface Green Function of the Linearized Wave-Structure Problem.”</span> <em>Journal of Engineering Mathematics</em> 120 (1): 1–25.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("^(?:http:|https:)\/\/kapilkhanal\.github\.io\/custom");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<a href="http://www.github.com">Kapil Khanal</a> ©
+<script>document.write(new Date().getFullYear())</script>
+</div>   
+    <div class="nav-footer-center">
+<p>Build on <a href="https://github.com/KapilKhanal/kapilkhanal.github.io">Quart Academic Website Template</a></p>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/KapilKhanal/kapilkhanal.github.io" target="_blank">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://bsky.app" target="_blank">
+<p><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></p>
+</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="../../posts.xml" target="_blank">
+      <i class="bi bi-rss" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

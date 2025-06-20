@@ -11,23 +11,22 @@ css: custom.css
 <!--Include academic icons or buttons-->
 {{< include /files/includes/_academic.qmd >}}
 
-Notes: \* corresponding author; <sup>GS</sup> graduate student advisee; <sup>VS</sup> visiting scholar; ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ESI [Highly Cited Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-highly-cited-papers.html) (top 1%); ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} ESI [Hot Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-hot-papers.html) (top 0.1%) 
 
-Total citations as of January 2025:
+## Publications and Conference Papers
 
-- [Web of Science](https://www.webofscience.com): 100,000 (h-index = 100)   
-- [Google Scholar](https://scholar.google.com/citations?user=qc6CJjYAAAAJ&hl=en): 179,000 (h-index = 127, i10-index = 377) 
+**Khanal, K.**, Michelén Ströfer, C. A., Ancellin, M., & Haji, M. (2024). Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis of Wave-Structure Interactions. *Applied Ocean Research*, Submitted.
 
-## Selected Work
+**Khanal, K.**, & Haji, M. N. (2024). Multi-Objective Multidisciplinary Optimization of Wave Energy Converter Array Layout and Controls. [https://dx.doi.org/10.2139/ssrn.4891821](https://dx.doi.org/10.2139/ssrn.4891821)
 
-Einstein, A., Podolsky, B., & Rosen, N. (1935). [Can quantum-mechanical description of physical reality be considered complete?](posts/paper-title/index.qmd). *Physical review*, 47(10), 777. \[[pdf](https://scholar.google.com/)\] \[[code and data](https://doi.org)\] ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1103/PhysRev.47.777" data-hide-no-mentions="true" class="altmetric-embed"></div>     
+McCabe, R., **Khanal, K.**, & Haji, M. (2024). Open-source toolbox for semi-analytical hydrodynamic coefficients via the matched eigenfunction expansion method. *UMERC Conference*, August 7, Duluth, Minnesota.
 
+**Khanal, K.**, & Haji, M. N. (2022, October 25). Multidisciplinary Design Optimization for Novel Offshore Systems. *Presentation at the openMDAO Workshop*, NASA Glenn Research Center, Cleveland, Ohio.
+
+**Khanal, K.**, McCabe, R., & Haji, M. N. (2023). Gradient-Based Design Optimization of Concentric Cylindrical Offshore Structures. *Proceedings of the SIAM Conference on Optimization (OP23)*, May 31, Seattle, Washington.
+
+**Khanal, K.**, Vitale, O., DeGoede, N., & Haji, M. (2023, October 4-6). Multi-objective Multidisciplinary Optimization of Wave Energy Converter Array Configurations and Controls. *University Marine Energy Research Community 2023 Conference*, Durham, NH, USA.
 
 <center><hr style="width:50%"></center>
-
-Einstein, A. (1965). Concerning an heuristic point of view toward the emission and transformation of light. *American Journal of Physics*, 33(5), 367. [[pdf](https://icg.isy.liu.se/en/phd-courses/quantum_foundations/references/Einstein1905b.pdf)] <span class="__dimensions_badge_embed__" data-doi="10.1038/s41560-023-01304-w" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1038/s41560-023-01304-w" data-hide-no-mentions="true" class="altmetric-embed"></div>
-
-
 
 <!--Include social share buttons-->
 
