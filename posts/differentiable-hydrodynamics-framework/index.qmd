@@ -4,9 +4,9 @@ subtitle: "My PhD Research Proposal"
 description: "Developing a differentiable boundary element method solver for hydrodynamic shape optimization of offshore structures using automatic differentiation and adjoint methods"
 author: "Kapil Khanal"
 date: 2024-01-15
+image: ""
 categories: [research, optimization, hydrodynamics, thesis]
 tags: [differentiable programming, MDO, BEM, automatic differentiation, offshore systems]
-image: MDO.png
 draft: false
 ---
 

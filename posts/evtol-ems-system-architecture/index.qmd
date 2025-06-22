@@ -1,0 +1,105 @@
+---
+title: "eVTOL Integration in Emergency Medical Services: A System Architecture Approach"
+subtitle: "Designing Affordable, High-Performance, and Equitable Air Ambulance Systems"
+author: "Kapil Khanal"
+date: "2023-12-19"
+image: "evtol.png"
+categories: [system architecture, eVTOL,systems engineering, urban mobility, research]
+tags: [emergency medical services, air ambulance, system design, urban air mobility, healthcare logistics]
+---
+
+## Project Overview
+
+**We propose to architect a system that integrates eVTOLs in emergency medical services to ensure affordability, performance, and equity.** The technical, operational, and regulatory requirements of the EMS services are fundamentally different and stringent from the air-taxi requirements, thus a design of system architecture is important. The successful integration of the air ambulance in the city emergency services will save countless lives by reducing the response time and safe transportation.
+
+## Project Scope
+
+The scope of the project is to successfully realize an integrated system of air transport for emergency medical services. It will develop models and methods necessary to deploy emergency services using the appropriate air vehicle in the urban environment. We will simulate the operational and design decisions to enumerate the architectures. 
+
+The main function of this system is transporting (process) a patient (operand) or providing immediate medical attention (process) to the hospital (operand). Our goal is to provide insight for all the stakeholders about the promise and potential of eVTOL-based emergency services and propose several reference architectures.
+
+## System Architecture Poster
+
+::: {.callout-note}
+## System Architecture Poster
+
+The following poster presents our comprehensive system architecture for integrating eVTOLs into emergency medical services:
+
+:::
+
+::: {#poster-embed}
+<iframe src="System_Architecture_Poster.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
+:::
+
+::: {.callout-tip}
+## Alternative Viewing Options
+
+- **Full Screen**: [Open poster in new tab](System_Architecture_Poster.pdf){target="_blank"}
+- **Download**: [Download PDF file](System_Architecture_Poster.pdf)
+:::
+
+## Key Research Areas
+
+### 1. System Architecture Design
+- **Multi-stakeholder Analysis**: Understanding the needs of patients, healthcare providers, emergency responders, and regulatory bodies
+- **Operational Modeling**: Developing simulation frameworks for emergency response scenarios
+- **Infrastructure Planning**: Designing vertiport networks and medical facility integration
+
+### 2. Technical Requirements
+- **Vehicle Specifications**: eVTOL design requirements for medical transport
+- **Safety Standards**: Regulatory compliance and certification pathways
+- **Performance Metrics**: Response time optimization and reliability requirements
+
+### 3. Operational Considerations
+- **Dispatch Algorithms**: Intelligent routing and resource allocation
+- **Medical Integration**: Coordination with existing emergency medical systems
+- **Cost-Benefit Analysis**: Economic feasibility and sustainability models
+
+### 4. Equity and Accessibility
+- **Geographic Coverage**: Ensuring service availability across diverse urban areas
+- **Affordability Models**: Making emergency air transport accessible to all communities
+- **Regulatory Framework**: Policy recommendations for equitable service delivery
+
+## Research Methodology
+
+Our approach combines several analytical frameworks:
+
+1. **Systems Engineering**: Structured approach to complex system design
+2. **Operations Research**: Mathematical modeling of emergency response networks
+3. **Stakeholder Analysis**: Understanding diverse requirements and constraints
+4. **Simulation Modeling**: Virtual testing of system architectures and operational scenarios
+
+## Expected Outcomes
+
+This research will deliver:
+
+- **Reference Architectures**: Multiple system design options for eVTOL EMS integration
+- **Performance Models**: Quantitative analysis of response times and service quality
+- **Implementation Roadmap**: Step-by-step guidance for system deployment
+- **Policy Recommendations**: Regulatory and operational guidelines for stakeholders
+
+## Impact and Significance
+
+The integration of eVTOLs into emergency medical services has the potential to:
+
+- **Reduce Response Times**: Faster emergency response in urban and rural areas
+- **Improve Patient Outcomes**: Quicker access to specialized medical care
+- **Enhance System Efficiency**: Better resource utilization and coordination
+- **Promote Equity**: Extend high-quality emergency care to underserved communities
+
+## Future Work
+
+Building on this system architecture study, future research directions include:
+
+- **Pilot Program Design**: Implementation of small-scale demonstration projects
+- **Technology Development**: Advancement of eVTOL capabilities for medical applications
+- **Partnership Development**: Collaboration with healthcare providers and regulatory agencies
+- **Economic Analysis**: Detailed cost-benefit studies for different deployment scenarios
+
+---
+
+*This work represents a comprehensive approach to integrating emerging air mobility technologies with critical healthcare infrastructure, with the ultimate goal of improving emergency medical services for all communities.*
+
+## Related Publications
+
+This research builds on and contributes to the broader field of urban air mobility and emergency services integration. For more information about related work in this area, please refer to the publications section of this website. 

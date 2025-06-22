@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Gang He">
-<meta name="description" content="Bridging Differentiable Programming and Engineering">
+<meta name="dcterms.date" content="2020-02-01">
+<meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
 
-<title>Kapil Khanal</title>
+<title>Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass) – Kapil Khanal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,27 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,36 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 3,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -162,12 +131,18 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Kapil Khanal">
-<meta property="og:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/files/profiles/profile1.JPG">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass) – Kapil Khanal">
+<meta property="og:description" content="Personal Portfolio of Kapil Khanal">
+<meta property="og:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/pass.png">
 <meta property="og:site_name" content="Kapil Khanal">
-<meta name="twitter:title" content="Kapil Khanal">
-<meta name="twitter:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/files/profiles/profile1.JPG">
+<meta property="og:image:height" content="674">
+<meta property="og:image:width" content="1060">
+<meta name="twitter:title" content="Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass) – Kapil Khanal">
+<meta name="twitter:description" content="Personal Portfolio of Kapil Khanal">
+<meta name="twitter:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/pass.png">
+<meta name="twitter:image-height" content="674">
+<meta name="twitter:image-width" content="1060">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -178,7 +153,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kapil Khanal</span>
     </a>
   </div>
@@ -194,15 +169,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=news">
+    <a class="dropdown-item" href="../../posts.html#category=news">
  <span class="dropdown-text">News</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts.html#category=event">
+    <a class="dropdown-item" href="../../posts.html#category=event">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./contact.html">
+    <a class="dropdown-item" href="../../contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
     </ul>
@@ -213,21 +188,21 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
         <li>
-    <a class="dropdown-item" href="./publications.html">
+    <a class="dropdown-item" href="../../publications.html">
  <span class="dropdown-text">List of Publication</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts.html#category=paper">
+    <a class="dropdown-item" href="../../posts.html#category=paper">
  <span class="dropdown-text">Selected Papers</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects.html">
+    <a class="dropdown-item" href="../../projects.html">
  <span class="dropdown-text">Grants</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -236,19 +211,19 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-outreach">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=presentation">
+    <a class="dropdown-item" href="../../posts.html#category=presentation">
  <span class="dropdown-text">Presentations</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link" href="../../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./files/kapil_resume.pdf"> 
+    <a class="nav-link" href="../../files/kapil_resume.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -261,7 +236,7 @@ window.Quarto = {
 <span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -278,23 +253,64 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#dataset-statsbomb-event-data" id="toc-dataset-statsbomb-event-data" class="nav-link" data-scroll-target="#dataset-statsbomb-event-data">Dataset: StatsBomb Event Data</a></li>
+  <li><a href="#methods-for-distributing-xg" id="toc-methods-for-distributing-xg" class="nav-link" data-scroll-target="#methods-for-distributing-xg">Methods for Distributing xG</a>
+  <ul class="collapse">
+  <li><a href="#grid-based-model" id="toc-grid-based-model" class="nav-link" data-scroll-target="#grid-based-model">1. Grid-Based Model</a></li>
+  <li><a href="#generalized-additive-model-gam" id="toc-generalized-additive-model-gam" class="nav-link" data-scroll-target="#generalized-additive-model-gam">2. Generalized Additive Model (GAM)</a></li>
+  <li><a href="#random-forest-model" id="toc-random-forest-model" class="nav-link" data-scroll-target="#random-forest-model">3. Random Forest Model</a></li>
+  </ul></li>
+  <li><a href="#model-comparison" id="toc-model-comparison" class="nav-link" data-scroll-target="#model-comparison">Model Comparison</a></li>
+  <li><a href="#creating-the-final-xg-per-pass-metric" id="toc-creating-the-final-xg-per-pass-metric" class="nav-link" data-scroll-target="#creating-the-final-xg-per-pass-metric">Creating the Final <em>xG per Pass</em> Metric</a></li>
+  <li><a href="#conclusion-and-future-work" id="toc-conclusion-and-future-work" class="nav-link" data-scroll-target="#conclusion-and-future-work">Conclusion and Future Work</a>
+  <ul class="collapse">
+  <li><a href="#code-for-analysis" id="toc-code-for-analysis" class="nav-link" data-scroll-target="#code-for-analysis">Code for Analysis</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Kapil Khanal</h1>
-</div>
+<h1 class="title">Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">data science</div>
+    <div class="quarto-category">sports analytics</div>
+    <div class="quarto-category">soccer</div>
+    <div class="quarto-category">research</div>
+  </div>
+  </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kapil Khanal </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 1, 2020</p>
+    </div>
+  </div>
   
     
   </div>
@@ -304,190 +320,150 @@ window.Quarto = {
 </header>
 
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
-
-.hero-section-with-particles {
-  position: relative;
-  background-color: #FFFFFF; /* White background */
-  overflow: hidden;
-  padding-bottom: 60px; /* Add padding to contain the 'About Me' section */
-}
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 40px 20px 30px; /* Reduced top padding */
-  font-family: 'Montserrat', sans-serif;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  font-weight: 700;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #34495e;
-}
-
-.about-section {
-  position: relative;
-  z-index: 1;
-  color: #2c3e50;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.about-section h2 {
-  text-align: left;
-}
-
-.content-section {
-  background: white;
-  padding: 40px 0;
-}
-</style>
-<div class="hero-section-with-particles">
-<div id="particles-js">
-
-</div>
-<section id="architecting-large-scale-systems" class="level1 hero-content">
-<h1>Architecting Large-Scale Systems</h1>
-<p><strong>Differentiable Programming to Engineer Complex Systems.</strong></p>
+<p>This is a project I did for my summer undergraduate experience in statistics at Carnegie Mellon University. This project can be extended to create a dynamic network model of the game if you’re interested in that and I am open to collaborate on that especially if you’re a undergraduate researcher.</p>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>Finding the value of a pass is a holy grail of soccer analytics. While Expected Goals (xG) is a ubiquitous metric for measuring the quality of a shot, it primarily rewards the player taking the shot, often overlooking the crucial build-up play. Soccer is a collaborative game, and the passes leading to a shot are often as important as the shot itself. To create a more complete picture, we need to give passes their due credit.</p>
+<p>This paper proposes a data-driven framework to calculate an “Expected Goal per Pass” (<em>xG/pass</em>) value, distributing the credit for a scoring opportunity across all players involved in the passing sequence.</p>
+<p><strong>Keywords</strong>: <em>xG per pass, credit assignment, data driven, soccer analytics</em></p>
 </section>
-<div class="container about-section">
-<div class="grid">
-<div class="g-col-12 g-col-md-4">
-<p><img src="files/profiles/profile1.JPG" class="img-fluid rounded-circle"></p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>A pass in soccer can be evaluated in terms of its risk and reward. In this paper, we propose a data-driven methodology to assign an Expected Goal (xG) value to each pass made by a player. The framework considers the quality of the pass, the collaboration within the team, and the spatial context of where the pass was made on the pitch.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="soccer.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Let’s kick it</figcaption>
+</figure>
 </div>
-<section id="about-me" class="level2 g-col-12 g-col-md-8">
-<h2 class="anchored" data-anchor-id="about-me">About Me</h2>
-<p>I am a <span style="color: #B31B1B;"><strong>doctoral candidate at Cornell University</strong></span>, specializing in <span style="color: #34568B;"><strong>systems design</strong></span>, <span style="color: #34568B;"><strong>engineering</strong></span>, and <span style="color: #34568B;"><strong>optimization</strong></span>. My work focuses on leveraging <strong>modeling</strong>, <strong>optimization</strong>, and <strong>computational techniques</strong> to advance <span style="color: #3A7D44;"><strong>sustainable technologies</strong></span>. As a member of the <strong>Symbiotic Engineering and Analysis (SEA) Lab</strong>, I collaborate on modeling and optimizing large scale renewable energy systems.</p>
-<p>With a Master’s degree in <span style="color: #34568B;"><strong>Systems Engineering</strong></span> and ongoing PhD work, I am to bridge <span style="color: #3A7D44;"><strong>theory and applications</strong></span> for <span style="color: #34568B;"><strong>large-scale systems</strong></span>. I did my undergraduate in Mathematics and Data Science from Winona State University, Minnesota.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled" style="margin-top: 25px;">
+<p>Various methods have been proposed to solve this credit assignment problem. One common approach is to simply attribute a fraction of the final shot’s xG to players who assisted. However, this method often fails to account for the quality of the individual passes and tends to over-reward forward players who are closer to the final action. Our framework aims to provide a more nuanced distribution of credit.</p>
+</section>
+<section id="dataset-statsbomb-event-data" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-statsbomb-event-data">Dataset: StatsBomb Event Data</h2>
+<p>We used event data from <a href="httpss://statsbomb.com/">StatsBomb</a>’s open data resources. This dataset logs every event in a match, including timestamps, player actions, and locations. We focused our analysis on “pass chains”—sequences of passes within a single team’s possession.</p>
+<p>A pass chain can originate anywhere on the field and may or may not end in a shot. When a chain does end in a shot, the entire sequence inherits the xG value of that shot.</p>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-💼 Bridging Research and Industry
+Placeholder for Figure 1: Pass Chain Example
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Upon completing my PhD, I am <strong>seeking full-time industry roles</strong> where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.</p>
-<div style="margin-top: 15px;">
-<p><a href="files/kapil_resume.pdf" class="btn btn-primary">View My CV</a> &nbsp; <a href="https://www.linkedin.com/in/kapilkhanal/" class="btn btn-secondary">Connect on LinkedIn</a> &nbsp; <a href="https://github.com/KapilKhanal" class="btn btn-dark">Explore My GitHub</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pass.png" class="img-fluid figure-img"></p>
+<figcaption>Pass Chain Example</figcaption>
+</figure>
 </div>
 </div>
 </div>
 </section>
-</div>
-</div>
-</div>
-<div class="content-section">
-<div class="container">
-<hr>
-<section id="research-focus" class="level2">
-<h2 class="anchored" data-anchor-id="research-focus">Research Focus</h2>
-<p>My research architects the next generation of complex engineered systems by fusing advanced computational methods. I am interested in <strong>Multidisciplinary Design Optimization (MDO)</strong> and <strong>Scientific Machine Learning</strong> this involves utilizing ideas from <strong>Differentiable methods</strong> (neural networks, adjoint methods, automatic differentiation, etc.) and other physical simulations. Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. I am also interested in <strong>Verification and Validation</strong> of large systems utilizing techniques from <strong>Uncertainty Quantification</strong> (UQ).</p>
-<hr>
+<section id="methods-for-distributing-xg" class="level2">
+<h2 class="anchored" data-anchor-id="methods-for-distributing-xg">Methods for Distributing xG</h2>
+<p>We explored several statistical methods to model the value of each pass within a chain.</p>
+<section id="grid-based-model" class="level3">
+<h3 class="anchored" data-anchor-id="grid-based-model">1. Grid-Based Model</h3>
+<p>The most intuitive approach is to divide the pitch into a grid and calculate the average xG of all pass chains originating from each grid cell. This value is then assigned to any pass starting in that cell. We used cross-validation to determine the optimal grid size.</p>
+<p>While simple, this model assumes all passes from a given area are equal, which ignores individual pass quality and player skill.</p>
 </section>
-<section id="recent-posts" class="level2">
-<h2 class="anchored" data-anchor-id="recent-posts">Recent Posts</h2>
-<p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="c29mdHdhcmUlMkNyZXNlYXJjaCUyQ0p1bGlhJTJDaHlkcm9keW5hbWljcyUyQ29wdGltaXphdGlvbg==" data-listing-date-sort="1750568400000" data-listing-file-modified-sort="1750607219971" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="678">
-<a href="./posts/marinehydro-julia-package/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/marinehydro-julia-package/julia_dots.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<strong>MarineHydro.jl</strong>: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis
-</h5>
-<div class="card-subtitle listing-subtitle">
-A Julia Package for Wave-Structure Interactions
+<section id="generalized-additive-model-gam" class="level3">
+<h3 class="anchored" data-anchor-id="generalized-additive-model-gam">2. Generalized Additive Model (GAM)</h3>
+<p>To capture the non-linear relationship between pass location and its value, we used a Generalized Additive Model (GAM). This model provides a smooth estimate of xG across the entire pitch based on the precise starting coordinates of a pass.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jun 22, 2025
+<div class="callout-title-container flex-fill">
+Placeholder for Figure 3: GAM Smooth Estimates
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="gam.png" class="img-fluid figure-img"></p>
+<figcaption>GAM Smooth Estimates</figcaption>
+</figure>
 </div>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Y29uZmVyZW5jZSUyQ01ETyUyQ29wdGltaXphdGlvbiUyQ3Jlc2VhcmNo" data-listing-date-sort="1745298000000" data-listing-file-modified-sort="1750604735961" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="688">
-<a href="./posts/aiaa-scitech-2026-submission/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs
-</h5>
-<div class="card-subtitle listing-subtitle">
-Extending the Isoperformance Method for Feasibility in Coupled Multidisciplinary Systems
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 22, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cmVzZWFyY2glMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNoeWRyb2R5bmFtaWNzJTJDSnVsaWE=" data-listing-date-sort="1722315600000" data-listing-file-modified-sort="1750607990507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="610">
-<a href="./posts/neural-networks-bem/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/neural-networks-bem/nn.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Enhancing the Boundary Element Method with Scientific Machine Learning
-</h5>
-<div class="card-subtitle listing-subtitle">
-A Hybrid Approach for Solving Diffraction-Radiation Problems
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 30, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p align="right">
-<a href="./posts.html">All Posts »</a>
-</p>
 </section>
+<section id="random-forest-model" class="level3">
+<h3 class="anchored" data-anchor-id="random-forest-model">3. Random Forest Model</h3>
+<p>Finally, we built a Random Forest model to incorporate a richer set of features beyond just location. These features included: - <strong>Pass Length and Duration</strong>: How far and how quickly the ball traveled. - <strong>Network Metrics</strong>: We constructed a passing network for each team to measure player influence. Metrics like <strong>PageRank</strong> and <strong>Betweenness Centrality</strong> were calculated for each player (node) in the network.</p>
+<p>The model, built with 500 trees, prioritized pass location and the PageRank of the receiving player, indicating that high-value passes are those made near the opponent’s goal to influential players.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Placeholder for Figure 4 &amp; 5: Network and Feature Importance
 </div>
 </div>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="files/includes/particles-config.js"></script>
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="network.png" class="img-fluid figure-img"></p>
+<figcaption>Network and Feature Importance</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="model-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="model-comparison">Model Comparison</h2>
+<p>We compared the models using Mean Squared Error (MSE) on a 70/30 train-test split. The Random Forest model performed the best, confirming the presence of non-linear relationships in the data.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>MSE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Grid-Based Model</td>
+<td>0.043</td>
+</tr>
+<tr class="even">
+<td>Generalized Additive Model</td>
+<td>0.0034</td>
+</tr>
+<tr class="odd">
+<td><strong>Random Forest Model</strong></td>
+<td><strong>0.0024</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="creating-the-final-xg-per-pass-metric" class="level2">
+<h2 class="anchored" data-anchor-id="creating-the-final-xg-per-pass-metric">Creating the Final <em>xG per Pass</em> Metric</h2>
+<p>Using the predictions from our Random Forest model, we re-normalized the values within each pass chain to create the final metric. The formula is:</p>
+<p><span class="math display">\[
+\textit{xG per pass}_{i} = \frac{f(\text{pass}_i)}{\sum_{j=1}^{n}f(\text{pass}_{j})} \times \textit{xG from shot}
+\]</span></p>
+<p>where <span class="math inline">\(f(\text{pass}_i)\)</span> is the predicted value for pass <em>i</em> from the model, and <em>n</em> is the total number of passes in the chain.</p>
+</section>
+<section id="conclusion-and-future-work" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-and-future-work">Conclusion and Future Work</h2>
+<p>This framework provides a quantitative method to credit players for their contribution to creating scoring chances. It rewards passes made closer to the opponent’s goal and those made to influential teammates. This metric can be used to rank players based on their creative passing ability.</p>
+<p>For future work, we plan to incorporate team tactics, the positions of nearby players, and a method to penalize “bad” passes that result in a loss of possession.</p>
+<section id="code-for-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="code-for-analysis">Code for Analysis</h3>
+<p>The code for this project is available on GitHub: <a href="https://github.com/KapilKhanal/Soccer_CMUCamp">https://github.com/KapilKhanal/Soccer_CMUCamp</a></p>
+</section>
+<section id="acknowledgements" class="level3">
+<h3 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h3>
+<p>I would like to thank Dr.&nbsp;Kostas Pelechrinis of the University of Pittsburgh for helping with the project and Dr.&nbsp;Tisha Hooks of Winona State University for reviewing the paper. This paper is a continuation of the work I did for my summer undergraduate experience in statistics at Carnegie Mellon University.</p>
 
 
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -918,7 +894,7 @@ Jul 30, 2024
 </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank">
+    <a class="nav-link" href="../../posts.xml" target="_blank">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>

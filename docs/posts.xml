@@ -328,6 +328,7 @@ font-style: inherit;">calculate_radiation_forces</span>(mesh, ζ, ω)</span></co
   <category>optimization</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/marinehydro-julia-package/</guid>
   <pubDate>Sun, 22 Jun 2025 05:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/marinehydro-julia-package/julia_dots.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs</title>
@@ -427,6 +428,77 @@ font-style: inherit;">calculate_radiation_forces</span>(mesh, ζ, ω)</span></co
   <category>research</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/aiaa-scitech-2026-submission/</guid>
   <pubDate>Tue, 22 Apr 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Enhancing the Boundary Element Method with Scientific Machine Learning</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/neural-networks-bem/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The Boundary Element Method (BEM) is a cornerstone of computational hydrodynamics, widely used to solve the three-dimensional diffraction-radiation problem for floating bodies. BEM involves transforming a partial differential equation (PDE) into a boundary integral equation using Green’s theorem, which is then solved numerically. A key challenge in BEM is the numerical evaluation of the Green’s function, particularly its wave-related terms. These computations typically scale poorly, often at <img src="https://latex.codecogs.com/png.latex?O(N%5E3)"> with the number of panels (<img src="https://latex.codecogs.com/png.latex?N">), creating a significant bottleneck. This is especially problematic in large-scale optimization tasks for offshore structures, which involve many panels and design parameters.</p>
+<p>This creates a classic trade-off: <strong>accuracy vs.&nbsp;efficiency</strong>. We propose adding a third dimension to this trade-off: <strong>the ease of numerical differentiation</strong>. While surrogate models and semi-analytical methods exist, we introduce a hybrid approach that leverages a <strong>physics-informed neural network (PINN)</strong> to enhance the traditional BEM program.</p>
+</section>
+<section id="neural-networks-in-scientific-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="neural-networks-in-scientific-machine-learning">Neural Networks in Scientific Machine Learning</h2>
+<p>Neural networks have a growing history in scientific machine learning, with recent publications demonstrating their power in hydrodynamics . However, a well-known challenge is that standard neural networks often struggle to learn periodic and oscillatory functions, which are fundamental to wave physics.</p>
+<p>Several research avenues have explored solutions to this, including: - Transforming data into the Fourier space. - Developing novel activation functions. - Using deeper network architectures.</p>
+<p>We’re exploring the use of neural networks to approximate the Green’s function and integrate it into our in-house BEM solver - <a href="https://github.com/symbiotic-engineering/MarineHydro.jl">MarineHydro.jl</a>.</p>
+<p><strong>This is a work in progress.</strong></p>
+<!-- ## Model Architecture
+
+We use a fully connected neural network with a `[2, 30, 30, 30, 30, 30, 30, 30, 1]` architecture (input, hidden layers, output). While deeper networks can improve generalization, they also increase inference time, creating a trade-off between model performance and speed.
+
+
+![Neural Network Architecture](nn.png)
+
+To better capture the oscillatory nature of the problem, we adopt two specialized activation functions:
+1.  **Trainable Rational Activation Function**: Used for most hidden layers.
+2.  **Oscillatory Activation Function**: $x + \sin^2(x)$, used for the final hidden layer.
+
+Computational experiments suggest this combination yields the best performance. The rational activation function is defined as:
+
+$$
+F(x) = \frac{\sum_{i=0}^{r_p}a_i x^i}{\sum_{j=0}^{r_q}b_j x^j}, \quad a_{r_p} \neq 0, b_{r_q} \neq 0
+$$
+
+This neural network-based global approximation aims to be as fast as older, less accurate methods (like Wu et al.'s approximation) while being as accurate as more modern, computationally intensive ones (like Newman's derivation), all while generalizing well to domains outside the training data.
+
+## Loss Function: A Physics-Informed Approach
+
+A key to successfully training a network on a physical problem is to inform it about the underlying physics. Since the terms of the Green's function satisfy the Laplace equation, we can build this constraint directly into the loss function. Specifically, we enforce the following condition:
+
+$$
+\nabla^2 F = \frac{1}{X} \frac{\partial F}{\partial X}  + \frac{\partial^2 F}{\partial Y^2} + \frac{\partial^2 F}{\partial X^2} = 0
+$$ -->
+<!-- Our loss function penalizes not only incorrect predicted values but also **incorrect gradients**. We use automatic differentiation to compute the gradients of the network's output with respect to its inputs ($\nabla_X \hat{NN}, \nabla_Y \hat{NN}$) and include a term in the loss that pushes these gradients to satisfy the Laplace equation. This ensures the model learns solutions that are not just accurate but also physically consistent. -->
+<hr>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<ul>
+<li>John, F. (1950). On the motion of floating bodies II. <em>Communications on Pure and Applied Mathematics</em>.</li>
+<li>Xie, M., et al.&nbsp;(2018). A review of Green’s functions for marine hydrodynamics. <em>Journal of Hydrodynamics</em>.</li>
+<li>Huang, G., et al.&nbsp;(2022). Deep-learning-based fast-prediction method for hydrodynamic performance of a ship sailing in waves. <em>Ocean Engineering</em>.</li>
+<li>Zhan, S., et al.&nbsp;(2023). A review of deep learning in naval architecture and ocean engineering. <em>Ocean Engineering</em>.</li>
+<li>Boulle, N., et al.&nbsp;(2020). Rational neural networks. <em>arXiv preprint</em>.</li>
+</ul>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>research</category>
+  <category>machine learning</category>
+  <category>hydrodynamics</category>
+  <category>Julia</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/neural-networks-bem/</guid>
+  <pubDate>Tue, 30 Jul 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/neural-networks-bem/nn.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization</title>
@@ -779,7 +851,316 @@ Xie, Zhiming, and Yuming Liu. 2020. <span>“Mathematical Expressions and Numeri
   <category>thesis</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/differentiable-hydrodynamics-framework/</guid>
   <pubDate>Mon, 15 Jan 2024 06:00:00 GMT</pubDate>
-  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/differentiable-hydrodynamics-framework/MDO.png" medium="image" type="image/png" height="115" width="144"/>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/differentiable-hydrodynamics-framework" medium="image"/>
+</item>
+<item>
+  <title>eVTOL Integration in Emergency Medical Services: A System Architecture Approach</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/evtol-ems-system-architecture/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p><strong>We propose to architect a system that integrates eVTOLs in emergency medical services to ensure affordability, performance, and equity.</strong> The technical, operational, and regulatory requirements of the EMS services are fundamentally different and stringent from the air-taxi requirements, thus a design of system architecture is important. The successful integration of the air ambulance in the city emergency services will save countless lives by reducing the response time and safe transportation.</p>
+</section>
+<section id="project-scope" class="level2">
+<h2 class="anchored" data-anchor-id="project-scope">Project Scope</h2>
+<p>The scope of the project is to successfully realize an integrated system of air transport for emergency medical services. It will develop models and methods necessary to deploy emergency services using the appropriate air vehicle in the urban environment. We will simulate the operational and design decisions to enumerate the architectures.</p>
+<p>The main function of this system is transporting (process) a patient (operand) or providing immediate medical attention (process) to the hospital (operand). Our goal is to provide insight for all the stakeholders about the promise and potential of eVTOL-based emergency services and propose several reference architectures.</p>
+</section>
+<section id="system-architecture-poster" class="level2">
+<h2 class="anchored" data-anchor-id="system-architecture-poster">System Architecture Poster</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+System Architecture Poster
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The following poster presents our comprehensive system architecture for integrating eVTOLs into emergency medical services:</p>
+</div>
+</div>
+<div id="poster-embed">
+<iframe src="System_Architecture_Poster.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 8px;">
+</iframe>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Alternative Viewing Options
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Full Screen</strong>: <a href="System_Architecture_Poster.pdf" target="_blank">Open poster in new tab</a></li>
+<li><strong>Download</strong>: <a href="System_Architecture_Poster.pdf">Download PDF file</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="key-research-areas" class="level2">
+<h2 class="anchored" data-anchor-id="key-research-areas">Key Research Areas</h2>
+<section id="system-architecture-design" class="level3">
+<h3 class="anchored" data-anchor-id="system-architecture-design">1. System Architecture Design</h3>
+<ul>
+<li><strong>Multi-stakeholder Analysis</strong>: Understanding the needs of patients, healthcare providers, emergency responders, and regulatory bodies</li>
+<li><strong>Operational Modeling</strong>: Developing simulation frameworks for emergency response scenarios</li>
+<li><strong>Infrastructure Planning</strong>: Designing vertiport networks and medical facility integration</li>
+</ul>
+</section>
+<section id="technical-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="technical-requirements">2. Technical Requirements</h3>
+<ul>
+<li><strong>Vehicle Specifications</strong>: eVTOL design requirements for medical transport</li>
+<li><strong>Safety Standards</strong>: Regulatory compliance and certification pathways</li>
+<li><strong>Performance Metrics</strong>: Response time optimization and reliability requirements</li>
+</ul>
+</section>
+<section id="operational-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="operational-considerations">3. Operational Considerations</h3>
+<ul>
+<li><strong>Dispatch Algorithms</strong>: Intelligent routing and resource allocation</li>
+<li><strong>Medical Integration</strong>: Coordination with existing emergency medical systems</li>
+<li><strong>Cost-Benefit Analysis</strong>: Economic feasibility and sustainability models</li>
+</ul>
+</section>
+<section id="equity-and-accessibility" class="level3">
+<h3 class="anchored" data-anchor-id="equity-and-accessibility">4. Equity and Accessibility</h3>
+<ul>
+<li><strong>Geographic Coverage</strong>: Ensuring service availability across diverse urban areas</li>
+<li><strong>Affordability Models</strong>: Making emergency air transport accessible to all communities</li>
+<li><strong>Regulatory Framework</strong>: Policy recommendations for equitable service delivery</li>
+</ul>
+</section>
+</section>
+<section id="research-methodology" class="level2">
+<h2 class="anchored" data-anchor-id="research-methodology">Research Methodology</h2>
+<p>Our approach combines several analytical frameworks:</p>
+<ol type="1">
+<li><strong>Systems Engineering</strong>: Structured approach to complex system design</li>
+<li><strong>Operations Research</strong>: Mathematical modeling of emergency response networks</li>
+<li><strong>Stakeholder Analysis</strong>: Understanding diverse requirements and constraints</li>
+<li><strong>Simulation Modeling</strong>: Virtual testing of system architectures and operational scenarios</li>
+</ol>
+</section>
+<section id="expected-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="expected-outcomes">Expected Outcomes</h2>
+<p>This research will deliver:</p>
+<ul>
+<li><strong>Reference Architectures</strong>: Multiple system design options for eVTOL EMS integration</li>
+<li><strong>Performance Models</strong>: Quantitative analysis of response times and service quality</li>
+<li><strong>Implementation Roadmap</strong>: Step-by-step guidance for system deployment</li>
+<li><strong>Policy Recommendations</strong>: Regulatory and operational guidelines for stakeholders</li>
+</ul>
+</section>
+<section id="impact-and-significance" class="level2">
+<h2 class="anchored" data-anchor-id="impact-and-significance">Impact and Significance</h2>
+<p>The integration of eVTOLs into emergency medical services has the potential to:</p>
+<ul>
+<li><strong>Reduce Response Times</strong>: Faster emergency response in urban and rural areas</li>
+<li><strong>Improve Patient Outcomes</strong>: Quicker access to specialized medical care</li>
+<li><strong>Enhance System Efficiency</strong>: Better resource utilization and coordination</li>
+<li><strong>Promote Equity</strong>: Extend high-quality emergency care to underserved communities</li>
+</ul>
+</section>
+<section id="future-work" class="level2">
+<h2 class="anchored" data-anchor-id="future-work">Future Work</h2>
+<p>Building on this system architecture study, future research directions include:</p>
+<ul>
+<li><strong>Pilot Program Design</strong>: Implementation of small-scale demonstration projects</li>
+<li><strong>Technology Development</strong>: Advancement of eVTOL capabilities for medical applications</li>
+<li><strong>Partnership Development</strong>: Collaboration with healthcare providers and regulatory agencies</li>
+<li><strong>Economic Analysis</strong>: Detailed cost-benefit studies for different deployment scenarios</li>
+</ul>
+<hr>
+<p><em>This work represents a comprehensive approach to integrating emerging air mobility technologies with critical healthcare infrastructure, with the ultimate goal of improving emergency medical services for all communities.</em></p>
+</section>
+<section id="related-publications" class="level2">
+<h2 class="anchored" data-anchor-id="related-publications">Related Publications</h2>
+<p>This research builds on and contributes to the broader field of urban air mobility and emergency services integration. For more information about related work in this area, please refer to the publications section of this website.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>system architecture</category>
+  <category>eVTOL</category>
+  <category>systems engineering</category>
+  <category>urban mobility</category>
+  <category>research</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/evtol-ems-system-architecture/</guid>
+  <pubDate>Tue, 19 Dec 2023 06:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/evtol-ems-system-architecture/evtol.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This is a project I did for my summer undergraduate experience in statistics at Carnegie Mellon University. This project can be extended to create a dynamic network model of the game if you’re interested in that and I am open to collaborate on that especially if you’re a undergraduate researcher.</p>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>Finding the value of a pass is a holy grail of soccer analytics. While Expected Goals (xG) is a ubiquitous metric for measuring the quality of a shot, it primarily rewards the player taking the shot, often overlooking the crucial build-up play. Soccer is a collaborative game, and the passes leading to a shot are often as important as the shot itself. To create a more complete picture, we need to give passes their due credit.</p>
+<p>This paper proposes a data-driven framework to calculate an “Expected Goal per Pass” (<em>xG/pass</em>) value, distributing the credit for a scoring opportunity across all players involved in the passing sequence.</p>
+<p><strong>Keywords</strong>: <em>xG per pass, credit assignment, data driven, soccer analytics</em></p>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>A pass in soccer can be evaluated in terms of its risk and reward. In this paper, we propose a data-driven methodology to assign an Expected Goal (xG) value to each pass made by a player. The framework considers the quality of the pass, the collaboration within the team, and the spatial context of where the pass was made on the pitch.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/soccer.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Let’s kick it</figcaption>
+</figure>
+</div>
+<p>Various methods have been proposed to solve this credit assignment problem. One common approach is to simply attribute a fraction of the final shot’s xG to players who assisted. However, this method often fails to account for the quality of the individual passes and tends to over-reward forward players who are closer to the final action. Our framework aims to provide a more nuanced distribution of credit.</p>
+</section>
+<section id="dataset-statsbomb-event-data" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-statsbomb-event-data">Dataset: StatsBomb Event Data</h2>
+<p>We used event data from <a href="httpss://statsbomb.com/">StatsBomb</a>’s open data resources. This dataset logs every event in a match, including timestamps, player actions, and locations. We focused our analysis on “pass chains”—sequences of passes within a single team’s possession.</p>
+<p>A pass chain can originate anywhere on the field and may or may not end in a shot. When a chain does end in a shot, the entire sequence inherits the xG value of that shot.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Placeholder for Figure 1: Pass Chain Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/pass.png" class="img-fluid figure-img"></p>
+<figcaption>Pass Chain Example</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="methods-for-distributing-xg" class="level2">
+<h2 class="anchored" data-anchor-id="methods-for-distributing-xg">Methods for Distributing xG</h2>
+<p>We explored several statistical methods to model the value of each pass within a chain.</p>
+<section id="grid-based-model" class="level3">
+<h3 class="anchored" data-anchor-id="grid-based-model">1. Grid-Based Model</h3>
+<p>The most intuitive approach is to divide the pitch into a grid and calculate the average xG of all pass chains originating from each grid cell. This value is then assigned to any pass starting in that cell. We used cross-validation to determine the optimal grid size.</p>
+<p>While simple, this model assumes all passes from a given area are equal, which ignores individual pass quality and player skill.</p>
+</section>
+<section id="generalized-additive-model-gam" class="level3">
+<h3 class="anchored" data-anchor-id="generalized-additive-model-gam">2. Generalized Additive Model (GAM)</h3>
+<p>To capture the non-linear relationship between pass location and its value, we used a Generalized Additive Model (GAM). This model provides a smooth estimate of xG across the entire pitch based on the precise starting coordinates of a pass.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Placeholder for Figure 3: GAM Smooth Estimates
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/gam.png" class="img-fluid figure-img"></p>
+<figcaption>GAM Smooth Estimates</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="random-forest-model" class="level3">
+<h3 class="anchored" data-anchor-id="random-forest-model">3. Random Forest Model</h3>
+<p>Finally, we built a Random Forest model to incorporate a richer set of features beyond just location. These features included: - <strong>Pass Length and Duration</strong>: How far and how quickly the ball traveled. - <strong>Network Metrics</strong>: We constructed a passing network for each team to measure player influence. Metrics like <strong>PageRank</strong> and <strong>Betweenness Centrality</strong> were calculated for each player (node) in the network.</p>
+<p>The model, built with 500 trees, prioritized pass location and the PageRank of the receiving player, indicating that high-value passes are those made near the opponent’s goal to influential players.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Placeholder for Figure 4 &amp; 5: Network and Feature Importance
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/network.png" class="img-fluid figure-img"></p>
+<figcaption>Network and Feature Importance</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="model-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="model-comparison">Model Comparison</h2>
+<p>We compared the models using Mean Squared Error (MSE) on a 70/30 train-test split. The Random Forest model performed the best, confirming the presence of non-linear relationships in the data.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>MSE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Grid-Based Model</td>
+<td>0.043</td>
+</tr>
+<tr class="even">
+<td>Generalized Additive Model</td>
+<td>0.0034</td>
+</tr>
+<tr class="odd">
+<td><strong>Random Forest Model</strong></td>
+<td><strong>0.0024</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="creating-the-final-xg-per-pass-metric" class="level2">
+<h2 class="anchored" data-anchor-id="creating-the-final-xg-per-pass-metric">Creating the Final <em>xG per Pass</em> Metric</h2>
+<p>Using the predictions from our Random Forest model, we re-normalized the values within each pass chain to create the final metric. The formula is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctextit%7BxG%20per%20pass%7D_%7Bi%7D%20=%20%5Cfrac%7Bf(%5Ctext%7Bpass%7D_i)%7D%7B%5Csum_%7Bj=1%7D%5E%7Bn%7Df(%5Ctext%7Bpass%7D_%7Bj%7D)%7D%20%5Ctimes%20%5Ctextit%7BxG%20from%20shot%7D%0A"></p>
+<p>where <img src="https://latex.codecogs.com/png.latex?f(%5Ctext%7Bpass%7D_i)"> is the predicted value for pass <em>i</em> from the model, and <em>n</em> is the total number of passes in the chain.</p>
+</section>
+<section id="conclusion-and-future-work" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-and-future-work">Conclusion and Future Work</h2>
+<p>This framework provides a quantitative method to credit players for their contribution to creating scoring chances. It rewards passes made closer to the opponent’s goal and those made to influential teammates. This metric can be used to rank players based on their creative passing ability.</p>
+<p>For future work, we plan to incorporate team tactics, the positions of nearby players, and a method to penalize “bad” passes that result in a loss of possession.</p>
+<section id="code-for-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="code-for-analysis">Code for Analysis</h3>
+<p>The code for this project is available on GitHub: <a href="https://github.com/KapilKhanal/Soccer_CMUCamp">https://github.com/KapilKhanal/Soccer_CMUCamp</a></p>
+</section>
+<section id="acknowledgements" class="level3">
+<h3 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h3>
+<p>I would like to thank Dr.&nbsp;Kostas Pelechrinis of the University of Pittsburgh for helping with the project and Dr.&nbsp;Tisha Hooks of Winona State University for reviewing the paper. This paper is a continuation of the work I did for my summer undergraduate experience in statistics at Carnegie Mellon University.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>data science</category>
+  <category>sports analytics</category>
+  <category>soccer</category>
+  <category>research</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/</guid>
+  <pubDate>Sat, 01 Feb 2020 06:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/pass.png" medium="image" type="image/png" height="92" width="144"/>
 </item>
 </channel>
 </rss>

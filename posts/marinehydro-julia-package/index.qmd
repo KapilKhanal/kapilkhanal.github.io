@@ -3,6 +3,7 @@ title: "**MarineHydro.jl**: A Fully Differentiable Boundary Element Solver for H
 subtitle: "A Julia Package for Wave-Structure Interactions"
 author: "Kapil Khanal"
 date: "2025-06-22"
+image: "julia_dots.png"
 categories: [software, research, Julia, hydrodynamics, optimization]
 tags: [boundary element method, automatic differentiation, marine hydrodynamics, wave energy converters, Julia programming]
 ---
