@@ -83,7 +83,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 3,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -404,7 +405,7 @@ window.Quarto = {
 <hr>
 <section id="research-focus" class="level2">
 <h2 class="anchored" data-anchor-id="research-focus">Research Focus</h2>
-<p>My research architects the next generation of complex engineered systems by fusing advanced computational methods. I operate at the confluence of <strong>Multidisciplinary Design Optimization (MDO)</strong> and <strong>Scientific Machine Learning</strong>, with a focus on creating novel frameworks for <strong>Differentiable Hydrodynamics</strong> and other physical simulations. Central to my approach is the use of <strong>Adjoint-Based Sensitivity Analysis</strong> to enable efficient, large-scale <strong>PDE-Constrained Optimization</strong>. Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures.</p>
+<p>My research architects the next generation of complex engineered systems by fusing advanced computational methods. I am interested in <strong>Multidisciplinary Design Optimization (MDO)</strong> and <strong>Scientific Machine Learning</strong> this involves utilizing ideas from <strong>Differentiable methods</strong> (neural networks, adjoint methods, automatic differentiation, etc.) and other physical simulations. Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. I am also interested in <strong>Verification and Validation</strong> of large systems utilizing techniques from <strong>Uncertainty Quantification</strong> (UQ).</p>
 <hr>
 </section>
 <section id="recent-posts" class="level2">
@@ -412,7 +413,45 @@ window.Quarto = {
 <p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
 <div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29uZmVyZW5jZSUyQ3Jlc2VhcmNoJTJDb3B0aW1pemF0aW9u" data-listing-date-sort="1721952000000" data-listing-file-modified-sort="1750447187709" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="253">
+<div class="g-col-1" data-index="0" data-categories="c29mdHdhcmUlMkNyZXNlYXJjaCUyQ0p1bGlhJTJDaHlkcm9keW5hbWljcyUyQ29wdGltaXphdGlvbg==" data-listing-date-sort="1750550400000" data-listing-file-modified-sort="1750605460935" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="678">
+<a href="./posts/marinehydro-julia-package/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+<strong>MarineHydro.jl</strong>: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis
+</h5>
+<div class="card-subtitle listing-subtitle">
+A Julia Package for Wave-Structure Interactions
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun 22, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Y29uZmVyZW5jZSUyQ01ETyUyQ29wdGltaXphdGlvbiUyQ3Jlc2VhcmNo" data-listing-date-sort="1745280000000" data-listing-file-modified-sort="1750605460934" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="688">
+<a href="./posts/aiaa-scitech-2026-submission/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs
+</h5>
+<div class="card-subtitle listing-subtitle">
+Extending the Isoperformance Method for Feasibility in Coupled Multidisciplinary Systems
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Apr 22, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Y29uZmVyZW5jZSUyQ3Jlc2VhcmNoJTJDb3B0aW1pemF0aW9u" data-listing-date-sort="1721952000000" data-listing-file-modified-sort="1750605460935" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="253">
 <a href="./posts/idetc-2025-submission/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -428,46 +467,6 @@ Submission to the ASME 2025 IDETC/CIE Conference
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
 Jul 26, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="TURPJTJDb3B0aW1pemF0aW9uJTJDcmVzZWFyY2g=" data-listing-date-sort="1721952000000" data-listing-file-modified-sort="1750447187708" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1185">
-<a href="./posts/gradient-based-optimization/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Gradient-Based Optimization for Large Systems
-</h5>
-<div class="card-subtitle listing-subtitle">
-A Deep Dive into MDO Architectures, Solvers, and Simulators
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 26, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cmVzZWFyY2glMkNvcHRpbWl6YXRpb24lMkNoeWRyb2R5bmFtaWNzJTJDdGhlc2lz" data-listing-date-sort="1705276800000" data-listing-file-modified-sort="1750447187708" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2508">
-<a href="./posts/differentiable-hydrodynamics-framework/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/differentiable-hydrodynamics-framework/MDO.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems
-</h5>
-<div class="card-subtitle listing-subtitle">
-My PhD Research Proposal
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jan 15, 2024
 </div>
 </div>
 </div>
