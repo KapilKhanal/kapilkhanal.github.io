@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Gang He">
-<meta name="description" content="Bridging Differentiable Programming and Engineering">
+<meta name="dcterms.date" content="2023-12-19">
+<meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
 
-<title>Kapil Khanal</title>
+<title>eVTOL Integration in Emergency Medical Services: A System Architecture Approach – Kapil Khanal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,27 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ac00eefc3da0d19490f9776e29124d6b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ac00eefc3da0d19490f9776e29124d6b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,36 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 3,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -132,42 +101,19 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Kapil Khanal">
-<meta property="og:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/files/profiles/profile1.JPG">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="eVTOL Integration in Emergency Medical Services: A System Architecture Approach – Kapil Khanal">
+<meta property="og:description" content="Designing Affordable, High-Performance, and Equitable Air Ambulance Systems">
+<meta property="og:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/evtol-ems-system-architecture/evtol.png">
 <meta property="og:site_name" content="Kapil Khanal">
-<meta name="twitter:title" content="Kapil Khanal">
-<meta name="twitter:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/files/profiles/profile1.JPG">
+<meta property="og:image:height" content="183">
+<meta property="og:image:width" content="275">
+<meta name="twitter:title" content="eVTOL Integration in Emergency Medical Services: A System Architecture Approach – Kapil Khanal">
+<meta name="twitter:description" content="Designing Affordable, High-Performance, and Equitable Air Ambulance Systems">
+<meta name="twitter:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/evtol-ems-system-architecture/evtol.png">
+<meta name="twitter:image-height" content="183">
+<meta name="twitter:image-width" content="275">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -178,7 +124,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kapil Khanal</span>
     </a>
   </div>
@@ -194,15 +140,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=news">
+    <a class="dropdown-item" href="../../posts.html#category=news">
  <span class="dropdown-text">News</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts.html#category=event">
+    <a class="dropdown-item" href="../../posts.html#category=event">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./contact.html">
+    <a class="dropdown-item" href="../../contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
     </ul>
@@ -213,21 +159,21 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
         <li>
-    <a class="dropdown-item" href="./publications.html">
+    <a class="dropdown-item" href="../../publications.html">
  <span class="dropdown-text">List of Publication</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts.html#category=paper">
+    <a class="dropdown-item" href="../../posts.html#category=paper">
  <span class="dropdown-text">Selected Papers</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects.html">
+    <a class="dropdown-item" href="../../projects.html">
  <span class="dropdown-text">Grants</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -236,19 +182,19 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-outreach">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=presentation">
+    <a class="dropdown-item" href="../../posts.html#category=presentation">
  <span class="dropdown-text">Presentations</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link" href="../../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./files/kapil_resume.pdf"> 
+    <a class="nav-link" href="../../files/kapil_resume.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -261,7 +207,7 @@ window.Quarto = {
 <span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -278,23 +224,65 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#project-scope" id="toc-project-scope" class="nav-link" data-scroll-target="#project-scope">Project Scope</a></li>
+  <li><a href="#system-architecture-poster" id="toc-system-architecture-poster" class="nav-link" data-scroll-target="#system-architecture-poster">System Architecture Poster</a></li>
+  <li><a href="#key-research-areas" id="toc-key-research-areas" class="nav-link" data-scroll-target="#key-research-areas">Key Research Areas</a>
+  <ul class="collapse">
+  <li><a href="#system-architecture-design" id="toc-system-architecture-design" class="nav-link" data-scroll-target="#system-architecture-design">1. System Architecture Design</a></li>
+  <li><a href="#technical-requirements" id="toc-technical-requirements" class="nav-link" data-scroll-target="#technical-requirements">2. Technical Requirements</a></li>
+  <li><a href="#operational-considerations" id="toc-operational-considerations" class="nav-link" data-scroll-target="#operational-considerations">3. Operational Considerations</a></li>
+  <li><a href="#equity-and-accessibility" id="toc-equity-and-accessibility" class="nav-link" data-scroll-target="#equity-and-accessibility">4. Equity and Accessibility</a></li>
+  </ul></li>
+  <li><a href="#research-methodology" id="toc-research-methodology" class="nav-link" data-scroll-target="#research-methodology">Research Methodology</a></li>
+  <li><a href="#expected-outcomes" id="toc-expected-outcomes" class="nav-link" data-scroll-target="#expected-outcomes">Expected Outcomes</a></li>
+  <li><a href="#impact-and-significance" id="toc-impact-and-significance" class="nav-link" data-scroll-target="#impact-and-significance">Impact and Significance</a></li>
+  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work">Future Work</a></li>
+  <li><a href="#related-publications" id="toc-related-publications" class="nav-link" data-scroll-target="#related-publications">Related Publications</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Kapil Khanal</h1>
-</div>
+<h1 class="title">eVTOL Integration in Emergency Medical Services: A System Architecture Approach</h1>
+<p class="subtitle lead">Designing Affordable, High-Performance, and Equitable Air Ambulance Systems</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">system architecture</div>
+    <div class="quarto-category">eVTOL</div>
+    <div class="quarto-category">systems engineering</div>
+    <div class="quarto-category">urban mobility</div>
+    <div class="quarto-category">research</div>
+  </div>
+  </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kapil Khanal </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 19, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -304,190 +292,134 @@ window.Quarto = {
 </header>
 
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
-
-.hero-section-with-particles {
-  position: relative;
-  background-color: #FFFFFF; /* White background */
-  overflow: hidden;
-  padding-bottom: 60px; /* Add padding to contain the 'About Me' section */
-}
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 40px 20px 30px; /* Reduced top padding */
-  font-family: 'Montserrat', sans-serif;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  font-weight: 700;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #34495e;
-}
-
-.about-section {
-  position: relative;
-  z-index: 1;
-  color: #2c3e50;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.about-section h2 {
-  text-align: left;
-}
-
-.content-section {
-  background: white;
-  padding: 40px 0;
-}
-</style>
-<div class="hero-section-with-particles">
-<div id="particles-js">
-
-</div>
-<section id="architecting-large-scale-systems" class="level1 hero-content">
-<h1>Architecting Large-Scale Systems</h1>
-<p><strong>Differentiable Programming to Engineer Complex Systems.</strong></p>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p><strong>We propose to architect a system that integrates eVTOLs in emergency medical services to ensure affordability, performance, and equity.</strong> The technical, operational, and regulatory requirements of the EMS services are fundamentally different and stringent from the air-taxi requirements, thus a design of system architecture is important. The successful integration of the air ambulance in the city emergency services will save countless lives by reducing the response time and safe transportation.</p>
 </section>
-<div class="container about-section">
-<div class="grid">
-<div class="g-col-12 g-col-md-4">
-<p><img src="files/profiles/profile1.JPG" class="img-fluid rounded-circle"></p>
-</div>
-<section id="about-me" class="level2 g-col-12 g-col-md-8">
-<h2 class="anchored" data-anchor-id="about-me">About Me</h2>
-<p>I am a <span style="color: #B31B1B;"><strong>doctoral candidate at Cornell University</strong></span>, specializing in <span style="color: #34568B;"><strong>systems design</strong></span>, <span style="color: #34568B;"><strong>engineering</strong></span>, and <span style="color: #34568B;"><strong>optimization</strong></span>. My work focuses on leveraging <strong>modeling</strong>, <strong>optimization</strong>, and <strong>computational techniques</strong> to advance <span style="color: #3A7D44;"><strong>sustainable technologies</strong></span>. As a member of the <strong>Symbiotic Engineering and Analysis (SEA) Lab</strong>, I collaborate on modeling and optimizing large scale renewable energy systems.</p>
-<p>With a Master’s degree in <span style="color: #34568B;"><strong>Systems Engineering</strong></span> and ongoing PhD work, I am to bridge <span style="color: #3A7D44;"><strong>theory and applications</strong></span> for <span style="color: #34568B;"><strong>large-scale systems</strong></span>. I did my undergraduate in Mathematics and Data Science from Winona State University, Minnesota.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled" style="margin-top: 25px;">
+<section id="project-scope" class="level2">
+<h2 class="anchored" data-anchor-id="project-scope">Project Scope</h2>
+<p>The scope of the project is to successfully realize an integrated system of air transport for emergency medical services. It will develop models and methods necessary to deploy emergency services using the appropriate air vehicle in the urban environment. We will simulate the operational and design decisions to enumerate the architectures.</p>
+<p>The main function of this system is transporting (process) a patient (operand) or providing immediate medical attention (process) to the hospital (operand). Our goal is to provide insight for all the stakeholders about the promise and potential of eVTOL-based emergency services and propose several reference architectures.</p>
+</section>
+<section id="system-architecture-poster" class="level2">
+<h2 class="anchored" data-anchor-id="system-architecture-poster">System Architecture Poster</h2>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-💼 Bridging Research and Industry
+System Architecture Poster
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Upon completing my PhD, I am <strong>seeking full-time industry roles</strong> where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.</p>
-<div style="margin-top: 15px;">
-<p><a href="files/kapil_resume.pdf" class="btn btn-primary">View My CV</a> &nbsp; <a href="https://www.linkedin.com/in/kapilkhanal/" class="btn btn-secondary">Connect on LinkedIn</a> &nbsp; <a href="https://github.com/KapilKhanal" class="btn btn-dark">Explore My GitHub</a></p>
+<p>The following poster presents our comprehensive system architecture for integrating eVTOLs into emergency medical services:</p>
 </div>
+</div>
+<div id="poster-embed">
+<iframe src="System_Architecture_Poster.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 8px;">
+</iframe>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Alternative Viewing Options
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Full Screen</strong>: <a href="System_Architecture_Poster.pdf" target="_blank">Open poster in new tab</a></li>
+<li><strong>Download</strong>: <a href="System_Architecture_Poster.pdf">Download PDF file</a></li>
+</ul>
 </div>
 </div>
 </section>
-</div>
-</div>
-</div>
-<div class="content-section">
-<div class="container">
+<section id="key-research-areas" class="level2">
+<h2 class="anchored" data-anchor-id="key-research-areas">Key Research Areas</h2>
+<section id="system-architecture-design" class="level3">
+<h3 class="anchored" data-anchor-id="system-architecture-design">1. System Architecture Design</h3>
+<ul>
+<li><strong>Multi-stakeholder Analysis</strong>: Understanding the needs of patients, healthcare providers, emergency responders, and regulatory bodies</li>
+<li><strong>Operational Modeling</strong>: Developing simulation frameworks for emergency response scenarios</li>
+<li><strong>Infrastructure Planning</strong>: Designing vertiport networks and medical facility integration</li>
+</ul>
+</section>
+<section id="technical-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="technical-requirements">2. Technical Requirements</h3>
+<ul>
+<li><strong>Vehicle Specifications</strong>: eVTOL design requirements for medical transport</li>
+<li><strong>Safety Standards</strong>: Regulatory compliance and certification pathways</li>
+<li><strong>Performance Metrics</strong>: Response time optimization and reliability requirements</li>
+</ul>
+</section>
+<section id="operational-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="operational-considerations">3. Operational Considerations</h3>
+<ul>
+<li><strong>Dispatch Algorithms</strong>: Intelligent routing and resource allocation</li>
+<li><strong>Medical Integration</strong>: Coordination with existing emergency medical systems</li>
+<li><strong>Cost-Benefit Analysis</strong>: Economic feasibility and sustainability models</li>
+</ul>
+</section>
+<section id="equity-and-accessibility" class="level3">
+<h3 class="anchored" data-anchor-id="equity-and-accessibility">4. Equity and Accessibility</h3>
+<ul>
+<li><strong>Geographic Coverage</strong>: Ensuring service availability across diverse urban areas</li>
+<li><strong>Affordability Models</strong>: Making emergency air transport accessible to all communities</li>
+<li><strong>Regulatory Framework</strong>: Policy recommendations for equitable service delivery</li>
+</ul>
+</section>
+</section>
+<section id="research-methodology" class="level2">
+<h2 class="anchored" data-anchor-id="research-methodology">Research Methodology</h2>
+<p>Our approach combines several analytical frameworks:</p>
+<ol type="1">
+<li><strong>Systems Engineering</strong>: Structured approach to complex system design</li>
+<li><strong>Operations Research</strong>: Mathematical modeling of emergency response networks</li>
+<li><strong>Stakeholder Analysis</strong>: Understanding diverse requirements and constraints</li>
+<li><strong>Simulation Modeling</strong>: Virtual testing of system architectures and operational scenarios</li>
+</ol>
+</section>
+<section id="expected-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="expected-outcomes">Expected Outcomes</h2>
+<p>This research will deliver:</p>
+<ul>
+<li><strong>Reference Architectures</strong>: Multiple system design options for eVTOL EMS integration</li>
+<li><strong>Performance Models</strong>: Quantitative analysis of response times and service quality</li>
+<li><strong>Implementation Roadmap</strong>: Step-by-step guidance for system deployment</li>
+<li><strong>Policy Recommendations</strong>: Regulatory and operational guidelines for stakeholders</li>
+</ul>
+</section>
+<section id="impact-and-significance" class="level2">
+<h2 class="anchored" data-anchor-id="impact-and-significance">Impact and Significance</h2>
+<p>The integration of eVTOLs into emergency medical services has the potential to:</p>
+<ul>
+<li><strong>Reduce Response Times</strong>: Faster emergency response in urban and rural areas</li>
+<li><strong>Improve Patient Outcomes</strong>: Quicker access to specialized medical care</li>
+<li><strong>Enhance System Efficiency</strong>: Better resource utilization and coordination</li>
+<li><strong>Promote Equity</strong>: Extend high-quality emergency care to underserved communities</li>
+</ul>
+</section>
+<section id="future-work" class="level2">
+<h2 class="anchored" data-anchor-id="future-work">Future Work</h2>
+<p>Building on this system architecture study, future research directions include:</p>
+<ul>
+<li><strong>Pilot Program Design</strong>: Implementation of small-scale demonstration projects</li>
+<li><strong>Technology Development</strong>: Advancement of eVTOL capabilities for medical applications</li>
+<li><strong>Partnership Development</strong>: Collaboration with healthcare providers and regulatory agencies</li>
+<li><strong>Economic Analysis</strong>: Detailed cost-benefit studies for different deployment scenarios</li>
+</ul>
 <hr>
-<section id="research-focus" class="level2">
-<h2 class="anchored" data-anchor-id="research-focus">Research Focus</h2>
-<p>My research architects the next generation of complex engineered systems by fusing advanced computational methods. I am interested in <strong>Multidisciplinary Design Optimization (MDO)</strong> and <strong>Scientific Machine Learning</strong> this involves utilizing ideas from <strong>Differentiable methods</strong> (neural networks, adjoint methods, automatic differentiation, etc.) and other physical simulations. Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. I am also interested in <strong>Verification and Validation</strong> of large systems utilizing techniques from <strong>Uncertainty Quantification</strong> (UQ).</p>
-<hr>
+<p><em>This work represents a comprehensive approach to integrating emerging air mobility technologies with critical healthcare infrastructure, with the ultimate goal of improving emergency medical services for all communities.</em></p>
 </section>
-<section id="recent-posts" class="level2">
-<h2 class="anchored" data-anchor-id="recent-posts">Recent Posts</h2>
-<p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="c29mdHdhcmUlMkNyZXNlYXJjaCUyQ0p1bGlhJTJDaHlkcm9keW5hbWljcyUyQ29wdGltaXphdGlvbg==" data-listing-date-sort="1750550400000" data-listing-file-modified-sort="1750608111071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="678">
-<a href="./posts/marinehydro-julia-package/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/marinehydro-julia-package/julia_dots.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<strong>MarineHydro.jl</strong>: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis
-</h5>
-<div class="card-subtitle listing-subtitle">
-A Julia Package for Wave-Structure Interactions
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jun 22, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Y29uZmVyZW5jZSUyQ01ETyUyQ29wdGltaXphdGlvbiUyQ3Jlc2VhcmNo" data-listing-date-sort="1745280000000" data-listing-file-modified-sort="1750608111065" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="688">
-<a href="./posts/aiaa-scitech-2026-submission/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs
-</h5>
-<div class="card-subtitle listing-subtitle">
-Extending the Isoperformance Method for Feasibility in Coupled Multidisciplinary Systems
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 22, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cmVzZWFyY2glMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNoeWRyb2R5bmFtaWNzJTJDSnVsaWE=" data-listing-date-sort="1722297600000" data-listing-file-modified-sort="1750608111072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="610">
-<a href="./posts/neural-networks-bem/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/neural-networks-bem/nn.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Enhancing the Boundary Element Method with Scientific Machine Learning
-</h5>
-<div class="card-subtitle listing-subtitle">
-A Hybrid Approach for Solving Diffraction-Radiation Problems
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 30, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p align="right">
-<a href="./posts.html">All Posts »</a>
-</p>
+<section id="related-publications" class="level2">
+<h2 class="anchored" data-anchor-id="related-publications">Related Publications</h2>
+<p>This research builds on and contributes to the broader field of urban air mobility and emergency services integration. For more information about related work in this area, please refer to the publications section of this website.</p>
+
+
 </section>
-</div>
-</div>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="files/includes/particles-config.js"></script>
-
-
-
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -918,7 +850,7 @@ Jul 30, 2024
 </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank">
+    <a class="nav-link" href="../../posts.xml" target="_blank">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>
