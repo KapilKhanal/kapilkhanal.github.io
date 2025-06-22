@@ -136,13 +136,13 @@ window.Quarto = {
 <meta property="og:description" content="A Hybrid Approach for Solving Diffraction-Radiation Problems">
 <meta property="og:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/neural-networks-bem/nn.png">
 <meta property="og:site_name" content="Kapil Khanal">
-<meta property="og:image:height" content="1782">
-<meta property="og:image:width" content="3168">
+<meta property="og:image:height" content="2180">
+<meta property="og:image:width" content="3056">
 <meta name="twitter:title" content="Enhancing the Boundary Element Method with Scientific Machine Learning – Kapil Khanal">
 <meta name="twitter:description" content="A Hybrid Approach for Solving Diffraction-Radiation Problems">
 <meta name="twitter:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/neural-networks-bem/nn.png">
-<meta name="twitter:image-height" content="1782">
-<meta name="twitter:image-width" content="3168">
+<meta name="twitter:image-height" content="2180">
+<meta name="twitter:image-width" content="3056">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -317,6 +317,13 @@ window.Quarto = {
 </section>
 <section id="neural-networks-in-scientific-machine-learning" class="level2">
 <h2 class="anchored" data-anchor-id="neural-networks-in-scientific-machine-learning">Neural Networks in Scientific Machine Learning</h2>
+<p>The classical expression of the free surface Greens function.<span class="math inline">\(G(P,Q) = \text{fundamental solution} + \textit{harmonic function}\)</span> : <span class="math display">\[\begin{equation}
+G(P,Q) = \left(\frac{1}{X^2+ (Z_1-Z_2)^2}\right) + \left( \frac{1}{X^2+ Y^2} + F(X,Y)
++ 2 \pi ik_0 e^{-Y} J_0(X)\right)  
+\end{equation}\]</span> where horizontal (X) and vertical distances (Y), \ <span class="math inline">\(X:k_0 *\sqrt{x1-x2)^2  + (y1-y2)^2}\)</span> and <span class="math inline">\(Y:-k_o(z1+z2)\)</span> Newman simplified <span class="math inline">\(F(X,Y)\)</span> from the original expression (not included here) which has many computational challenges to: <span class="math display">\[\begin{equation}
+F(X, Y) = -2e^{-y} \int_{0}^{Y} \frac{e^t}{\sqrt{X^2 + t^2}} \, dt - \pi e^{-y} \left[B(X) + H(X)\right]
+\end{equation}\]</span></p>
+<p>Q: Can we instead use a neural network to approximate the Green’s function?</p>
 <p>Neural networks have a growing history in scientific machine learning, with recent publications demonstrating their power in hydrodynamics . However, a well-known challenge is that standard neural networks often struggle to learn periodic and oscillatory functions, which are fundamental to wave physics.</p>
 <p>Several research avenues have explored solutions to this, including: - Transforming data into the Fourier space. - Developing novel activation functions. - Using deeper network architectures.</p>
 <p>We’re exploring the use of neural networks to approximate the Green’s function and integrate it into our in-house BEM solver - <a href="https://github.com/symbiotic-engineering/MarineHydro.jl">MarineHydro.jl</a>.</p>

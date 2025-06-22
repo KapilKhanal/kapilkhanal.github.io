@@ -16,6 +16,22 @@ This creates a classic trade-off: **accuracy vs. efficiency**. We propose adding
 
 ## Neural Networks in Scientific Machine Learning
 
+The classical expression of the free surface Greens function.$G(P,Q) = \text{fundamental solution} + \textit{harmonic function}$ \cite{JohnF1950}: 
+\begin{equation} 
+G(P,Q) = \left(\frac{1}{X^2+ (Z_1-Z_2)^2}\right) + \left( \frac{1}{X^2+ Y^2} + F(X,Y)
++ 2 \pi ik_0 e^{-Y} J_0(X)\right)  
+\end{equation} 
+where horizontal (X) and vertical distances (Y), \\
+$X:k_0 *\sqrt{x1-x2)^2  + (y1-y2)^2}$ and $Y:-k_o(z1+z2)$ 
+\newline
+\newline
+Newman simplified $F(X,Y)$ from the original expression (not included here) which has many computational challenges to:
+\begin{equation}
+F(X, Y) = -2e^{-y} \int_{0}^{Y} \frac{e^t}{\sqrt{X^2 + t^2}} \, dt - \pi e^{-y} \left[B(X) + H(X)\right] 
+\end{equation}
+
+Q: Can we instead use a neural network to approximate the Green's function?
+
 Neural networks have a growing history in scientific machine learning, with recent publications demonstrating their power in hydrodynamics \cite{HUANG202235, ZHAN2023}. However, a well-known challenge is that standard neural networks often struggle to learn periodic and oscillatory functions, which are fundamental to wave physics.
 
 Several research avenues have explored solutions to this, including:
