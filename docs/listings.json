@@ -2,6 +2,8 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/marinehydro-julia-package/index.html",
+      "/posts/aiaa-scitech-2026-submission/index.html",
       "/posts/idetc-2025-submission/index.html",
       "/posts/gradient-based-optimization/index.html",
       "/posts/differentiable-hydrodynamics-framework/index.html"
@@ -10,6 +12,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/marinehydro-julia-package/index.html",
+      "/posts/aiaa-scitech-2026-submission/index.html",
       "/posts/idetc-2025-submission/index.html",
       "/posts/gradient-based-optimization/index.html",
       "/posts/differentiable-hydrodynamics-framework/index.html"

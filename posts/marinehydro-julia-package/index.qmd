@@ -1,0 +1,173 @@
+---
+title: "**MarineHydro.jl**: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis"
+subtitle: "A Julia Package for Wave-Structure Interactions"
+author: "Kapil Khanal"
+date: "2025-06-22"
+categories: [software, research, Julia, hydrodynamics, optimization]
+tags: [boundary element method, automatic differentiation, marine hydrodynamics, wave energy converters, Julia programming]
+---
+
+## Research Overview
+
+**MarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis of Wave-Structure Interactions**
+
+This work presents a novel implementation of a fully differentiable boundary element solver for marine hydrodynamics, enabling efficient gradient-based optimization of offshore structures and wave energy converters.
+
+## Authors
+
+- **Kapil Khanal** (Cornell University & (partly developed while interning at) Sandia National Laboratories)
+- **Carlos A. Michelén Ströfer** (Sandia National Laboratories)
+- **Matthieu Ancellin** (Eurobios Mews Labs)
+- **Maha Haji** (Cornell University)
+
+## 🌟 Research Highlights
+
+- 📚 **Derivation and discussion** of the discrete adjoint method for the boundary integral equations
+- 💻 **Review and implementation** of a differentiable boundary element solver for marine hydrodynamics in Julia
+- 🌊 **Exact gradient calculation** for a pair of floating hemispheres with respect to their dimensions, separation distance, and wave environment
+- ⚡ **Mechanical power optimization** for a pair of wave energy converters using exact gradients
+
+## About MarineHydro.jl
+
+[MarineHydro.jl](https://github.com/symbiotic-engineering/MarineHydro.jl) is a fully-differentiable boundary element solver for marine hydrodynamics. This new solver implements both direct and indirect boundary element formulations and uses two Green's function expressions: Wu et al., and Delhommeau's, varying in their accuracy and speed.
+
+### Key Features
+
+- **Dual Formulation Support**: Implements both direct and indirect boundary element formulations
+- **Multiple Green's Functions**: Supports Wu et al. and Delhommeau's Green's function expressions
+- **Automatic Differentiation**: Fully differentiable with respect to geometry and wave parameters
+- **Julia Implementation**: High-performance implementation in Julia for computational efficiency
+- **Open Source**: MIT licensed and available on GitHub
+
+## Technical Implementation
+
+### Boundary Element Method
+
+The boundary element method (BEM) is particularly well-suited for wave-structure interaction problems because it:
+
+- Reduces the problem dimensionality by one (surface instead of volume discretization)
+- Naturally handles infinite domains without artificial boundary conditions
+
+
+### Differentiability Framework
+
+The key innovation in this work is the implementation of automatic differentiation throughout the boundary element solver:
+
+```julia
+using MarineHydro
+using Zygote
+
+# Calculate radiation forces with automatic differentiation
+A_w_grad, = Zygote.gradient(w -> calculate_radiation_forces(mesh, ζ, w)[1], ω)
+```
+
+This enables:
+- **Exact gradients** without finite difference approximations for the hydrodynamic forces
+- **Efficient optimization** of complex geometries
+- **Sensitivity analysis** for design parameters
+
+### Adjoint Method Implementation
+
+The discrete adjoint method is derived and implemented for the boundary integral equations, providing:
+
+- Computational efficiency for gradient calculations
+- Scalability to large-scale problems
+- Integration with modern optimization frameworks
+
+## Applications
+
+### Wave Energy Converters
+
+The package demonstrates mechanical power optimization for wave energy converters:
+
+- **Multi-body interactions**: Analysis of arrays of floating bodies
+- **Power optimization**: Maximizing energy extraction efficiency
+- **Geometric sensitivity**: Understanding how shape affects performance
+
+### Offshore Structures
+
+Applications extend to various offshore structures:
+
+- **Floating platforms**: Oil and gas platforms, wind turbines
+- **Marine vessels**: Ships, submarines, underwater vehicles
+- **Coastal structures**: Breakwaters, harbors, piers
+
+## Code Repository
+
+The complete implementation is available at: [https://github.com/symbiotic-engineering/MarineHydro.jl](https://github.com/symbiotic-engineering/MarineHydro.jl)
+
+### Repository Structure
+
+- **📁 .github/workflows**: Continuous integration and automated testing
+- **📊 paper**: Plots and data generated for the research paper
+- **📜 src**: Source code for the MarineHydro.jl package
+- **🧪 test**: Comprehensive test suite and validation cases
+
+### Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/symbiotic-engineering/MarineHydro.jl.git
+cd MarineHydro.jl
+
+# Install dependencies
+using Pkg
+Pkg.activate(".")
+Pkg.instantiate()
+```
+
+### Basic Usage Example
+
+```julia
+using MarineHydro
+using PyCall
+
+# Import Capytaine mesh
+cpt = pyimport("capytaine")
+radius = 1.0
+resolution = (10, 10)
+cptmesh = cpt.mesh_sphere(name="sphere", radius=radius, center=(0, 0, 0), resolution=resolution)
+cptmesh.keep_immersed_part(inplace=true)
+
+# Convert to Julia mesh
+mesh = Mesh(cptmesh)
+
+# Calculate diffraction forces
+ω = 1.03
+ζ = [0, 0, 1]  # HEAVE motion
+F = DiffractionForce(mesh, ω, ζ)
+
+# Calculate radiation forces
+A, B = calculate_radiation_forces(mesh, ζ, ω)
+```
+
+## Research Impact
+
+This work addresses several critical challenges in marine hydrodynamics:
+
+1. **Computational Efficiency**: Automatic differentiation eliminates the need for expensive finite difference calculations
+2. **Design Optimization**: Enables gradient-based optimization of complex marine structures
+3. **Multi-physics Integration**: Provides a foundation for coupling with structural and control systems
+4. **Open Source Accessibility**: Makes advanced hydrodynamic analysis tools available to the research community
+
+## Future Developments
+
+The package is actively developed with plans for:
+
+- **Enhanced API**: More user-friendly interface for complex problems
+- **Performance Optimization**: Further improvements in computational efficiency
+- **Extended Functionality**: Support for additional wave theories and boundary conditions
+- **Documentation**: Comprehensive tutorials and examples
+
+## Related Publications
+
+This work is part of a broader research effort in **differentiable programming for engineering applications**. The implementation builds on recent advances in:
+
+- Automatic differentiation frameworks
+- Boundary element method theory
+- Marine hydrodynamics modeling
+- Optimization algorithms
+
+---
+
+*MarineHydro.jl represents a significant step forward in making advanced hydrodynamic analysis accessible for design optimization, enabling researchers and engineers to efficiently explore the design space for marine structures and wave energy devices.* 

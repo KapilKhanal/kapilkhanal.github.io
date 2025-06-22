@@ -1,0 +1,90 @@
+---
+title: "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs"
+subtitle: "Extending the Isoperformance Method for Feasibility in Coupled Multidisciplinary Systems"
+author: "Kapil Khanal"
+date: "2025-04-22"
+categories: [conference, MDO, optimization, research]
+tags: [isoperformance, multidisciplinary analysis, automatic differentiation, adjoint methods, feasibility constraints]
+---
+
+## Conference Information
+
+**2026 AIAA SciTech Forum**  
+**12–16 January 2026**  
+**Hyatt Regency Orlando**  
+**Orlando, Florida**
+
+## Abstract
+
+In many practical settings, mathematically optimal system designs are often set aside in favor of similarly performing alternatives that better accommodate real-world constraints and evolving requirements. In such cases, it is desirable to identify alternative design vectors that maintain acceptable levels of system performance. This can be achieved using isoperformance method, which construct sets of performance-invariant solutions, or through multiobjective optimization. However, traditional isoperformance approaches typically ignore the feasibility constraints that arise in coupled systems governed by multidisciplinary analysis (MDA). These systems require convergence of nonlinear solvers, and the resulting computational burden increases when newly generated designs do not satisfy such feasibility inherently. Isoperformance analysis is an inverse design technique used to identify a set of feasible design vectors that yield a specified vector of system performance metrics. This performance-invariant set provides a space for subsequent decision-making based on secondary criteria like cost, risk, or implementation ease. However, applying isoperformance methods to complex coupled systems is challenging, as these systems often require a multidisciplinary analysis (MDA) to resolve interdependencies among components. The resulting nonlinear solver demands increase computational cost when infeasible designs are evaluated. 
+
+In this paper, we propose two contributions to improve the robustness and scalability of isoperformance methods in such settings. First, we extend the isoperformance method to support arbitrarily large design spaces using reverse-mode automatic differentiation and adjoint sensitivity analysis. Second, we introduce a regularized isoperformance approach that incorporates the feasibility constraints arising from MDA directly into the Jacobian, improving the likelihood of convergence and solution quality. We demonstrate the method on a benchmark coupled problem involving three objectives, showcasing its ability to generate feasible isoperformant designs. 
+\lettrine{M}{ulticriteria} decision-making in complex engineered systems requires balancing conflicting objectives among various subsystems and stakeholders. In many cases, a numerically optimal solution is not the final adopted design due to constraints, trade-offs, or the infeasibility of implementation. This motivates the search for alternative design solutions that achieve target performance levels without requiring complete re-optimization. 
+
+
+To address this, we enhance the isoperformance approach to explicitly consider MDA feasibility during inverse design. This is critical for large systems where convergence, sensitivity, and robustness all play significant roles in engineering decision-making.
+
+
+## Authors
+
+- **Kapil Khanal** (PhD Candidate, Systems Engineering)
+- **Maha N. Haji** (Assistant Professor, Sibley School of Mechanical Engineering)
+
+**Affiliation**: Cornell University, Ithaca, NY
+
+## Research Context
+
+This work addresses a fundamental challenge in multidisciplinary design optimization (MDO): the gap between mathematically optimal solutions and practically implementable designs. While optimization algorithms can find the "best" solution according to mathematical criteria, real-world engineering often requires flexibility in design choices to accommodate:
+
+- Manufacturing constraints
+- Supply chain limitations  
+- Regulatory requirements
+- Future design modifications
+- Risk mitigation strategies
+
+The isoperformance method offers a systematic approach to explore the design space for alternatives that maintain acceptable performance levels while providing the flexibility needed for practical implementation.
+
+## Key Contributions
+
+### 1. Scalable Isoperformance with Automatic Differentiation
+
+Traditional isoperformance methods often struggle with high-dimensional design spaces due to computational limitations in gradient computation. Our approach leverages:
+
+- **Reverse-mode automatic differentiation** for efficient gradient computation
+- **Adjoint sensitivity analysis** to handle complex coupled systems
+- **Computational graph frameworks** for scalable implementation
+
+This enables the method to scale to arbitrarily large design spaces while maintaining computational efficiency.
+
+### 2. Regularized Isoperformance for Coupled Systems
+
+Coupled multidisciplinary systems introduce unique challenges through:
+
+- **Nonlinear coupling constraints** between disciplines
+- **Feasibility requirements** that must be satisfied simultaneously
+- **Convergence dependencies** of numerical solvers
+
+Our regularized approach incorporates these feasibility constraints directly into the Jacobian matrix, improving both convergence likelihood and solution quality.
+
+
+## Applications
+
+This work has broad applications across engineering disciplines, including:
+
+- **Aerospace Systems**: Aircraft design with multiple performance objectives
+- **Marine Engineering**: Offshore structure optimization under environmental constraints
+- **Energy Systems**: Renewable energy device design and optimization
+- **Transportation**: Vehicle design balancing performance, efficiency, and safety
+
+## Future Work
+
+Future research directions include:
+
+- Extension to dynamic systems and time-varying constraints
+- Integration with uncertainty quantification methods
+- Development of interactive visualization tools for design space exploration
+- Application to real-world engineering case studies
+
+---
+
+*This work represents a significant step forward in making optimization methods more practical and accessible for complex engineering systems, bridging the gap between mathematical optimality and engineering feasibility.* 

@@ -125,7 +125,7 @@ Upon completing my PhD, I am **seeking full-time industry roles** where I can ap
 
 ## Research Focus
 
-My research architects the next generation of complex engineered systems by fusing advanced computational methods. I operate at the confluence of **Multidisciplinary Design Optimization (MDO)** and **Scientific Machine Learning**, with a focus on creating novel frameworks for **Differentiable Hydrodynamics** and other physical simulations. Central to my approach is the use of **Adjoint-Based Sensitivity Analysis** to enable efficient, large-scale **PDE-Constrained Optimization**. Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures.
+My research architects the next generation of complex engineered systems by fusing advanced computational methods. I am interested in **Multidisciplinary Design Optimization (MDO)** and **Scientific Machine Learning** this involves utilizing ideas from **Differentiable methods** (neural networks, adjoint methods, automatic differentiation, etc.) and other physical simulations.  Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. I am also interested in **Verification and Validation** of large systems utilizing techniques from **Uncertainty Quantification** (UQ).
 
 ---
 
