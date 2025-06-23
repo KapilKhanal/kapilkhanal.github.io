@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Gang He">
-<meta name="description" content="Bridging Differentiable Programming and Engineering">
+<meta name="dcterms.date" content="2024-07-30">
+<meta name="description" content="Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
 
-<title>Kapil Khanal</title>
+<title>Derivatives are Cheap and Expensive – Kapil Khanal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,27 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ac00eefc3da0d19490f9776e29124d6b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ac00eefc3da0d19490f9776e29124d6b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,36 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 3,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -132,42 +101,15 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Kapil Khanal">
-<meta property="og:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/files/profiles/profile1.JPG">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Derivatives are Cheap and Expensive – Kapil Khanal">
+<meta property="og:description" content="The Real Cost of Gradients in Complex Systems Optimization">
+<meta property="og:image" content="https://quarto.org/quarto.png">
 <meta property="og:site_name" content="Kapil Khanal">
-<meta name="twitter:title" content="Kapil Khanal">
-<meta name="twitter:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/files/profiles/profile1.JPG">
+<meta name="twitter:title" content="Derivatives are Cheap and Expensive – Kapil Khanal">
+<meta name="twitter:description" content="The Real Cost of Gradients in Complex Systems Optimization">
+<meta name="twitter:image" content="https://quarto.org/quarto.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -178,7 +120,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kapil Khanal</span>
     </a>
   </div>
@@ -194,15 +136,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=news">
+    <a class="dropdown-item" href="../../posts.html#category=news">
  <span class="dropdown-text">News</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts.html#category=event">
+    <a class="dropdown-item" href="../../posts.html#category=event">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./contact.html">
+    <a class="dropdown-item" href="../../contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
     </ul>
@@ -213,21 +155,21 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
         <li>
-    <a class="dropdown-item" href="./publications.html">
+    <a class="dropdown-item" href="../../publications.html">
  <span class="dropdown-text">List of Publication</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts.html#category=paper">
+    <a class="dropdown-item" href="../../posts.html#category=paper">
  <span class="dropdown-text">Selected Papers</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects.html">
+    <a class="dropdown-item" href="../../projects.html">
  <span class="dropdown-text">Grants</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -236,19 +178,19 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-outreach">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=presentation">
+    <a class="dropdown-item" href="../../posts.html#category=presentation">
  <span class="dropdown-text">Presentations</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link" href="../../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./files/kapil_resume.pdf"> 
+    <a class="nav-link" href="../../files/kapil_resume.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -261,7 +203,7 @@ window.Quarto = {
 <span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -278,23 +220,55 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#why-are-gradients-cheap-for-neural-networks" id="toc-why-are-gradients-cheap-for-neural-networks" class="nav-link" data-scroll-target="#why-are-gradients-cheap-for-neural-networks">Why Are Gradients Cheap for Neural Networks?</a></li>
+  <li><a href="#why-are-gradients-expensive-for-physical-systems" id="toc-why-are-gradients-expensive-for-physical-systems" class="nav-link" data-scroll-target="#why-are-gradients-expensive-for-physical-systems">Why Are Gradients Expensive for Physical Systems?</a></li>
+  <li><a href="#methods-for-gradient-computation" id="toc-methods-for-gradient-computation" class="nav-link" data-scroll-target="#methods-for-gradient-computation">Methods for Gradient Computation</a></li>
+  <li><a href="#forward-vs.-adjoint-backward-mode-vs-mixed-mode" id="toc-forward-vs.-adjoint-backward-mode-vs-mixed-mode" class="nav-link" data-scroll-target="#forward-vs.-adjoint-backward-mode-vs-mixed-mode">Forward vs.&nbsp;Adjoint (Backward) Mode vs Mixed Mode</a></li>
+  <li><a href="#modular-systems-mixing-and-matching" id="toc-modular-systems-mixing-and-matching" class="nav-link" data-scroll-target="#modular-systems-mixing-and-matching">Modular Systems: Mixing and Matching</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Kapil Khanal</h1>
-</div>
+<h1 class="title">Derivatives are Cheap and Expensive</h1>
+<p class="subtitle lead">The Real Cost of Gradients in Complex Systems Optimization</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">optimization</div>
+    <div class="quarto-category">sensitivity analysis</div>
+    <div class="quarto-category">research</div>
+  </div>
+  </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kapil Khanal </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 30, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -304,190 +278,109 @@ window.Quarto = {
 </header>
 
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
-
-.hero-section-with-particles {
-  position: relative;
-  background-color: #FFFFFF; /* White background */
-  overflow: hidden;
-  padding-bottom: 60px; /* Add padding to contain the 'About Me' section */
-}
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 40px 20px 30px; /* Reduced top padding */
-  font-family: 'Montserrat', sans-serif;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  font-weight: 700;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #34495e;
-}
-
-.about-section {
-  position: relative;
-  z-index: 1;
-  color: #2c3e50;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.about-section h2 {
-  text-align: left;
-}
-
-.content-section {
-  background: white;
-  padding: 40px 0;
-}
-</style>
-<div class="hero-section-with-particles">
-<div id="particles-js">
-
-</div>
-<section id="architecting-large-scale-systems" class="level1 hero-content">
-<h1>Architecting Large-Scale Systems</h1>
-<p><strong>Differentiable Programming to Engineer Complex Systems.</strong></p>
-</section>
-<div class="container about-section">
-<div class="grid">
-<div class="g-col-12 g-col-md-4">
-<p><img src="files/profiles/profile1.JPG" class="img-fluid rounded-circle"></p>
-</div>
-<section id="about-me" class="level2 g-col-12 g-col-md-8">
-<h2 class="anchored" data-anchor-id="about-me">About Me</h2>
-<p>I am a <span style="color: #B31B1B;"><strong>doctoral candidate at Cornell University</strong></span>, specializing in <span style="color: #34568B;"><strong>systems design</strong></span>, <span style="color: #34568B;"><strong>engineering</strong></span>, and <span style="color: #34568B;"><strong>optimization</strong></span>. My work focuses on leveraging <strong>modeling</strong>, <strong>optimization</strong>, and <strong>computational techniques</strong> to advance <span style="color: #3A7D44;"><strong>sustainable technologies</strong></span>. As a member of the <strong>Symbiotic Engineering and Analysis (SEA) Lab</strong>, I collaborate on modeling and optimizing large scale renewable energy systems.</p>
-<p>With a Master’s degree in <span style="color: #34568B;"><strong>Systems Engineering</strong></span> and ongoing PhD work, I am to bridge <span style="color: #3A7D44;"><strong>theory and applications</strong></span> for <span style="color: #34568B;"><strong>large-scale systems</strong></span>. I did my undergraduate in Mathematics and Data Science from Winona State University, Minnesota.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled" style="margin-top: 25px;">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-💼 Bridging Research and Industry
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Upon completing my PhD, I am <strong>seeking full-time industry roles</strong> where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.</p>
-<div style="margin-top: 15px;">
-<p><a href="files/kapil_resume.pdf" class="btn btn-primary">View My CV</a> &nbsp; <a href="https://www.linkedin.com/in/kapilkhanal/" class="btn btn-secondary">Connect on LinkedIn</a> &nbsp; <a href="https://github.com/KapilKhanal" class="btn btn-dark">Explore My GitHub</a></p>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</div>
-<div class="content-section">
-<div class="container">
+<blockquote class="blockquote">
+<p>“In machine learning, derivatives are cheap. In design optimization, they can be very expensive. Why?”</p>
+</blockquote>
 <hr>
-<section id="research-focus" class="level2">
-<h2 class="anchored" data-anchor-id="research-focus">Research Focus</h2>
-<p>My research architects the next generation of complex engineered systems by fusing advanced computational methods. I am interested in <strong>Multidisciplinary Design Optimization (MDO)</strong> and <strong>Scientific Machine Learning</strong> this involves utilizing ideas from <strong>Differentiable methods</strong> (neural networks, adjoint methods, automatic differentiation, etc.) and other physical simulations. Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. I am also interested in <strong>Verification and Validation</strong> of large systems utilizing techniques from <strong>Uncertainty Quantification</strong> (UQ).</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Gradient-based optimization methods are everywhere, and they gave are the secret sauce behind intelligent software systems like <strong>ChatGPT</strong> to the optimal design of physical systems such as <strong>satellites, rockets, and airplanes</strong>. Very few people know the parallels between these two systems and how the engineering decision making is similar. This post reviews the methodologies for computing gradients in complex systems, drawing on insights from both machine learning and engineering literature.</p>
+<p>Gradients are essential for sensitivity calculations and optimization of objective (loss) functions. But while gradients are <em>cheap</em> for neural network training, they are often <em>expensive</em> for PDEs and coupled simulations in physical system design. <!-- 
+For a technical deep dive into MDO architectures and adjoint methods, see the [main post on Gradient-Based Optimization for Large Systems](index.qmd). --></p>
 <hr>
 </section>
-<section id="recent-posts" class="level2">
-<h2 class="anchored" data-anchor-id="recent-posts">Recent Posts</h2>
-<p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="c29mdHdhcmUlMkNyZXNlYXJjaCUyQ0p1bGlhJTJDaHlkcm9keW5hbWljcyUyQ29wdGltaXphdGlvbg==" data-listing-date-sort="1750550400000" data-listing-file-modified-sort="1750711963521" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="678">
-<a href="./posts/marinehydro-julia-package/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/marinehydro-julia-package/julia_dots.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<strong>MarineHydro.jl</strong>: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis
-</h5>
-<div class="card-subtitle listing-subtitle">
-A Julia Package for Wave-Structure Interactions
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jun 22, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Y29uZmVyZW5jZSUyQ01ETyUyQ29wdGltaXphdGlvbiUyQ3Jlc2VhcmNo" data-listing-date-sort="1745280000000" data-listing-file-modified-sort="1750711963514" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="688">
-<a href="./posts/aiaa-scitech-2026-submission/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs
-</h5>
-<div class="card-subtitle listing-subtitle">
-Extending the Isoperformance Method for Feasibility in Coupled Multidisciplinary Systems
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 22, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cmVzZWFyY2glMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNoeWRyb2R5bmFtaWNzJTJDSnVsaWE=" data-listing-date-sort="1722297600000" data-listing-file-modified-sort="1750711963521" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="701">
-<a href="./posts/neural-networks-bem/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/neural-networks-bem/nn.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Enhancing the Boundary Element Method with Scientific Machine Learning
-</h5>
-<div class="card-subtitle listing-subtitle">
-A Hybrid Approach for Solving Diffraction-Radiation Problems
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 30, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p align="right">
-<a href="./posts.html">All Posts »</a>
-</p>
+<section id="why-are-gradients-cheap-for-neural-networks" class="level2">
+<h2 class="anchored" data-anchor-id="why-are-gradients-cheap-for-neural-networks">Why Are Gradients Cheap for Neural Networks?</h2>
+<ul>
+<li><strong>Neural networks</strong> are composed of simple, differentiable operations (dot products, matrix multiplications, simple activation functions).</li>
+<li>Automatic differentiation (AD) frameworks (e.g., PyTorch, TensorFlow) efficiently apply the chain rule via backpropagation.</li>
+<li>The computational graph can be traversed efficiently, making gradient computation nearly as fast as the forward pass.</li>
+<li>Analytical gradients are available for many neural network layers so your AD framework gets to cheat and use them.</li>
+</ul>
+<hr>
 </section>
-</div>
-</div>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="files/includes/particles-config.js"></script>
+<section id="why-are-gradients-expensive-for-physical-systems" class="level2">
+<h2 class="anchored" data-anchor-id="why-are-gradients-expensive-for-physical-systems">Why Are Gradients Expensive for Physical Systems?</h2>
+<ul>
+<li><strong>Physical systems</strong> often involve PDEs, legacy code, or black-box simulations.</li>
+<li>Simulations may be modular, with neural networks chained to empirical calculations, surrogate models, and numerical solvers.</li>
+<li>Gradients may require finite differences (expensive and noisy), symbolic methods (rarely feasible), or custom adjoint/automatic differentiation implementations.</li>
+<li>Coupled systems (e.g., multidisciplinary design optimization) require careful management of data flow and execution order.</li>
+<li>Adhoc heterogenous assembly of components and simulations.</li>
+</ul>
+<hr>
+</section>
+<section id="methods-for-gradient-computation" class="level2">
+<h2 class="anchored" data-anchor-id="methods-for-gradient-computation">Methods for Gradient Computation</h2>
+<ul>
+<li><strong>Finite Differences:</strong> Simple but expensive and prone to numerical error.</li>
+<li><strong>Symbolic Differentiation:</strong> Exact but rarely practical for complex or legacy code.</li>
+<li><strong>Automatic Differentiation:</strong> Powerful, but requires code to be written in a compatible way.</li>
+<li><strong>Adjoint/Linear System Methods:</strong> Set up a global sensitivity equation and solve a linear system—especially useful when the chain rule is unwieldy.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 32%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Finite Differences</td>
+<td>Easy to implement</td>
+<td>Expensive, noisy, scales poorly</td>
+</tr>
+<tr class="even">
+<td>Symbolic</td>
+<td>Exact</td>
+<td>Impractical for large/legacy code</td>
+</tr>
+<tr class="odd">
+<td>Automatic Diff (AD)</td>
+<td>Efficient, general</td>
+<td>Needs compatible code, memory usage</td>
+</tr>
+<tr class="even">
+<td>Adjoint/Linear System</td>
+<td>Scales for many inputs</td>
+<td>Complex to implement, setup required</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="forward-vs.-adjoint-backward-mode-vs-mixed-mode" class="level2">
+<h2 class="anchored" data-anchor-id="forward-vs.-adjoint-backward-mode-vs-mixed-mode">Forward vs.&nbsp;Adjoint (Backward) Mode vs Mixed Mode</h2>
+<ul>
+<li><strong>Forward mode:</strong> Efficient when there are few inputs (design variables).</li>
+<li><strong>Adjoint (backward) mode:</strong> Efficient when there are few outputs (objectives/constraints).</li>
+<li>Both are applications of the chain rule, but their efficiency depends on the problem structure.</li>
+<li>Sometime mixed mode are efficient combining forward and adjoint mode. This depends on the dataflow and the structure of the system.</li>
+</ul>
+<hr>
+</section>
+<section id="modular-systems-mixing-and-matching" class="level2">
+<h2 class="anchored" data-anchor-id="modular-systems-mixing-and-matching">Modular Systems: Mixing and Matching</h2>
+<p>In real-world modeling, systems are often modular: a neural network, an empirical formula, and a numerical simulation may be chained together. The chain rule applies, but the optimal way to compute derivatives may not be a simple sequential application. A different interpretation of the chain rule is needed. Additionally, in complex multidisciplinary systems, managing the execution order and data flow for derivatives is non-trivial. Frameworks like OpenMDAO use graph algorithms (e.g., NetworkX) to determine the correct order and avoid unnecessary computations so that forward and adjoint computation is scalable.</p>
+<hr>
+<p>Most automatic differentiation techniques, including backpropagation, can be traced back to constrained optimization and the vast literature on optimal controls. The method of Lagrange multipliers transforms constrained problems into unconstrained ones, providing the foundation for adjoint methods and modern AD frameworks.</p>
+<hr>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Although gradients are necessary for scalable optimization, but their cost varies dramatically between fields. It requires understanding the structure of your system—and choosing the right differentiation method, this can make the difference between tractable and intractable optimization. As systems become more modular and complex, hybrid approaches and careful management of forward computation and adjoint derivative computation are increasingly important.</p>
+<p>System of systems are becoming more common in the design of systems such as ChatGPT, rockets, airplanes, buildings etc and the only way to scale the ‘training’/ ‘tuning’ / optimization is to use right tools to compute them gradients.</p>
+<hr>
 
 
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -918,7 +811,7 @@ Jul 30, 2024
 </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank">
+    <a class="nav-link" href="../../posts.xml" target="_blank">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>
