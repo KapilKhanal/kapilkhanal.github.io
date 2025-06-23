@@ -1,0 +1,86 @@
+---
+title: "Derivatives are Cheap and Expensive"
+subtitle: "The Real Cost of Gradients in Complex Systems Optimization"
+author: "Kapil Khanal"
+date: "2024-07-30"
+categories: [optimization, sensitivity analysis, research]
+tags: [gradients, automatic differentiation, chain rule, modular systems, PDEs, neural networks]
+---
+
+> "In machine learning, derivatives are cheap. In design optimization, they can be very expensive. Why?"
+
+---
+
+## Introduction
+
+Gradient-based optimization methods are everywhere, and they gave are the secret sauce behind intelligent software systems like **ChatGPT** to the optimal design of physical systems such as **satellites, rockets, and airplanes**. Very few people know the parallels between these two systems and how the engineering decision making is similar. This post reviews the methodologies for computing gradients in complex systems, drawing on insights from both machine learning and engineering literature.
+
+Gradients are essential for sensitivity calculations and optimization of objective (loss) functions. But while gradients are *cheap* for neural network training, they are often *expensive* for PDEs and coupled simulations in physical system design.
+<!-- 
+For a technical deep dive into MDO architectures and adjoint methods, see the [main post on Gradient-Based Optimization for Large Systems](index.qmd). -->
+
+---
+
+## Why Are Gradients Cheap for Neural Networks?
+
+- **Neural networks** are composed of simple, differentiable operations (dot products, matrix multiplications, simple activation functions).
+- Automatic differentiation (AD) frameworks (e.g., PyTorch, TensorFlow) efficiently apply the chain rule via backpropagation.
+- The computational graph can be traversed efficiently, making gradient computation nearly as fast as the forward pass.
+- Analytical gradients are available for many neural network layers so your AD framework gets to cheat and use them.
+
+---
+
+## Why Are Gradients Expensive for Physical Systems?
+
+- **Physical systems** often involve PDEs, legacy code, or black-box simulations.
+- Simulations may be modular, with neural networks chained to empirical calculations, surrogate models, and numerical solvers.
+- Gradients may require finite differences (expensive and noisy), symbolic methods (rarely feasible), or custom adjoint/automatic differentiation implementations.
+- Coupled systems (e.g., multidisciplinary design optimization) require careful management of data flow and execution order.
+- Adhoc heterogenous assembly of components and simulations.
+
+
+---
+
+## Methods for Gradient Computation
+
+- **Finite Differences:** Simple but expensive and prone to numerical error.
+- **Symbolic Differentiation:** Exact but rarely practical for complex or legacy code.
+- **Automatic Differentiation:** Powerful, but requires code to be written in a compatible way.
+- **Adjoint/Linear System Methods:** Set up a global sensitivity equation and solve a linear system—especially useful when the chain rule is unwieldy.
+
+| Method                | Pros                        | Cons                                 |
+|-----------------------|-----------------------------|--------------------------------------|
+| Finite Differences    | Easy to implement           | Expensive, noisy, scales poorly      |
+| Symbolic              | Exact                       | Impractical for large/legacy code    |
+| Automatic Diff (AD)   | Efficient, general          | Needs compatible code, memory usage  |
+| Adjoint/Linear System | Scales for many inputs      | Complex to implement, setup required |
+
+---
+
+
+## Forward vs. Adjoint (Backward) Mode vs Mixed Mode
+
+- **Forward mode:** Efficient when there are few inputs (design variables).
+- **Adjoint (backward) mode:** Efficient when there are few outputs (objectives/constraints).
+- Both are applications of the chain rule, but their efficiency depends on the problem structure.
+- Sometime mixed mode are efficient combining forward and adjoint mode. This depends on the dataflow and the structure of the system.
+
+---
+
+## Modular Systems: Mixing and Matching
+
+In real-world modeling, systems are often modular: a neural network, an empirical formula, and a numerical simulation may be chained together. The chain rule applies, but the optimal way to compute derivatives may not be a simple sequential application. A different interpretation of the chain rule is needed.  Additionally, in complex multidisciplinary systems, managing the execution order and data flow for derivatives is non-trivial. Frameworks like OpenMDAO use graph algorithms (e.g., NetworkX) to determine the correct order and avoid unnecessary computations so that forward and adjoint computation is scalable.
+
+---
+
+Most automatic differentiation techniques, including backpropagation, can be traced back to constrained optimization and the vast literature on optimal controls. The method of Lagrange multipliers transforms constrained problems into unconstrained ones, providing the foundation for adjoint methods and modern AD frameworks. 
+
+---
+
+## Conclusion
+
+Although gradients are necessary for scalable optimization, but their cost varies dramatically between fields. It requires understanding the structure of your system—and choosing the right differentiation method, this can make the difference between tractable and intractable optimization. As systems become more modular and complex, hybrid approaches and careful management of forward computation and adjoint derivative computation are increasingly important.
+
+System of systems are becoming more common in the design of systems such as ChatGPT, rockets, airplanes, buildings etc and the only way to scale the 'training'/ 'tuning' / optimization is to use right tools to compute them gradients.
+
+---
