@@ -31,7 +31,7 @@
 <hr>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Gradient-based optimization methods are everywhere, and they gave are the secret sauce behind intelligent software systems like <strong>ChatGPT</strong> to the optimal design of physical systems such as <strong>satellites, rockets, and airplanes</strong>. Very few people know the parallels between these two systems and how the engineering decision making is similar. This post reviews the methodologies for computing gradients in complex systems, drawing on insights from both machine learning and engineering literature.</p>
+<p>Gradient-based optimization methods are everywhere, and they are the secret sauce behind intelligent software systems like <strong>ChatGPT</strong> to the optimal design of physical systems such as <strong>satellites, rockets, and airplanes</strong>. Very few people know the parallels between these two systems and how the engineering decision making is similar. This post reviews the methodologies for computing gradients in complex systems, drawing on insights from both machine learning and engineering literature.</p>
 <p>Gradients are essential for sensitivity calculations and optimization of objective (loss) functions. But while gradients are <em>cheap</em> for neural network training, they are often <em>expensive</em> for PDEs and coupled simulations in physical system design. <!-- 
 For a technical deep dive into MDO architectures and adjoint methods, see the [main post on Gradient-Based Optimization for Large Systems](index.qmd). --></p>
 <hr>
