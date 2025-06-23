@@ -13,7 +13,7 @@ tags: [gradients, automatic differentiation, chain rule, modular systems, PDEs, 
 
 ## Introduction
 
-Gradient-based optimization methods are everywhere, and they gave are the secret sauce behind intelligent software systems like **ChatGPT** to the optimal design of physical systems such as **satellites, rockets, and airplanes**. Very few people know the parallels between these two systems and how the engineering decision making is similar. This post reviews the methodologies for computing gradients in complex systems, drawing on insights from both machine learning and engineering literature.
+Gradient-based optimization methods are everywhere, and they are the secret sauce behind intelligent software systems like **ChatGPT** to the optimal design of physical systems such as **satellites, rockets, and airplanes**. Very few people know the parallels between these two systems and how the engineering decision making is similar. This post reviews the methodologies for computing gradients in complex systems, drawing on insights from both machine learning and engineering literature.
 
 Gradients are essential for sensitivity calculations and optimization of objective (loss) functions. But while gradients are *cheap* for neural network training, they are often *expensive* for PDEs and coupled simulations in physical system design.
 <!-- 
