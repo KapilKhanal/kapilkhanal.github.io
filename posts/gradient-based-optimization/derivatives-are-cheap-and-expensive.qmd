@@ -2,7 +2,7 @@
 title: "Derivatives are Cheap and Expensive"
 subtitle: "The Real Cost of Gradients in Complex Systems Optimization"
 author: "Kapil Khanal"
-date: "2024-07-30"
+date: "2025-06-23"
 categories: [optimization, sensitivity analysis, research]
 tags: [gradients, automatic differentiation, chain rule, modular systems, PDEs, neural networks]
 ---
