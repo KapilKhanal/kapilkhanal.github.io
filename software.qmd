@@ -20,8 +20,8 @@ A Boundary Element Method (BEM) solver written in Julia, designed for hydrodynam
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-#### MDO Framework for WECs
-An open-source framework built on OpenMDAO for the Multidisciplinary Design Optimization of Wave Energy Converters (WECs). This project integrates hydrodynamic, structural, and control system models.
+#### MDO Framework for WEC Farms
+An framework for the Multidisciplinary Design Optimization of Wave Energy Converters (WECs) and WEC Farms. This project integrates hydrodynamic of large number of WECs, and control system models to optimize the performance of the WEC farm.
 :::
 
 ::: {.g-col-12 .g-col-md-6}
