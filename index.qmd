@@ -84,7 +84,7 @@ listing:
 <div id="particles-js"></div>
   
 :::{.hero-content}
-# Architecting Large-Scale Systems
+# Designing and Operating Large-Scale Systems
 
 **Differentiable Programming to Engineer Complex Systems.**
 :::
