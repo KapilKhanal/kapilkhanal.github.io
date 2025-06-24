@@ -333,7 +333,7 @@
     "href": "index.html#research-focus",
     "title": "Kapil Khanal",
     "section": "Research Focus",
-    "text": "Research Focus\nMy research architects the next generation of complex engineered systems by fusing advanced computational methods. I am interested in Multidisciplinary Design Optimization (MDO) and Scientific Machine Learning this involves utilizing ideas from Differentiable methods (neural networks, adjoint methods, automatic differentiation, etc.) and other physical simulations. Through these powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. I am also interested in Verification and Validation of large systems utilizing techniques from Uncertainty Quantification (UQ)."
+    "text": "Research Focus\nI am interested in applying computational methods to solve real-world problems. Currently, I focus on multidisciplinary design optimization (MDO), control co-design, machine learning and physical simulations to design and operate large-scale systems. Through the powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. I am also interested in Verification and Validation of large systems utilizing techniques from Uncertainty Quantification (UQ). Broadly, I am interested in bridging the gap between theory and practice in engineering and science.\nKeywords: Optimization, Optimal Controls, Differentiable Programming, Reinforcement Learning, System Architecture, System of System Optimization, Numerical simulations (boundary element method, finite difference method, finite element method, etc.)"
   },
   {
     "objectID": "index.html#recent-posts",
