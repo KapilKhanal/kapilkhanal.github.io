@@ -396,21 +396,14 @@
     "href": "posts/aiaa-scitech-2026-submission/index.html#key-contributions",
     "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
     "section": "Key Contributions",
-    "text": "Key Contributions\n\n1. Scalable Isoperformance with Automatic Differentiation\nTraditional isoperformance methods often struggle with high-dimensional design spaces due to computational limitations in gradient computation. Our approach leverages:\n\nReverse-mode automatic differentiation for efficient gradient computation\nAdjoint sensitivity analysis to handle complex coupled systems\nComputational graph frameworks for scalable implementation\n\nThis enables the method to scale to arbitrarily large design spaces while maintaining computational efficiency.\n\n\n2. Regularized Isoperformance for Coupled Systems\nCoupled multidisciplinary systems introduce unique challenges through:\n\nNonlinear coupling constraints between disciplines\nFeasibility requirements that must be satisfied simultaneously\nConvergence dependencies of numerical solvers\n\nOur regularized approach incorporates these feasibility constraints directly into the Jacobian matrix, improving both convergence likelihood and solution quality."
+    "text": "Key Contributions\n\n1. Scalable Isoperformance with Automatic Differentiation\nTraditional isoperformance methods often struggle with high-dimensional design spaces due to computational limitations in gradient computation. Our approach leverages:\n\nReverse-mode automatic differentiation for efficient gradient computation.\n\nThis enables the method to scale to arbitrarily large design spaces while maintaining computational efficiency.\n\n\n2. Regularized Isoperformance for Coupled Systems\nCoupled multidisciplinary systems introduce unique challenges through:\n\nNonlinear coupling constraints between disciplines\nFeasibility requirements that must be satisfied simultaneously\nConvergence dependencies of numerical solvers"
   },
   {
     "objectID": "posts/aiaa-scitech-2026-submission/index.html#applications",
     "href": "posts/aiaa-scitech-2026-submission/index.html#applications",
     "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
     "section": "Applications",
-    "text": "Applications\nThis work has broad applications across engineering disciplines, including:\n\nAerospace Systems: Aircraft design with multiple performance objectives\nMarine Engineering: Offshore structure optimization under environmental constraints\nEnergy Systems: Renewable energy device design and optimization\nTransportation: Vehicle design balancing performance, efficiency, and safety"
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#future-work",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#future-work",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "Future Work",
-    "text": "Future Work\nFuture research directions include:\n\nExtension to dynamic systems and time-varying constraints\nIntegration with uncertainty quantification methods\nDevelopment of interactive visualization tools for design space exploration\nApplication to real-world engineering case studies\n\n\nThis work represents a significant step forward in making optimization methods more practical and accessible for complex engineering systems, bridging the gap between mathematical optimality and engineering feasibility."
+    "text": "Applications\nThis work has broad applications across engineering disciplines, including:\n\nAerospace Systems: Aircraft design with multiple performance objectives\nMarine Engineering: Offshore structure optimization under environmental constraints\nEnergy Systems: Renewable energy device design and optimization\nTransportation: Vehicle design balancing performance, efficiency, and safety\n\nThis work represents a significant step forward in making optimization methods more practical and accessible for complex engineering systems, bridging the gap between mathematical optimality and engineering feasibility."
   },
   {
     "objectID": "posts/neural-networks-bem/index.html",
