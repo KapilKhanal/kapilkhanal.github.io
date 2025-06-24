@@ -50,9 +50,7 @@ The isoperformance method offers a systematic approach to explore the design spa
 
 Traditional isoperformance methods often struggle with high-dimensional design spaces due to computational limitations in gradient computation. Our approach leverages:
 
-- **Reverse-mode automatic differentiation** for efficient gradient computation
-- **Adjoint sensitivity analysis** to handle complex coupled systems
-- **Computational graph frameworks** for scalable implementation
+- **Reverse-mode automatic differentiation** for efficient gradient computation.
 
 This enables the method to scale to arbitrarily large design spaces while maintaining computational efficiency.
 
@@ -64,8 +62,6 @@ Coupled multidisciplinary systems introduce unique challenges through:
 - **Feasibility requirements** that must be satisfied simultaneously
 - **Convergence dependencies** of numerical solvers
 
-Our regularized approach incorporates these feasibility constraints directly into the Jacobian matrix, improving both convergence likelihood and solution quality.
-
 
 ## Applications
 
@@ -76,15 +72,5 @@ This work has broad applications across engineering disciplines, including:
 - **Energy Systems**: Renewable energy device design and optimization
 - **Transportation**: Vehicle design balancing performance, efficiency, and safety
 
-## Future Work
-
-Future research directions include:
-
-- Extension to dynamic systems and time-varying constraints
-- Integration with uncertainty quantification methods
-- Development of interactive visualization tools for design space exploration
-- Application to real-world engineering case studies
-
----
 
 *This work represents a significant step forward in making optimization methods more practical and accessible for complex engineering systems, bridging the gap between mathematical optimality and engineering feasibility.* 
