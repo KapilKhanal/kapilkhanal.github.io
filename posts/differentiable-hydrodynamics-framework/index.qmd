@@ -1,7 +1,7 @@
 ---
 title: "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems"
 subtitle: "My PhD Research Proposal"
-description: "Developing a differentiable boundary element method solver for hydrodynamic shape optimization of offshore structures using automatic differentiation and adjoint methods"
+description: "Developing a differentiable boundary element method solver for hydrodynamic design optimization of offshore structures using automatic differentiation and adjoint methods"
 author: "Kapil Khanal"
 date: 2024-01-15
 image: ""
@@ -171,7 +171,7 @@ Hydrodynamic problems involve complex numbers (frequency domain analysis). AD fr
 - Maintaining numerical stability
 
 **Challenge 3: Green's Function Evaluation**
-The free-surface Green's function is computationally expensive and involves special functions. Solutions include:
+The free-surface Green's function is computationally expensive and involves special functions. 
 - Implementing efficient evaluation algorithms
 - Using approximation methods for early design iterations
 - Leveraging GPU acceleration where possible
