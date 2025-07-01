@@ -62,7 +62,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ac00eefc3da0d19490f9776e29124d6b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dadaeca146ff93bc42eca84d14ab1b3b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -153,11 +153,11 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems – Kapil Khanal">
-<meta property="og:description" content="Developing a differentiable boundary element method solver for hydrodynamic shape optimization of offshore structures using automatic differentiation and adjoint methods">
+<meta property="og:description" content="Developing a differentiable boundary element method solver for hydrodynamic design optimization of offshore structures using automatic differentiation and adjoint methods">
 <meta property="og:image" content="https://quarto.org/quarto.png">
 <meta property="og:site_name" content="Kapil Khanal">
 <meta name="twitter:title" content="A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems – Kapil Khanal">
-<meta name="twitter:description" content="Developing a differentiable boundary element method solver for hydrodynamic shape optimization of offshore structures using automatic differentiation and adjoint methods">
+<meta name="twitter:description" content="Developing a differentiable boundary element method solver for hydrodynamic design optimization of offshore structures using automatic differentiation and adjoint methods">
 <meta name="twitter:image" content="https://quarto.org/quarto.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -318,7 +318,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    Developing a differentiable boundary element method solver for hydrodynamic shape optimization of offshore structures using automatic differentiation and adjoint methods
+    Developing a differentiable boundary element method solver for hydrodynamic design optimization of offshore structures using automatic differentiation and adjoint methods
   </div>
 </div>
 
@@ -445,7 +445,7 @@ window.Quarto = {
 <h4 class="anchored" data-anchor-id="challenges-and-solutions">Challenges and Solutions</h4>
 <p><strong>Challenge 1: Dense Linear Systems</strong> BEM methods solve dense linear systems, which are computationally expensive. Solutions include: - Using iterative solvers with preconditioning - Implementing matrix-free methods where possible - Leveraging parallel computing for large problems</p>
 <p><strong>Challenge 2: Complex-valued Computations</strong> Hydrodynamic problems involve complex numbers (frequency domain analysis). AD frameworks must handle complex differentiation correctly: - Using Wirtinger calculus for complex derivatives - Ensuring proper handling of complex conjugates - Maintaining numerical stability</p>
-<p><strong>Challenge 3: Green’s Function Evaluation</strong> The free-surface Green’s function is computationally expensive and involves special functions. Solutions include: - Implementing efficient evaluation algorithms - Using approximation methods for early design iterations - Leveraging GPU acceleration where possible</p>
+<p><strong>Challenge 3: Green’s Function Evaluation</strong> The free-surface Green’s function is computationally expensive and involves special functions. - Implementing efficient evaluation algorithms - Using approximation methods for early design iterations - Leveraging GPU acceleration where possible</p>
 <p><strong>Challenge 4: Integration with Optimization Frameworks</strong> The differentiable BEM solver must integrate with MDO frameworks like OpenMDAO: - Providing consistent interfaces for gradient computation - Handling the coupling between different subsystems - Ensuring numerical stability across the entire optimization</p>
 </section>
 </section>
