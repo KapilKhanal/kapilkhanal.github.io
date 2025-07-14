@@ -1,6 +1,6 @@
 ---
 title: "Gradient-Based Optimization for Large Systems"
-subtitle: "A Deep Dive into MDO Architectures, Solvers, and Simulators"
+subtitle: "Introduction to MDO Architectures, Solvers, and Simulators"
 author: "Kapil Khanal"
 date: "2024-07-26"
 categories: [MDO, optimization, research]
@@ -14,6 +14,10 @@ A computational architecture for Multidisciplinary Design Optimization (MDO) is 
 Simulators and solvers are required to either compute the performance of the system through some physics (numerical simulation) or resolve non-linear feedback coupling between subsystems (non-linear equation solvers). A system where all the subsystems agree on their input and output (including any shared variables) is necessary for the system to be optimal and feasible. The coordination of the variables can, however, be done in numerous ways that involve solvers and/or optimizers. Many architectures that arise due to these choices are briefly discussed in later sections.
 
 For offshore systems, marine hydrodynamics solvers (like the boundary element method) are required. The choice of solvers, however, depends on the strength of the coupling between two subsystems. In this post, a Newton solver is used to converge the feedback coupling when necessary.
+
+![Large systems](./coupled_uncoupled.png)
+
+
 
 ### MDO 'Stack'
 
