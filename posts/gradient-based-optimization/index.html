@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-dadaeca146ff93bc42eca84d14ab1b3b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-461446b6e9a8fcea71e53a5f1f7aa55d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -133,12 +133,16 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Gradient-Based Optimization for Large Systems – Kapil Khanal">
-<meta property="og:description" content="A Deep Dive into MDO Architectures, Solvers, and Simulators">
-<meta property="og:image" content="https://quarto.org/quarto.png">
+<meta property="og:description" content="Introduction to MDO Architectures, Solvers, and Simulators">
+<meta property="og:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/gradient-based-optimization/coupled_uncoupled.png">
 <meta property="og:site_name" content="Kapil Khanal">
+<meta property="og:image:height" content="887">
+<meta property="og:image:width" content="1323">
 <meta name="twitter:title" content="Gradient-Based Optimization for Large Systems – Kapil Khanal">
-<meta name="twitter:description" content="A Deep Dive into MDO Architectures, Solvers, and Simulators">
-<meta name="twitter:image" content="https://quarto.org/quarto.png">
+<meta name="twitter:description" content="Introduction to MDO Architectures, Solvers, and Simulators">
+<meta name="twitter:image" content="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/gradient-based-optimization/coupled_uncoupled.png">
+<meta name="twitter:image-height" content="887">
+<meta name="twitter:image-width" content="1323">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -273,7 +277,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Gradient-Based Optimization for Large Systems</h1>
-<p class="subtitle lead">A Deep Dive into MDO Architectures, Solvers, and Simulators</p>
+<p class="subtitle lead">Introduction to MDO Architectures, Solvers, and Simulators</p>
   <div class="quarto-categories">
     <div class="quarto-category">MDO</div>
     <div class="quarto-category">optimization</div>
@@ -312,6 +316,12 @@ window.Quarto = {
 <p>A computational architecture for Multidisciplinary Design Optimization (MDO) is composed of three primary components: <strong>solvers</strong> (e.g., Newton), <strong>simulators</strong> (or emulators, PDE solvers, closed-form expressions), and <strong>optimizers</strong> (e.g., IPOPT, Genetic Algorithm). The performance and efficiency of the overall system are directly influenced by the selection and interaction of these components.</p>
 <p>Simulators and solvers are required to either compute the performance of the system through some physics (numerical simulation) or resolve non-linear feedback coupling between subsystems (non-linear equation solvers). A system where all the subsystems agree on their input and output (including any shared variables) is necessary for the system to be optimal and feasible. The coordination of the variables can, however, be done in numerous ways that involve solvers and/or optimizers. Many architectures that arise due to these choices are briefly discussed in later sections.</p>
 <p>For offshore systems, marine hydrodynamics solvers (like the boundary element method) are required. The choice of solvers, however, depends on the strength of the coupling between two subsystems. In this post, a Newton solver is used to converge the feedback coupling when necessary.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./coupled_uncoupled.png" class="img-fluid figure-img"></p>
+<figcaption>Large systems</figcaption>
+</figure>
+</div>
 <section id="mdo-stack" class="level3">
 <h3 class="anchored" data-anchor-id="mdo-stack">MDO ‘Stack’</h3>
 <p>The MDO system can be represented as a set:</p>

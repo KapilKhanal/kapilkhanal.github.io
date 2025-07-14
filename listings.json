@@ -1,17 +1,7 @@
 [
   {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
-      "/posts/marinehydro-julia-package/index.html",
-      "/posts/aiaa-scitech-2026-submission/index.html",
-      "/posts/neural-networks-bem/index.html",
-      "/posts/gradient-based-optimization/index.html",
-      "/posts/idetc-2025-submission/index.html",
-      "/posts/differentiable-hydrodynamics-framework/index.html",
-      "/posts/evtol-ems-system-architecture/index.html",
-      "/posts/xg-pass-soccer-analytics/index.html"
-    ]
+    "listing": "/people.html",
+    "items": []
   },
   {
     "listing": "/index.html",
@@ -20,16 +10,26 @@
       "/posts/marinehydro-julia-package/index.html",
       "/posts/aiaa-scitech-2026-submission/index.html",
       "/posts/neural-networks-bem/index.html",
-      "/posts/gradient-based-optimization/index.html",
       "/posts/idetc-2025-submission/index.html",
+      "/posts/gradient-based-optimization/index.html",
       "/posts/differentiable-hydrodynamics-framework/index.html",
       "/posts/evtol-ems-system-architecture/index.html",
       "/posts/xg-pass-soccer-analytics/index.html"
     ]
   },
   {
-    "listing": "/people.html",
-    "items": []
+    "listing": "/posts.html",
+    "items": [
+      "/posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
+      "/posts/marinehydro-julia-package/index.html",
+      "/posts/aiaa-scitech-2026-submission/index.html",
+      "/posts/neural-networks-bem/index.html",
+      "/posts/idetc-2025-submission/index.html",
+      "/posts/gradient-based-optimization/index.html",
+      "/posts/differentiable-hydrodynamics-framework/index.html",
+      "/posts/evtol-ems-system-architecture/index.html",
+      "/posts/xg-pass-soccer-analytics/index.html"
+    ]
   },
   {
     "listing": "/projects.html",

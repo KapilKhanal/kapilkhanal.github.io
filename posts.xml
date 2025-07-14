@@ -610,6 +610,35 @@ $$ -->
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/neural-networks-bem/nn.png" medium="image" type="image/png" height="103" width="144"/>
 </item>
 <item>
+  <title>Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/idetc-2025-submission/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I recently submitted a paper to the <strong>ASME 2025 International Design Engineering Technical Conferences &amp; Computers and Information in Engineering Conference (IDETC/CIE)</strong>, to be held in Anahiem, California, from August 17-20, 2025.</p>
+<p>Below is the abstract for the submission.</p>
+<hr>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
+<p>Wave energy conversion requires optimal design and control strategies to maximize energy extraction. Optimization approaches such as control co-design optimize plant design and the control strategies together. Several existing approaches use heuristic methods that do not scale well with high-dimensional design spaces. A gradient-based approach scales better than the heuristic method, for which the integrated model should be able to provide not just the output but its sensitivity with respect to the inputs. Currently, these different numerical solvers are used in isolation, thus making heuristic optimizers a natural choice.</p>
+<p>This study develops a <strong>differentiable model</strong> integrating boundary element methods (BEM) for hydrodynamic modeling with <strong>pseudo-spectral optimal control</strong> techniques to optimize power take-off (PTO) forces under dynamic constraints for maximizing electrical power per volume of a point absorber wave energy converter (WEC). This model is useful for the large-scale gradient-based optimization of the electrical power.</p>
+<p>Discussion and derivation of the <strong>semi-analytic adjoint for the hydrodynamics solver</strong>, non-linear parametric sensitivity for the trajectory optimization, and the calculation of the coupled derivative using unified derivative equations is presented. A nested formulation of the control co-design approach within a multidisciplinary design optimization architecture is created for the differentiable wave-to-wire model. Preliminary numerical experiment and verification of the sensitivities is conducted for the differentiable wave-to-wire model for a heaving point absorber WEC.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>conference</category>
+  <category>research</category>
+  <category>optimization</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/idetc-2025-submission/</guid>
+  <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder3.JPG" medium="image"/>
+</item>
+<item>
   <title>Gradient-Based Optimization for Large Systems</title>
   <dc:creator>Kapil Khanal</dc:creator>
   <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/gradient-based-optimization/</link>
@@ -623,6 +652,12 @@ $$ -->
 <p>A computational architecture for Multidisciplinary Design Optimization (MDO) is composed of three primary components: <strong>solvers</strong> (e.g., Newton), <strong>simulators</strong> (or emulators, PDE solvers, closed-form expressions), and <strong>optimizers</strong> (e.g., IPOPT, Genetic Algorithm). The performance and efficiency of the overall system are directly influenced by the selection and interaction of these components.</p>
 <p>Simulators and solvers are required to either compute the performance of the system through some physics (numerical simulation) or resolve non-linear feedback coupling between subsystems (non-linear equation solvers). A system where all the subsystems agree on their input and output (including any shared variables) is necessary for the system to be optimal and feasible. The coordination of the variables can, however, be done in numerous ways that involve solvers and/or optimizers. Many architectures that arise due to these choices are briefly discussed in later sections.</p>
 <p>For offshore systems, marine hydrodynamics solvers (like the boundary element method) are required. The choice of solvers, however, depends on the strength of the coupling between two subsystems. In this post, a Newton solver is used to converge the feedback coupling when necessary.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/gradient-based-optimization/coupled_uncoupled.png" class="img-fluid figure-img"></p>
+<figcaption>Large systems</figcaption>
+</figure>
+</div>
 <section id="mdo-stack" class="level3">
 <h3 class="anchored" data-anchor-id="mdo-stack">MDO ‘Stack’</h3>
 <p>The MDO system can be represented as a set:</p>
@@ -691,35 +726,6 @@ A comparison between monolithic and distributed optimization architectures is pe
   <category>research</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/gradient-based-optimization/</guid>
   <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization</title>
-  <dc:creator>Kapil Khanal</dc:creator>
-  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/idetc-2025-submission/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>I recently submitted a paper to the <strong>ASME 2025 International Design Engineering Technical Conferences &amp; Computers and Information in Engineering Conference (IDETC/CIE)</strong>, to be held in Anahiem, California, from August 17-20, 2025.</p>
-<p>Below is the abstract for the submission.</p>
-<hr>
-<section id="abstract" class="level3">
-<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
-<p>Wave energy conversion requires optimal design and control strategies to maximize energy extraction. Optimization approaches such as control co-design optimize plant design and the control strategies together. Several existing approaches use heuristic methods that do not scale well with high-dimensional design spaces. A gradient-based approach scales better than the heuristic method, for which the integrated model should be able to provide not just the output but its sensitivity with respect to the inputs. Currently, these different numerical solvers are used in isolation, thus making heuristic optimizers a natural choice.</p>
-<p>This study develops a <strong>differentiable model</strong> integrating boundary element methods (BEM) for hydrodynamic modeling with <strong>pseudo-spectral optimal control</strong> techniques to optimize power take-off (PTO) forces under dynamic constraints for maximizing electrical power per volume of a point absorber wave energy converter (WEC). This model is useful for the large-scale gradient-based optimization of the electrical power.</p>
-<p>Discussion and derivation of the <strong>semi-analytic adjoint for the hydrodynamics solver</strong>, non-linear parametric sensitivity for the trajectory optimization, and the calculation of the coupled derivative using unified derivative equations is presented. A nested formulation of the control co-design approach within a multidisciplinary design optimization architecture is created for the differentiable wave-to-wire model. Preliminary numerical experiment and verification of the sensitivities is conducted for the differentiable wave-to-wire model for a heaving point absorber WEC.</p>
-
-
-</section>
-
- ]]></description>
-  <category>conference</category>
-  <category>research</category>
-  <category>optimization</category>
-  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/idetc-2025-submission/</guid>
-  <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder3.JPG" medium="image"/>
 </item>
 <item>
   <title>A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems</title>
