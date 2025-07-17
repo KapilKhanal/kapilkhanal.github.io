@@ -1,0 +1,90 @@
+---
+title: "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl"
+author: "Kapil Khanal"
+date: "2025-07-27"
+categories: [workshop, marine hydrodynamics, differentiable programming, optimization]
+tags: [MarineHydro.jl, BEM, automatic differentiation, wave energy converters, surrogate modeling, layout optimization]
+---
+
+> "Understanding and predicting wave-structure interactions is central to the design and operation of offshore systems—from floating wind turbines and wave energy converters to autonomous marine platforms."
+
+---
+
+## Abstract
+
+Understanding and predicting wave-structure interactions is central to the design and operation of offshore systems—from floating wind turbines and wave energy converters to autonomous marine platforms. Traditionally, these interactions are modeled using boundary element method (BEM) solvers based on linear potential flow theory. However, a major limitation of existing BEM solvers is their inability to provide sensitivities (derivatives) of hydrodynamic quantities with respect to design variables such as geometry, wave frequency, or device layout. These sensitivities are essential for enabling modern workflows in design optimization, control co-design, uncertainty quantification, and physics-informed machine learning.
+
+Without access to gradients, engineers are forced to rely on derivative-free methods (e.g., parameter sweeps, heuristics, or surrogate models without sensitivity guidance), which scale poorly and often miss optimal solutions in high-dimensional design spaces. This bottleneck has hindered progress in applying scalable, gradient-based optimization methods—now common in aerospace, robotics, and machine learning—to the marine energy sector.
+
+This workshop introduces MarineHydro.jl, a fully differentiable BEM solver that unlocks access to exact sensitivities of hydrodynamic coefficients through reverse-mode automatic differentiation. Developed in Julia, MarineHydro.jl supports both direct and indirect BEM formulations and includes fast and accurate Green's function implementations. The workshop is targeted at researchers and practitioners working on design and control of offshore and marine structures, with an emphasis on applications where sensitivity information is essential. Participants will learn to install the solver, perform hydrodynamic simulations, extract gradients, and apply these results to practical case studies.
+
+We begin by reviewing the fundamentals of differentiable programming and its potential usage/implementation in BEM software common in marine hydrodynamics. 
+
+---
+
+## Workshop Overview
+
+### Target Audience
+- Researchers and practitioners working on design and control of offshore and marine structures
+- Engineers interested in differentiable programming 
+- Students and professionals in marine hydrodynamics and renewable energy
+
+### Learning Objectives
+- Install and configure MarineHydro.jl from GitHub
+- Perform automatic differentiation
+- Perform hydrodynamic simulations with BEM formulations
+- Extract exact sensitivities using automatic differentiation
+- Understand the fundamentals of differentiable programming 
+
+---
+
+
+
+---
+
+## Technical Foundations
+
+### Differentiable Programming in Marine Hydrodynamics
+
+The workshop covers the fundamentals of differentiable programming as applied to potential flow theory and boundary element methods. Participants will learn:
+
+- **Automatic Differentiation:** How reverse-mode AD enables exact gradient computation
+- **BEM Formulations:** Direct and indirect boundary element method implementations
+- **Green's Functions:** Efficient and accurate implementations for marine applications
+- **Sensitivity Analysis:** Computing derivatives with respect to geometry, frequency, and layout parameters
+
+
+
+## Workshop Materials
+
+The workshop will include hands-on sessions with:
+
+- **Installation Guide:** Setting up MarineHydro.jl from GitHub, AD backends.
+- **Interactive Pluto Notebook:** Step-by-step examples with live code execution??
+- **Tutorial Notebooks:** Step-by-step examples
+
+### Interactive Workshop Notebook
+
+The workshop includes an interactive Pluto notebook that demonstrates:
+
+- **Setup and Installation:** Getting MarineHydro.jl and dependencies running
+- **Basic BEM Simulations:** Simple hydrodynamic calculations
+- **Automatic Differentiation:** Computing exact sensitivities
+- **Gradient-Based Optimization:** Practical examples with real marine structures
+- **Advanced Features:** Multi-body interactions and layout optimization
+
+You can download and run the notebook locally, or view it online. The notebook is designed to be self-contained and includes all necessary code examples.
+
+**[Download Workshop Notebook](notebooks/workshop_notebook.jl)** - Interactive Pluto notebook with all workshop examples
+
+
+---
+
+## Conclusion
+
+This workshop enable researchers and practitioners to leverage the full power of gradient-based methods that have transformed other engineering disciplines and bring them to the marine energy sector.
+
+
+---
+
+*For more information about MarineHydro.jl, visit the [GitHub repository](https://github.com/symbiotic-engineering/MarineHydro.jl).* This software is in initial stages of development and actively looking for contributors and feedback.

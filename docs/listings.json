@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/marinehydro-workshop/index.html",
       "/posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
       "/posts/marinehydro-julia-package/index.html",
       "/posts/aiaa-scitech-2026-submission/index.html",
@@ -16,6 +17,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/marinehydro-workshop/index.html",
       "/posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
       "/posts/marinehydro-julia-package/index.html",
       "/posts/aiaa-scitech-2026-submission/index.html",
