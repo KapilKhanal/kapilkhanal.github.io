@@ -45,6 +45,19 @@ begin
 end
 
 
+# ╔═╡ f0f2ab01-a052-4015-ade1-367f06473a04
+md"## 🔧 Introduction to Automatic Differentiation in Julia  
+### 🌀 MarineHydro.jl — A Differentiable BEM Solver for Marine Hydrodynamics. 
+
+
+- 🌊 Focused on **marine hydrodynamics** problems via Boundary Element Methods (BEM).
+- 🧑‍💻 **Open Source** and welcoming contributors, testers, and curious users.
+- 🚀 If you're excited by **differentiable physics**, **Julia**, or **offshore systems**, join us!
+
+
+⚠️ **Experimental Software**: This package is in early stages — bugs are expected!"
+
+
 # ╔═╡ d2f079da-6f93-456a-b918-54d7ab92b703
 md"### Intro to automatic differentiation "
 
@@ -135,7 +148,7 @@ end
 
 # ╔═╡ df8bb2de-0362-4c8a-901e-42de5a4a6f5c
 md"""
-# 🧠 Adjoint Mode Differentiation in `MarineHydro.jl`
+### Automatic Differentiation in `MarineHydro.jl`
 
 - The current implementation is **research-focused**, and the API is still evolving.
 - It is designed to work seamlessly with **automatic differentiation (AD) engines**.
@@ -204,24 +217,36 @@ begin
 	print(A_w_grad_reverse)
 end
 
+# ╔═╡ a14e88eb-3047-4501-9142-cccafc4150c7
+md" ## There could be BIG BUGS in this research software at this point. We are looking for contributors and feedback on it
+
+To do:
+1) Ireggular frequency removal
+2) GPU, Distributed Computing etc
+3) Software API 
+4) Speeding up automatic differentiation by providing analytical gradient to AD engine. Less work for AD engine!!
+"
+
 # ╔═╡ Cell order:
-# ╠═a6fe44fb-c400-4207-b8c7-d243f735b9e7
-# ╠═d2f079da-6f93-456a-b918-54d7ab92b703
+# ╟─f0f2ab01-a052-4015-ade1-367f06473a04
+# ╟─a6fe44fb-c400-4207-b8c7-d243f735b9e7
+# ╟─d2f079da-6f93-456a-b918-54d7ab92b703
 # ╠═dea1bff4-7eb6-4204-acbf-c0140da4230d
-# ╠═e655ff4e-5c5a-4895-a76c-e9b888a24fd1
+# ╟─e655ff4e-5c5a-4895-a76c-e9b888a24fd1
 # ╠═edb29ea8-2857-4e8c-b4be-6db510d684f7
 # ╠═dbb6b39c-c4e1-481a-ad9c-f68fbcccc244
-# ╠═da64e8f3-0403-44f8-a494-f87da48e2d57
+# ╟─da64e8f3-0403-44f8-a494-f87da48e2d57
 # ╠═3919f706-fce7-4174-9e47-91e12b8b2c8c
 # ╠═37728131-01c1-4e3b-8f68-9c8cbf78d100
 # ╠═d6002b38-0430-4b32-ad35-fede308e5bb2
 # ╠═b3daf591-e534-41f4-ad69-7616abb1abff
-# ╠═33df4a52-826f-4d3a-b71d-2ac6b0af6644
+# ╟─33df4a52-826f-4d3a-b71d-2ac6b0af6644
 # ╠═0ddfea0a-2b19-4370-96ec-8127eebc7215
-# ╠═df8bb2de-0362-4c8a-901e-42de5a4a6f5c
+# ╟─df8bb2de-0362-4c8a-901e-42de5a4a6f5c
 # ╠═b91b0dc0-da09-43e2-969c-be681e092c4f
 # ╠═f9f9b4f2-62c9-11f0-3438-27cf7886b3aa
 # ╠═e004d41e-c4f1-4002-99df-1036f9a28dd4
 # ╠═14defa7e-8857-4fcd-8177-4e82bdd6b261
-# ╠═0f9ff588-fe85-410f-8666-e5c3ba725507
+# ╟─0f9ff588-fe85-410f-8666-e5c3ba725507
 # ╠═deb89ef6-77b1-4b40-8ddb-214907376cb7
+# ╟─a14e88eb-3047-4501-9142-cccafc4150c7
