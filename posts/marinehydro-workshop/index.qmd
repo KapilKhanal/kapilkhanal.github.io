@@ -2,7 +2,7 @@
 title: "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl"
 author: "Kapil Khanal"
 date: "2025-07-27"
-image: umerc.png
+image: "umerc.png"
 categories: [workshop, marine hydrodynamics, differentiable programming, optimization]
 tags: [MarineHydro.jl, BEM, automatic differentiation, wave energy converters, surrogate modeling, layout optimization]
 ---

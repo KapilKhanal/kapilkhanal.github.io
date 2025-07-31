@@ -39,7 +39,7 @@
     "href": "index.html#recent-posts",
     "title": "Kapil Khanal",
     "section": "Recent Posts",
-    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\nWorkshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl\n\n\n\nJul 27, 2025\n\n\n\n\n\n\n\n\n\n\n\nDerivatives are Cheap and Expensive\n\n\nThe Real Cost of Gradients in Complex Systems Optimization\n\n\n\nJun 23, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis\n\n\nA Julia Package for Wave-Structure Interactions\n\n\n\nJun 22, 2025\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
+    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nWorkshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl\n\n\n\nJul 27, 2025\n\n\n\n\n\n\n\n\n\n\n\nDerivatives are Cheap and Expensive\n\n\nThe Real Cost of Gradients in Complex Systems Optimization\n\n\n\nJun 23, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis\n\n\nA Julia Package for Wave-Structure Interactions\n\n\n\nJun 22, 2025\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
   },
   {
     "objectID": "posts/idetc-2025-submission/index.html",
@@ -550,7 +550,7 @@
     "href": "posts/marinehydro-workshop/index.html",
     "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
     "section": "",
-    "text": "“Understanding and predicting wave-structure interactions is central to the design and operation of offshore systems—from floating wind turbines and wave energy converters to autonomous marine platforms.”"
+    "text": "“Bringing the power of gradient-based optimization to the marine energy sector”"
   },
   {
     "objectID": "posts/marinehydro-workshop/index.html#abstract",
@@ -578,7 +578,7 @@
     "href": "posts/marinehydro-workshop/index.html#workshop-materials",
     "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
     "section": "Workshop Materials",
-    "text": "Workshop Materials\nThe workshop will include hands-on sessions with:\n\nInstallation Guide: Setting up MarineHydro.jl from GitHub, AD backends.\nInteractive Pluto Notebook: Step-by-step examples with live code execution??\nTutorial Notebooks: Step-by-step examples\n\n\nInteractive Workshop Notebook\nThe workshop includes an interactive Pluto notebook that demonstrates:\n\nSetup and Installation: Getting MarineHydro.jl and dependencies running\nBasic BEM Simulations: Simple hydrodynamic calculations\nAutomatic Differentiation: Computing exact sensitivities\nGradient-Based Optimization: Practical examples with real marine structures\nAdvanced Features: Multi-body interactions and layout optimization\n\nYou can download and run the notebook locally, or view it online. The notebook is designed to be self-contained and includes all necessary code examples.\nDownload Workshop Notebook - Interactive Pluto notebook with all workshop examples"
+    "text": "Workshop Materials\nThe workshop will include hands-on sessions with:\n\nInstallation Guide: Setting up MarineHydro.jl from GitHub, AD backends.\nInteractive Pluto Notebook: Step-by-step examples with live code execution??\nTutorial Notebooks: Step-by-step examples\n\n\nInteractive Workshop Notebook\nThe workshop includes an interactive Pluto notebook that demonstrates:\n\nSetup and Installation: Getting MarineHydro.jl and dependencies running\nBasic BEM Simulations: Simple hydrodynamic calculations\nAutomatic Differentiation: Computing exact sensitivities\nGradient-Based Optimization: Practical examples with real marine structures\nAdvanced Features: Multi-body interactions and layout optimization\n\nYou can download and run the notebook locally, or view it online. The notebook is designed to be self-contained and includes all necessary code examples.\nDownload Workshop Notebook - Interactive Pluto notebook with all workshop examples\n\n\nPluto Notebooks\n\nInstalling Pluto.jl: https://plutojl.org/#install"
   },
   {
     "objectID": "posts/marinehydro-workshop/index.html#conclusion",
@@ -586,5 +586,12 @@
     "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
     "section": "Conclusion",
     "text": "Conclusion\nThis workshop enable researchers and practitioners to leverage the full power of gradient-based methods that have transformed other engineering disciplines and bring them to the marine energy sector.\n\nFor more information about MarineHydro.jl, visit the GitHub repository. This software is in initial stages of development and actively looking for contributors and feedback."
+  },
+  {
+    "objectID": "posts/marinehydro-workshop/index.html#how-to-install-and-run-the-pluto-notebook",
+    "href": "posts/marinehydro-workshop/index.html#how-to-install-and-run-the-pluto-notebook",
+    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
+    "section": "How to Install and Run the Pluto Notebook",
+    "text": "How to Install and Run the Pluto Notebook\nFollow these steps to get started with Julia and Pluto for running the MarineHydro.jl workshop notebook:\n\nStep 1: Install Julia 1.11.6\nGo to https://julialang.org/downloads and install the current stable release.\n\n\nStep 2: Run Julia\nAfter installing, make sure that you can run Julia. On some systems, this means searching for the “Julia 1.11” program installed on your computer; in others, it means running the command julia in a terminal.\nMake sure that you can execute 1 + 1.\n\n\nStep 3: Install Pluto\nIn the Julia terminal, type:\nimport Pkg; Pkg.add(\"Pluto\")\nThis will use Julia’s package manager to install the Pluto package.\nThis might take a couple of minutes, so you can go get yourself a cup of tea!\n\nscreenshot of the Julia REPL running the command import Pkg; Pkg.add(\"Pluto\")\n\n\n\nStep 4: Run Pluto\nIn the Julia terminal, type:\nimport Pluto; Pluto.run()\nPluto will automatically open your browser when it’s ready. 🎉"
   }
 ]
