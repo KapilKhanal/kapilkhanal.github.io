@@ -6,7 +6,7 @@ categories: [workshop, marine hydrodynamics, differentiable programming, optimiz
 tags: [MarineHydro.jl, BEM, automatic differentiation, wave energy converters, surrogate modeling, layout optimization]
 ---
 
-> "Understanding and predicting wave-structure interactions is central to the design and operation of offshore systems—from floating wind turbines and wave energy converters to autonomous marine platforms."
+> "Bringing the power of gradient-based optimization to the marine energy sector"
 
 ---
 
@@ -75,8 +75,46 @@ The workshop includes an interactive Pluto notebook that demonstrates:
 
 You can download and run the notebook locally, or view it online. The notebook is designed to be self-contained and includes all necessary code examples.
 
-**[Download Workshop Notebook](notebooks/workshop_notebook.jl)** - Interactive Pluto notebook with all workshop examples
+**[Download Workshop Notebook](https://github.com/KapilKhanal/UMERCWorkshop)** - Interactive Pluto notebook with all workshop examples
 
+### Pluto Notebooks
+
+- Installing Pluto.jl: https://plutojl.org/#install
+
+## How to Install and Run the Pluto Notebook
+
+Follow these steps to get started with Julia and Pluto for running the MarineHydro.jl workshop notebook:
+
+### Step 1: Install Julia 1.11.6
+Go to [https://julialang.org/downloads](https://julialang.org/downloads) and install the current stable release.
+
+### Step 2: Run Julia
+After installing, make sure that you can run Julia. On some systems, this means searching for the "Julia 1.11" program installed on your computer; in others, it means running the command `julia` in a terminal.
+
+Make sure that you can execute `1 + 1`.
+
+
+### Step 3: Install Pluto
+In the Julia terminal, type:
+
+```julia
+import Pkg; Pkg.add("Pluto")
+```
+
+This will use Julia's package manager to install the Pluto package.
+
+This might take a couple of minutes, so you can go get yourself a cup of tea!
+
+> _screenshot of the Julia REPL running the command `import Pkg; Pkg.add("Pluto")`_
+
+### Step 4: Run Pluto
+In the Julia terminal, type:
+
+```julia
+import Pluto; Pluto.run()
+```
+
+Pluto will automatically open your browser when it's ready. 🎉
 
 ---
 
