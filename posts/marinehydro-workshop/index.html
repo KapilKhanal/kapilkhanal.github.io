@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -241,6 +276,14 @@ https://badge.dimensions.ai/
   <li><a href="#workshop-materials" id="toc-workshop-materials" class="nav-link" data-scroll-target="#workshop-materials">Workshop Materials</a>
   <ul class="collapse">
   <li><a href="#interactive-workshop-notebook" id="toc-interactive-workshop-notebook" class="nav-link" data-scroll-target="#interactive-workshop-notebook">Interactive Workshop Notebook</a></li>
+  <li><a href="#pluto-notebooks" id="toc-pluto-notebooks" class="nav-link" data-scroll-target="#pluto-notebooks">Pluto Notebooks</a></li>
+  </ul></li>
+  <li><a href="#how-to-install-and-run-the-pluto-notebook" id="toc-how-to-install-and-run-the-pluto-notebook" class="nav-link" data-scroll-target="#how-to-install-and-run-the-pluto-notebook">How to Install and Run the Pluto Notebook</a>
+  <ul class="collapse">
+  <li><a href="#step-1-install-julia-1.11.6" id="toc-step-1-install-julia-1.11.6" class="nav-link" data-scroll-target="#step-1-install-julia-1.11.6">Step 1: Install Julia 1.11.6</a></li>
+  <li><a href="#step-2-run-julia" id="toc-step-2-run-julia" class="nav-link" data-scroll-target="#step-2-run-julia">Step 2: Run Julia</a></li>
+  <li><a href="#step-3-install-pluto" id="toc-step-3-install-pluto" class="nav-link" data-scroll-target="#step-3-install-pluto">Step 3: Install Pluto</a></li>
+  <li><a href="#step-4-run-pluto" id="toc-step-4-run-pluto" class="nav-link" data-scroll-target="#step-4-run-pluto">Step 4: Run Pluto</a></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
@@ -287,7 +330,7 @@ https://badge.dimensions.ai/
 
 
 <blockquote class="blockquote">
-<p>“Understanding and predicting wave-structure interactions is central to the design and operation of offshore systems—from floating wind turbines and wave energy converters to autonomous marine platforms.”</p>
+<p>“Bringing the power of gradient-based optimization to the marine energy sector”</p>
 </blockquote>
 <hr>
 <section id="abstract" class="level2">
@@ -353,7 +396,42 @@ https://badge.dimensions.ai/
 <li><strong>Advanced Features:</strong> Multi-body interactions and layout optimization</li>
 </ul>
 <p>You can download and run the notebook locally, or view it online. The notebook is designed to be self-contained and includes all necessary code examples.</p>
-<p><strong><a href="notebooks/workshop_notebook.jl">Download Workshop Notebook</a></strong> - Interactive Pluto notebook with all workshop examples</p>
+<p><strong><a href="https://github.com/KapilKhanal/UMERCWorkshop">Download Workshop Notebook</a></strong> - Interactive Pluto notebook with all workshop examples</p>
+</section>
+<section id="pluto-notebooks" class="level3">
+<h3 class="anchored" data-anchor-id="pluto-notebooks">Pluto Notebooks</h3>
+<ul>
+<li>Installing Pluto.jl: https://plutojl.org/#install</li>
+</ul>
+</section>
+</section>
+<section id="how-to-install-and-run-the-pluto-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-install-and-run-the-pluto-notebook">How to Install and Run the Pluto Notebook</h2>
+<p>Follow these steps to get started with Julia and Pluto for running the MarineHydro.jl workshop notebook:</p>
+<section id="step-1-install-julia-1.11.6" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-install-julia-1.11.6">Step 1: Install Julia 1.11.6</h3>
+<p>Go to <a href="https://julialang.org/downloads">https://julialang.org/downloads</a> and install the current stable release.</p>
+</section>
+<section id="step-2-run-julia" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-run-julia">Step 2: Run Julia</h3>
+<p>After installing, make sure that you can run Julia. On some systems, this means searching for the “Julia 1.11” program installed on your computer; in others, it means running the command <code>julia</code> in a terminal.</p>
+<p>Make sure that you can execute <code>1 + 1</code>.</p>
+</section>
+<section id="step-3-install-pluto" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-install-pluto">Step 3: Install Pluto</h3>
+<p>In the Julia terminal, type:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="bu">Pkg;</span> Pkg.add("Pluto")</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will use Julia’s package manager to install the Pluto package.</p>
+<p>This might take a couple of minutes, so you can go get yourself a cup of tea!</p>
+<blockquote class="blockquote">
+<p><em>screenshot of the Julia REPL running the command <code>import Pkg; Pkg.add("Pluto")</code></em></p>
+</blockquote>
+</section>
+<section id="step-4-run-pluto" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-run-pluto">Step 4: Run Pluto</h3>
+<p>In the Julia terminal, type:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="bu">Pluto;</span> Pluto.run()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Pluto will automatically open your browser when it’s ready. 🎉</p>
 <hr>
 </section>
 </section>
