@@ -111,6 +111,15 @@
 <section id="step-2-run-julia" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-run-julia">Step 2: Run Julia</h3>
 <p>After installing, make sure that you can run Julia. On some systems, this means searching for the “Julia 1.11” program installed on your computer; in others, it means running the command <code>julia</code> in a terminal.</p>
+<blockquote class="blockquote">
+<p>Julia install screenshot</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/marinehydro-workshop/julia.png" class="img-fluid figure-img"></p>
+<figcaption>Julia Installation</figcaption>
+</figure>
+</div>
 <p>Make sure that you can execute <code>1 + 1</code>.</p>
 </section>
 <section id="step-3-install-pluto" class="level3">
@@ -124,7 +133,7 @@ font-style: inherit;">Pkg;</span> Pkg.add("Pluto")</span></code></pre></div>
 <p>This will use Julia’s package manager to install the Pluto package.</p>
 <p>This might take a couple of minutes, so you can go get yourself a cup of tea!</p>
 <blockquote class="blockquote">
-<p><em>screenshot of the Julia REPL running the command <code>import Pkg; Pkg.add("Pluto")</code></em></p>
+<p><em>screenshot of the Julia REPL running the command <code>import Pkg; Pkg.add("Pluto")</code></em> <img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/marinehydro-workshop/pluto_install.png" class="img-fluid" alt="Julia Installation"></p>
 </blockquote>
 </section>
 <section id="step-4-run-pluto" class="level3">
@@ -135,6 +144,12 @@ background-color: null;
 font-style: inherit;">import</span> <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">Pluto;</span> Pluto.run()</span></code></pre></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/marinehydro-workshop/pluto_run.png" class="img-fluid figure-img"></p>
+<figcaption>Pluto Installation</figcaption>
+</figure>
+</div>
 <p>Pluto will automatically open your browser when it’s ready. 🎉</p>
 <hr>
 </section>

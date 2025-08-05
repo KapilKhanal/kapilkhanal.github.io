@@ -92,6 +92,10 @@ Go to [https://julialang.org/downloads](https://julialang.org/downloads) and ins
 ### Step 2: Run Julia
 After installing, make sure that you can run Julia. On some systems, this means searching for the "Julia 1.11" program installed on your computer; in others, it means running the command `julia` in a terminal.
 
+> Julia install screenshot
+
+![Julia Installation](julia.png)
+
 Make sure that you can execute `1 + 1`.
 
 
@@ -107,6 +111,7 @@ This will use Julia's package manager to install the Pluto package.
 This might take a couple of minutes, so you can go get yourself a cup of tea!
 
 > _screenshot of the Julia REPL running the command `import Pkg; Pkg.add("Pluto")`_
+![Julia Installation](pluto_install.png)
 
 ### Step 4: Run Pluto
 In the Julia terminal, type:
@@ -114,6 +119,7 @@ In the Julia terminal, type:
 ```julia
 import Pluto; Pluto.run()
 ```
+![Pluto Installation](pluto_run.png)
 
 Pluto will automatically open your browser when it's ready. 🎉
 
