@@ -92,7 +92,7 @@
 <li><strong>Advanced Features:</strong> Multi-body interactions and layout optimization</li>
 </ul>
 <p>You can download and run the notebook locally, or view it online. The notebook is designed to be self-contained and includes all necessary code examples.</p>
-<p><strong><a href="../../notebooks/umerc_workshop.jl">Download Workshop Notebook</a></strong> - Interactive Pluto notebook with all workshop examples</p>
+<p><strong><a href="notebooks/umerc_workshop.jl">Download Workshop Notebook</a></strong> - Interactive Pluto notebook with all workshop examples</p>
 </section>
 <section id="pluto-notebooks" class="level3">
 <h3 class="anchored" data-anchor-id="pluto-notebooks">Pluto Notebooks</h3>
