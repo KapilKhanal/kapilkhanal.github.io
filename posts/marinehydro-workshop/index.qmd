@@ -76,7 +76,7 @@ The workshop includes an interactive Pluto notebook that demonstrates:
 
 You can download and run the notebook locally, or view it online. The notebook is designed to be self-contained and includes all necessary code examples.
 
-**[Download Workshop Notebook](/notebooks/umerc_workshop.jl)** - Interactive Pluto notebook with all workshop examples
+**[Download Workshop Notebook](notebooks/umerc_workshop.jl)** - Interactive Pluto notebook with all workshop examples
 
 ### Pluto Notebooks
 
