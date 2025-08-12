@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.20.13
+# v0.20.15
 
 using Markdown
 using InteractiveUtils
@@ -62,7 +62,7 @@ md"## 🔧 Introduction to Automatic Differentiation in Julia
 md"### Intro to automatic differentiation "
 
 # ╔═╡ e655ff4e-5c5a-4895-a76c-e9b888a24fd1
-md"### Forward mode differentiation like finite difference but exact and no step size funny business"
+md"### Forward mode differentiation like finite difference but exact and no step size business"
 
 # ╔═╡ edb29ea8-2857-4e8c-b4be-6db510d684f7
 begin
@@ -97,9 +97,7 @@ end
 # ╔═╡ da64e8f3-0403-44f8-a494-f87da48e2d57
 md"### Differentiation with iterative residual solve (system solve) needs more thought
 - AD engine will try to differentiate each line of the iterative algorithm but we only care that the derivative be accurate at the solution of the algorithm 
-- IMPLICIT FUNCTION THEOREM
-- Differentiate at the solution
-
+- Differentiate at the solution, use any solver for system/equation solve
 "
 
 
@@ -209,22 +207,26 @@ end
 
 
 # ╔═╡ 0f9ff588-fe85-410f-8666-e5c3ba725507
-md"#### Reverse mode example using Zygote"
+md"#### Exercise: Reverse mode using Zygote
+- Reverse mode is useful for design optimization.
+- Zygote / ReverseDiff / Enzyme support reverse-mode differentiation if your code allows gradient propagation. 
+
+Our paper implements reverse mode through mesh for design optimization. Setting up meshing is difficult with Python and Julia currently and hence we need to implement meshing next in Julia"
+
 
 # ╔═╡ deb89ef6-77b1-4b40-8ddb-214907376cb7
-begin
-	A_w_grad_reverse = Zygote.gradient(Am,ω)
-	print(A_w_grad_reverse)
-end
+
 
 # ╔═╡ a14e88eb-3047-4501-9142-cccafc4150c7
 md" ## There could be BIG BUGS in this research software at this point. We are looking for contributors and feedback on it
 
-To do:
+### To do:
 1) Ireggular frequency removal
 2) GPU, Distributed Computing etc
 3) Software API 
 4) Speeding up automatic differentiation by providing analytical gradient to AD engine. Less work for AD engine!!
+5) AD usecases
+6) Mesh in Geometry
 "
 
 # ╔═╡ Cell order:
@@ -235,7 +237,7 @@ To do:
 # ╟─e655ff4e-5c5a-4895-a76c-e9b888a24fd1
 # ╠═edb29ea8-2857-4e8c-b4be-6db510d684f7
 # ╠═dbb6b39c-c4e1-481a-ad9c-f68fbcccc244
-# ╟─da64e8f3-0403-44f8-a494-f87da48e2d57
+# ╠═da64e8f3-0403-44f8-a494-f87da48e2d57
 # ╠═3919f706-fce7-4174-9e47-91e12b8b2c8c
 # ╠═37728131-01c1-4e3b-8f68-9c8cbf78d100
 # ╠═d6002b38-0430-4b32-ad35-fede308e5bb2
@@ -247,6 +249,6 @@ To do:
 # ╠═f9f9b4f2-62c9-11f0-3438-27cf7886b3aa
 # ╠═e004d41e-c4f1-4002-99df-1036f9a28dd4
 # ╠═14defa7e-8857-4fcd-8177-4e82bdd6b261
-# ╟─0f9ff588-fe85-410f-8666-e5c3ba725507
+# ╠═0f9ff588-fe85-410f-8666-e5c3ba725507
 # ╠═deb89ef6-77b1-4b40-8ddb-214907376cb7
-# ╟─a14e88eb-3047-4501-9142-cccafc4150c7
+# ╠═a14e88eb-3047-4501-9142-cccafc4150c7
