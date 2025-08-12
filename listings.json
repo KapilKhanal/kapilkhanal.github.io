@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/people.html",
+    "listing": "/projects.html",
     "items": []
   },
   {
@@ -19,6 +19,10 @@
     ]
   },
   {
+    "listing": "/people.html",
+    "items": []
+  },
+  {
     "listing": "/posts.html",
     "items": [
       "/posts/marinehydro-workshop/index.html",
@@ -32,9 +36,5 @@
       "/posts/evtol-ems-system-architecture/index.html",
       "/posts/xg-pass-soccer-analytics/index.html"
     ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": []
   }
 ]
