@@ -15,7 +15,7 @@
 <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts.html</link>
 </image>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Sun, 27 Jul 2025 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 27 Jul 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl</title>
   <dc:creator>Kapil Khanal</dc:creator>
@@ -92,7 +92,7 @@
 <li><strong>Advanced Features:</strong> Multi-body interactions and layout optimization</li>
 </ul>
 <p>You can download and run the notebook locally, or view it online. The notebook is designed to be self-contained and includes all necessary code examples.</p>
-<p><strong><a href="https://github.com/KapilKhanal/UMERCWorkshop">Download Workshop Notebook</a></strong> - Interactive Pluto notebook with all workshop examples</p>
+<p><strong><a href="notebooks/umerc_workshop.jl">Download Workshop Notebook</a></strong> - Interactive Pluto notebook with all workshop examples</p>
 </section>
 <section id="pluto-notebooks" class="level3">
 <h3 class="anchored" data-anchor-id="pluto-notebooks">Pluto Notebooks</h3>
@@ -169,7 +169,7 @@ font-style: inherit;">Pluto;</span> Pluto.run()</span></code></pre></div>
   <category>differentiable programming</category>
   <category>optimization</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/marinehydro-workshop/</guid>
-  <pubDate>Sun, 27 Jul 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 27 Jul 2025 05:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/marinehydro-workshop/umerc.png" medium="image" type="image/png" height="34" width="144"/>
 </item>
 <item>
@@ -291,7 +291,7 @@ For a technical deep dive into MDO architectures and adjoint methods, see the [m
   <category>sensitivity analysis</category>
   <category>research</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html</guid>
-  <pubDate>Mon, 23 Jun 2025 04:00:00 GMT</pubDate>
+  <pubDate>Mon, 23 Jun 2025 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>MarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis</title>
@@ -604,7 +604,7 @@ font-style: inherit;">calculate_radiation_forces</span>(mesh, ζ, ω)</span></co
   <category>hydrodynamics</category>
   <category>optimization</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/marinehydro-julia-package/</guid>
-  <pubDate>Sun, 22 Jun 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 22 Jun 2025 05:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/marinehydro-julia-package/julia_dots.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
@@ -690,7 +690,7 @@ font-style: inherit;">calculate_radiation_forces</span>(mesh, ζ, ω)</span></co
   <category>optimization</category>
   <category>research</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/aiaa-scitech-2026-submission/</guid>
-  <pubDate>Tue, 22 Apr 2025 04:00:00 GMT</pubDate>
+  <pubDate>Tue, 22 Apr 2025 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Enhancing the Boundary Element Method with Scientific Machine Learning</title>
@@ -762,7 +762,7 @@ $$ -->
   <category>hydrodynamics</category>
   <category>Julia</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/neural-networks-bem/</guid>
-  <pubDate>Tue, 30 Jul 2024 04:00:00 GMT</pubDate>
+  <pubDate>Tue, 30 Jul 2024 05:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/neural-networks-bem/nn.png" medium="image" type="image/png" height="103" width="144"/>
 </item>
 <item>
@@ -791,7 +791,7 @@ $$ -->
   <category>research</category>
   <category>optimization</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/idetc-2025-submission/</guid>
-  <pubDate>Fri, 26 Jul 2024 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 26 Jul 2024 05:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder3.JPG" medium="image"/>
 </item>
 <item>
@@ -881,7 +881,7 @@ A comparison between monolithic and distributed optimization architectures is pe
   <category>optimization</category>
   <category>research</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/gradient-based-optimization/</guid>
-  <pubDate>Fri, 26 Jul 2024 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 26 Jul 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems</title>
@@ -1121,7 +1121,7 @@ Xie, Zhiming, and Yuming Liu. 2020. <span>“Mathematical Expressions and Numeri
   <category>hydrodynamics</category>
   <category>thesis</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/differentiable-hydrodynamics-framework/</guid>
-  <pubDate>Mon, 15 Jan 2024 05:00:00 GMT</pubDate>
+  <pubDate>Mon, 15 Jan 2024 06:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/differentiable-hydrodynamics-framework" medium="image"/>
 </item>
 <item>
@@ -1269,7 +1269,7 @@ Alternative Viewing Options
   <category>urban mobility</category>
   <category>research</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/evtol-ems-system-architecture/</guid>
-  <pubDate>Tue, 19 Dec 2023 05:00:00 GMT</pubDate>
+  <pubDate>Tue, 19 Dec 2023 06:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/evtol-ems-system-architecture/evtol.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
@@ -1430,7 +1430,7 @@ Placeholder for Figure 4 &amp; 5: Network and Feature Importance
   <category>soccer</category>
   <category>research</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/</guid>
-  <pubDate>Sat, 01 Feb 2020 05:00:00 GMT</pubDate>
+  <pubDate>Sat, 01 Feb 2020 06:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/pass.png" medium="image" type="image/png" height="92" width="144"/>
 </item>
 </channel>
