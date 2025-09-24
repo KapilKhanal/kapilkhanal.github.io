@@ -14,7 +14,7 @@
 <title>Kapil Khanal</title>
 <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts.html</link>
 </image>
-<generator>quarto-1.7.33</generator>
+<generator>quarto-1.8.24</generator>
 <lastBuildDate>Sun, 27 Jul 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl</title>
@@ -125,11 +125,11 @@
 <section id="step-3-install-pluto" class="level3">
 <h3 class="anchored" data-anchor-id="step-3-install-pluto">Step 3: Install Pluto</h3>
 <p>In the Julia terminal, type:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> <span class="bu" style="color: null;
 background-color: null;
-font-style: inherit;">Pkg;</span> Pkg.add("Pluto")</span></code></pre></div>
+font-style: inherit;">Pkg;</span> Pkg.add("Pluto")</span></code></pre></div></div>
 <p>This will use Julia’s package manager to install the Pluto package.</p>
 <p>This might take a couple of minutes, so you can go get yourself a cup of tea!</p>
 <blockquote class="blockquote">
@@ -139,11 +139,11 @@ font-style: inherit;">Pkg;</span> Pkg.add("Pluto")</span></code></pre></div>
 <section id="step-4-run-pluto" class="level3">
 <h3 class="anchored" data-anchor-id="step-4-run-pluto">Step 4: Run Pluto</h3>
 <p>In the Julia terminal, type:</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> <span class="bu" style="color: null;
 background-color: null;
-font-style: inherit;">Pluto;</span> Pluto.run()</span></code></pre></div>
+font-style: inherit;">Pluto;</span> Pluto.run()</span></code></pre></div></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/marinehydro-workshop/pluto_run.png" class="img-fluid figure-img"></p>
@@ -352,7 +352,7 @@ For a technical deep dive into MDO architectures and adjoint methods, see the [m
 <section id="differentiability-framework" class="level3">
 <h3 class="anchored" data-anchor-id="differentiability-framework">Differentiability Framework</h3>
 <p>The key innovation in this work is the implementation of automatic differentiation throughout the boundary element solver:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">using</span> <span class="bu" style="color: null;
 background-color: null;
@@ -376,7 +376,7 @@ font-style: inherit;">-&gt;</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">calculate_radiation_forces</span>(mesh, ζ, w)[<span class="fl" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">1</span>], ω)</span></code></pre></div>
+font-style: inherit;">1</span>], ω)</span></code></pre></div></div>
 <p>This enables: - <strong>Exact gradients</strong> without finite difference approximations for the hydrodynamic forces - <strong>Efficient optimization</strong> of complex geometries - <strong>Sensitivity analysis</strong> for design parameters</p>
 </section>
 <section id="adjoint-method-implementation" class="level3">
@@ -424,7 +424,7 @@ font-style: inherit;">1</span>], ω)</span></code></pre></div>
 </section>
 <section id="getting-started" class="level3">
 <h3 class="anchored" data-anchor-id="getting-started">Getting Started</h3>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Clone the repository</span></span>
 <span id="cb2-2"><span class="fu" style="color: #4758AB;
@@ -452,11 +452,11 @@ font-weight: bold;
 font-style: inherit;">)</span></span>
 <span id="cb2-8"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">Pkg.instantiate()</span></span></code></pre></div>
+font-style: inherit;">Pkg.instantiate()</span></span></code></pre></div></div>
 </section>
 <section id="basic-usage-example" class="level3">
 <h3 class="anchored" data-anchor-id="basic-usage-example">Basic Usage Example</h3>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">using</span> <span class="bu" style="color: null;
 background-color: null;
@@ -559,7 +559,7 @@ font-style: inherit;"># Calculate radiation forces</span></span>
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">calculate_radiation_forces</span>(mesh, ζ, ω)</span></code></pre></div>
+font-style: inherit;">calculate_radiation_forces</span>(mesh, ζ, ω)</span></code></pre></div></div>
 </section>
 </section>
 <section id="research-impact" class="level2">
@@ -1150,7 +1150,7 @@ Xie, Zhiming, and Yuming Liu. 2020. <span>“Mathematical Expressions and Numeri
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-System Architecture Poster
+<span class="screen-reader-only">Note</span>System Architecture Poster
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1167,7 +1167,7 @@ System Architecture Poster
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Alternative Viewing Options
+<span class="screen-reader-only">Tip</span>Alternative Viewing Options
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1309,7 +1309,7 @@ Alternative Viewing Options
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Placeholder for Figure 1: Pass Chain Example
+<span class="screen-reader-only">Note</span>Placeholder for Figure 1: Pass Chain Example
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1339,7 +1339,7 @@ Placeholder for Figure 1: Pass Chain Example
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Placeholder for Figure 3: GAM Smooth Estimates
+<span class="screen-reader-only">Note</span>Placeholder for Figure 3: GAM Smooth Estimates
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1362,7 +1362,7 @@ Placeholder for Figure 3: GAM Smooth Estimates
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Placeholder for Figure 4 &amp; 5: Network and Feature Importance
+<span class="screen-reader-only">Note</span>Placeholder for Figure 4 &amp; 5: Network and Feature Importance
 </div>
 </div>
 <div class="callout-body-container callout-body">

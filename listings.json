@@ -4,7 +4,11 @@
     "items": []
   },
   {
-    "listing": "/index.html",
+    "listing": "/people.html",
+    "items": []
+  },
+  {
+    "listing": "/posts.html",
     "items": [
       "/posts/marinehydro-workshop/index.html",
       "/posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
@@ -19,11 +23,7 @@
     ]
   },
   {
-    "listing": "/people.html",
-    "items": []
-  },
-  {
-    "listing": "/posts.html",
+    "listing": "/index.html",
     "items": [
       "/posts/marinehydro-workshop/index.html",
       "/posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
