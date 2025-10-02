@@ -99,9 +99,9 @@ listing:
 :::{.g-col-12 .g-col-md-8}
 ## About Me
 
-I am a <span style="color: #B31B1B;">**doctoral candidate at Cornell University**</span>, specializing in **systems design**, **engineering**, and **optimization**. My work focuses on leveraging **modeling**, **optimization**, and **computational techniques** to advance sustainable technologies. As a member of the **Symbiotic Engineering and Analysis (SEA) Lab**, I collaborate on modeling and optimizing novel offshore systems such as wave energy converters.
+I am a <span style="color: #B31B1B;">**doctoral candidate at Cornell University**</span>, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the **Symbiotic Engineering and Analysis (SEA) Lab**, I collaborate on modeling and optimizing novel offshore systems such as wave energy converters.
 
-With a Master's degree in **Systems Engineering** and ongoing PhD work, I am to bridge **theory and applications** for **large-scale systems**. I did my undergraduate in **Mathematics and Data Science** from Winona State University, Minnesota.
+With a Master's degree in **Systems Engineering** and ongoing PhD work, I am to bridge theory and applications for large-scale systems. I did my undergraduate in **Mathematics and Data Science** from Winona State University, Minnesota.
 
 :::{.callout-note icon=false style="margin-top: 25px;"}
 ### 💼 Bridging Research and Industry
