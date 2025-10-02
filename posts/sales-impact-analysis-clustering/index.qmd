@@ -1,0 +1,168 @@
+---
+title: "Sales Impact Analysis with Clustering and Causal Effects"
+author: "Kapil Khanal"
+date: "2020-03-30"
+categories: [data science, analytics, business intelligence]
+tags: [RFM analysis, K-means clustering, causal impact, customer segmentation, sales analytics]
+image: "sales_analysis.png"
+---
+
+## Overview
+
+This project examines how the introduction of discounts during holidays affects the total sales of different customer groups within a timeframe of a year. By combining customer segmentation with causal impact analysis, we can understand not just *what* happened to sales, but *why* it happened and which customer segments were most responsive to promotional campaigns.
+
+## Methodology
+
+The analysis employs three key statistical techniques to provide comprehensive insights into customer behavior and promotional effectiveness:
+
+### 1. RFM Analysis (Recency, Frequency, Monetary)
+
+RFM analysis is a proven method for analyzing customer behavior by examining their transaction history across three critical dimensions:
+
+- **Recency**: How recently a customer has made a purchase
+- **Frequency**: How often they make purchases  
+- **Monetary**: How much the customer typically spends
+
+::: {.callout-note}
+### Why RFM Analysis?
+RFM helps us identify customers who are more likely to respond to promotions by understanding their engagement patterns and value to the business.
+:::
+
+**Key Benefits:**
+- Identifies high-value customers worth targeting with premium offers
+- Segments customers based on engagement level and purchase behavior
+- Provides actionable insights for personalized marketing strategies
+
+### 2. K-Means Clustering for Customer Segmentation
+
+Using the RFM scores as features, we apply K-means clustering to segment customers into distinct groups with similar behavioral patterns.
+
+**Clustering Process:**
+1. **Feature Engineering**: Transform RFM metrics into standardized scores
+2. **Optimal Cluster Selection**: Use elbow method and silhouette analysis to determine optimal number of clusters
+3. **Segment Profiling**: Analyze each cluster's characteristics and business value
+
+**Typical Customer Segments:**
+- **Champions**: High recency, frequency, and monetary scores
+- **Loyal Customers**: High frequency and monetary, moderate recency
+- **Potential Loyalists**: Recent customers with good frequency
+- **At Risk**: Previously valuable customers showing declining engagement
+- **Lost Customers**: Low scores across all dimensions
+
+### 3. Causal Impact Analysis
+
+For each customer segment identified through clustering, we perform causal impact analysis to measure the true effect of discount campaigns.
+
+**Methodology:**
+- **Bayesian Structural Time Series**: Models the counterfactual scenario (what would have happened without the intervention)
+- **Pre/Post Comparison**: Analyzes sales patterns before and after discount implementation
+- **Statistical Significance**: Determines whether observed changes are statistically meaningful
+
+## Technical Implementation
+
+### Data Processing Pipeline
+
+```python
+# Pseudocode for RFM Analysis
+def calculate_rfm_scores(transactions):
+    # Calculate recency, frequency, monetary metrics
+    # Assign quintile scores (1-5) for each dimension
+    # Return RFM dataframe
+    
+def perform_clustering(rfm_data):
+    # Standardize RFM scores
+    # Apply K-means clustering
+    # Return cluster assignments
+    
+def causal_impact_analysis(sales_data, intervention_date):
+    # Fit Bayesian structural time series model
+    # Estimate counterfactual predictions
+    # Calculate causal effect and confidence intervals
+```
+
+### Key Performance Indicators
+
+The analysis tracks several important metrics:
+
+- **Lift in Sales**: Percentage increase in sales attributable to discounts
+- **Customer Acquisition**: New customers gained during promotional periods  
+- **Customer Retention**: Retention rates across different segments
+- **Revenue per Customer**: Changes in average customer value
+- **Statistical Significance**: Confidence intervals and p-values for all effects
+
+## Results and Business Impact
+
+### Customer Segmentation Insights
+
+The clustering analysis revealed distinct customer segments with varying responsiveness to promotional campaigns:
+
+1. **High-Value Segments** showed strong positive response to targeted discounts
+2. **Price-Sensitive Segments** demonstrated significant sales lift during promotional periods
+3. **At-Risk Segments** could be re-engaged through strategic discount timing
+
+### Causal Impact Findings
+
+The causal impact analysis provided clear evidence of promotional effectiveness:
+
+- **Quantified ROI**: Measured the true incremental impact of discount campaigns
+- **Segment-Specific Effects**: Identified which customer groups benefited most from promotions
+- **Optimal Timing**: Determined the most effective periods for promotional activities
+
+## Interactive Data Product
+
+To make these insights accessible to business stakeholders, I developed an interactive web application that allows users to:
+
+- Explore customer segments visually
+- Analyze the impact of different promotional strategies
+- Generate actionable recommendations for future campaigns
+
+**Live Application**: [Sales Impact Dashboard](https://salesimpact.herokuapp.com/)
+
+## Technical Resources
+
+### Code Repository
+The complete analysis code, including data preprocessing, clustering algorithms, and causal impact models, is available on GitHub:
+
+[**Sales Impact Analysis Repository**](https://github.com/KapilKhanal/Sales_Impact)
+
+### Key Technologies Used
+- **Python**: Primary analysis language
+- **Scikit-learn**: K-means clustering implementation
+- **CausalImpact**: Bayesian causal inference
+- **Pandas/NumPy**: Data manipulation and analysis
+- **Plotly/Dash**: Interactive visualization and web app
+- **Heroku**: Application deployment
+
+## Business Applications
+
+This methodology can be applied across various business contexts:
+
+### Retail & E-commerce
+- Optimize promotional timing and targeting
+- Improve customer lifetime value through segmentation
+- Reduce churn through predictive analytics
+
+### Marketing Strategy
+- Measure true ROI of marketing campaigns
+- Personalize offers based on customer segments
+- Allocate marketing budget more effectively
+
+### Revenue Optimization
+- Identify high-value customer segments
+- Optimize pricing strategies by segment
+- Improve inventory management through demand forecasting
+
+## Conclusion
+
+By combining RFM analysis, K-means clustering, and causal impact analysis, this project demonstrates how advanced analytics can provide actionable insights for business decision-making. The methodology not only identifies *what* happened during promotional periods but also quantifies *why* it happened and provides guidance for future strategic decisions.
+
+The interactive dashboard makes these complex analyses accessible to business stakeholders, enabling data-driven decision making across the organization.
+
+## Future Enhancements
+
+Potential extensions to this analysis include:
+
+- **Real-time Segmentation**: Dynamic customer segment updates
+- **Predictive Modeling**: Forecast customer behavior and campaign effectiveness
+- **Multi-channel Analysis**: Extend analysis across different marketing channels
+- **Advanced Causal Methods**: Implement more sophisticated causal inference techniques
