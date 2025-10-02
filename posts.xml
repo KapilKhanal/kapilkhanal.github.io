@@ -1539,5 +1539,103 @@ Xie, Zhiming, and Yuming Liu. 2020. <span>“Mathematical Expressions and Numeri
   <pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/winona-area-public-schools/waps.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
+<item>
+  <title>Data Dashboard for StockX Contest</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/stockx-data-contest-2019/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="stockx-data-contest-2019" class="level2">
+<h2 class="anchored" data-anchor-id="stockx-data-contest-2019">Stock<strong>X</strong> Data Contest 2019</h2>
+<p>The <a href="https://stockx.com/news/the-2019-data-contest/">StockX Challenge</a> is a call for data and sneakers nerds to have fun.</p>
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/stockx-data-contest-2019/sneaker.jpg" class="img-fluid" alt="Sneaker Culture"> <em>Source: StockX</em></p>
+<p>The basic idea is this: they give you a bunch of original StockX sneaker data, then you crunch the numbers and come up with the coolest, smartest, most compelling story you can tell. It can be literally anything you want. A theory, an insight, even just a really original data visualization. It could be a novel hypothesis about resale prices you’ve always wanted to test. Or maybe it’s just a beautiful chart to visualize the data. It can be on any subject – sneakers, brands, buyers, or even StockX itself. Whatever you find interesting, just follow your bliss.</p>
+<p>I also gave a shot at trying to come up with something useful. Below is my finished data dashboard.</p>
+</section>
+<section id="my-data-dashboard-for-stockx" class="level2">
+<h2 class="anchored" data-anchor-id="my-data-dashboard-for-stockx">My Data Dashboard for Stock<strong>X</strong></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/stockx-data-contest-2019/stockX.png" class="img-fluid figure-img"></p>
+<figcaption>StockX Dashboard</figcaption>
+</figure>
+</div>
+<p>The link for the Tableau worksheet is <a href="https://public.tableau.com/views/StockX_0/Dashboard1?:embed=y&amp;:display_count=yes&amp;:origin=viz_share_link"><strong>here</strong></a>.</p>
+</section>
+<section id="dashboard-calculations" class="level2">
+<h2 class="anchored" data-anchor-id="dashboard-calculations">Dashboard Calculations</h2>
+<p><strong>Key Metrics Defined:</strong></p>
+<ul>
+<li><strong>Price Ratio</strong>: Ratio of Sales to Retail Price for Each Sneaker</li>
+<li><strong>Weeks</strong>: (Order Date - Release Date) Converted in Weeks</li>
+<li><strong>Median Price Ratio</strong>: Chosen to eliminate the effect of asymmetrical range of dates (2017-2019 not complete as 2018) and counts of sneaker sales</li>
+<li><strong>Color Scale</strong>: For two brands are consistent whenever there is plot relating to brands</li>
+</ul>
+</section>
+<section id="key-insights-from-the-dashboard" class="level2">
+<h2 class="anchored" data-anchor-id="key-insights-from-the-dashboard">Key Insights from the Dashboard</h2>
+<section id="order-volume-by-brand-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="order-volume-by-brand-over-time">1. Order Volume by Brand Over Time</h3>
+<p><strong>Orders of Sneakers by brand for weeks from Release Date</strong></p>
+<p>This plot shows the total count of orders for different sneakers of two brands. Both brands are ordered before the release date. Off-White has more orders than Yeezy in the dataset.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Interesting Finding
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It’s fascinating how the demand for Yeezy increased at around <strong>90 weeks</strong> after the release of the shoes.</p>
+</div>
+</div>
+</section>
+<section id="price-premium-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="price-premium-analysis">2. Price Premium Analysis</h3>
+<p><strong>Ratio of Sales Price to Retail Price For each Brand by Weeks</strong></p>
+<p>This plot examines the relationship between the ratio of sale price to retail price for each brand and weeks after release date.</p>
+<p><strong>Key Findings:</strong> - Both brands’ sale prices are consistently higher than retail prices - Off-White’s price ratio increases generally regardless of individual sneakers - Yeezy’s price ratio is somewhat noisy but follows a similar trend to Off-White - Both brands’ price ratios increase after the release date</p>
+</section>
+<section id="premium-distribution-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="premium-distribution-analysis">3. Premium Distribution Analysis</h3>
+<p><strong>Distribution of Median Sales Price Given the Retail Price for Each Brand</strong></p>
+<p>This plot provides detailed insight into how median sale price is distributed for each sneaker. The distribution shows median sale prices for the top 28 sneakers that were sold at least 5 times over retail price.</p>
+</section>
+<section id="geographic-market-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="geographic-market-analysis">4. Geographic Market Analysis</h3>
+<p><strong>Median Price and States</strong></p>
+<p>This visualization examines the median price ratio across all states, with color scale representing the ratio and bubble size indicating total sales volume.</p>
+<p><strong>Geographic Insights:</strong> - <strong>High Premium States</strong>: Delaware, Vermont, and Utah had sales with high price ratios - <strong>High Volume Markets</strong>: California and New York show significant sales volumes (represented by larger bubble sizes) - <strong>Market Calculation</strong>: Relative size calculated using logarithm of total sales in each state - <strong>Low Activity Markets</strong>: States like Wyoming show both lower sales volume and lower price ratios</p>
+</section>
+</section>
+<section id="data-methodology" class="level2">
+<h2 class="anchored" data-anchor-id="data-methodology">Data Methodology</h2>
+<p>The analysis focuses on understanding: - <strong>Temporal patterns</strong> in sneaker demand and pricing - <strong>Brand comparison</strong> between Off-White and Yeezy - <strong>Geographic variations</strong> in market behavior - <strong>Price premium evolution</strong> over time</p>
+</section>
+<section id="interactive-dashboard" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-dashboard">Interactive Dashboard</h2>
+<p>Explore the full interactive dashboard with filters and detailed breakdowns: <a href="https://public.tableau.com/views/StockX_0/Dashboard1?:embed=y&amp;:display_count=yes&amp;:origin=viz_share_link"><strong>StockX Data Contest Dashboard</strong></a></p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>This analysis reveals the complex dynamics of the sneaker resale market, showing how brand prestige, time since release, and geographic location all influence pricing patterns. The data demonstrates the significant premiums that collectors are willing to pay, particularly for limited releases from premium brands like Off-White and Yeezy.</p>
+<p>The StockX contest provided an excellent opportunity to apply data visualization skills to an interesting and culturally relevant dataset, uncovering insights about consumer behavior in the luxury streetwear market.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>data science</category>
+  <category>competition</category>
+  <category>visualization</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/stockx-data-contest-2019/</guid>
+  <pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/stockx-data-contest-2019/stockX.png" medium="image" type="image/png" height="90" width="144"/>
+</item>
 </channel>
 </rss>
