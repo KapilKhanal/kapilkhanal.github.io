@@ -1,0 +1,96 @@
+---
+title: "Data Dashboard for StockX Contest"
+author: "Kapil Khanal"
+date: "2019-08-21"
+categories: [data science, competition, visualization]
+tags: [Tableau, data visualization, StockX, sneakers, contest]
+image: "stockX.png"
+---
+
+## Stock**X** Data Contest 2019
+
+The [StockX Challenge](https://stockx.com/news/the-2019-data-contest/) is a call for data and sneakers nerds to have fun.
+
+![Sneaker Culture](sneaker.jpg)
+*Source: StockX*
+
+The basic idea is this: they give you a bunch of original StockX sneaker data, then you crunch the numbers and come up with the coolest, smartest, most compelling story you can tell. It can be literally anything you want. A theory, an insight, even just a really original data visualization. It could be a novel hypothesis about resale prices you've always wanted to test. Or maybe it's just a beautiful chart to visualize the data. It can be on any subject – sneakers, brands, buyers, or even StockX itself. Whatever you find interesting, just follow your bliss.
+
+I also gave a shot at trying to come up with something useful. Below is my finished data dashboard.
+
+## My Data Dashboard for Stock**X**
+
+![StockX Dashboard](stockX.png)
+
+The link for the Tableau worksheet is [**here**](https://public.tableau.com/views/StockX_0/Dashboard1?:embed=y&:display_count=yes&:origin=viz_share_link).
+
+## Dashboard Calculations
+
+**Key Metrics Defined:**
+
+- **Price Ratio**: Ratio of Sales to Retail Price for Each Sneaker
+- **Weeks**: (Order Date - Release Date) Converted in Weeks
+- **Median Price Ratio**: Chosen to eliminate the effect of asymmetrical range of dates (2017-2019 not complete as 2018) and counts of sneaker sales
+- **Color Scale**: For two brands are consistent whenever there is plot relating to brands
+
+## Key Insights from the Dashboard
+
+### 1. Order Volume by Brand Over Time
+
+**Orders of Sneakers by brand for weeks from Release Date**
+
+This plot shows the total count of orders for different sneakers of two brands. Both brands are ordered before the release date. Off-White has more orders than Yeezy in the dataset.
+
+::: {.callout-note}
+### Interesting Finding
+It's fascinating how the demand for Yeezy increased at around **90 weeks** after the release of the shoes.
+:::
+
+### 2. Price Premium Analysis
+
+**Ratio of Sales Price to Retail Price For each Brand by Weeks**
+
+This plot examines the relationship between the ratio of sale price to retail price for each brand and weeks after release date. 
+
+**Key Findings:**
+- Both brands' sale prices are consistently higher than retail prices
+- Off-White's price ratio increases generally regardless of individual sneakers
+- Yeezy's price ratio is somewhat noisy but follows a similar trend to Off-White
+- Both brands' price ratios increase after the release date
+
+### 3. Premium Distribution Analysis
+
+**Distribution of Median Sales Price Given the Retail Price for Each Brand**
+
+This plot provides detailed insight into how median sale price is distributed for each sneaker. The distribution shows median sale prices for the top 28 sneakers that were sold at least 5 times over retail price.
+
+### 4. Geographic Market Analysis
+
+**Median Price and States**
+
+This visualization examines the median price ratio across all states, with color scale representing the ratio and bubble size indicating total sales volume.
+
+**Geographic Insights:**
+- **High Premium States**: Delaware, Vermont, and Utah had sales with high price ratios
+- **High Volume Markets**: California and New York show significant sales volumes (represented by larger bubble sizes)
+- **Market Calculation**: Relative size calculated using logarithm of total sales in each state
+- **Low Activity Markets**: States like Wyoming show both lower sales volume and lower price ratios
+
+## Data Methodology
+
+The analysis focuses on understanding:
+- **Temporal patterns** in sneaker demand and pricing
+- **Brand comparison** between Off-White and Yeezy
+- **Geographic variations** in market behavior
+- **Price premium evolution** over time
+
+## Interactive Dashboard
+
+Explore the full interactive dashboard with filters and detailed breakdowns:
+[**StockX Data Contest Dashboard**](https://public.tableau.com/views/StockX_0/Dashboard1?:embed=y&:display_count=yes&:origin=viz_share_link)
+
+## Conclusion
+
+This analysis reveals the complex dynamics of the sneaker resale market, showing how brand prestige, time since release, and geographic location all influence pricing patterns. The data demonstrates the significant premiums that collectors are willing to pay, particularly for limited releases from premium brands like Off-White and Yeezy.
+
+The StockX contest provided an excellent opportunity to apply data visualization skills to an interesting and culturally relevant dataset, uncovering insights about consumer behavior in the luxury streetwear market.
