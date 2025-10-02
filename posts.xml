@@ -14,7 +14,7 @@
 <title>Kapil Khanal</title>
 <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts.html</link>
 </image>
-<generator>quarto-1.8.24</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Sun, 27 Jul 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl</title>
@@ -766,35 +766,6 @@ $$ -->
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/neural-networks-bem/nn.png" medium="image" type="image/png" height="103" width="144"/>
 </item>
 <item>
-  <title>Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization</title>
-  <dc:creator>Kapil Khanal</dc:creator>
-  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/idetc-2025-submission/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>I recently submitted a paper to the <strong>ASME 2025 International Design Engineering Technical Conferences &amp; Computers and Information in Engineering Conference (IDETC/CIE)</strong>, to be held in Anahiem, California, from August 17-20, 2025.</p>
-<p>Below is the abstract for the submission.</p>
-<hr>
-<section id="abstract" class="level3">
-<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
-<p>Wave energy conversion requires optimal design and control strategies to maximize energy extraction. Optimization approaches such as control co-design optimize plant design and the control strategies together. Several existing approaches use heuristic methods that do not scale well with high-dimensional design spaces. A gradient-based approach scales better than the heuristic method, for which the integrated model should be able to provide not just the output but its sensitivity with respect to the inputs. Currently, these different numerical solvers are used in isolation, thus making heuristic optimizers a natural choice.</p>
-<p>This study develops a <strong>differentiable model</strong> integrating boundary element methods (BEM) for hydrodynamic modeling with <strong>pseudo-spectral optimal control</strong> techniques to optimize power take-off (PTO) forces under dynamic constraints for maximizing electrical power per volume of a point absorber wave energy converter (WEC). This model is useful for the large-scale gradient-based optimization of the electrical power.</p>
-<p>Discussion and derivation of the <strong>semi-analytic adjoint for the hydrodynamics solver</strong>, non-linear parametric sensitivity for the trajectory optimization, and the calculation of the coupled derivative using unified derivative equations is presented. A nested formulation of the control co-design approach within a multidisciplinary design optimization architecture is created for the differentiable wave-to-wire model. Preliminary numerical experiment and verification of the sensitivities is conducted for the differentiable wave-to-wire model for a heaving point absorber WEC.</p>
-
-
-</section>
-
- ]]></description>
-  <category>conference</category>
-  <category>research</category>
-  <category>optimization</category>
-  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/idetc-2025-submission/</guid>
-  <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder3.JPG" medium="image"/>
-</item>
-<item>
   <title>Gradient-Based Optimization for Large Systems</title>
   <dc:creator>Kapil Khanal</dc:creator>
   <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/gradient-based-optimization/</link>
@@ -882,6 +853,35 @@ A comparison between monolithic and distributed optimization architectures is pe
   <category>research</category>
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/gradient-based-optimization/</guid>
   <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/idetc-2025-submission/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I recently submitted a paper to the <strong>ASME 2025 International Design Engineering Technical Conferences &amp; Computers and Information in Engineering Conference (IDETC/CIE)</strong>, to be held in Anahiem, California, from August 17-20, 2025.</p>
+<p>Below is the abstract for the submission.</p>
+<hr>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
+<p>Wave energy conversion requires optimal design and control strategies to maximize energy extraction. Optimization approaches such as control co-design optimize plant design and the control strategies together. Several existing approaches use heuristic methods that do not scale well with high-dimensional design spaces. A gradient-based approach scales better than the heuristic method, for which the integrated model should be able to provide not just the output but its sensitivity with respect to the inputs. Currently, these different numerical solvers are used in isolation, thus making heuristic optimizers a natural choice.</p>
+<p>This study develops a <strong>differentiable model</strong> integrating boundary element methods (BEM) for hydrodynamic modeling with <strong>pseudo-spectral optimal control</strong> techniques to optimize power take-off (PTO) forces under dynamic constraints for maximizing electrical power per volume of a point absorber wave energy converter (WEC). This model is useful for the large-scale gradient-based optimization of the electrical power.</p>
+<p>Discussion and derivation of the <strong>semi-analytic adjoint for the hydrodynamics solver</strong>, non-linear parametric sensitivity for the trajectory optimization, and the calculation of the coupled derivative using unified derivative equations is presented. A nested formulation of the control co-design approach within a multidisciplinary design optimization architecture is created for the differentiable wave-to-wire model. Preliminary numerical experiment and verification of the sensitivities is conducted for the differentiable wave-to-wire model for a heaving point absorber WEC.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>conference</category>
+  <category>research</category>
+  <category>optimization</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/idetc-2025-submission/</guid>
+  <pubDate>Fri, 26 Jul 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder3.JPG" medium="image"/>
 </item>
 <item>
   <title>A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems</title>
