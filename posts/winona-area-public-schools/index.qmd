@@ -1,0 +1,82 @@
+---
+title: "Winona Area Public Schools: Community Contribution"
+author: "Kapil Khanal"
+date: "2019-08-21"
+categories: [data science, community, education]
+tags: [Tableau, data visualization, public schools, Winona, community service]
+image: "waps.png"
+---
+
+## Winona Area Public Schools Data Visualization
+
+**Introduction:**
+
+This project addresses the need of communication of public school data to community members in a meaningful way. Also, making the data available to general public in a proper and useable format.
+
+There has been a wider discussion regarding the budget issue in Winona area schools. Here is [the article](https://www.winonadailynews.com/news/local/what-will-waps-cut-board-to-weigh-new-options-for/article_23c25b9f-7365-5aa2-b370-1ed251eb8231.html) discussing the budget concerns.
+
+Primarily, this project was focused on cleaning and visualizing the Enrollment, Expenditures and Staffing History reports of the Winona Area Public District (WAPS) available publicly through Minnesota Department of Education, Data Center.
+
+**Link:** [http://education.state.mn.us/MDE/Data/](http://education.state.mn.us/MDE/Data/)
+
+![WAPS Overview](waps.png)
+
+## Methods and Steps of Project
+
+### 1. Data Inspection/Acquisition
+
+Public data was collected by Alison Quam (Representative from WAPS District). The data were made available in different PDF/Excel files. Also, the information were scattered in different files.
+
+### 2. Data Cleaning and Formatting
+
+First, most of the PDF files were converted to Excel by [Tabula](http://tabula.technology/) and online tool ([pdftoexcel.com](http://pdftoexcel.com)). Then, they were cleaned up in proper format and stacked using Python (Pandas).
+
+### 3. Data Exploration and Visualization
+
+This part of the project is focused on addressing the questions provided by representative of WAPS (Alison Quam). Tableau was used extensively to explore the data and visualize it.
+
+Primarily, I focused on answering following questions:
+
+1. **I was curious about, how does the enrollment and capture rate (rate of new born enrolling to Kindergarten) is changing in WAPS district?**
+
+After few meetings with representative, I realized she was more curious about how schools spend across different programs.
+
+2. **How the expenditure per average daily membership (count of student daily served in schools) and spending on various category is changing?**
+
+## Interactive Tableau Dashboard
+
+The link to the tableau file and the data is [**here**](https://public.tableau.com/views/WinonaAreaPublicSchoolsDataStory/FourthDashboard?:retry=yes&:embed=y&:display_count=yes&:origin=viz_share_link).
+
+## Visual Story
+
+Now, the visual story begins...
+
+::: {.callout-note}
+### Dashboard Screenshots
+The following images show the key insights from the Tableau dashboard:
+:::
+
+![Enrollment and Capture Rate Analysis](Second_Dashboard.png)
+
+![Expenditure Analysis](Third_Dashboard.png)
+
+![Comprehensive Overview](Fourth_Dashboard.png)
+
+## Impact and Conclusion
+
+This project actually helped inform the decision makers at local level. Thus, I was able to contribute to something meaningful with my Python and Tableau skills.
+
+The visualization provided clear insights into:
+- Enrollment trends and capture rates over time
+- Expenditure patterns across different programs
+- Resource allocation efficiency
+- Budget planning considerations
+
+## Acknowledgements
+
+I would like to thank:
+- **Alison Quam** (WAPS representative) for providing the data and guidance
+- **Prof. Silas Bergen** for helping and guiding me to understand the terms and calculations already done in the reports
+- **Prof. Todd Iverson** for help figuring out Python code for cleaning the data
+
+This project demonstrates how data science skills can be applied to serve the community and support informed decision-making in public education.
