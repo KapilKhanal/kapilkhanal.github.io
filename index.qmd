@@ -99,13 +99,13 @@ listing:
 :::{.g-col-12 .g-col-md-8}
 ## About Me
 
-I am a <span style="color: #B31B1B;">**doctoral candidate at Cornell University**</span>, specializing in **systems design**, **engineering**, and **optimization**. My work focuses on leveraging **modeling**, **optimization**, and **computational techniques** to advance sustainable technologies. As a member of the **Symbiotic Engineering and Analysis (SEA) Lab**, I collaborate on modeling and optimizing large scale renewable energy systems.
+I am a <span style="color: #B31B1B;">**doctoral candidate at Cornell University**</span>, specializing in **systems design**, **engineering**, and **optimization**. My work focuses on leveraging **modeling**, **optimization**, and **computational techniques** to advance sustainable technologies. As a member of the **Symbiotic Engineering and Analysis (SEA) Lab**, I collaborate on modeling and optimizing novel offshore systems such as wave energy converters.
 
 With a Master's degree in **Systems Engineering** and ongoing PhD work, I am to bridge **theory and applications** for **large-scale systems**. I did my undergraduate in Mathematics and Data Science from Winona State University, Minnesota.
 
 :::{.callout-note icon=false style="margin-top: 25px;"}
 ### 💼 Bridging Research and Industry
-Upon completing my PhD, I am **seeking full-time industry roles** where I can apply my expertise in gradient-based optimization and scientific machine learning to solve challenging real-world problems.
+Upon completing my PhD, I am **seeking full-time industry roles** where I can apply my expertise in data science, multiphysics simulation and design optimization to solve challenging hard-tech engineering problems.
 
 <div style="margin-top: 15px;">
 [View My CV](files/kapil_resume.pdf){.btn .btn-primary} &nbsp; [Connect on LinkedIn](https://www.linkedin.com/in/kapilkhanal/){.btn .btn-secondary} &nbsp; [Explore My GitHub](https://github.com/KapilKhanal){.btn .btn-dark}
@@ -125,11 +125,11 @@ Upon completing my PhD, I am **seeking full-time industry roles** where I can ap
 
 ## Research Focus
 
-I am interested in applying computational methods to solve real-world problems. Currently, I focus on **multidisciplinary design optimization (MDO)**, **control co-design**, **machine learning** and **physical simulations** to design and operate large-scale systems.  Through the powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. I am also interested in **Verification and Validation** of large systems utilizing techniques from **Uncertainty Quantification** (UQ). Broadly, I am interested in **bridging the gap between theory and practice** in engineering and science.
+I am interested in applying computational methods to solve real-world problems. Currently, I focus on **multidisciplinary design optimization (MDO)**, **control co-design**, **machine learning** and **physical simulations** to design and operate large-scale systems.  Through the powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. Broadly, I am interested in **bridging the gap between theory and practice** in engineering and science.
 
 ![Research Interests](files/my%20reseach%20interests.png){.img-fluid style="width: 100%; max-width: 1200px; height: auto; display: block; margin: 20px auto;"}
 
-Keywords: Optimization, Optimal Controls, Differentiable Programming, Reinforcement Learning, System Architecture, System of System Optimization, Numerical simulations (boundary element method, finite difference method, finite element method, etc.)
+Keywords: Optimization, Optimal Controls, Differentiable Programming, Reinforcement Learning, System Architecture, System of System Optimization, Numerical simulations (boundary element method, finite difference method, finite element method, etc.), Data Science, Data Engineering.
 
 ---
 
