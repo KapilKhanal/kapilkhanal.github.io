@@ -11,7 +11,7 @@
     "href": "posts.html",
     "title": "What’s New & Updated",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nWorkshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl\n\n\n\n\n\n\nworkshop\n\nmarine hydrodynamics\n\ndifferentiable programming\n\noptimization\n\n\n\n\n\n\n\n\n\nJul 27, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nDerivatives are Cheap and Expensive\n\n\nThe Real Cost of Gradients in Complex Systems Optimization\n\n\n\noptimization\n\nsensitivity analysis\n\nresearch\n\n\n\n\n\n\n\n\n\nJun 23, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nMarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis\n\n\nA Julia Package for Wave-Structure Interactions\n\n\n\nsoftware\n\nresearch\n\nJulia\n\nhydrodynamics\n\noptimization\n\n\n\n\n\n\n\n\n\nJun 22, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nCoupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs\n\n\nExtending the Isoperformance Method for Feasibility in Coupled Multidisciplinary Systems\n\n\n\nconference\n\nMDO\n\noptimization\n\nresearch\n\n\n\n\n\n\n\n\n\nApr 22, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nEnhancing the Boundary Element Method with Scientific Machine Learning\n\n\nA Hybrid Approach for Solving Diffraction-Radiation Problems\n\n\n\nresearch\n\nmachine learning\n\nhydrodynamics\n\nJulia\n\n\n\n\n\n\n\n\n\nJul 30, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nGradient-Based Optimization for Large Systems\n\n\nIntroduction to MDO Architectures, Solvers, and Simulators\n\n\n\nMDO\n\noptimization\n\nresearch\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nDifferentiable Wave-to-Wire Model for Wave Energy Converter Optimization\n\n\nSubmission to the ASME 2025 IDETC/CIE Conference\n\n\n\nconference\n\nresearch\n\noptimization\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nA Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems\n\n\nMy PhD Research Proposal\n\n\n\nresearch\n\noptimization\n\nhydrodynamics\n\nthesis\n\n\n\nDeveloping a differentiable boundary element method solver for hydrodynamic design optimization of offshore structures using automatic differentiation and adjoint methods\n\n\n\n\n\nJan 15, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\neVTOL Integration in Emergency Medical Services: A System Architecture Approach\n\n\nDesigning Affordable, High-Performance, and Equitable Air Ambulance Systems\n\n\n\nsystem architecture\n\neVTOL\n\nsystems engineering\n\nurban mobility\n\nresearch\n\n\n\n\n\n\n\n\n\nDec 19, 2023\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nGiving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)\n\n\n\n\n\n\ndata science\n\nsports analytics\n\nsoccer\n\nresearch\n\n\n\n\n\n\n\n\n\nFeb 1, 2020\n\n\nKapil Khanal\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nWorkshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl\n\n\n\n\n\n\nworkshop\n\nmarine hydrodynamics\n\ndifferentiable programming\n\noptimization\n\n\n\n\n\n\n\n\n\nJul 27, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nDerivatives are Cheap and Expensive\n\n\nThe Real Cost of Gradients in Complex Systems Optimization\n\n\n\noptimization\n\nsensitivity analysis\n\nresearch\n\n\n\n\n\n\n\n\n\nJun 23, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nMarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis\n\n\nA Julia Package for Wave-Structure Interactions\n\n\n\nsoftware\n\nresearch\n\nJulia\n\nhydrodynamics\n\noptimization\n\n\n\n\n\n\n\n\n\nJun 22, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nCoupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs\n\n\nExtending the Isoperformance Method for Feasibility in Coupled Multidisciplinary Systems\n\n\n\nconference\n\nMDO\n\noptimization\n\nresearch\n\n\n\n\n\n\n\n\n\nApr 22, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nEnhancing the Boundary Element Method with Scientific Machine Learning\n\n\nA Hybrid Approach for Solving Diffraction-Radiation Problems\n\n\n\nresearch\n\nmachine learning\n\nhydrodynamics\n\nJulia\n\n\n\n\n\n\n\n\n\nJul 30, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nGradient-Based Optimization for Large Systems\n\n\nIntroduction to MDO Architectures, Solvers, and Simulators\n\n\n\nMDO\n\noptimization\n\nresearch\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nDifferentiable Wave-to-Wire Model for Wave Energy Converter Optimization\n\n\nSubmission to the ASME 2025 IDETC/CIE Conference\n\n\n\nconference\n\nresearch\n\noptimization\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nA Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems\n\n\nMy PhD Research Proposal\n\n\n\nresearch\n\noptimization\n\nhydrodynamics\n\nthesis\n\n\n\nDeveloping a differentiable boundary element method solver for hydrodynamic design optimization of offshore structures using automatic differentiation and adjoint methods\n\n\n\n\n\nJan 15, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\neVTOL Integration in Emergency Medical Services: A System Architecture Approach\n\n\nDesigning Affordable, High-Performance, and Equitable Air Ambulance Systems\n\n\n\nsystem architecture\n\neVTOL\n\nsystems engineering\n\nurban mobility\n\nresearch\n\n\n\n\n\n\n\n\n\nDec 19, 2023\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nGiving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)\n\n\n\n\n\n\ndata science\n\nsports analytics\n\nsoccer\n\nresearch\n\n\n\n\n\n\n\n\n\nFeb 1, 2020\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nWinona Area Public Schools: Community Contribution\n\n\n\n\n\n\ndata science\n\ncommunity\n\neducation\n\n\n\n\n\n\n\n\n\nAug 21, 2019\n\n\nKapil Khanal\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/idetc-2025-submission/index.html",
@@ -161,6 +161,160 @@
     "text": "Related Publications\nThis research builds on and contributes to the broader field of urban air mobility and emergency services integration. For more information about related work in this area, please refer to the publications section of this website."
   },
   {
+    "objectID": "posts/winona-area-public-schools/index.html",
+    "href": "posts/winona-area-public-schools/index.html",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "",
+    "text": "Introduction:\nThis project addresses the need of communication of public school data to community members in a meaningful way. Also, making the data available to general public in a proper and useable format.\nThere has been a wider discussion regarding the budget issue in Winona area schools. Here is the article discussing the budget concerns.\nPrimarily, this project was focused on cleaning and visualizing the Enrollment, Expenditures and Staffing History reports of the Winona Area Public District (WAPS) available publicly through Minnesota Department of Education, Data Center.\nLink: http://education.state.mn.us/MDE/Data/\n\n\n\nWAPS Overview"
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#winona-area-public-schools-data-visualization",
+    "href": "posts/winona-area-public-schools/index.html#winona-area-public-schools-data-visualization",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "",
+    "text": "Introduction:\nThis project addresses the need of communication of public school data to community members in a meaningful way. Also, making the data available to general public in a proper and useable format.\nThere has been a wider discussion regarding the budget issue in Winona area schools. Here is the article discussing the budget concerns.\nPrimarily, this project was focused on cleaning and visualizing the Enrollment, Expenditures and Staffing History reports of the Winona Area Public District (WAPS) available publicly through Minnesota Department of Education, Data Center.\nLink: http://education.state.mn.us/MDE/Data/\n\n\n\nWAPS Overview"
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#methods-and-steps-of-project",
+    "href": "posts/winona-area-public-schools/index.html#methods-and-steps-of-project",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "Methods and Steps of Project",
+    "text": "Methods and Steps of Project\n\n1. Data Inspection/Acquisition\nPublic data was collected by Alison Quam (Representative from WAPS District). The data were made available in different PDF/Excel files. Also, the information were scattered in different files.\n\n\n2. Data Cleaning and Formatting\nFirst, most of the PDF files were converted to Excel by Tabula and online tool (pdftoexcel.com). Then, they were cleaned up in proper format and stacked using Python (Pandas).\n\n\n3. Data Exploration and Visualization\nThis part of the project is focused on addressing the questions provided by representative of WAPS (Alison Quam). Tableau was used extensively to explore the data and visualize it.\nPrimarily, I focused on answering following questions:\n\nI was curious about, how does the enrollment and capture rate (rate of new born enrolling to Kindergarten) is changing in WAPS district?\n\nAfter few meetings with representative, I realized she was more curious about how schools spend across different programs.\n\nHow the expenditure per average daily membership (count of student daily served in schools) and spending on various category is changing?"
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#interactive-tableau-dashboard",
+    "href": "posts/winona-area-public-schools/index.html#interactive-tableau-dashboard",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "Interactive Tableau Dashboard",
+    "text": "Interactive Tableau Dashboard\nThe link to the tableau file and the data is here."
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#visual-story",
+    "href": "posts/winona-area-public-schools/index.html#visual-story",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "Visual Story",
+    "text": "Visual Story\nNow, the visual story begins…\n\n\n\n\n\n\nNoteDashboard Screenshots\n\n\n\nThe following images show the key insights from the Tableau dashboard:\n\n\n\n\n\nEnrollment and Capture Rate Analysis\n\n\n\n\n\nExpenditure Analysis\n\n\n\n\n\nComprehensive Overview"
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#impact-and-conclusion",
+    "href": "posts/winona-area-public-schools/index.html#impact-and-conclusion",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "Impact and Conclusion",
+    "text": "Impact and Conclusion\nThis project actually helped inform the decision makers at local level. Thus, I was able to contribute to something meaningful with my Python and Tableau skills.\nThe visualization provided clear insights into: - Enrollment trends and capture rates over time - Expenditure patterns across different programs - Resource allocation efficiency - Budget planning considerations"
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#acknowledgements",
+    "href": "posts/winona-area-public-schools/index.html#acknowledgements",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nI would like to thank: - Alison Quam (WAPS representative) for providing the data and guidance - Prof. Silas Bergen for helping and guiding me to understand the terms and calculations already done in the reports - Prof. Todd Iverson for help figuring out Python code for cleaning the data\nThis project demonstrates how data science skills can be applied to serve the community and support informed decision-making in public education."
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html",
+    "href": "posts/aiaa-scitech-2026-submission/index.html",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "",
+    "text": "2026 AIAA SciTech Forum\n12–16 January 2026\nHyatt Regency Orlando\nOrlando, Florida"
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#conference-information",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#conference-information",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "",
+    "text": "2026 AIAA SciTech Forum\n12–16 January 2026\nHyatt Regency Orlando\nOrlando, Florida"
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#abstract",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#abstract",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "Abstract",
+    "text": "Abstract\nIn many practical settings, mathematically optimal system designs are often set aside in favor of similarly performing alternatives that better accommodate real-world constraints and evolving requirements. In such cases, it is desirable to identify alternative design vectors that maintain acceptable levels of system performance. This can be achieved using isoperformance method, which construct sets of performance-invariant solutions, or through multiobjective optimization. However, traditional isoperformance approaches typically ignore the feasibility constraints that arise in coupled systems governed by multidisciplinary analysis (MDA). These systems require convergence of nonlinear solvers, and the resulting computational burden increases when newly generated designs do not satisfy such feasibility inherently. Isoperformance analysis is an inverse design technique used to identify a set of feasible design vectors that yield a specified vector of system performance metrics. This performance-invariant set provides a space for subsequent decision-making based on secondary criteria like cost, risk, or implementation ease. However, applying isoperformance methods to complex coupled systems is challenging, as these systems often require a multidisciplinary analysis (MDA) to resolve interdependencies among components. The resulting nonlinear solver demands increase computational cost when infeasible designs are evaluated.\nIn this paper, we propose two contributions to improve the robustness and scalability of isoperformance methods in such settings. First, we extend the isoperformance method to support arbitrarily large design spaces using reverse-mode automatic differentiation and adjoint sensitivity analysis. Second, we introduce a regularized isoperformance approach that incorporates the feasibility constraints arising from MDA directly into the Jacobian, improving the likelihood of convergence and solution quality. We demonstrate the method on a benchmark coupled problem involving three objectives, showcasing its ability to generate feasible isoperformant designs. decision-making in complex engineered systems requires balancing conflicting objectives among various subsystems and stakeholders. In many cases, a numerically optimal solution is not the final adopted design due to constraints, trade-offs, or the infeasibility of implementation. This motivates the search for alternative design solutions that achieve target performance levels without requiring complete re-optimization.\nTo address this, we enhance the isoperformance approach to explicitly consider MDA feasibility during inverse design. This is critical for large systems where convergence, sensitivity, and robustness all play significant roles in engineering decision-making."
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#authors",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#authors",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "Authors",
+    "text": "Authors\n\nKapil Khanal (PhD Candidate, Systems Engineering)\nMaha N. Haji (Assistant Professor, Sibley School of Mechanical Engineering)\n\nAffiliation: Cornell University, Ithaca, NY"
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#research-context",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#research-context",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "Research Context",
+    "text": "Research Context\nThis work addresses a fundamental challenge in multidisciplinary design optimization (MDO): the gap between mathematically optimal solutions and practically implementable designs. While optimization algorithms can find the “best” solution according to mathematical criteria, real-world engineering often requires flexibility in design choices to accommodate:\n\nManufacturing constraints\nSupply chain limitations\n\nRegulatory requirements\nFuture design modifications\nRisk mitigation strategies\n\nThe isoperformance method offers a systematic approach to explore the design space for alternatives that maintain acceptable performance levels while providing the flexibility needed for practical implementation."
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#key-contributions",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#key-contributions",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "Key Contributions",
+    "text": "Key Contributions\n\n1. Scalable Isoperformance with Automatic Differentiation\nTraditional isoperformance methods often struggle with high-dimensional design spaces due to computational limitations in gradient computation. Our approach leverages:\n\nReverse-mode automatic differentiation for efficient gradient computation.\n\nThis enables the method to scale to arbitrarily large design spaces while maintaining computational efficiency.\n\n\n2. Regularized Isoperformance for Coupled Systems\nCoupled multidisciplinary systems introduce unique challenges through:\n\nNonlinear coupling constraints between disciplines\nFeasibility requirements that must be satisfied simultaneously\nConvergence dependencies of numerical solvers"
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#applications",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#applications",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "Applications",
+    "text": "Applications\nThis work has broad applications across engineering disciplines, including:\n\nAerospace Systems: Aircraft design with multiple performance objectives\nMarine Engineering: Offshore structure optimization under environmental constraints\nEnergy Systems: Renewable energy device design and optimization\nTransportation: Vehicle design balancing performance, efficiency, and safety\n\nThis work represents a significant step forward in making optimization methods more practical and accessible for complex engineering systems, bridging the gap between mathematical optimality and engineering feasibility."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kapil Khanal",
+    "section": "",
+    "text": "Differentiable Programming to Engineer Complex Systems.\n\n\n\n\n\n\n\n\nI am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on modeling and optimizing novel offshore systems such as wave energy converters.\nWith a Master’s degree in Systems Engineering and ongoing PhD work, I am to bridge theory and applications for large-scale systems. I did my undergraduate in Mathematics and Data Science from Winona State University, Minnesota.\n\n\n\n\n\n\nNote💼 Bridging Research and Industry\n\n\n\nUpon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in data science, multiphysics simulation and design optimization to solve challenging hard-tech engineering problems.\n\nView My CV   Connect on LinkedIn   Explore My GitHub"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Kapil Khanal",
+    "section": "",
+    "text": "I am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on modeling and optimizing novel offshore systems such as wave energy converters.\nWith a Master’s degree in Systems Engineering and ongoing PhD work, I am to bridge theory and applications for large-scale systems. I did my undergraduate in Mathematics and Data Science from Winona State University, Minnesota.\n\n\n\n\n\n\nNote💼 Bridging Research and Industry\n\n\n\nUpon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in data science, multiphysics simulation and design optimization to solve challenging hard-tech engineering problems.\n\nView My CV   Connect on LinkedIn   Explore My GitHub"
+  },
+  {
+    "objectID": "index.html#research-focus",
+    "href": "index.html#research-focus",
+    "title": "Kapil Khanal",
+    "section": "Research Focus",
+    "text": "Research Focus\nI am interested in applying computational methods to solve real-world problems. Currently, I focus on multidisciplinary design optimization (MDO), control co-design, machine learning and physical simulations to design and operate large-scale systems. Through the powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. Broadly, I am interested in bridging the gap between theory and practice in engineering and science.\n\n\n\nResearch Interests\n\n\nKeywords: Optimization, Optimal Controls, Differentiable Programming, Reinforcement Learning, System Architecture, System of System Optimization, Numerical simulations (boundary element method, finite difference method, finite element method, etc.), Data Science, Data Engineering."
+  },
+  {
+    "objectID": "index.html#recent-posts",
+    "href": "index.html#recent-posts",
+    "title": "Kapil Khanal",
+    "section": "Recent Posts",
+    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nWorkshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl\n\n\n\nJul 27, 2025\n\n\n\n\n\n\n\n\n\n\n\nDerivatives are Cheap and Expensive\n\n\nThe Real Cost of Gradients in Complex Systems Optimization\n\n\n\nJun 23, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis\n\n\nA Julia Package for Wave-Structure Interactions\n\n\n\nJun 22, 2025\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software & Projects",
+    "section": "",
+    "text": "This page highlights the software projects and computational tools I have developed and contributed to. These projects reflect my interest in creating robust, scalable, and efficient solutions for complex engineering and scientific problems.\nMore details and project listings will be added here soon.\n\n\nFeatured Projects\n\n\nMarineHydro.jl\nA Boundary Element Method (BEM) solver written in Julia, designed for hydrodynamic analysis within a fully differentiable programming paradigm. It leverages automatic differentiation for efficient gradient computation.\n\n\nDifferentiable wave2wire Framework for WEC Farms\nAn framework for the Multidisciplinary Design Optimization of Wave Energy Converters (WECs) and WEC Farms. This project integrates hydrodynamic of large number of WECs, and control system models to optimize the performance of the WEC farm using gradient-based optimization.\n\n\nopenFlash\nAn open-source framework built to simulate the hydrodynamics of wave energy converters using matched eigenfunction expansion methods."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Image: openmdao\n\n\nCourse: Multidisciplinary Design Optimization\nInstitution: Cornell University\nRole: Teaching Assistant\nWhen Offered: Fall Semester\nPrerequisites: Undergraduate linear algebra and knowledge of MATLAB, Python, or R\nCourse Overview: This course presents a rigorous, quantitative multidisciplinary design methodology that incorporates the creative side of the design process. Through a topic of your choice, students learn how to use multidisciplinary design optimization (MDO) to create advanced and complex engineering systems that must be competitive in performance and life-cycle value.\nKey Focus Areas: -Multidisciplinary character of engineering systems -Design of complex systems\n-Tools for optimization\nCourse Structure: Students work in small teams on a term project to apply MDO principles to design and optimize an engineering system of their choice.\n\n\n\n\nStudents who successfully complete this course will be able to:\n\nSystem Decomposition: Subdivide a complex system into smaller disciplinary models, manage their interfaces and reintegrate them into an overall system model.\nAlgorithm Selection: Identify the most suitable optimization algorithm between gradient-based numerical optimization algorithms (i.e., sequential quadratic programming (SQP)) and various modern heuristic optimization techniques (i.e., simulated annealing (SA) or genetic algorithms (GA)) for their design problem and use it to find the optimal design for a single objective of their choice.\nCritical Analysis: Critically evaluate and interpret analysis and optimization results, including sensitivity analysis and exploration of performance, cost and risk tradeoffs.\nMulti-Objective Optimization: Utilize basic concepts of multi-objective optimization, including the conditions for optimality and Pareto front computation techniques, to optimize their design with respect to two objectives of their choice.\nTeam Project: Work as a team to formulate a realistic engineering design problem, optimize the design for a single objective and multiple competing objectives, and present the results in a final oral presentation and written report.\n\n\n\n\nThis course is fundamentally different from most traditional university optimization courses which focus mainly on the mathematics and algorithms for search. The focus is equally strong on all three aspects of the problem:\n\nMultidisciplinary Integration: Understanding how different disciplines (structures, aerodynamics, controls, optics, costing, manufacturing, environmental science, marketing, etc.) must be tightly coupled during conceptual and preliminary design of complex new systems and products.\nSystem Design: Developing the ability to design complex engineering systems that are competitive in performance and life-cycle value.\nOptimization Tools: Mastering both gradient-based and heuristic optimization techniques for real-world engineering applications.\n\n\n\n\n\nProgramming: MATLAB, Python, or R for implementation\nOptimization Algorithms:\n\nGradient-based methods (Sequential Quadratic Programming)\nHeuristic methods (Simulated Annealing, Genetic Algorithms)\n\nMulti-objective Optimization: Pareto front computation and analysis\nSensitivity Analysis: Understanding design parameter impacts\nSystem Integration: Managing multidisciplinary model couplings\n\n\nThis course provides students with practical experience in applying MDO principles to real engineering problems, preparing them for careers in advanced engineering design and optimization."
+  },
+  {
+    "objectID": "teaching.html#multidisciplinary-design-optimization-mdo",
+    "href": "teaching.html#multidisciplinary-design-optimization-mdo",
+    "title": "Teaching",
+    "section": "",
+    "text": "Image: openmdao\n\n\nCourse: Multidisciplinary Design Optimization\nInstitution: Cornell University\nRole: Teaching Assistant\nWhen Offered: Fall Semester\nPrerequisites: Undergraduate linear algebra and knowledge of MATLAB, Python, or R\nCourse Overview: This course presents a rigorous, quantitative multidisciplinary design methodology that incorporates the creative side of the design process. Through a topic of your choice, students learn how to use multidisciplinary design optimization (MDO) to create advanced and complex engineering systems that must be competitive in performance and life-cycle value.\nKey Focus Areas: -Multidisciplinary character of engineering systems -Design of complex systems\n-Tools for optimization\nCourse Structure: Students work in small teams on a term project to apply MDO principles to design and optimize an engineering system of their choice.\n\n\n\n\nStudents who successfully complete this course will be able to:\n\nSystem Decomposition: Subdivide a complex system into smaller disciplinary models, manage their interfaces and reintegrate them into an overall system model.\nAlgorithm Selection: Identify the most suitable optimization algorithm between gradient-based numerical optimization algorithms (i.e., sequential quadratic programming (SQP)) and various modern heuristic optimization techniques (i.e., simulated annealing (SA) or genetic algorithms (GA)) for their design problem and use it to find the optimal design for a single objective of their choice.\nCritical Analysis: Critically evaluate and interpret analysis and optimization results, including sensitivity analysis and exploration of performance, cost and risk tradeoffs.\nMulti-Objective Optimization: Utilize basic concepts of multi-objective optimization, including the conditions for optimality and Pareto front computation techniques, to optimize their design with respect to two objectives of their choice.\nTeam Project: Work as a team to formulate a realistic engineering design problem, optimize the design for a single objective and multiple competing objectives, and present the results in a final oral presentation and written report.\n\n\n\n\nThis course is fundamentally different from most traditional university optimization courses which focus mainly on the mathematics and algorithms for search. The focus is equally strong on all three aspects of the problem:\n\nMultidisciplinary Integration: Understanding how different disciplines (structures, aerodynamics, controls, optics, costing, manufacturing, environmental science, marketing, etc.) must be tightly coupled during conceptual and preliminary design of complex new systems and products.\nSystem Design: Developing the ability to design complex engineering systems that are competitive in performance and life-cycle value.\nOptimization Tools: Mastering both gradient-based and heuristic optimization techniques for real-world engineering applications.\n\n\n\n\n\nProgramming: MATLAB, Python, or R for implementation\nOptimization Algorithms:\n\nGradient-based methods (Sequential Quadratic Programming)\nHeuristic methods (Simulated Annealing, Genetic Algorithms)\n\nMulti-objective Optimization: Pareto front computation and analysis\nSensitivity Analysis: Understanding design parameter impacts\nSystem Integration: Managing multidisciplinary model couplings\n\n\nThis course provides students with practical experience in applying MDO principles to real engineering problems, preparing them for careers in advanced engineering design and optimization."
+  },
+  {
     "objectID": "posts/marinehydro-julia-package/index.html",
     "href": "posts/marinehydro-julia-package/index.html",
     "title": "MarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis",
@@ -236,111 +390,6 @@
     "title": "MarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis",
     "section": "Related Publications",
     "text": "Related Publications\nThis work is part of a broader research effort in differentiable programming for engineering applications. The implementation builds on recent advances in:\n\nAutomatic differentiation frameworks\nBoundary element method theory\nMarine hydrodynamics modeling\nOptimization algorithms\n\n\nMarineHydro.jl represents a significant step forward in making advanced hydrodynamic analysis accessible for design optimization, enabling researchers and engineers to efficiently explore the design space for marine structures and wave energy devices."
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Image: openmdao\n\n\nCourse: Multidisciplinary Design Optimization\nInstitution: Cornell University\nRole: Teaching Assistant\nWhen Offered: Fall Semester\nPrerequisites: Undergraduate linear algebra and knowledge of MATLAB, Python, or R\nCourse Overview: This course presents a rigorous, quantitative multidisciplinary design methodology that incorporates the creative side of the design process. Through a topic of your choice, students learn how to use multidisciplinary design optimization (MDO) to create advanced and complex engineering systems that must be competitive in performance and life-cycle value.\nKey Focus Areas: -Multidisciplinary character of engineering systems -Design of complex systems\n-Tools for optimization\nCourse Structure: Students work in small teams on a term project to apply MDO principles to design and optimize an engineering system of their choice.\n\n\n\n\nStudents who successfully complete this course will be able to:\n\nSystem Decomposition: Subdivide a complex system into smaller disciplinary models, manage their interfaces and reintegrate them into an overall system model.\nAlgorithm Selection: Identify the most suitable optimization algorithm between gradient-based numerical optimization algorithms (i.e., sequential quadratic programming (SQP)) and various modern heuristic optimization techniques (i.e., simulated annealing (SA) or genetic algorithms (GA)) for their design problem and use it to find the optimal design for a single objective of their choice.\nCritical Analysis: Critically evaluate and interpret analysis and optimization results, including sensitivity analysis and exploration of performance, cost and risk tradeoffs.\nMulti-Objective Optimization: Utilize basic concepts of multi-objective optimization, including the conditions for optimality and Pareto front computation techniques, to optimize their design with respect to two objectives of their choice.\nTeam Project: Work as a team to formulate a realistic engineering design problem, optimize the design for a single objective and multiple competing objectives, and present the results in a final oral presentation and written report.\n\n\n\n\nThis course is fundamentally different from most traditional university optimization courses which focus mainly on the mathematics and algorithms for search. The focus is equally strong on all three aspects of the problem:\n\nMultidisciplinary Integration: Understanding how different disciplines (structures, aerodynamics, controls, optics, costing, manufacturing, environmental science, marketing, etc.) must be tightly coupled during conceptual and preliminary design of complex new systems and products.\nSystem Design: Developing the ability to design complex engineering systems that are competitive in performance and life-cycle value.\nOptimization Tools: Mastering both gradient-based and heuristic optimization techniques for real-world engineering applications.\n\n\n\n\n\nProgramming: MATLAB, Python, or R for implementation\nOptimization Algorithms:\n\nGradient-based methods (Sequential Quadratic Programming)\nHeuristic methods (Simulated Annealing, Genetic Algorithms)\n\nMulti-objective Optimization: Pareto front computation and analysis\nSensitivity Analysis: Understanding design parameter impacts\nSystem Integration: Managing multidisciplinary model couplings\n\n\nThis course provides students with practical experience in applying MDO principles to real engineering problems, preparing them for careers in advanced engineering design and optimization."
-  },
-  {
-    "objectID": "teaching.html#multidisciplinary-design-optimization-mdo",
-    "href": "teaching.html#multidisciplinary-design-optimization-mdo",
-    "title": "Teaching",
-    "section": "",
-    "text": "Image: openmdao\n\n\nCourse: Multidisciplinary Design Optimization\nInstitution: Cornell University\nRole: Teaching Assistant\nWhen Offered: Fall Semester\nPrerequisites: Undergraduate linear algebra and knowledge of MATLAB, Python, or R\nCourse Overview: This course presents a rigorous, quantitative multidisciplinary design methodology that incorporates the creative side of the design process. Through a topic of your choice, students learn how to use multidisciplinary design optimization (MDO) to create advanced and complex engineering systems that must be competitive in performance and life-cycle value.\nKey Focus Areas: -Multidisciplinary character of engineering systems -Design of complex systems\n-Tools for optimization\nCourse Structure: Students work in small teams on a term project to apply MDO principles to design and optimize an engineering system of their choice.\n\n\n\n\nStudents who successfully complete this course will be able to:\n\nSystem Decomposition: Subdivide a complex system into smaller disciplinary models, manage their interfaces and reintegrate them into an overall system model.\nAlgorithm Selection: Identify the most suitable optimization algorithm between gradient-based numerical optimization algorithms (i.e., sequential quadratic programming (SQP)) and various modern heuristic optimization techniques (i.e., simulated annealing (SA) or genetic algorithms (GA)) for their design problem and use it to find the optimal design for a single objective of their choice.\nCritical Analysis: Critically evaluate and interpret analysis and optimization results, including sensitivity analysis and exploration of performance, cost and risk tradeoffs.\nMulti-Objective Optimization: Utilize basic concepts of multi-objective optimization, including the conditions for optimality and Pareto front computation techniques, to optimize their design with respect to two objectives of their choice.\nTeam Project: Work as a team to formulate a realistic engineering design problem, optimize the design for a single objective and multiple competing objectives, and present the results in a final oral presentation and written report.\n\n\n\n\nThis course is fundamentally different from most traditional university optimization courses which focus mainly on the mathematics and algorithms for search. The focus is equally strong on all three aspects of the problem:\n\nMultidisciplinary Integration: Understanding how different disciplines (structures, aerodynamics, controls, optics, costing, manufacturing, environmental science, marketing, etc.) must be tightly coupled during conceptual and preliminary design of complex new systems and products.\nSystem Design: Developing the ability to design complex engineering systems that are competitive in performance and life-cycle value.\nOptimization Tools: Mastering both gradient-based and heuristic optimization techniques for real-world engineering applications.\n\n\n\n\n\nProgramming: MATLAB, Python, or R for implementation\nOptimization Algorithms:\n\nGradient-based methods (Sequential Quadratic Programming)\nHeuristic methods (Simulated Annealing, Genetic Algorithms)\n\nMulti-objective Optimization: Pareto front computation and analysis\nSensitivity Analysis: Understanding design parameter impacts\nSystem Integration: Managing multidisciplinary model couplings\n\n\nThis course provides students with practical experience in applying MDO principles to real engineering problems, preparing them for careers in advanced engineering design and optimization."
-  },
-  {
-    "objectID": "software.html",
-    "href": "software.html",
-    "title": "Software & Projects",
-    "section": "",
-    "text": "This page highlights the software projects and computational tools I have developed and contributed to. These projects reflect my interest in creating robust, scalable, and efficient solutions for complex engineering and scientific problems.\nMore details and project listings will be added here soon.\n\n\nFeatured Projects\n\n\nMarineHydro.jl\nA Boundary Element Method (BEM) solver written in Julia, designed for hydrodynamic analysis within a fully differentiable programming paradigm. It leverages automatic differentiation for efficient gradient computation.\n\n\nDifferentiable wave2wire Framework for WEC Farms\nAn framework for the Multidisciplinary Design Optimization of Wave Energy Converters (WECs) and WEC Farms. This project integrates hydrodynamic of large number of WECs, and control system models to optimize the performance of the WEC farm using gradient-based optimization.\n\n\nopenFlash\nAn open-source framework built to simulate the hydrodynamics of wave energy converters using matched eigenfunction expansion methods."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Kapil Khanal",
-    "section": "",
-    "text": "Differentiable Programming to Engineer Complex Systems.\n\n\n\n\n\n\n\n\nI am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on modeling and optimizing novel offshore systems such as wave energy converters.\nWith a Master’s degree in Systems Engineering and ongoing PhD work, I am to bridge theory and applications for large-scale systems. I did my undergraduate in Mathematics and Data Science from Winona State University, Minnesota.\n\n\n\n\n\n\nNote💼 Bridging Research and Industry\n\n\n\nUpon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in data science, multiphysics simulation and design optimization to solve challenging hard-tech engineering problems.\n\nView My CV   Connect on LinkedIn   Explore My GitHub"
-  },
-  {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Kapil Khanal",
-    "section": "",
-    "text": "I am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on modeling and optimizing novel offshore systems such as wave energy converters.\nWith a Master’s degree in Systems Engineering and ongoing PhD work, I am to bridge theory and applications for large-scale systems. I did my undergraduate in Mathematics and Data Science from Winona State University, Minnesota.\n\n\n\n\n\n\nNote💼 Bridging Research and Industry\n\n\n\nUpon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in data science, multiphysics simulation and design optimization to solve challenging hard-tech engineering problems.\n\nView My CV   Connect on LinkedIn   Explore My GitHub"
-  },
-  {
-    "objectID": "index.html#research-focus",
-    "href": "index.html#research-focus",
-    "title": "Kapil Khanal",
-    "section": "Research Focus",
-    "text": "Research Focus\nI am interested in applying computational methods to solve real-world problems. Currently, I focus on multidisciplinary design optimization (MDO), control co-design, machine learning and physical simulations to design and operate large-scale systems. Through the powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. Broadly, I am interested in bridging the gap between theory and practice in engineering and science.\n\n\n\nResearch Interests\n\n\nKeywords: Optimization, Optimal Controls, Differentiable Programming, Reinforcement Learning, System Architecture, System of System Optimization, Numerical simulations (boundary element method, finite difference method, finite element method, etc.), Data Science, Data Engineering."
-  },
-  {
-    "objectID": "index.html#recent-posts",
-    "href": "index.html#recent-posts",
-    "title": "Kapil Khanal",
-    "section": "Recent Posts",
-    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nWorkshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl\n\n\n\nJul 27, 2025\n\n\n\n\n\n\n\n\n\n\n\nDerivatives are Cheap and Expensive\n\n\nThe Real Cost of Gradients in Complex Systems Optimization\n\n\n\nJun 23, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis\n\n\nA Julia Package for Wave-Structure Interactions\n\n\n\nJun 22, 2025\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html",
-    "href": "posts/aiaa-scitech-2026-submission/index.html",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "",
-    "text": "2026 AIAA SciTech Forum\n12–16 January 2026\nHyatt Regency Orlando\nOrlando, Florida"
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#conference-information",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#conference-information",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "",
-    "text": "2026 AIAA SciTech Forum\n12–16 January 2026\nHyatt Regency Orlando\nOrlando, Florida"
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#abstract",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#abstract",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "Abstract",
-    "text": "Abstract\nIn many practical settings, mathematically optimal system designs are often set aside in favor of similarly performing alternatives that better accommodate real-world constraints and evolving requirements. In such cases, it is desirable to identify alternative design vectors that maintain acceptable levels of system performance. This can be achieved using isoperformance method, which construct sets of performance-invariant solutions, or through multiobjective optimization. However, traditional isoperformance approaches typically ignore the feasibility constraints that arise in coupled systems governed by multidisciplinary analysis (MDA). These systems require convergence of nonlinear solvers, and the resulting computational burden increases when newly generated designs do not satisfy such feasibility inherently. Isoperformance analysis is an inverse design technique used to identify a set of feasible design vectors that yield a specified vector of system performance metrics. This performance-invariant set provides a space for subsequent decision-making based on secondary criteria like cost, risk, or implementation ease. However, applying isoperformance methods to complex coupled systems is challenging, as these systems often require a multidisciplinary analysis (MDA) to resolve interdependencies among components. The resulting nonlinear solver demands increase computational cost when infeasible designs are evaluated.\nIn this paper, we propose two contributions to improve the robustness and scalability of isoperformance methods in such settings. First, we extend the isoperformance method to support arbitrarily large design spaces using reverse-mode automatic differentiation and adjoint sensitivity analysis. Second, we introduce a regularized isoperformance approach that incorporates the feasibility constraints arising from MDA directly into the Jacobian, improving the likelihood of convergence and solution quality. We demonstrate the method on a benchmark coupled problem involving three objectives, showcasing its ability to generate feasible isoperformant designs. decision-making in complex engineered systems requires balancing conflicting objectives among various subsystems and stakeholders. In many cases, a numerically optimal solution is not the final adopted design due to constraints, trade-offs, or the infeasibility of implementation. This motivates the search for alternative design solutions that achieve target performance levels without requiring complete re-optimization.\nTo address this, we enhance the isoperformance approach to explicitly consider MDA feasibility during inverse design. This is critical for large systems where convergence, sensitivity, and robustness all play significant roles in engineering decision-making."
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#authors",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#authors",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "Authors",
-    "text": "Authors\n\nKapil Khanal (PhD Candidate, Systems Engineering)\nMaha N. Haji (Assistant Professor, Sibley School of Mechanical Engineering)\n\nAffiliation: Cornell University, Ithaca, NY"
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#research-context",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#research-context",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "Research Context",
-    "text": "Research Context\nThis work addresses a fundamental challenge in multidisciplinary design optimization (MDO): the gap between mathematically optimal solutions and practically implementable designs. While optimization algorithms can find the “best” solution according to mathematical criteria, real-world engineering often requires flexibility in design choices to accommodate:\n\nManufacturing constraints\nSupply chain limitations\n\nRegulatory requirements\nFuture design modifications\nRisk mitigation strategies\n\nThe isoperformance method offers a systematic approach to explore the design space for alternatives that maintain acceptable performance levels while providing the flexibility needed for practical implementation."
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#key-contributions",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#key-contributions",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "Key Contributions",
-    "text": "Key Contributions\n\n1. Scalable Isoperformance with Automatic Differentiation\nTraditional isoperformance methods often struggle with high-dimensional design spaces due to computational limitations in gradient computation. Our approach leverages:\n\nReverse-mode automatic differentiation for efficient gradient computation.\n\nThis enables the method to scale to arbitrarily large design spaces while maintaining computational efficiency.\n\n\n2. Regularized Isoperformance for Coupled Systems\nCoupled multidisciplinary systems introduce unique challenges through:\n\nNonlinear coupling constraints between disciplines\nFeasibility requirements that must be satisfied simultaneously\nConvergence dependencies of numerical solvers"
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#applications",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#applications",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "Applications",
-    "text": "Applications\nThis work has broad applications across engineering disciplines, including:\n\nAerospace Systems: Aircraft design with multiple performance objectives\nMarine Engineering: Offshore structure optimization under environmental constraints\nEnergy Systems: Renewable energy device design and optimization\nTransportation: Vehicle design balancing performance, efficiency, and safety\n\nThis work represents a significant step forward in making optimization methods more practical and accessible for complex engineering systems, bridging the gap between mathematical optimality and engineering feasibility."
   },
   {
     "objectID": "posts/differentiable-hydrodynamics-framework/index.html",

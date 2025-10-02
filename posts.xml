@@ -1433,5 +1433,111 @@ Xie, Zhiming, and Yuming Liu. 2020. <span>“Mathematical Expressions and Numeri
   <pubDate>Sat, 01 Feb 2020 00:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/pass.png" medium="image" type="image/png" height="92" width="144"/>
 </item>
+<item>
+  <title>Winona Area Public Schools: Community Contribution</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/winona-area-public-schools/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="winona-area-public-schools-data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="winona-area-public-schools-data-visualization">Winona Area Public Schools Data Visualization</h2>
+<p><strong>Introduction:</strong></p>
+<p>This project addresses the need of communication of public school data to community members in a meaningful way. Also, making the data available to general public in a proper and useable format.</p>
+<p>There has been a wider discussion regarding the budget issue in Winona area schools. Here is <a href="https://www.winonadailynews.com/news/local/what-will-waps-cut-board-to-weigh-new-options-for/article_23c25b9f-7365-5aa2-b370-1ed251eb8231.html">the article</a> discussing the budget concerns.</p>
+<p>Primarily, this project was focused on cleaning and visualizing the Enrollment, Expenditures and Staffing History reports of the Winona Area Public District (WAPS) available publicly through Minnesota Department of Education, Data Center.</p>
+<p><strong>Link:</strong> <a href="http://education.state.mn.us/MDE/Data/">http://education.state.mn.us/MDE/Data/</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/winona-area-public-schools/waps.png" class="img-fluid figure-img"></p>
+<figcaption>WAPS Overview</figcaption>
+</figure>
+</div>
+</section>
+<section id="methods-and-steps-of-project" class="level2">
+<h2 class="anchored" data-anchor-id="methods-and-steps-of-project">Methods and Steps of Project</h2>
+<section id="data-inspectionacquisition" class="level3">
+<h3 class="anchored" data-anchor-id="data-inspectionacquisition">1. Data Inspection/Acquisition</h3>
+<p>Public data was collected by Alison Quam (Representative from WAPS District). The data were made available in different PDF/Excel files. Also, the information were scattered in different files.</p>
+</section>
+<section id="data-cleaning-and-formatting" class="level3">
+<h3 class="anchored" data-anchor-id="data-cleaning-and-formatting">2. Data Cleaning and Formatting</h3>
+<p>First, most of the PDF files were converted to Excel by <a href="http://tabula.technology/">Tabula</a> and online tool (<a href="http://pdftoexcel.com">pdftoexcel.com</a>). Then, they were cleaned up in proper format and stacked using Python (Pandas).</p>
+</section>
+<section id="data-exploration-and-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="data-exploration-and-visualization">3. Data Exploration and Visualization</h3>
+<p>This part of the project is focused on addressing the questions provided by representative of WAPS (Alison Quam). Tableau was used extensively to explore the data and visualize it.</p>
+<p>Primarily, I focused on answering following questions:</p>
+<ol type="1">
+<li><strong>I was curious about, how does the enrollment and capture rate (rate of new born enrolling to Kindergarten) is changing in WAPS district?</strong></li>
+</ol>
+<p>After few meetings with representative, I realized she was more curious about how schools spend across different programs.</p>
+<ol start="2" type="1">
+<li><strong>How the expenditure per average daily membership (count of student daily served in schools) and spending on various category is changing?</strong></li>
+</ol>
+</section>
+</section>
+<section id="interactive-tableau-dashboard" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-tableau-dashboard">Interactive Tableau Dashboard</h2>
+<p>The link to the tableau file and the data is <a href="https://public.tableau.com/views/WinonaAreaPublicSchoolsDataStory/FourthDashboard?:retry=yes&amp;:embed=y&amp;:display_count=yes&amp;:origin=viz_share_link"><strong>here</strong></a>.</p>
+</section>
+<section id="visual-story" class="level2">
+<h2 class="anchored" data-anchor-id="visual-story">Visual Story</h2>
+<p>Now, the visual story begins…</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Dashboard Screenshots
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The following images show the key insights from the Tableau dashboard:</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/winona-area-public-schools/Second_Dashboard.png" class="img-fluid figure-img"></p>
+<figcaption>Enrollment and Capture Rate Analysis</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/winona-area-public-schools/Third_Dashboard.png" class="img-fluid figure-img"></p>
+<figcaption>Expenditure Analysis</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/winona-area-public-schools/Fourth_Dashboard.png" class="img-fluid figure-img"></p>
+<figcaption>Comprehensive Overview</figcaption>
+</figure>
+</div>
+</section>
+<section id="impact-and-conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="impact-and-conclusion">Impact and Conclusion</h2>
+<p>This project actually helped inform the decision makers at local level. Thus, I was able to contribute to something meaningful with my Python and Tableau skills.</p>
+<p>The visualization provided clear insights into: - Enrollment trends and capture rates over time - Expenditure patterns across different programs - Resource allocation efficiency - Budget planning considerations</p>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>I would like to thank: - <strong>Alison Quam</strong> (WAPS representative) for providing the data and guidance - <strong>Prof.&nbsp;Silas Bergen</strong> for helping and guiding me to understand the terms and calculations already done in the reports - <strong>Prof.&nbsp;Todd Iverson</strong> for help figuring out Python code for cleaning the data</p>
+<p>This project demonstrates how data science skills can be applied to serve the community and support informed decision-making in public education.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>data science</category>
+  <category>community</category>
+  <category>education</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/winona-area-public-schools/</guid>
+  <pubDate>Wed, 21 Aug 2019 00:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/winona-area-public-schools/waps.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 </channel>
 </rss>
