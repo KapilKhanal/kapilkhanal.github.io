@@ -1,80 +1,38 @@
 [
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "publications.html#publications-and-conference-papers",
+    "href": "publications.html#publications-and-conference-papers",
+    "title": "Publications",
+    "section": "Publications and Conference Papers",
+    "text": "Publications and Conference Papers\nKhanal, K., Michelén Ströfer, C. A., Ancellin, M., & Haji, M. (2024). Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis of Wave-Structure Interactions. Applied Ocean Research, Submitted.\nKhanal, K., & Haji, M. N. (2024). Multi-Objective Multidisciplinary Optimization of Wave Energy Converter Array Layout and Controls. https://dx.doi.org/10.2139/ssrn.4891821\nMcCabe, R., Khanal, K., & Haji, M. (2024). Open-source toolbox for semi-analytical hydrodynamic coefficients via the matched eigenfunction expansion method. UMERC Conference, August 7, Duluth, Minnesota.\nKhanal, K., & Haji, M. N. (2022, October 25). Multidisciplinary Design Optimization for Novel Offshore Systems. Presentation at the openMDAO Workshop, NASA Glenn Research Center, Cleveland, Ohio.\nKhanal, K., McCabe, R., & Haji, M. N. (2023). Gradient-Based Design Optimization of Concentric Cylindrical Offshore Structures. Proceedings of the SIAM Conference on Optimization (OP23), May 31, Seattle, Washington.\nKhanal, K., Vitale, O., DeGoede, N., & Haji, M. (2023, October 4-6). Multi-objective Multidisciplinary Optimization of Wave Energy Converter Array Configurations and Controls. University Marine Energy Research Community 2023 Conference, Durham, NH, USA."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kapil Khanal",
     "section": "",
-    "text": "Order By\n      Default\n      \n      \n      \n        Funder\n      \n      \n        Team\n      \n      \n        Description\n      \n      \n        Start\n      \n      \n        End\n      \n      \n        Funding\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nTitle\n\n\n\nTeam\n\n\n\nFunder\n\n\n\nDescription\n\n\n\nFunding\n\n\n\nStart\n\n\n\nEnd\n\n\n\n\n\n\n\n\n\n\n\n \n\n\nKapil Khanal, Dr. Maha Haji, Dr. Carlos , Dr. Mattheiu\n\n\nSandia National Laboratories\n\n\nSeedling I and II: A Framework for Differentiable Hydrodynamics\n\n\n$200,000\n\n\n2023 - Present\n\n\nPresent\n\n\n\n\n\n\n\n\n\nAWS Cloud Credit for Research\n\n\nKapil Khanal\n\n\nAmazon Web Services (AWS)\n\n\nAmazon Web Services (AWS) Cloud Credit for Computational Research\n\n\n$5,000\n\n\n2023\n\n\n2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Differentiable Programming to Engineer Complex Systems.\n\n\n\n\n\n\n\n\nI am a Quantitative Researcher at Glencore in Houston, where I build forecasting, optimization, and valuation models for North American natural gas and power markets. My work spans demand and supply forecasting across balancing authorities, LP-based storage dispatch and valuation, and walk-forward backtesting infrastructure for systematic trading strategies.\nI recently completed my Ph.D. in Systems Engineering at Cornell University (Applied Mathematics minor), where I was a member of the Symbiotic Engineering and Analysis (SEA) Lab. My dissertation developed differentiable simulation and gradient-based methods for the multidisciplinary design optimization of novel offshore systems. Before Cornell, I earned my B.S. in Mathematics and Data Science from Winona State University, Minnesota.\n\n\n\n\n\n\nNote💼 What I’m Working On\n\n\n\nAt Glencore, I focus on price forecasting, statistical arbitrage, and storage optimization in natural gas markets — combining time-series models, supervised ML, convex optimization, and large-scale fundamental data pipelines to inform discretionary and systematic trading.\n\nView My CV   Connect on LinkedIn   Explore My GitHub"
   },
   {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "What’s New & Updated",
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Kapil Khanal",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nWorkshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl\n\n\n\n\n\n\nworkshop\n\nmarine hydrodynamics\n\ndifferentiable programming\n\noptimization\n\n\n\n\n\n\n\n\n\nJul 27, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nDerivatives are Cheap and Expensive\n\n\nThe Real Cost of Gradients in Complex Systems Optimization\n\n\n\noptimization\n\nsensitivity analysis\n\nresearch\n\n\n\n\n\n\n\n\n\nJun 23, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nMarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis\n\n\nA Julia Package for Wave-Structure Interactions\n\n\n\nsoftware\n\nresearch\n\nJulia\n\nhydrodynamics\n\noptimization\n\n\n\n\n\n\n\n\n\nJun 22, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nCoupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs\n\n\nExtending the Isoperformance Method for Feasibility in Coupled Multidisciplinary Systems\n\n\n\nconference\n\nMDO\n\noptimization\n\nresearch\n\n\n\n\n\n\n\n\n\nApr 22, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nEnhancing the Boundary Element Method with Scientific Machine Learning\n\n\nA Hybrid Approach for Solving Diffraction-Radiation Problems\n\n\n\nresearch\n\nmachine learning\n\nhydrodynamics\n\nJulia\n\n\n\n\n\n\n\n\n\nJul 30, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nGradient-Based Optimization for Large Systems\n\n\nIntroduction to MDO Architectures, Solvers, and Simulators\n\n\n\nMDO\n\noptimization\n\nresearch\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nDifferentiable Wave-to-Wire Model for Wave Energy Converter Optimization\n\n\nSubmission to the ASME 2025 IDETC/CIE Conference\n\n\n\nconference\n\nresearch\n\noptimization\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nA Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems\n\n\nMy PhD Research Proposal\n\n\n\nresearch\n\noptimization\n\nhydrodynamics\n\nthesis\n\n\n\nDeveloping a differentiable boundary element method solver for hydrodynamic design optimization of offshore structures using automatic differentiation and adjoint methods\n\n\n\n\n\nJan 15, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\neVTOL Integration in Emergency Medical Services: A System Architecture Approach\n\n\nDesigning Affordable, High-Performance, and Equitable Air Ambulance Systems\n\n\n\nsystem architecture\n\neVTOL\n\nsystems engineering\n\nurban mobility\n\nresearch\n\n\n\n\n\n\n\n\n\nDec 19, 2023\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nGiving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)\n\n\n\n\n\n\ndata science\n\nsports analytics\n\nsoccer\n\nresearch\n\n\n\n\n\n\n\n\n\nFeb 1, 2020\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nWinona Area Public Schools: Community Contribution\n\n\n\n\n\n\ndata science\n\ncommunity\n\neducation\n\n\n\n\n\n\n\n\n\nAug 21, 2019\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nData Dashboard for StockX Contest\n\n\n\n\n\n\ndata science\n\ncompetition\n\nvisualization\n\n\n\n\n\n\n\n\n\nAug 21, 2019\n\n\nKapil Khanal\n\n\n\n\n\nNo matching items"
+    "text": "I am a Quantitative Researcher at Glencore in Houston, where I build forecasting, optimization, and valuation models for North American natural gas and power markets. My work spans demand and supply forecasting across balancing authorities, LP-based storage dispatch and valuation, and walk-forward backtesting infrastructure for systematic trading strategies.\nI recently completed my Ph.D. in Systems Engineering at Cornell University (Applied Mathematics minor), where I was a member of the Symbiotic Engineering and Analysis (SEA) Lab. My dissertation developed differentiable simulation and gradient-based methods for the multidisciplinary design optimization of novel offshore systems. Before Cornell, I earned my B.S. in Mathematics and Data Science from Winona State University, Minnesota.\n\n\n\n\n\n\nNote💼 What I’m Working On\n\n\n\nAt Glencore, I focus on price forecasting, statistical arbitrage, and storage optimization in natural gas markets — combining time-series models, supervised ML, convex optimization, and large-scale fundamental data pipelines to inform discretionary and systematic trading.\n\nView My CV   Connect on LinkedIn   Explore My GitHub"
   },
   {
-    "objectID": "posts/idetc-2025-submission/index.html",
-    "href": "posts/idetc-2025-submission/index.html",
-    "title": "Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization",
-    "section": "",
-    "text": "I recently submitted a paper to the ASME 2025 International Design Engineering Technical Conferences & Computers and Information in Engineering Conference (IDETC/CIE), to be held in Anahiem, California, from August 17-20, 2025.\nBelow is the abstract for the submission.\n\n\nAbstract\nWave energy conversion requires optimal design and control strategies to maximize energy extraction. Optimization approaches such as control co-design optimize plant design and the control strategies together. Several existing approaches use heuristic methods that do not scale well with high-dimensional design spaces. A gradient-based approach scales better than the heuristic method, for which the integrated model should be able to provide not just the output but its sensitivity with respect to the inputs. Currently, these different numerical solvers are used in isolation, thus making heuristic optimizers a natural choice.\nThis study develops a differentiable model integrating boundary element methods (BEM) for hydrodynamic modeling with pseudo-spectral optimal control techniques to optimize power take-off (PTO) forces under dynamic constraints for maximizing electrical power per volume of a point absorber wave energy converter (WEC). This model is useful for the large-scale gradient-based optimization of the electrical power.\nDiscussion and derivation of the semi-analytic adjoint for the hydrodynamics solver, non-linear parametric sensitivity for the trajectory optimization, and the calculation of the coupled derivative using unified derivative equations is presented. A nested formulation of the control co-design approach within a multidisciplinary design optimization architecture is created for the differentiable wave-to-wire model. Preliminary numerical experiment and verification of the sensitivities is conducted for the differentiable wave-to-wire model for a heaving point absorber WEC."
+    "objectID": "index.html#research-applied-interests",
+    "href": "index.html#research-applied-interests",
+    "title": "Kapil Khanal",
+    "section": "Research & Applied Interests",
+    "text": "Research & Applied Interests\nI apply computational methods to design and operate large-scale systems — from offshore renewables to wholesale energy markets. My interests sit at the intersection of optimization, machine learning, and physical/economic simulation. In academia, I focused on multidisciplinary design optimization (MDO), control co-design, and differentiable programming for complex engineered systems. In industry, I bring those same tools to commodity trading research: forecasting, valuation of physical assets (storage, generation), and systematic strategy development in natural gas and power markets.\n\n\n\nResearch Interests\n\n\nKeywords: Time-Series Forecasting, Convex & Stochastic Optimization, Optimal Control, Differentiable Programming, Reinforcement Learning, System Architecture, Numerical Simulation (BEM, FDM, FEM), Data Science, Data Engineering, Energy & Commodity Markets."
   },
   {
-    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
-    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
-    "title": "Derivatives are Cheap and Expensive",
-    "section": "",
-    "text": "“In machine learning, derivatives are cheap. In design optimization, they can be very expensive. Why?”"
-  },
-  {
-    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#introduction",
-    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#introduction",
-    "title": "Derivatives are Cheap and Expensive",
-    "section": "Introduction",
-    "text": "Introduction\nGradient-based optimization methods are everywhere, and they are the secret sauce behind intelligent software systems like ChatGPT to the optimal design of physical systems such as satellites, rockets, and airplanes. Very few people know the parallels between these two systems and how the engineering decision making is similar. This post reviews the methodologies for computing gradients in complex systems, drawing on insights from both machine learning and engineering literature.\nDifferentiation of modular systems composed of many simple subsystem is cheap and very straight forward to compute using chain rule but what if the complex system is composed of many subsystems that are handled by different sub-contractors and the dataflow is complicated? The subsystems probably have their own ‘constraints’ to be solved and thus each subsystem could be implicit function of the system design variables. This is not really a problem for neural networks but it is a problem for physical systems. How many contractors were there in the Apollo 11 mission? I don’t really know, see this article on the Apollo Program and Private Companies.\nGradients are essential for sensitivity calculations and optimization of objective (loss) functions. But while gradients are cheap for neural network training, they are often expensive for PDEs and coupled simulations in physical system design."
-  },
-  {
-    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#why-are-gradients-cheap-for-neural-networks",
-    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#why-are-gradients-cheap-for-neural-networks",
-    "title": "Derivatives are Cheap and Expensive",
-    "section": "Why Are Gradients Cheap for Neural Networks?",
-    "text": "Why Are Gradients Cheap for Neural Networks?\n\nNeural networks are composed of simple, differentiable operations (dot products, matrix multiplications, simple activation functions).\nAutomatic differentiation (AD) frameworks (e.g., PyTorch, TensorFlow) efficiently apply the chain rule via backpropagation.\nThe computational graph can be traversed efficiently, making gradient computation nearly as fast as the forward pass.\nAnalytical gradients are available for many neural network layers so your AD framework gets to cheat and use them."
-  },
-  {
-    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#why-are-gradients-expensive-for-physical-systems",
-    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#why-are-gradients-expensive-for-physical-systems",
-    "title": "Derivatives are Cheap and Expensive",
-    "section": "Why Are Gradients Expensive for Physical Systems?",
-    "text": "Why Are Gradients Expensive for Physical Systems?\n\nPhysical systems often involve PDEs, legacy code, or black-box simulations.\nSimulations may be modular, with neural networks chained to empirical calculations, surrogate models, and numerical solvers.\nGradients may require finite differences (expensive and noisy), symbolic methods (rarely feasible), or custom adjoint/automatic differentiation implementations.\nCoupled systems (e.g., multidisciplinary design optimization) require careful management of data flow and execution order.\nAdhoc heterogenous assembly of components and simulations."
-  },
-  {
-    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#methods-for-gradient-computation",
-    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#methods-for-gradient-computation",
-    "title": "Derivatives are Cheap and Expensive",
-    "section": "Methods for Gradient Computation",
-    "text": "Methods for Gradient Computation\n\nFinite Differences: Simple but expensive and prone to numerical error.\nSymbolic Differentiation: Exact but rarely practical for complex or legacy code.\nAutomatic Differentiation: Powerful, but requires code to be written in a compatible way.\nAdjoint/Linear System Methods: Set up a global sensitivity equation and solve a linear system—especially useful when the chain rule is unwieldy.\n\n\n\n\n\n\n\n\n\nMethod\nPros\nCons\n\n\n\n\nFinite Differences\nEasy to implement\nExpensive, noisy, scales poorly\n\n\nSymbolic\nExact\nImpractical for large/legacy code\n\n\nAutomatic Diff (AD)\nEfficient, general\nNeeds compatible code, memory usage\n\n\nAdjoint/Linear System\nScales for many inputs\nComplex to implement, setup required"
-  },
-  {
-    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#forward-vs.-adjoint-backward-mode-vs-mixed-mode",
-    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#forward-vs.-adjoint-backward-mode-vs-mixed-mode",
-    "title": "Derivatives are Cheap and Expensive",
-    "section": "Forward vs. Adjoint (Backward) Mode vs Mixed Mode",
-    "text": "Forward vs. Adjoint (Backward) Mode vs Mixed Mode\n\nForward mode: Efficient when there are few inputs (design variables).\nAdjoint (backward) mode: Efficient when there are few outputs (objectives/constraints).\nBoth are applications of the chain rule, but their efficiency depends on the problem structure.\nSometime mixed mode are efficient combining forward and adjoint mode. This depends on the dataflow and the structure of the system."
-  },
-  {
-    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#modular-systems-mixing-and-matching",
-    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#modular-systems-mixing-and-matching",
-    "title": "Derivatives are Cheap and Expensive",
-    "section": "Modular Systems: Mixing and Matching",
-    "text": "Modular Systems: Mixing and Matching\nIn real-world modeling, systems are often modular: a neural network, an empirical formula, and a numerical simulation may be chained together. The chain rule applies, but the optimal way to compute derivatives may not be a simple sequential application. A different interpretation of the chain rule is needed. Additionally, in complex multidisciplinary systems, managing the execution order and data flow for derivatives is non-trivial. Frameworks like OpenMDAO use graph algorithms (e.g., NetworkX) to determine the correct order and avoid unnecessary computations so that forward and adjoint computation is scalable.\n\nMost automatic differentiation techniques, including backpropagation, can be traced back to constrained optimization and the vast literature on optimal controls. The method of Lagrange multipliers transforms constrained problems into unconstrained ones, providing the foundation for adjoint methods and modern AD frameworks."
-  },
-  {
-    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#conclusion",
-    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#conclusion",
-    "title": "Derivatives are Cheap and Expensive",
-    "section": "Conclusion",
-    "text": "Conclusion\nAlthough gradients are necessary for scalable optimization, but their cost varies dramatically between fields. It requires understanding the structure of your system—and choosing the right differentiation method, this can make the difference between tractable and intractable optimization. As systems become more modular and complex, hybrid approaches and careful management of forward computation and adjoint derivative computation are increasingly important.\nSystem of systems are becoming more common in the design of systems such as ChatGPT, rockets, airplanes, buildings etc and the only way to scale the ‘training’/ ‘tuning’ / optimization is to use right tools to compute them gradients."
+    "objectID": "index.html#recent-posts",
+    "href": "index.html#recent-posts",
+    "title": "Kapil Khanal",
+    "section": "Recent Posts",
+    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nJoined Glencore as a Quantitative Researcher\n\n\nDefended my Ph.D. at Cornell and started in Houston on the Natural Gas research desk\n\n\n\nJan 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl\n\n\n\nJul 27, 2025\n\n\n\n\n\n\n\n\n\n\n\nDerivatives are Cheap and Expensive\n\n\nThe Real Cost of Gradients in Complex Systems Optimization\n\n\n\nJun 23, 2025\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
   },
   {
     "objectID": "posts/neural-networks-bem/index.html",
@@ -96,125 +54,6 @@
     "title": "Enhancing the Boundary Element Method with Scientific Machine Learning",
     "section": "Neural Networks in Scientific Machine Learning",
     "text": "Neural Networks in Scientific Machine Learning\nThe classical expression of the free surface Greens function.\\(G(P,Q) = \\text{fundamental solution} + \\textit{harmonic function}\\) : \\[\\begin{equation}\nG(P,Q) = \\left(\\frac{1}{X^2+ (Z_1-Z_2)^2}\\right) + \\left( \\frac{1}{X^2+ Y^2} + F(X,Y)\n+ 2 \\pi ik_0 e^{-Y} J_0(X)\\right)  \n\\end{equation}\\] where horizontal (X) and vertical distances (Y), \\ \\(X:k_0 *\\sqrt{x1-x2)^2  + (y1-y2)^2}\\) and \\(Y:-k_o(z1+z2)\\) Newman simplified \\(F(X,Y)\\) from the original expression (not included here) which has many computational challenges to: \\[\\begin{equation}\nF(X, Y) = -2e^{-y} \\int_{0}^{Y} \\frac{e^t}{\\sqrt{X^2 + t^2}} \\, dt - \\pi e^{-y} \\left[B(X) + H(X)\\right]\n\\end{equation}\\]\nQ: Can we instead use a neural network to approximate the Green’s function?\nNeural networks have a growing history in scientific machine learning, with recent publications demonstrating their power in hydrodynamics . However, a well-known challenge is that standard neural networks often struggle to learn periodic and oscillatory functions, which are fundamental to wave physics.\nSeveral research avenues have explored solutions to this, including: - Transforming data into the Fourier space. - Developing novel activation functions. - Using deeper network architectures.\nWe’re exploring the use of neural networks to approximate the Green’s function and integrate it into our in-house BEM solver - MarineHydro.jl.\nThis is a work in progress.\n\n\n\n\nReferences\n\nJohn, F. (1950). On the motion of floating bodies II. Communications on Pure and Applied Mathematics.\nXie, M., et al. (2018). A review of Green’s functions for marine hydrodynamics. Journal of Hydrodynamics.\nHuang, G., et al. (2022). Deep-learning-based fast-prediction method for hydrodynamic performance of a ship sailing in waves. Ocean Engineering.\nZhan, S., et al. (2023). A review of deep learning in naval architecture and ocean engineering. Ocean Engineering.\nBoulle, N., et al. (2020). Rational neural networks. arXiv preprint."
-  },
-  {
-    "objectID": "posts/marinehydro-workshop/index.html",
-    "href": "posts/marinehydro-workshop/index.html",
-    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
-    "section": "",
-    "text": "“Bringing the power of gradient-based optimization to the marine energy sector”"
-  },
-  {
-    "objectID": "posts/marinehydro-workshop/index.html#abstract",
-    "href": "posts/marinehydro-workshop/index.html#abstract",
-    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
-    "section": "Abstract",
-    "text": "Abstract\nUnderstanding and predicting wave-structure interactions is central to the design and operation of offshore systems—from floating wind turbines and wave energy converters to autonomous marine platforms. Traditionally, these interactions are modeled using boundary element method (BEM) solvers based on linear potential flow theory. However, a major limitation of existing BEM solvers is their inability to provide sensitivities (derivatives) of hydrodynamic quantities with respect to design variables such as geometry, wave frequency, or device layout. These sensitivities are essential for enabling modern workflows in design optimization, control co-design, uncertainty quantification, and physics-informed machine learning.\nWithout access to gradients, engineers are forced to rely on derivative-free methods (e.g., parameter sweeps, heuristics, or surrogate models without sensitivity guidance), which scale poorly and often miss optimal solutions in high-dimensional design spaces. This bottleneck has hindered progress in applying scalable, gradient-based optimization methods—now common in aerospace, robotics, and machine learning—to the marine energy sector.\nThis workshop introduces MarineHydro.jl, a fully differentiable BEM solver that unlocks access to exact sensitivities of hydrodynamic coefficients through reverse-mode automatic differentiation. Developed in Julia, MarineHydro.jl supports both direct and indirect BEM formulations and includes fast and accurate Green’s function implementations. The workshop is targeted at researchers and practitioners working on design and control of offshore and marine structures, with an emphasis on applications where sensitivity information is essential. Participants will learn to install the solver, perform hydrodynamic simulations, extract gradients, and apply these results to practical case studies.\nWe begin by reviewing the fundamentals of differentiable programming and its potential usage/implementation in BEM software common in marine hydrodynamics."
-  },
-  {
-    "objectID": "posts/marinehydro-workshop/index.html#workshop-overview",
-    "href": "posts/marinehydro-workshop/index.html#workshop-overview",
-    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
-    "section": "Workshop Overview",
-    "text": "Workshop Overview\n\nTarget Audience\n\nResearchers and practitioners working on design and control of offshore and marine structures\nEngineers interested in differentiable programming\nStudents and professionals in marine hydrodynamics and renewable energy\n\n\n\nLearning Objectives\n\nInstall and configure MarineHydro.jl from GitHub\nPerform automatic differentiation\nPerform hydrodynamic simulations with BEM formulations\nExtract exact sensitivities using automatic differentiation\nUnderstand the fundamentals of differentiable programming"
-  },
-  {
-    "objectID": "posts/marinehydro-workshop/index.html#technical-foundations",
-    "href": "posts/marinehydro-workshop/index.html#technical-foundations",
-    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
-    "section": "Technical Foundations",
-    "text": "Technical Foundations\n\nDifferentiable Programming in Marine Hydrodynamics\nThe workshop covers the fundamentals of differentiable programming as applied to potential flow theory and boundary element methods. Participants will learn:\n\nAutomatic Differentiation: How reverse-mode AD enables exact gradient computation\nBEM Formulations: Direct and indirect boundary element method implementations\nGreen’s Functions: Efficient and accurate implementations for marine applications\nSensitivity Analysis: Computing derivatives with respect to geometry, frequency, and layout parameters"
-  },
-  {
-    "objectID": "posts/marinehydro-workshop/index.html#workshop-materials",
-    "href": "posts/marinehydro-workshop/index.html#workshop-materials",
-    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
-    "section": "Workshop Materials",
-    "text": "Workshop Materials\nThe workshop will include hands-on sessions with:\n\nInstallation Guide: Setting up MarineHydro.jl from GitHub, AD backends.\nInteractive Pluto Notebook: Step-by-step examples with live code execution??\nTutorial Notebooks: Step-by-step examples\n\n\nInteractive Workshop Notebook\nThe workshop includes an interactive Pluto notebook that demonstrates:\n\nSetup and Installation: Getting MarineHydro.jl and dependencies running\nBasic BEM Simulations: Simple hydrodynamic calculations\nAutomatic Differentiation: Computing exact sensitivities\nGradient-Based Optimization: Practical examples with real marine structures\nAdvanced Features: Multi-body interactions and layout optimization\n\nYou can download and run the notebook locally, or view it online. The notebook is designed to be self-contained and includes all necessary code examples.\nDownload Workshop Notebook - Interactive Pluto notebook with all workshop examples\n\n\nPluto Notebooks\n\nInstalling Pluto.jl: https://plutojl.org/#install"
-  },
-  {
-    "objectID": "posts/marinehydro-workshop/index.html#how-to-install-and-run-the-pluto-notebook",
-    "href": "posts/marinehydro-workshop/index.html#how-to-install-and-run-the-pluto-notebook",
-    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
-    "section": "How to Install and Run the Pluto Notebook",
-    "text": "How to Install and Run the Pluto Notebook\nFollow these steps to get started with Julia and Pluto for running the MarineHydro.jl workshop notebook:\n\nStep 1: Install Julia 1.11.6\nGo to https://julialang.org/downloads and install the current stable release.\n\n\nStep 2: Run Julia\nAfter installing, make sure that you can run Julia. On some systems, this means searching for the “Julia 1.11” program installed on your computer; in others, it means running the command julia in a terminal.\n\nJulia install screenshot\n\n\n\n\nJulia Installation\n\n\nMake sure that you can execute 1 + 1.\n\n\nStep 3: Install Pluto\nIn the Julia terminal, type:\nimport Pkg; Pkg.add(\"Pluto\")\nThis will use Julia’s package manager to install the Pluto package.\nThis might take a couple of minutes, so you can go get yourself a cup of tea!\n\nscreenshot of the Julia REPL running the command import Pkg; Pkg.add(\"Pluto\") \n\n\n\nStep 4: Run Pluto\nIn the Julia terminal, type:\nimport Pluto; Pluto.run()\n\n\n\nPluto Installation\n\n\nPluto will automatically open your browser when it’s ready. 🎉"
-  },
-  {
-    "objectID": "posts/marinehydro-workshop/index.html#conclusion",
-    "href": "posts/marinehydro-workshop/index.html#conclusion",
-    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
-    "section": "Conclusion",
-    "text": "Conclusion\nThis workshop enable researchers and practitioners to leverage the full power of gradient-based methods that have transformed other engineering disciplines and bring them to the marine energy sector.\n\nFor more information about MarineHydro.jl, visit the GitHub repository. This software is in initial stages of development and actively looking for contributors and feedback."
-  },
-  {
-    "objectID": "posts/differentiable-hydrodynamics-framework/index.html",
-    "href": "posts/differentiable-hydrodynamics-framework/index.html",
-    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
-    "section": "",
-    "text": "Optimizing the levelized cost of electricity for floating offshore wind turbines (FOWTs) and wave energy parks involves analyzing multiple coupled subsystems including geometry, aerodynamics, and hydrodynamics. In complex engineered systems, the solution of governing equations in one subsystem changes the input for another subsystem. As the saying goes in engineering: “everything influences everything else” (Sobieszczanski-Sobieski and Haftka 1993). This creates design tradeoffs between several subsystems, necessitating an integrated multidisciplinary analysis approach.\nMultidisciplinary Design Optimization (MDO) is a field of engineering that focuses on using numerical optimization and solvers for designing systems involving multiple coupled disciplines or subsystems (Martins and Lambe 2013). Research has shown that sequential optimization of coupled subsystems usually results in sub-optimal designs, while an MDO approach leads to system-optimal solutions (Sobieszczanski-Sobieski and Haftka 1993)."
-  },
-  {
-    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#introduction",
-    "href": "posts/differentiable-hydrodynamics-framework/index.html#introduction",
-    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
-    "section": "",
-    "text": "Optimizing the levelized cost of electricity for floating offshore wind turbines (FOWTs) and wave energy parks involves analyzing multiple coupled subsystems including geometry, aerodynamics, and hydrodynamics. In complex engineered systems, the solution of governing equations in one subsystem changes the input for another subsystem. As the saying goes in engineering: “everything influences everything else” (Sobieszczanski-Sobieski and Haftka 1993). This creates design tradeoffs between several subsystems, necessitating an integrated multidisciplinary analysis approach.\nMultidisciplinary Design Optimization (MDO) is a field of engineering that focuses on using numerical optimization and solvers for designing systems involving multiple coupled disciplines or subsystems (Martins and Lambe 2013). Research has shown that sequential optimization of coupled subsystems usually results in sub-optimal designs, while an MDO approach leads to system-optimal solutions (Sobieszczanski-Sobieski and Haftka 1993)."
-  },
-  {
-    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#motivation-for-a-differentiable-framework",
-    "href": "posts/differentiable-hydrodynamics-framework/index.html#motivation-for-a-differentiable-framework",
-    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
-    "section": "Motivation for a Differentiable Framework",
-    "text": "Motivation for a Differentiable Framework\nOffshore and marine energy systems are inherently complex coupled systems. Currently, no integrated framework exists for offshore structures that supports both hydrodynamic simulation and shape optimization. This represents a significant bottleneck for design studies and optimization efforts. The adoption of MDO-based approaches should be encouraged to increase accessibility for further research (Musial et al. 2020).\nIn multidisciplinary design optimization, changes in one subsystem propagate across other subsystems. For example, a change in the mean position of a floating body alters the waterline and waterplane area, requiring recalculation of hydrodynamic coefficients. Similarly, research on novel multipurpose platforms (Perez-Collazo, Greaves, and Iglesias 2015) would benefit from such a framework.\nThe framework I’m developing is intended to serve as: - A tool for early design studies in the conceptual phase - A plugin for other MDO applications where hydrodynamics analysis is coupled"
-  },
-  {
-    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#multidisciplinary-design-optimization",
-    "href": "posts/differentiable-hydrodynamics-framework/index.html#multidisciplinary-design-optimization",
-    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
-    "section": "Multidisciplinary Design Optimization",
-    "text": "Multidisciplinary Design Optimization\n\nHydrodynamic Shape Optimization\nMDO of offshore structures involves shape perturbation and optimization. Different underwater shapes of floating bodies respond differently to incoming ocean waves, making shape optimization crucial for offshore platform design.\nOffshore structures like spar buoys (vertical cylindrical structures) can be reasonably modeled using analytical approximations (Haghi, Sabbagh-Yazdi, and Ghalandari 2014; Morison, Johnson, and Schaaf 1950). However, these analytical approaches are not feasible for non-standard geometries—those obtained after perturbing a base shape, usually described using splines. Efficient shape parameterization and numerical solvers explore the design space much better (Martins and Lambe 2013). In MDO, shapes are typically perturbed to be compatible with other subsystems, with B-splines (CAD geometry) being preferred (Samareh 2001).\nThe response motion of offshore structures is calculated using hydrodynamic coefficients such as added mass and damping. These coefficients characterize the geometry of floating structures. A transfer function called the Response Amplitude Operator (RAO) linearly relates sea motion to floating body motion."
-  },
-  {
-    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#boundary-element-method",
-    "href": "posts/differentiable-hydrodynamics-framework/index.html#boundary-element-method",
-    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
-    "section": "Boundary Element Method",
-    "text": "Boundary Element Method\nBoundary Element Methods (BEM) are used to calculate hydrodynamic coefficients, relying on linear potential flow theory where the exact Green’s function and its derivative are known (Babarit and Delhommeau 2011). BEM-based PDE solvers (Babarit 2015) are typically accurate for most geometries and can be coupled for shape optimization within a design framework. Depending on system requirements, we may want to minimize or maximize body response to waves—minimizing motion for wind turbines while maximizing motion for wave energy converters.\nHydrodynamics of floating bodies is typically modeled using linear potential flow theory. Since the domain is unbounded, boundary element methods are used, requiring only boundary discretization—the surface geometry is meshed with quadrilateral panels.\nFor each frequency of ocean waves the structure encounters, diffraction and radiation problems are solved to calculate hydrodynamic coefficients. The solution of velocity potential and radiation/diffraction forces is computed in the frequency domain.\nComputational cost increases with geometry discretization and the number of wave frequencies and headings. Typically, numerical complexity of BEM codes is proportional to \\(O(N^2)\\) or \\(O(N^3)\\) with \\(N\\) as the number of mesh panels. The Green function is computed \\(O(N^2)\\) times to set up the linear system, which is solved either by iterative methods with \\(O(N^2)\\) complexity or Gauss elimination with \\(O(N^3)\\) complexity (Babarit and Delhommeau 2011).\nThis limits integration within optimization loops, especially for large-scale optimization based on heuristic methods. The solution is to minimize function evaluations in optimization. Gradient-based optimization explores design space more efficiently (fewer evaluations) to reach locally optimal points\n\nDifferentiable Hydrodynamics\nCoupling numerical solvers within optimization is computationally costly. Shape optimization with many design variables requires an efficient way to calculate both the response and its gradient. Researchers often rely on reduced-order models to approximate hydrodynamic response and heuristic methods for optimization. However, heuristic methods don’t scale well for large-scale optimization, and reduced-order models lack the accuracy of full simulations.\nGradient-based optimization is preferred for large-scale optimization with many design variables and costly function evaluations. Coupling numerical solvers in gradient-based optimization requires gradients of solver output with respect to all inputs. While this has been implemented for CFD (He et al. 2020), no implementation of differentiable hydrodynamics (differentiable BEM) exists.\nAmong various gradient calculation methods, adjoint-based methods are accurate and efficient for inverse design problems. Adjoint methods are widely used in optimal control and aerodynamic shape optimization (Jameson 1988) as well as design optimization (Giles and Pierce 2000), but haven’t been applied to BEM-based hydrodynamics shape optimization.\n\n\nCoupled Derivatives\nFor multidisciplinary design optimization, Modular Analysis and Unified Derivatives (MAUD) architecture couples derivatives from several subsystems. MAUD formulates the multidisciplinary model as a nonlinear system of equations, leading to a linear equation that unifies all derivative computation methods (Hwang and Martins 2018). Each subsystem can provide numerical or analytical gradients.\nOpenMDAO (Gray et al. 2019), a tool developed by NASA, implements this framework. I plan to integrate newly developed BEM adjoints into this framework. Currently, I integrate BEM in OpenMDAO using numerical derivatives approximated through finite differences (Khanal and Haji 2023). Since this scales linearly with the number of design variables and accuracy deteriorates for nonlinear problems, it’s not appropriate for multidisciplinary analysis and optimization. My thesis aims to solve this problem.\n\nUnderstanding Adjoint Methods\nAdjoint methods provide an elegant way to compute gradients of objective functions with respect to many design variables at a computational cost that is essentially independent of the number of design variables. This is particularly valuable for shape optimization problems where we may have hundreds or thousands of design variables.\nThe key insight of adjoint methods is that instead of computing \\(\\frac{\\partial x}{\\partial \\theta}\\) directly (which would require solving the system for each design variable), we solve a single adjoint equation to obtain the sensitivity of the objective function.\nFor our BEM optimization problem:\n\\[\\begin{aligned}\n\\min_{\\theta,x} \\quad & J(S(\\theta), x(\\theta); \\theta ) \\\\\n\\textrm{s.t.} \\quad R(\\theta)=  & K(\\theta)\\times x(\\theta) - B(\\theta) = 0 \\\\\n\\end{aligned}\\]\nThe total derivative of the objective function with respect to design variables is:\n\\[\\frac{dJ}{d\\theta} = \\frac{\\partial J}{\\partial \\theta} + \\frac{\\partial J}{\\partial x}\\frac{\\partial x}{\\partial \\theta}\\]\nUsing the constraint equation \\(R(\\theta) = K(\\theta)x(\\theta) - B(\\theta) = 0\\), we can derive:\n\\[\\frac{\\partial R}{\\partial \\theta} = \\frac{\\partial K}{\\partial \\theta}x + K\\frac{\\partial x}{\\partial \\theta} - \\frac{\\partial B}{\\partial \\theta} = 0\\]\nSolving for \\(\\frac{\\partial x}{\\partial \\theta}\\):\n\\[\\frac{\\partial x}{\\partial \\theta} = K^{-1}\\left(\\frac{\\partial B}{\\partial \\theta} - \\frac{\\partial K}{\\partial \\theta}x\\right)\\]\nSubstituting back into the total derivative:\n\\[\\frac{dJ}{d\\theta} = \\frac{\\partial J}{\\partial \\theta} + \\frac{\\partial J}{\\partial x}K^{-1}\\left(\\frac{\\partial B}{\\partial \\theta} - \\frac{\\partial K}{\\partial \\theta}x\\right)\\]\nThe adjoint variable \\(\\lambda\\) is defined as the solution to:\n\\[K^T\\lambda = \\left(\\frac{\\partial J}{\\partial x}\\right)^T\\]\nThis leads to the elegant expression:\n\\[\\frac{dJ}{d\\theta} = \\frac{\\partial J}{\\partial \\theta} + \\lambda^T\\left(\\frac{\\partial B}{\\partial \\theta} - \\frac{\\partial K}{\\partial \\theta}x\\right)\\]\nComputational advantage: Instead of solving \\(N\\) forward problems (one for each design variable), we solve: 1. One forward problem: \\(Kx = B\\) 2. One adjoint problem: \\(K^T\\lambda = \\left(\\frac{\\partial J}{\\partial x}\\right)^T\\)\nThis gives us gradients with respect to all design variables at the cost of just two linear system solves, regardless of the number of design variables.\n\n\nAutomatic Differentiation in Practice\nAutomatic Differentiation (AD) is a technique that automatically computes derivatives of functions implemented in computer code. Unlike symbolic differentiation (which manipulates mathematical expressions) or finite differences (which approximates derivatives), AD computes exact derivatives by applying the chain rule systematically through the computational graph.\nTwo main modes of AD:\n\nForward Mode AD: Computes directional derivatives by propagating derivatives forward through the computation. For a function \\(f: \\mathbb{R}^n \\rightarrow \\mathbb{R}^m\\), forward mode computes \\(J \\cdot v\\) where \\(J\\) is the Jacobian and \\(v\\) is a direction vector.\nReverse Mode AD: Computes gradients by propagating adjoints backward through the computation. For a scalar function \\(f: \\mathbb{R}^n \\rightarrow \\mathbb{R}\\), reverse mode computes \\(\\nabla f\\) at the cost of approximately 2-4 function evaluations, regardless of \\(n\\).\n\nFor our BEM solver, reverse mode AD is particularly attractive because: - We typically have many design variables (shape parameters) but few objectives - The computational cost is independent of the number of design variables - It naturally computes the adjoint variables needed for our optimization\nImplementation considerations:\n\nLanguage choice: Julia and JAX are excellent choices because they:\n\nSupport automatic differentiation natively\nProvide high-performance numerical computing\nEnable just-in-time compilation for efficiency\nOffer parallel computing capabilities\n\nComputational graph: The BEM solver must be implemented in a way that maintains a differentiable computational graph:\n\nAll operations must be differentiable\nControl flow must be handled carefully\nLinear solvers must be differentiable (or replaced with differentiable alternatives)\n\nMemory considerations: Reverse mode AD requires storing intermediate values for the backward pass, which can be memory-intensive for large problems.\n\n\n\nDiscrete vs. Continuous Adjoint\nContinuous adjoint methods derive adjoint equations from the continuous governing equations (PDEs) before discretization. This approach: - Provides analytical expressions for adjoint equations - May be more efficient for certain problems - Requires careful treatment of boundary conditions - Is problem-specific and requires manual derivation\nDiscrete adjoint methods work with the discretized equations and use automatic differentiation to compute the required derivatives. This approach: - Is more general and applicable to many problems - Automatically handles complex discretization schemes - Requires less manual derivation - Can be less efficient but is more robust\nFor our BEM solver, discrete adjoint with automatic differentiation is preferred because: - It handles the complex Green’s function evaluations automatically - It works with any objective function without manual derivation - It integrates seamlessly with existing optimization frameworks - It provides exact gradients (up to numerical precision)\n\n\nChallenges and Solutions\nChallenge 1: Dense Linear Systems BEM methods solve dense linear systems, which are computationally expensive. Solutions include: - Using iterative solvers with preconditioning - Implementing matrix-free methods where possible - Leveraging parallel computing for large problems\nChallenge 2: Complex-valued Computations Hydrodynamic problems involve complex numbers (frequency domain analysis). AD frameworks must handle complex differentiation correctly: - Using Wirtinger calculus for complex derivatives - Ensuring proper handling of complex conjugates - Maintaining numerical stability\nChallenge 3: Green’s Function Evaluation The free-surface Green’s function is computationally expensive and involves special functions. - Implementing efficient evaluation algorithms - Using approximation methods for early design iterations - Leveraging GPU acceleration where possible\nChallenge 4: Integration with Optimization Frameworks The differentiable BEM solver must integrate with MDO frameworks like OpenMDAO: - Providing consistent interfaces for gradient computation - Handling the coupling between different subsystems - Ensuring numerical stability across the entire optimization"
-  },
-  {
-    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#optimization-problem-statement",
-    "href": "posts/differentiable-hydrodynamics-framework/index.html#optimization-problem-statement",
-    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
-    "section": "Optimization Problem Statement",
-    "text": "Optimization Problem Statement\nThe hydrodynamic optimization problem can be expressed in general form as:\n\\[\\begin{aligned}\n\\min_{\\theta,x} \\quad & J(S(\\theta), x(\\theta); \\theta ) \\\\\n\\textrm{s.t.} \\quad R(\\theta)=  & K(\\theta)\\times x(\\theta) - B(\\theta) = 0 \\\\\n\\end{aligned}\\]\nWhere: - \\(x\\) is the state variable vector (e.g., source distribution) - \\(\\theta\\) represents mesh parameters (design variables) - \\((K, S)\\) are influence matrices (complex-valued) from free surface Green’s function evaluation and its derivative - \\(J\\) is the objective function (e.g., Response Amplitude Operator)\nIn this optimization, residuals from dense linear systems are driven to zero iteratively using linear solvers:\n\\[R = K x - B\\]\nWhere \\(K\\) is the square influence matrix between mesh panels (\\(N \\times N\\)), \\(B\\) represents boundary conditions for diffraction and radiation problems, and \\(N\\) is the number of mesh panels. \\(K\\), \\(X\\), and \\(B\\) are explicitly related to mesh parameters \\((\\theta)\\). The objective function thus depends both explicitly and implicitly on mesh parameters \\((\\theta)\\).\nFor multidisciplinary design optimization including hydrodynamic optimization, the number of design variables increases further to account for system objectives and subsystem couplings.\nFor inverse design problems like this, calculating the gradient \\(\\frac{d J}{d\\theta}\\) involves computing \\(\\frac{\\partial B}{\\partial \\theta}\\), \\(\\frac{\\partial K}{\\partial \\theta}\\), \\(\\frac{\\partial x}{\\partial \\theta}\\), and \\(\\frac{\\partial J}{\\partial \\theta}\\)—which is only possible through automatic differentiation of the BEM solver."
-  },
-  {
-    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#my-research-contribution",
-    "href": "posts/differentiable-hydrodynamics-framework/index.html#my-research-contribution",
-    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
-    "section": "My Research Contribution",
-    "text": "My Research Contribution\nWhen coupling BEM with other analyses, numerical derivatives such as finite differences can be used (Khanal and Haji 2023). I have already implemented this as the first version of my framework, but it has issues with accuracy and convergence and may not scale well for large numbers of design variables.\nIn contrast, the adjoint method requires only 2 solves of the linear system to obtain accurate gradients with respect to many design variables. A differentiable hydrodynamics solver is required to construct the adjoint equation.\nAdjoint equations to minimize wave resistance of surface ships were derived by Ragab through continuous adjoint formulation (Ragab and Nayfeh 2004). However, this isn’t directly applicable to many offshore structures where different functionals (motions) are optimized. Unlike continuous formulation, discrete adjoint-based derivation using automatic differentiation is applicable to many objectives as long as they’re programmed in a language supporting automatic differentiation (Giles and Pierce 2000).\nMy thesis aims to implement a differentiable multidisciplinary design optimization framework that integrates gradient-based optimization for large-scale offshore systems.\nThe proposed framework will:\n\nImplement a differentiable solver for hydrodynamics analysis\nDerive, implement, and integrate adjoint-based shape optimization for offshore structures\nDemonstrate differentiability and present case studies on optimization of novel offshore systems\n\nCreating a differentiable boundary element method (BEM) solver will enable modern and complex workflows in offshore system design and optimization. Differentiability will allow for novel methods such as adjoint-based multidisciplinary optimization and more accurate data-driven methods such as physics-informed machine learning.\nThese capabilities will significantly reduce the design cycle for early design studies of novel offshore systems."
-  },
-  {
-    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#research-phases",
-    "href": "posts/differentiable-hydrodynamics-framework/index.html#research-phases",
-    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
-    "section": "Research Phases",
-    "text": "Research Phases\n\nPhase 1: Discrete Adjoint Implementation\nThe first phase involves deriving and setting up discrete adjoint equations for BEM. We’ll use automatic differentiation to obtain partial sensitivities required in the equation by implementing the BEM method in either Julia or Jax, as they support automatic differentiation in a discretize-then-optimize scheme.\nThese libraries and programming languages support: - Automatic Differentiation (AD) - Parallelism - Just-in-time (JIT) compilation\nGradient calculations need to be performed through the iterative solver employed to solve dense linear systems in BEM methods.\nThis method relies on known exact expressions of Green’s function. Mathematical expressions and numerical methods for free-surface Green’s function of linearized wave-structure problems in deep water and frequency domain are investigated (Xie and Liu 2020). Other methods, such as approximating free-surface Green’s function using deep learning, can also be explored for early design iterations when speed is more important than accuracy.\n\n\nPhase 2: MDO Framework Integration\nThe second phase integrates differentiable BEM into the MDO framework. Extensions could include supporting more accurate physics-informed machine learning (Raissi, Perdikaris, and Karniadakis 2019).\nBEM methods require solving dense linear systems. The re-implementation will use algorithms best suited for dense matrices. A differentiable solver would provide required gradients for optimization and neural network-based approximation. Simulators implemented with automatic differentiation can be used inside machine learning models to construct more accurate reduced-order models (Brunton, Proctor, and Kutz 2020).\n\n\nExpected A-Exam Scope\nI plan to take an A-exam in Spring 2024, presenting the differentiable version of the solver that derives discrete adjoints for the hydrodynamic solver using automatic differentiation in Jax or Julia.\nAn optimization study of simple geometry (such as a compound cylinder) with analytical derivation through eigenfunction expansion will be conducted for gradient verification. Gradients will be compared with finite differences for geometries where analytical gradients are unavailable."
-  },
-  {
-    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#tentative-thesis-chapters",
-    "href": "posts/differentiable-hydrodynamics-framework/index.html#tentative-thesis-chapters",
-    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
-    "section": "Tentative Thesis Chapters",
-    "text": "Tentative Thesis Chapters\n\nMultidisciplinary Design Optimization of Offshore Systems - Literature review\nBoundary Element Method for Calculating Hydrodynamic Coefficients\nAdjoint and Automatic Differentiation of BEM Solver\nCase Studies and Applications of a Differentiable Solver"
-  },
-  {
-    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#keywords",
-    "href": "posts/differentiable-hydrodynamics-framework/index.html#keywords",
-    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
-    "section": "Keywords",
-    "text": "Keywords\nDifferentiable Hydrodynamics, Multidisciplinary Design Optimization, Automatic Differentiation, Discrete Adjoint Method, Boundary Element Method, Potential Flow, Panel Code\n\nThis research is conducted as part of my PhD in Systems Engineering at Cornell University, under the supervision of Dr. Maha Haji in the Symbiotic Engineering and Analysis Lab."
   },
   {
     "objectID": "posts/marinehydro-julia-package/index.html",
@@ -294,160 +133,6 @@
     "text": "Related Publications\nThis work is part of a broader research effort in differentiable programming for engineering applications. The implementation builds on recent advances in:\n\nAutomatic differentiation frameworks\nBoundary element method theory\nMarine hydrodynamics modeling\nOptimization algorithms\n\n\nMarineHydro.jl represents a significant step forward in making advanced hydrodynamic analysis accessible for design optimization, enabling researchers and engineers to efficiently explore the design space for marine structures and wave energy devices."
   },
   {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Image: openmdao\n\n\nCourse: Multidisciplinary Design Optimization\nInstitution: Cornell University\nRole: Teaching Assistant\nWhen Offered: Fall Semester\nPrerequisites: Undergraduate linear algebra and knowledge of MATLAB, Python, or R\nCourse Overview: This course presents a rigorous, quantitative multidisciplinary design methodology that incorporates the creative side of the design process. Through a topic of your choice, students learn how to use multidisciplinary design optimization (MDO) to create advanced and complex engineering systems that must be competitive in performance and life-cycle value.\nKey Focus Areas: -Multidisciplinary character of engineering systems -Design of complex systems\n-Tools for optimization\nCourse Structure: Students work in small teams on a term project to apply MDO principles to design and optimize an engineering system of their choice.\n\n\n\n\nStudents who successfully complete this course will be able to:\n\nSystem Decomposition: Subdivide a complex system into smaller disciplinary models, manage their interfaces and reintegrate them into an overall system model.\nAlgorithm Selection: Identify the most suitable optimization algorithm between gradient-based numerical optimization algorithms (i.e., sequential quadratic programming (SQP)) and various modern heuristic optimization techniques (i.e., simulated annealing (SA) or genetic algorithms (GA)) for their design problem and use it to find the optimal design for a single objective of their choice.\nCritical Analysis: Critically evaluate and interpret analysis and optimization results, including sensitivity analysis and exploration of performance, cost and risk tradeoffs.\nMulti-Objective Optimization: Utilize basic concepts of multi-objective optimization, including the conditions for optimality and Pareto front computation techniques, to optimize their design with respect to two objectives of their choice.\nTeam Project: Work as a team to formulate a realistic engineering design problem, optimize the design for a single objective and multiple competing objectives, and present the results in a final oral presentation and written report.\n\n\n\n\nThis course is fundamentally different from most traditional university optimization courses which focus mainly on the mathematics and algorithms for search. The focus is equally strong on all three aspects of the problem:\n\nMultidisciplinary Integration: Understanding how different disciplines (structures, aerodynamics, controls, optics, costing, manufacturing, environmental science, marketing, etc.) must be tightly coupled during conceptual and preliminary design of complex new systems and products.\nSystem Design: Developing the ability to design complex engineering systems that are competitive in performance and life-cycle value.\nOptimization Tools: Mastering both gradient-based and heuristic optimization techniques for real-world engineering applications.\n\n\n\n\n\nProgramming: MATLAB, Python, or R for implementation\nOptimization Algorithms:\n\nGradient-based methods (Sequential Quadratic Programming)\nHeuristic methods (Simulated Annealing, Genetic Algorithms)\n\nMulti-objective Optimization: Pareto front computation and analysis\nSensitivity Analysis: Understanding design parameter impacts\nSystem Integration: Managing multidisciplinary model couplings\n\n\nThis course provides students with practical experience in applying MDO principles to real engineering problems, preparing them for careers in advanced engineering design and optimization."
-  },
-  {
-    "objectID": "teaching.html#multidisciplinary-design-optimization-mdo",
-    "href": "teaching.html#multidisciplinary-design-optimization-mdo",
-    "title": "Teaching",
-    "section": "",
-    "text": "Image: openmdao\n\n\nCourse: Multidisciplinary Design Optimization\nInstitution: Cornell University\nRole: Teaching Assistant\nWhen Offered: Fall Semester\nPrerequisites: Undergraduate linear algebra and knowledge of MATLAB, Python, or R\nCourse Overview: This course presents a rigorous, quantitative multidisciplinary design methodology that incorporates the creative side of the design process. Through a topic of your choice, students learn how to use multidisciplinary design optimization (MDO) to create advanced and complex engineering systems that must be competitive in performance and life-cycle value.\nKey Focus Areas: -Multidisciplinary character of engineering systems -Design of complex systems\n-Tools for optimization\nCourse Structure: Students work in small teams on a term project to apply MDO principles to design and optimize an engineering system of their choice.\n\n\n\n\nStudents who successfully complete this course will be able to:\n\nSystem Decomposition: Subdivide a complex system into smaller disciplinary models, manage their interfaces and reintegrate them into an overall system model.\nAlgorithm Selection: Identify the most suitable optimization algorithm between gradient-based numerical optimization algorithms (i.e., sequential quadratic programming (SQP)) and various modern heuristic optimization techniques (i.e., simulated annealing (SA) or genetic algorithms (GA)) for their design problem and use it to find the optimal design for a single objective of their choice.\nCritical Analysis: Critically evaluate and interpret analysis and optimization results, including sensitivity analysis and exploration of performance, cost and risk tradeoffs.\nMulti-Objective Optimization: Utilize basic concepts of multi-objective optimization, including the conditions for optimality and Pareto front computation techniques, to optimize their design with respect to two objectives of their choice.\nTeam Project: Work as a team to formulate a realistic engineering design problem, optimize the design for a single objective and multiple competing objectives, and present the results in a final oral presentation and written report.\n\n\n\n\nThis course is fundamentally different from most traditional university optimization courses which focus mainly on the mathematics and algorithms for search. The focus is equally strong on all three aspects of the problem:\n\nMultidisciplinary Integration: Understanding how different disciplines (structures, aerodynamics, controls, optics, costing, manufacturing, environmental science, marketing, etc.) must be tightly coupled during conceptual and preliminary design of complex new systems and products.\nSystem Design: Developing the ability to design complex engineering systems that are competitive in performance and life-cycle value.\nOptimization Tools: Mastering both gradient-based and heuristic optimization techniques for real-world engineering applications.\n\n\n\n\n\nProgramming: MATLAB, Python, or R for implementation\nOptimization Algorithms:\n\nGradient-based methods (Sequential Quadratic Programming)\nHeuristic methods (Simulated Annealing, Genetic Algorithms)\n\nMulti-objective Optimization: Pareto front computation and analysis\nSensitivity Analysis: Understanding design parameter impacts\nSystem Integration: Managing multidisciplinary model couplings\n\n\nThis course provides students with practical experience in applying MDO principles to real engineering problems, preparing them for careers in advanced engineering design and optimization."
-  },
-  {
-    "objectID": "software.html",
-    "href": "software.html",
-    "title": "Software & Projects",
-    "section": "",
-    "text": "This page highlights the software projects and computational tools I have developed and contributed to. These projects reflect my interest in creating robust, scalable, and efficient solutions for complex engineering and scientific problems.\nMore details and project listings will be added here soon.\n\n\nFeatured Projects\n\n\nMarineHydro.jl\nA Boundary Element Method (BEM) solver written in Julia, designed for hydrodynamic analysis within a fully differentiable programming paradigm. It leverages automatic differentiation for efficient gradient computation.\n\n\nDifferentiable wave2wire Framework for WEC Farms\nAn framework for the Multidisciplinary Design Optimization of Wave Energy Converters (WECs) and WEC Farms. This project integrates hydrodynamic of large number of WECs, and control system models to optimize the performance of the WEC farm using gradient-based optimization.\n\n\nopenFlash\nAn open-source framework built to simulate the hydrodynamics of wave energy converters using matched eigenfunction expansion methods."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Kapil Khanal",
-    "section": "",
-    "text": "Differentiable Programming to Engineer Complex Systems.\n\n\n\n\n\n\n\n\nI am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on modeling and optimizing novel offshore systems such as wave energy converters.\nWith a Master’s degree in Systems Engineering and ongoing PhD work, I am to bridge theory and applications for large-scale systems. I did my undergraduate in Mathematics and Data Science from Winona State University, Minnesota.\n\n\n\n\n\n\nNote💼 Bridging Research and Industry\n\n\n\nUpon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in data science, multiphysics simulation and design optimization to solve challenging hard-tech engineering problems.\n\nView My CV   Connect on LinkedIn   Explore My GitHub"
-  },
-  {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Kapil Khanal",
-    "section": "",
-    "text": "I am a doctoral candidate at Cornell University, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the Symbiotic Engineering and Analysis (SEA) Lab, I collaborate on modeling and optimizing novel offshore systems such as wave energy converters.\nWith a Master’s degree in Systems Engineering and ongoing PhD work, I am to bridge theory and applications for large-scale systems. I did my undergraduate in Mathematics and Data Science from Winona State University, Minnesota.\n\n\n\n\n\n\nNote💼 Bridging Research and Industry\n\n\n\nUpon completing my PhD, I am seeking full-time industry roles where I can apply my expertise in data science, multiphysics simulation and design optimization to solve challenging hard-tech engineering problems.\n\nView My CV   Connect on LinkedIn   Explore My GitHub"
-  },
-  {
-    "objectID": "index.html#research-focus",
-    "href": "index.html#research-focus",
-    "title": "Kapil Khanal",
-    "section": "Research Focus",
-    "text": "Research Focus\nI am interested in applying computational methods to solve real-world problems. Currently, I focus on multidisciplinary design optimization (MDO), control co-design, machine learning and physical simulations to design and operate large-scale systems. Through the powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. Broadly, I am interested in bridging the gap between theory and practice in engineering and science.\n\n\n\nResearch Interests\n\n\nKeywords: Optimization, Optimal Controls, Differentiable Programming, Reinforcement Learning, System Architecture, System of System Optimization, Numerical simulations (boundary element method, finite difference method, finite element method, etc.), Data Science, Data Engineering."
-  },
-  {
-    "objectID": "index.html#recent-posts",
-    "href": "index.html#recent-posts",
-    "title": "Kapil Khanal",
-    "section": "Recent Posts",
-    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nWorkshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl\n\n\n\nJul 27, 2025\n\n\n\n\n\n\n\n\n\n\n\nDerivatives are Cheap and Expensive\n\n\nThe Real Cost of Gradients in Complex Systems Optimization\n\n\n\nJun 23, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis\n\n\nA Julia Package for Wave-Structure Interactions\n\n\n\nJun 22, 2025\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html",
-    "href": "posts/aiaa-scitech-2026-submission/index.html",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "",
-    "text": "2026 AIAA SciTech Forum\n12–16 January 2026\nHyatt Regency Orlando\nOrlando, Florida"
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#conference-information",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#conference-information",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "",
-    "text": "2026 AIAA SciTech Forum\n12–16 January 2026\nHyatt Regency Orlando\nOrlando, Florida"
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#abstract",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#abstract",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "Abstract",
-    "text": "Abstract\nIn many practical settings, mathematically optimal system designs are often set aside in favor of similarly performing alternatives that better accommodate real-world constraints and evolving requirements. In such cases, it is desirable to identify alternative design vectors that maintain acceptable levels of system performance. This can be achieved using isoperformance method, which construct sets of performance-invariant solutions, or through multiobjective optimization. However, traditional isoperformance approaches typically ignore the feasibility constraints that arise in coupled systems governed by multidisciplinary analysis (MDA). These systems require convergence of nonlinear solvers, and the resulting computational burden increases when newly generated designs do not satisfy such feasibility inherently. Isoperformance analysis is an inverse design technique used to identify a set of feasible design vectors that yield a specified vector of system performance metrics. This performance-invariant set provides a space for subsequent decision-making based on secondary criteria like cost, risk, or implementation ease. However, applying isoperformance methods to complex coupled systems is challenging, as these systems often require a multidisciplinary analysis (MDA) to resolve interdependencies among components. The resulting nonlinear solver demands increase computational cost when infeasible designs are evaluated.\nIn this paper, we propose two contributions to improve the robustness and scalability of isoperformance methods in such settings. First, we extend the isoperformance method to support arbitrarily large design spaces using reverse-mode automatic differentiation and adjoint sensitivity analysis. Second, we introduce a regularized isoperformance approach that incorporates the feasibility constraints arising from MDA directly into the Jacobian, improving the likelihood of convergence and solution quality. We demonstrate the method on a benchmark coupled problem involving three objectives, showcasing its ability to generate feasible isoperformant designs. decision-making in complex engineered systems requires balancing conflicting objectives among various subsystems and stakeholders. In many cases, a numerically optimal solution is not the final adopted design due to constraints, trade-offs, or the infeasibility of implementation. This motivates the search for alternative design solutions that achieve target performance levels without requiring complete re-optimization.\nTo address this, we enhance the isoperformance approach to explicitly consider MDA feasibility during inverse design. This is critical for large systems where convergence, sensitivity, and robustness all play significant roles in engineering decision-making."
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#authors",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#authors",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "Authors",
-    "text": "Authors\n\nKapil Khanal (PhD Candidate, Systems Engineering)\nMaha N. Haji (Assistant Professor, Sibley School of Mechanical Engineering)\n\nAffiliation: Cornell University, Ithaca, NY"
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#research-context",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#research-context",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "Research Context",
-    "text": "Research Context\nThis work addresses a fundamental challenge in multidisciplinary design optimization (MDO): the gap between mathematically optimal solutions and practically implementable designs. While optimization algorithms can find the “best” solution according to mathematical criteria, real-world engineering often requires flexibility in design choices to accommodate:\n\nManufacturing constraints\nSupply chain limitations\n\nRegulatory requirements\nFuture design modifications\nRisk mitigation strategies\n\nThe isoperformance method offers a systematic approach to explore the design space for alternatives that maintain acceptable performance levels while providing the flexibility needed for practical implementation."
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#key-contributions",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#key-contributions",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "Key Contributions",
-    "text": "Key Contributions\n\n1. Scalable Isoperformance with Automatic Differentiation\nTraditional isoperformance methods often struggle with high-dimensional design spaces due to computational limitations in gradient computation. Our approach leverages:\n\nReverse-mode automatic differentiation for efficient gradient computation.\n\nThis enables the method to scale to arbitrarily large design spaces while maintaining computational efficiency.\n\n\n2. Regularized Isoperformance for Coupled Systems\nCoupled multidisciplinary systems introduce unique challenges through:\n\nNonlinear coupling constraints between disciplines\nFeasibility requirements that must be satisfied simultaneously\nConvergence dependencies of numerical solvers"
-  },
-  {
-    "objectID": "posts/aiaa-scitech-2026-submission/index.html#applications",
-    "href": "posts/aiaa-scitech-2026-submission/index.html#applications",
-    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
-    "section": "Applications",
-    "text": "Applications\nThis work has broad applications across engineering disciplines, including:\n\nAerospace Systems: Aircraft design with multiple performance objectives\nMarine Engineering: Offshore structure optimization under environmental constraints\nEnergy Systems: Renewable energy device design and optimization\nTransportation: Vehicle design balancing performance, efficiency, and safety\n\nThis work represents a significant step forward in making optimization methods more practical and accessible for complex engineering systems, bridging the gap between mathematical optimality and engineering feasibility."
-  },
-  {
-    "objectID": "posts/winona-area-public-schools/index.html",
-    "href": "posts/winona-area-public-schools/index.html",
-    "title": "Winona Area Public Schools: Community Contribution",
-    "section": "",
-    "text": "Introduction:\nThis project addresses the need of communication of public school data to community members in a meaningful way. Also, making the data available to general public in a proper and useable format.\nThere has been a wider discussion regarding the budget issue in Winona area schools. Here is the article discussing the budget concerns.\nPrimarily, this project was focused on cleaning and visualizing the Enrollment, Expenditures and Staffing History reports of the Winona Area Public District (WAPS) available publicly through Minnesota Department of Education, Data Center.\nLink: http://education.state.mn.us/MDE/Data/\n\n\n\nWAPS Overview"
-  },
-  {
-    "objectID": "posts/winona-area-public-schools/index.html#winona-area-public-schools-data-visualization",
-    "href": "posts/winona-area-public-schools/index.html#winona-area-public-schools-data-visualization",
-    "title": "Winona Area Public Schools: Community Contribution",
-    "section": "",
-    "text": "Introduction:\nThis project addresses the need of communication of public school data to community members in a meaningful way. Also, making the data available to general public in a proper and useable format.\nThere has been a wider discussion regarding the budget issue in Winona area schools. Here is the article discussing the budget concerns.\nPrimarily, this project was focused on cleaning and visualizing the Enrollment, Expenditures and Staffing History reports of the Winona Area Public District (WAPS) available publicly through Minnesota Department of Education, Data Center.\nLink: http://education.state.mn.us/MDE/Data/\n\n\n\nWAPS Overview"
-  },
-  {
-    "objectID": "posts/winona-area-public-schools/index.html#methods-and-steps-of-project",
-    "href": "posts/winona-area-public-schools/index.html#methods-and-steps-of-project",
-    "title": "Winona Area Public Schools: Community Contribution",
-    "section": "Methods and Steps of Project",
-    "text": "Methods and Steps of Project\n\n1. Data Inspection/Acquisition\nPublic data was collected by Alison Quam (Representative from WAPS District). The data were made available in different PDF/Excel files. Also, the information were scattered in different files.\n\n\n2. Data Cleaning and Formatting\nFirst, most of the PDF files were converted to Excel by Tabula and online tool (pdftoexcel.com). Then, they were cleaned up in proper format and stacked using Python (Pandas).\n\n\n3. Data Exploration and Visualization\nThis part of the project is focused on addressing the questions provided by representative of WAPS (Alison Quam). Tableau was used extensively to explore the data and visualize it.\nPrimarily, I focused on answering following questions:\n\nI was curious about, how does the enrollment and capture rate (rate of new born enrolling to Kindergarten) is changing in WAPS district?\n\nAfter few meetings with representative, I realized she was more curious about how schools spend across different programs.\n\nHow the expenditure per average daily membership (count of student daily served in schools) and spending on various category is changing?"
-  },
-  {
-    "objectID": "posts/winona-area-public-schools/index.html#interactive-tableau-dashboard",
-    "href": "posts/winona-area-public-schools/index.html#interactive-tableau-dashboard",
-    "title": "Winona Area Public Schools: Community Contribution",
-    "section": "Interactive Tableau Dashboard",
-    "text": "Interactive Tableau Dashboard\nThe link to the tableau file and the data is here."
-  },
-  {
-    "objectID": "posts/winona-area-public-schools/index.html#visual-story",
-    "href": "posts/winona-area-public-schools/index.html#visual-story",
-    "title": "Winona Area Public Schools: Community Contribution",
-    "section": "Visual Story",
-    "text": "Visual Story\nNow, the visual story begins…\n\n\n\n\n\n\nNoteDashboard Screenshots\n\n\n\nThe following images show the key insights from the Tableau dashboard:\n\n\n\n\n\nEnrollment and Capture Rate Analysis\n\n\n\n\n\nExpenditure Analysis\n\n\n\n\n\nComprehensive Overview"
-  },
-  {
-    "objectID": "posts/winona-area-public-schools/index.html#impact-and-conclusion",
-    "href": "posts/winona-area-public-schools/index.html#impact-and-conclusion",
-    "title": "Winona Area Public Schools: Community Contribution",
-    "section": "Impact and Conclusion",
-    "text": "Impact and Conclusion\nThis project actually helped inform the decision makers at local level. Thus, I was able to contribute to something meaningful with my Python and Tableau skills.\nThe visualization provided clear insights into: - Enrollment trends and capture rates over time - Expenditure patterns across different programs - Resource allocation efficiency - Budget planning considerations"
-  },
-  {
-    "objectID": "posts/winona-area-public-schools/index.html#acknowledgements",
-    "href": "posts/winona-area-public-schools/index.html#acknowledgements",
-    "title": "Winona Area Public Schools: Community Contribution",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nI would like to thank: - Alison Quam (WAPS representative) for providing the data and guidance - Prof. Silas Bergen for helping and guiding me to understand the terms and calculations already done in the reports - Prof. Todd Iverson for help figuring out Python code for cleaning the data\nThis project demonstrates how data science skills can be applied to serve the community and support informed decision-making in public education."
-  },
-  {
     "objectID": "posts/evtol-ems-system-architecture/index.html",
     "href": "posts/evtol-ems-system-architecture/index.html",
     "title": "eVTOL Integration in Emergency Medical Services: A System Architecture Approach",
@@ -516,62 +201,6 @@
     "title": "eVTOL Integration in Emergency Medical Services: A System Architecture Approach",
     "section": "Related Publications",
     "text": "Related Publications\nThis research builds on and contributes to the broader field of urban air mobility and emergency services integration. For more information about related work in this area, please refer to the publications section of this website."
-  },
-  {
-    "objectID": "posts/xg-pass-soccer-analytics/index.html",
-    "href": "posts/xg-pass-soccer-analytics/index.html",
-    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
-    "section": "",
-    "text": "This is a project I did for my summer undergraduate experience in statistics at Carnegie Mellon University. This project can be extended to create a dynamic network model of the game if you’re interested in that and I am open to collaborate on that especially if you’re a undergraduate researcher."
-  },
-  {
-    "objectID": "posts/xg-pass-soccer-analytics/index.html#abstract",
-    "href": "posts/xg-pass-soccer-analytics/index.html#abstract",
-    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
-    "section": "Abstract",
-    "text": "Abstract\nFinding the value of a pass is a holy grail of soccer analytics. While Expected Goals (xG) is a ubiquitous metric for measuring the quality of a shot, it primarily rewards the player taking the shot, often overlooking the crucial build-up play. Soccer is a collaborative game, and the passes leading to a shot are often as important as the shot itself. To create a more complete picture, we need to give passes their due credit.\nThis paper proposes a data-driven framework to calculate an “Expected Goal per Pass” (xG/pass) value, distributing the credit for a scoring opportunity across all players involved in the passing sequence.\nKeywords: xG per pass, credit assignment, data driven, soccer analytics"
-  },
-  {
-    "objectID": "posts/xg-pass-soccer-analytics/index.html#introduction",
-    "href": "posts/xg-pass-soccer-analytics/index.html#introduction",
-    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
-    "section": "Introduction",
-    "text": "Introduction\nA pass in soccer can be evaluated in terms of its risk and reward. In this paper, we propose a data-driven methodology to assign an Expected Goal (xG) value to each pass made by a player. The framework considers the quality of the pass, the collaboration within the team, and the spatial context of where the pass was made on the pitch.\n\n\n\nLet’s kick it\n\n\nVarious methods have been proposed to solve this credit assignment problem. One common approach is to simply attribute a fraction of the final shot’s xG to players who assisted. However, this method often fails to account for the quality of the individual passes and tends to over-reward forward players who are closer to the final action. Our framework aims to provide a more nuanced distribution of credit."
-  },
-  {
-    "objectID": "posts/xg-pass-soccer-analytics/index.html#dataset-statsbomb-event-data",
-    "href": "posts/xg-pass-soccer-analytics/index.html#dataset-statsbomb-event-data",
-    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
-    "section": "Dataset: StatsBomb Event Data",
-    "text": "Dataset: StatsBomb Event Data\nWe used event data from StatsBomb’s open data resources. This dataset logs every event in a match, including timestamps, player actions, and locations. We focused our analysis on “pass chains”—sequences of passes within a single team’s possession.\nA pass chain can originate anywhere on the field and may or may not end in a shot. When a chain does end in a shot, the entire sequence inherits the xG value of that shot.\n\n\n\n\n\n\nNotePlaceholder for Figure 1: Pass Chain Example\n\n\n\n\n\n\nPass Chain Example"
-  },
-  {
-    "objectID": "posts/xg-pass-soccer-analytics/index.html#methods-for-distributing-xg",
-    "href": "posts/xg-pass-soccer-analytics/index.html#methods-for-distributing-xg",
-    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
-    "section": "Methods for Distributing xG",
-    "text": "Methods for Distributing xG\nWe explored several statistical methods to model the value of each pass within a chain.\n\n1. Grid-Based Model\nThe most intuitive approach is to divide the pitch into a grid and calculate the average xG of all pass chains originating from each grid cell. This value is then assigned to any pass starting in that cell. We used cross-validation to determine the optimal grid size.\nWhile simple, this model assumes all passes from a given area are equal, which ignores individual pass quality and player skill.\n\n\n2. Generalized Additive Model (GAM)\nTo capture the non-linear relationship between pass location and its value, we used a Generalized Additive Model (GAM). This model provides a smooth estimate of xG across the entire pitch based on the precise starting coordinates of a pass.\n\n\n\n\n\n\nNotePlaceholder for Figure 3: GAM Smooth Estimates\n\n\n\n\n\n\nGAM Smooth Estimates\n\n\n\n\n\n\n3. Random Forest Model\nFinally, we built a Random Forest model to incorporate a richer set of features beyond just location. These features included: - Pass Length and Duration: How far and how quickly the ball traveled. - Network Metrics: We constructed a passing network for each team to measure player influence. Metrics like PageRank and Betweenness Centrality were calculated for each player (node) in the network.\nThe model, built with 500 trees, prioritized pass location and the PageRank of the receiving player, indicating that high-value passes are those made near the opponent’s goal to influential players.\n\n\n\n\n\n\nNotePlaceholder for Figure 4 & 5: Network and Feature Importance\n\n\n\n\n\n\nNetwork and Feature Importance"
-  },
-  {
-    "objectID": "posts/xg-pass-soccer-analytics/index.html#model-comparison",
-    "href": "posts/xg-pass-soccer-analytics/index.html#model-comparison",
-    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
-    "section": "Model Comparison",
-    "text": "Model Comparison\nWe compared the models using Mean Squared Error (MSE) on a 70/30 train-test split. The Random Forest model performed the best, confirming the presence of non-linear relationships in the data.\n\n\n\nModel\nMSE\n\n\n\n\nGrid-Based Model\n0.043\n\n\nGeneralized Additive Model\n0.0034\n\n\nRandom Forest Model\n0.0024"
-  },
-  {
-    "objectID": "posts/xg-pass-soccer-analytics/index.html#creating-the-final-xg-per-pass-metric",
-    "href": "posts/xg-pass-soccer-analytics/index.html#creating-the-final-xg-per-pass-metric",
-    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
-    "section": "Creating the Final xG per Pass Metric",
-    "text": "Creating the Final xG per Pass Metric\nUsing the predictions from our Random Forest model, we re-normalized the values within each pass chain to create the final metric. The formula is:\n\\[\n\\textit{xG per pass}_{i} = \\frac{f(\\text{pass}_i)}{\\sum_{j=1}^{n}f(\\text{pass}_{j})} \\times \\textit{xG from shot}\n\\]\nwhere \\(f(\\text{pass}_i)\\) is the predicted value for pass i from the model, and n is the total number of passes in the chain."
-  },
-  {
-    "objectID": "posts/xg-pass-soccer-analytics/index.html#conclusion-and-future-work",
-    "href": "posts/xg-pass-soccer-analytics/index.html#conclusion-and-future-work",
-    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
-    "section": "Conclusion and Future Work",
-    "text": "Conclusion and Future Work\nThis framework provides a quantitative method to credit players for their contribution to creating scoring chances. It rewards passes made closer to the opponent’s goal and those made to influential teammates. This metric can be used to rank players based on their creative passing ability.\nFor future work, we plan to incorporate team tactics, the positions of nearby players, and a method to penalize “bad” passes that result in a loss of possession.\n\nCode for Analysis\nThe code for this project is available on GitHub: https://github.com/KapilKhanal/Soccer_CMUCamp\n\n\nAcknowledgements\nI would like to thank Dr. Kostas Pelechrinis of the University of Pittsburgh for helping with the project and Dr. Tisha Hooks of Winona State University for reviewing the paper. This paper is a continuation of the work I did for my summer undergraduate experience in statistics at Carnegie Mellon University."
   },
   {
     "objectID": "posts/gradient-based-optimization/index.html",
@@ -644,11 +273,123 @@
     "text": "Conclusion\nThis analysis reveals the complex dynamics of the sneaker resale market, showing how brand prestige, time since release, and geographic location all influence pricing patterns. The data demonstrates the significant premiums that collectors are willing to pay, particularly for limited releases from premium brands like Off-White and Yeezy.\nThe StockX contest provided an excellent opportunity to apply data visualization skills to an interesting and culturally relevant dataset, uncovering insights about consumer behavior in the luxury streetwear market."
   },
   {
-    "objectID": "publications.html#publications-and-conference-papers",
-    "href": "publications.html#publications-and-conference-papers",
-    "title": "Publications",
-    "section": "Publications and Conference Papers",
-    "text": "Publications and Conference Papers\nKhanal, K., Michelén Ströfer, C. A., Ancellin, M., & Haji, M. (2024). Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis of Wave-Structure Interactions. Applied Ocean Research, Submitted.\nKhanal, K., & Haji, M. N. (2024). Multi-Objective Multidisciplinary Optimization of Wave Energy Converter Array Layout and Controls. https://dx.doi.org/10.2139/ssrn.4891821\nMcCabe, R., Khanal, K., & Haji, M. (2024). Open-source toolbox for semi-analytical hydrodynamic coefficients via the matched eigenfunction expansion method. UMERC Conference, August 7, Duluth, Minnesota.\nKhanal, K., & Haji, M. N. (2022, October 25). Multidisciplinary Design Optimization for Novel Offshore Systems. Presentation at the openMDAO Workshop, NASA Glenn Research Center, Cleveland, Ohio.\nKhanal, K., McCabe, R., & Haji, M. N. (2023). Gradient-Based Design Optimization of Concentric Cylindrical Offshore Structures. Proceedings of the SIAM Conference on Optimization (OP23), May 31, Seattle, Washington.\nKhanal, K., Vitale, O., DeGoede, N., & Haji, M. (2023, October 4-6). Multi-objective Multidisciplinary Optimization of Wave Energy Converter Array Configurations and Controls. University Marine Energy Research Community 2023 Conference, Durham, NH, USA."
+    "objectID": "posts/marinehydro-workshop/index.html",
+    "href": "posts/marinehydro-workshop/index.html",
+    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
+    "section": "",
+    "text": "“Bringing the power of gradient-based optimization to the marine energy sector”"
+  },
+  {
+    "objectID": "posts/marinehydro-workshop/index.html#abstract",
+    "href": "posts/marinehydro-workshop/index.html#abstract",
+    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
+    "section": "Abstract",
+    "text": "Abstract\nUnderstanding and predicting wave-structure interactions is central to the design and operation of offshore systems—from floating wind turbines and wave energy converters to autonomous marine platforms. Traditionally, these interactions are modeled using boundary element method (BEM) solvers based on linear potential flow theory. However, a major limitation of existing BEM solvers is their inability to provide sensitivities (derivatives) of hydrodynamic quantities with respect to design variables such as geometry, wave frequency, or device layout. These sensitivities are essential for enabling modern workflows in design optimization, control co-design, uncertainty quantification, and physics-informed machine learning.\nWithout access to gradients, engineers are forced to rely on derivative-free methods (e.g., parameter sweeps, heuristics, or surrogate models without sensitivity guidance), which scale poorly and often miss optimal solutions in high-dimensional design spaces. This bottleneck has hindered progress in applying scalable, gradient-based optimization methods—now common in aerospace, robotics, and machine learning—to the marine energy sector.\nThis workshop introduces MarineHydro.jl, a fully differentiable BEM solver that unlocks access to exact sensitivities of hydrodynamic coefficients through reverse-mode automatic differentiation. Developed in Julia, MarineHydro.jl supports both direct and indirect BEM formulations and includes fast and accurate Green’s function implementations. The workshop is targeted at researchers and practitioners working on design and control of offshore and marine structures, with an emphasis on applications where sensitivity information is essential. Participants will learn to install the solver, perform hydrodynamic simulations, extract gradients, and apply these results to practical case studies.\nWe begin by reviewing the fundamentals of differentiable programming and its potential usage/implementation in BEM software common in marine hydrodynamics."
+  },
+  {
+    "objectID": "posts/marinehydro-workshop/index.html#workshop-overview",
+    "href": "posts/marinehydro-workshop/index.html#workshop-overview",
+    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
+    "section": "Workshop Overview",
+    "text": "Workshop Overview\n\nTarget Audience\n\nResearchers and practitioners working on design and control of offshore and marine structures\nEngineers interested in differentiable programming\nStudents and professionals in marine hydrodynamics and renewable energy\n\n\n\nLearning Objectives\n\nInstall and configure MarineHydro.jl from GitHub\nPerform automatic differentiation\nPerform hydrodynamic simulations with BEM formulations\nExtract exact sensitivities using automatic differentiation\nUnderstand the fundamentals of differentiable programming"
+  },
+  {
+    "objectID": "posts/marinehydro-workshop/index.html#technical-foundations",
+    "href": "posts/marinehydro-workshop/index.html#technical-foundations",
+    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
+    "section": "Technical Foundations",
+    "text": "Technical Foundations\n\nDifferentiable Programming in Marine Hydrodynamics\nThe workshop covers the fundamentals of differentiable programming as applied to potential flow theory and boundary element methods. Participants will learn:\n\nAutomatic Differentiation: How reverse-mode AD enables exact gradient computation\nBEM Formulations: Direct and indirect boundary element method implementations\nGreen’s Functions: Efficient and accurate implementations for marine applications\nSensitivity Analysis: Computing derivatives with respect to geometry, frequency, and layout parameters"
+  },
+  {
+    "objectID": "posts/marinehydro-workshop/index.html#workshop-materials",
+    "href": "posts/marinehydro-workshop/index.html#workshop-materials",
+    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
+    "section": "Workshop Materials",
+    "text": "Workshop Materials\nThe workshop will include hands-on sessions with:\n\nInstallation Guide: Setting up MarineHydro.jl from GitHub, AD backends.\nInteractive Pluto Notebook: Step-by-step examples with live code execution??\nTutorial Notebooks: Step-by-step examples\n\n\nInteractive Workshop Notebook\nThe workshop includes an interactive Pluto notebook that demonstrates:\n\nSetup and Installation: Getting MarineHydro.jl and dependencies running\nBasic BEM Simulations: Simple hydrodynamic calculations\nAutomatic Differentiation: Computing exact sensitivities\nGradient-Based Optimization: Practical examples with real marine structures\nAdvanced Features: Multi-body interactions and layout optimization\n\nYou can download and run the notebook locally, or view it online. The notebook is designed to be self-contained and includes all necessary code examples.\nDownload Workshop Notebook - Interactive Pluto notebook with all workshop examples\n\n\nPluto Notebooks\n\nInstalling Pluto.jl: https://plutojl.org/#install"
+  },
+  {
+    "objectID": "posts/marinehydro-workshop/index.html#how-to-install-and-run-the-pluto-notebook",
+    "href": "posts/marinehydro-workshop/index.html#how-to-install-and-run-the-pluto-notebook",
+    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
+    "section": "How to Install and Run the Pluto Notebook",
+    "text": "How to Install and Run the Pluto Notebook\nFollow these steps to get started with Julia and Pluto for running the MarineHydro.jl workshop notebook:\n\nStep 1: Install Julia 1.11.6\nGo to https://julialang.org/downloads and install the current stable release.\n\n\nStep 2: Run Julia\nAfter installing, make sure that you can run Julia. On some systems, this means searching for the “Julia 1.11” program installed on your computer; in others, it means running the command julia in a terminal.\n\nJulia install screenshot\n\n\n\n\nJulia Installation\n\n\nMake sure that you can execute 1 + 1.\n\n\nStep 3: Install Pluto\nIn the Julia terminal, type:\nimport Pkg; Pkg.add(\"Pluto\")\nThis will use Julia’s package manager to install the Pluto package.\nThis might take a couple of minutes, so you can go get yourself a cup of tea!\n\nscreenshot of the Julia REPL running the command import Pkg; Pkg.add(\"Pluto\") \n\n\n\nStep 4: Run Pluto\nIn the Julia terminal, type:\nimport Pluto; Pluto.run()\n\n\n\nPluto Installation\n\n\nPluto will automatically open your browser when it’s ready. 🎉"
+  },
+  {
+    "objectID": "posts/marinehydro-workshop/index.html#conclusion",
+    "href": "posts/marinehydro-workshop/index.html#conclusion",
+    "title": "Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl",
+    "section": "Conclusion",
+    "text": "Conclusion\nThis workshop enable researchers and practitioners to leverage the full power of gradient-based methods that have transformed other engineering disciplines and bring them to the marine energy sector.\n\nFor more information about MarineHydro.jl, visit the GitHub repository. This software is in initial stages of development and actively looking for contributors and feedback."
+  },
+  {
+    "objectID": "posts/xg-pass-soccer-analytics/index.html",
+    "href": "posts/xg-pass-soccer-analytics/index.html",
+    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
+    "section": "",
+    "text": "This is a project I did for my summer undergraduate experience in statistics at Carnegie Mellon University. This project can be extended to create a dynamic network model of the game if you’re interested in that and I am open to collaborate on that especially if you’re a undergraduate researcher."
+  },
+  {
+    "objectID": "posts/xg-pass-soccer-analytics/index.html#abstract",
+    "href": "posts/xg-pass-soccer-analytics/index.html#abstract",
+    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
+    "section": "Abstract",
+    "text": "Abstract\nFinding the value of a pass is a holy grail of soccer analytics. While Expected Goals (xG) is a ubiquitous metric for measuring the quality of a shot, it primarily rewards the player taking the shot, often overlooking the crucial build-up play. Soccer is a collaborative game, and the passes leading to a shot are often as important as the shot itself. To create a more complete picture, we need to give passes their due credit.\nThis paper proposes a data-driven framework to calculate an “Expected Goal per Pass” (xG/pass) value, distributing the credit for a scoring opportunity across all players involved in the passing sequence.\nKeywords: xG per pass, credit assignment, data driven, soccer analytics"
+  },
+  {
+    "objectID": "posts/xg-pass-soccer-analytics/index.html#introduction",
+    "href": "posts/xg-pass-soccer-analytics/index.html#introduction",
+    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
+    "section": "Introduction",
+    "text": "Introduction\nA pass in soccer can be evaluated in terms of its risk and reward. In this paper, we propose a data-driven methodology to assign an Expected Goal (xG) value to each pass made by a player. The framework considers the quality of the pass, the collaboration within the team, and the spatial context of where the pass was made on the pitch.\n\n\n\nLet’s kick it\n\n\nVarious methods have been proposed to solve this credit assignment problem. One common approach is to simply attribute a fraction of the final shot’s xG to players who assisted. However, this method often fails to account for the quality of the individual passes and tends to over-reward forward players who are closer to the final action. Our framework aims to provide a more nuanced distribution of credit."
+  },
+  {
+    "objectID": "posts/xg-pass-soccer-analytics/index.html#dataset-statsbomb-event-data",
+    "href": "posts/xg-pass-soccer-analytics/index.html#dataset-statsbomb-event-data",
+    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
+    "section": "Dataset: StatsBomb Event Data",
+    "text": "Dataset: StatsBomb Event Data\nWe used event data from StatsBomb’s open data resources. This dataset logs every event in a match, including timestamps, player actions, and locations. We focused our analysis on “pass chains”—sequences of passes within a single team’s possession.\nA pass chain can originate anywhere on the field and may or may not end in a shot. When a chain does end in a shot, the entire sequence inherits the xG value of that shot.\n\n\n\n\n\n\nNotePlaceholder for Figure 1: Pass Chain Example\n\n\n\n\n\n\nPass Chain Example"
+  },
+  {
+    "objectID": "posts/xg-pass-soccer-analytics/index.html#methods-for-distributing-xg",
+    "href": "posts/xg-pass-soccer-analytics/index.html#methods-for-distributing-xg",
+    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
+    "section": "Methods for Distributing xG",
+    "text": "Methods for Distributing xG\nWe explored several statistical methods to model the value of each pass within a chain.\n\n1. Grid-Based Model\nThe most intuitive approach is to divide the pitch into a grid and calculate the average xG of all pass chains originating from each grid cell. This value is then assigned to any pass starting in that cell. We used cross-validation to determine the optimal grid size.\nWhile simple, this model assumes all passes from a given area are equal, which ignores individual pass quality and player skill.\n\n\n2. Generalized Additive Model (GAM)\nTo capture the non-linear relationship between pass location and its value, we used a Generalized Additive Model (GAM). This model provides a smooth estimate of xG across the entire pitch based on the precise starting coordinates of a pass.\n\n\n\n\n\n\nNotePlaceholder for Figure 3: GAM Smooth Estimates\n\n\n\n\n\n\nGAM Smooth Estimates\n\n\n\n\n\n\n3. Random Forest Model\nFinally, we built a Random Forest model to incorporate a richer set of features beyond just location. These features included: - Pass Length and Duration: How far and how quickly the ball traveled. - Network Metrics: We constructed a passing network for each team to measure player influence. Metrics like PageRank and Betweenness Centrality were calculated for each player (node) in the network.\nThe model, built with 500 trees, prioritized pass location and the PageRank of the receiving player, indicating that high-value passes are those made near the opponent’s goal to influential players.\n\n\n\n\n\n\nNotePlaceholder for Figure 4 & 5: Network and Feature Importance\n\n\n\n\n\n\nNetwork and Feature Importance"
+  },
+  {
+    "objectID": "posts/xg-pass-soccer-analytics/index.html#model-comparison",
+    "href": "posts/xg-pass-soccer-analytics/index.html#model-comparison",
+    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
+    "section": "Model Comparison",
+    "text": "Model Comparison\nWe compared the models using Mean Squared Error (MSE) on a 70/30 train-test split. The Random Forest model performed the best, confirming the presence of non-linear relationships in the data.\n\n\n\nModel\nMSE\n\n\n\n\nGrid-Based Model\n0.043\n\n\nGeneralized Additive Model\n0.0034\n\n\nRandom Forest Model\n0.0024"
+  },
+  {
+    "objectID": "posts/xg-pass-soccer-analytics/index.html#creating-the-final-xg-per-pass-metric",
+    "href": "posts/xg-pass-soccer-analytics/index.html#creating-the-final-xg-per-pass-metric",
+    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
+    "section": "Creating the Final xG per Pass Metric",
+    "text": "Creating the Final xG per Pass Metric\nUsing the predictions from our Random Forest model, we re-normalized the values within each pass chain to create the final metric. The formula is:\n\\[\n\\textit{xG per pass}_{i} = \\frac{f(\\text{pass}_i)}{\\sum_{j=1}^{n}f(\\text{pass}_{j})} \\times \\textit{xG from shot}\n\\]\nwhere \\(f(\\text{pass}_i)\\) is the predicted value for pass i from the model, and n is the total number of passes in the chain."
+  },
+  {
+    "objectID": "posts/xg-pass-soccer-analytics/index.html#conclusion-and-future-work",
+    "href": "posts/xg-pass-soccer-analytics/index.html#conclusion-and-future-work",
+    "title": "Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)",
+    "section": "Conclusion and Future Work",
+    "text": "Conclusion and Future Work\nThis framework provides a quantitative method to credit players for their contribution to creating scoring chances. It rewards passes made closer to the opponent’s goal and those made to influential teammates. This metric can be used to rank players based on their creative passing ability.\nFor future work, we plan to incorporate team tactics, the positions of nearby players, and a method to penalize “bad” passes that result in a loss of possession.\n\nCode for Analysis\nThe code for this project is available on GitHub: https://github.com/KapilKhanal/Soccer_CMUCamp\n\n\nAcknowledgements\nI would like to thank Dr. Kostas Pelechrinis of the University of Pittsburgh for helping with the project and Dr. Tisha Hooks of Winona State University for reviewing the paper. This paper is a continuation of the work I did for my summer undergraduate experience in statistics at Carnegie Mellon University."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Order By\n      Default\n      \n      \n      \n        Funder\n      \n      \n        Team\n      \n      \n        Description\n      \n      \n        Start\n      \n      \n        End\n      \n      \n        Funding\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nTitle\n\n\n\nTeam\n\n\n\nFunder\n\n\n\nDescription\n\n\n\nFunding\n\n\n\nStart\n\n\n\nEnd\n\n\n\n\n\n\n\n\n\n\n\n \n\n\nKapil Khanal, Dr. Maha Haji, Dr. Carlos , Dr. Mattheiu\n\n\nSandia National Laboratories\n\n\nSeedling I and II: A Framework for Differentiable Hydrodynamics\n\n\n$200,000\n\n\n2023 - Present\n\n\nPresent\n\n\n\n\n\n\n\n\n\nAWS Cloud Credit for Research\n\n\nKapil Khanal\n\n\nAmazon Web Services (AWS)\n\n\nAmazon Web Services (AWS) Cloud Credit for Computational Research\n\n\n$5,000\n\n\n2023\n\n\n2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software & Projects",
+    "section": "",
+    "text": "This page highlights the software projects and computational tools I have developed and contributed to. These projects reflect my interest in creating robust, scalable, and efficient solutions for complex engineering and scientific problems.\nMore details and project listings will be added here soon.\n\n\nFeatured Projects\n\n\nMarineHydro.jl\nA Boundary Element Method (BEM) solver written in Julia, designed for hydrodynamic analysis within a fully differentiable programming paradigm. It leverages automatic differentiation for efficient gradient computation.\n\n\nDifferentiable wave2wire Framework for WEC Farms\nAn framework for the Multidisciplinary Design Optimization of Wave Energy Converters (WECs) and WEC Farms. This project integrates hydrodynamic of large number of WECs, and control system models to optimize the performance of the WEC farm using gradient-based optimization.\n\n\nopenFlash\nAn open-source framework built to simulate the hydrodynamics of wave energy converters using matched eigenfunction expansion methods."
   },
   {
     "objectID": "people.html",
@@ -670,5 +411,362 @@
     "title": "People",
     "section": "Alumni",
     "text": "Alumni\n\n\n   \n    \n    \n      Order By\n      Default\n      \n      \n      \n        Name\n      \n      \n        Role\n      \n      \n        Started\n      \n      \n        Ended\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nName\n\n\n\nRole\n\n\n\nStarted\n\n\n\nEnded\n\n\n\n\n\n\n\n\n\n\n\nKapil\n\n\nPhD Candidate\n\n\n2021\n\n\n*\n\n\n\n\n\n\n\n\n\nPI Name\n\n\nPI\n\n\n \n\n\n \n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "What’s New & Updated",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nJoined Glencore as a Quantitative Researcher\n\n\nDefended my Ph.D. at Cornell and started in Houston on the Natural Gas research desk\n\n\n\nnews\n\ncareer\n\nenergy\n\nquant\n\n\n\n\n\n\n\n\n\nJan 15, 2026\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl\n\n\n\n\n\n\nworkshop\n\nmarine hydrodynamics\n\ndifferentiable programming\n\noptimization\n\n\n\n\n\n\n\n\n\nJul 27, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nDerivatives are Cheap and Expensive\n\n\nThe Real Cost of Gradients in Complex Systems Optimization\n\n\n\noptimization\n\nsensitivity analysis\n\nresearch\n\n\n\n\n\n\n\n\n\nJun 23, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nMarineHydro.jl: A Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis\n\n\nA Julia Package for Wave-Structure Interactions\n\n\n\nsoftware\n\nresearch\n\nJulia\n\nhydrodynamics\n\noptimization\n\n\n\n\n\n\n\n\n\nJun 22, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nCoupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs\n\n\nExtending the Isoperformance Method for Feasibility in Coupled Multidisciplinary Systems\n\n\n\nconference\n\nMDO\n\noptimization\n\nresearch\n\n\n\n\n\n\n\n\n\nApr 22, 2025\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nEnhancing the Boundary Element Method with Scientific Machine Learning\n\n\nA Hybrid Approach for Solving Diffraction-Radiation Problems\n\n\n\nresearch\n\nmachine learning\n\nhydrodynamics\n\nJulia\n\n\n\n\n\n\n\n\n\nJul 30, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nGradient-Based Optimization for Large Systems\n\n\nIntroduction to MDO Architectures, Solvers, and Simulators\n\n\n\nMDO\n\noptimization\n\nresearch\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nDifferentiable Wave-to-Wire Model for Wave Energy Converter Optimization\n\n\nSubmission to the ASME 2025 IDETC/CIE Conference\n\n\n\nconference\n\nresearch\n\noptimization\n\n\n\n\n\n\n\n\n\nJul 26, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nA Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems\n\n\nMy PhD Research Proposal\n\n\n\nresearch\n\noptimization\n\nhydrodynamics\n\nthesis\n\n\n\nDeveloping a differentiable boundary element method solver for hydrodynamic design optimization of offshore structures using automatic differentiation and adjoint methods\n\n\n\n\n\nJan 15, 2024\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\neVTOL Integration in Emergency Medical Services: A System Architecture Approach\n\n\nDesigning Affordable, High-Performance, and Equitable Air Ambulance Systems\n\n\n\nsystem architecture\n\neVTOL\n\nsystems engineering\n\nurban mobility\n\nresearch\n\n\n\n\n\n\n\n\n\nDec 19, 2023\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nSales Impact Analysis with Clustering and Causal Effects\n\n\n\n\n\n\ndata science\n\nanalytics\n\nbusiness intelligence\n\n\n\n\n\n\n\n\n\nMar 30, 2020\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nGiving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)\n\n\n\n\n\n\ndata science\n\nsports analytics\n\nsoccer\n\nresearch\n\n\n\n\n\n\n\n\n\nFeb 1, 2020\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nWinona Area Public Schools: Community Contribution\n\n\n\n\n\n\ndata science\n\ncommunity\n\neducation\n\n\n\n\n\n\n\n\n\nAug 21, 2019\n\n\nKapil Khanal\n\n\n\n\n\n\n\n\n\n\n\n\nData Dashboard for StockX Contest\n\n\n\n\n\n\ndata science\n\ncompetition\n\nvisualization\n\n\n\n\n\n\n\n\n\nAug 21, 2019\n\n\nKapil Khanal\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Image: openmdao\n\n\nCourse: Multidisciplinary Design Optimization\nInstitution: Cornell University\nRole: Teaching Assistant\nWhen Offered: Fall Semester\nPrerequisites: Undergraduate linear algebra and knowledge of MATLAB, Python, or R\nCourse Overview: This course presents a rigorous, quantitative multidisciplinary design methodology that incorporates the creative side of the design process. Through a topic of your choice, students learn how to use multidisciplinary design optimization (MDO) to create advanced and complex engineering systems that must be competitive in performance and life-cycle value.\nKey Focus Areas: -Multidisciplinary character of engineering systems -Design of complex systems\n-Tools for optimization\nCourse Structure: Students work in small teams on a term project to apply MDO principles to design and optimize an engineering system of their choice.\n\n\n\n\nStudents who successfully complete this course will be able to:\n\nSystem Decomposition: Subdivide a complex system into smaller disciplinary models, manage their interfaces and reintegrate them into an overall system model.\nAlgorithm Selection: Identify the most suitable optimization algorithm between gradient-based numerical optimization algorithms (i.e., sequential quadratic programming (SQP)) and various modern heuristic optimization techniques (i.e., simulated annealing (SA) or genetic algorithms (GA)) for their design problem and use it to find the optimal design for a single objective of their choice.\nCritical Analysis: Critically evaluate and interpret analysis and optimization results, including sensitivity analysis and exploration of performance, cost and risk tradeoffs.\nMulti-Objective Optimization: Utilize basic concepts of multi-objective optimization, including the conditions for optimality and Pareto front computation techniques, to optimize their design with respect to two objectives of their choice.\nTeam Project: Work as a team to formulate a realistic engineering design problem, optimize the design for a single objective and multiple competing objectives, and present the results in a final oral presentation and written report.\n\n\n\n\nThis course is fundamentally different from most traditional university optimization courses which focus mainly on the mathematics and algorithms for search. The focus is equally strong on all three aspects of the problem:\n\nMultidisciplinary Integration: Understanding how different disciplines (structures, aerodynamics, controls, optics, costing, manufacturing, environmental science, marketing, etc.) must be tightly coupled during conceptual and preliminary design of complex new systems and products.\nSystem Design: Developing the ability to design complex engineering systems that are competitive in performance and life-cycle value.\nOptimization Tools: Mastering both gradient-based and heuristic optimization techniques for real-world engineering applications.\n\n\n\n\n\nProgramming: MATLAB, Python, or R for implementation\nOptimization Algorithms:\n\nGradient-based methods (Sequential Quadratic Programming)\nHeuristic methods (Simulated Annealing, Genetic Algorithms)\n\nMulti-objective Optimization: Pareto front computation and analysis\nSensitivity Analysis: Understanding design parameter impacts\nSystem Integration: Managing multidisciplinary model couplings\n\n\nThis course provides students with practical experience in applying MDO principles to real engineering problems, preparing them for careers in advanced engineering design and optimization."
+  },
+  {
+    "objectID": "teaching.html#multidisciplinary-design-optimization-mdo",
+    "href": "teaching.html#multidisciplinary-design-optimization-mdo",
+    "title": "Teaching",
+    "section": "",
+    "text": "Image: openmdao\n\n\nCourse: Multidisciplinary Design Optimization\nInstitution: Cornell University\nRole: Teaching Assistant\nWhen Offered: Fall Semester\nPrerequisites: Undergraduate linear algebra and knowledge of MATLAB, Python, or R\nCourse Overview: This course presents a rigorous, quantitative multidisciplinary design methodology that incorporates the creative side of the design process. Through a topic of your choice, students learn how to use multidisciplinary design optimization (MDO) to create advanced and complex engineering systems that must be competitive in performance and life-cycle value.\nKey Focus Areas: -Multidisciplinary character of engineering systems -Design of complex systems\n-Tools for optimization\nCourse Structure: Students work in small teams on a term project to apply MDO principles to design and optimize an engineering system of their choice.\n\n\n\n\nStudents who successfully complete this course will be able to:\n\nSystem Decomposition: Subdivide a complex system into smaller disciplinary models, manage their interfaces and reintegrate them into an overall system model.\nAlgorithm Selection: Identify the most suitable optimization algorithm between gradient-based numerical optimization algorithms (i.e., sequential quadratic programming (SQP)) and various modern heuristic optimization techniques (i.e., simulated annealing (SA) or genetic algorithms (GA)) for their design problem and use it to find the optimal design for a single objective of their choice.\nCritical Analysis: Critically evaluate and interpret analysis and optimization results, including sensitivity analysis and exploration of performance, cost and risk tradeoffs.\nMulti-Objective Optimization: Utilize basic concepts of multi-objective optimization, including the conditions for optimality and Pareto front computation techniques, to optimize their design with respect to two objectives of their choice.\nTeam Project: Work as a team to formulate a realistic engineering design problem, optimize the design for a single objective and multiple competing objectives, and present the results in a final oral presentation and written report.\n\n\n\n\nThis course is fundamentally different from most traditional university optimization courses which focus mainly on the mathematics and algorithms for search. The focus is equally strong on all three aspects of the problem:\n\nMultidisciplinary Integration: Understanding how different disciplines (structures, aerodynamics, controls, optics, costing, manufacturing, environmental science, marketing, etc.) must be tightly coupled during conceptual and preliminary design of complex new systems and products.\nSystem Design: Developing the ability to design complex engineering systems that are competitive in performance and life-cycle value.\nOptimization Tools: Mastering both gradient-based and heuristic optimization techniques for real-world engineering applications.\n\n\n\n\n\nProgramming: MATLAB, Python, or R for implementation\nOptimization Algorithms:\n\nGradient-based methods (Sequential Quadratic Programming)\nHeuristic methods (Simulated Annealing, Genetic Algorithms)\n\nMulti-objective Optimization: Pareto front computation and analysis\nSensitivity Analysis: Understanding design parameter impacts\nSystem Integration: Managing multidisciplinary model couplings\n\n\nThis course provides students with practical experience in applying MDO principles to real engineering problems, preparing them for careers in advanced engineering design and optimization."
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html",
+    "href": "posts/winona-area-public-schools/index.html",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "",
+    "text": "Introduction:\nThis project addresses the need of communication of public school data to community members in a meaningful way. Also, making the data available to general public in a proper and useable format.\nThere has been a wider discussion regarding the budget issue in Winona area schools. Here is the article discussing the budget concerns.\nPrimarily, this project was focused on cleaning and visualizing the Enrollment, Expenditures and Staffing History reports of the Winona Area Public District (WAPS) available publicly through Minnesota Department of Education, Data Center.\nLink: http://education.state.mn.us/MDE/Data/\n\n\n\nWAPS Overview"
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#winona-area-public-schools-data-visualization",
+    "href": "posts/winona-area-public-schools/index.html#winona-area-public-schools-data-visualization",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "",
+    "text": "Introduction:\nThis project addresses the need of communication of public school data to community members in a meaningful way. Also, making the data available to general public in a proper and useable format.\nThere has been a wider discussion regarding the budget issue in Winona area schools. Here is the article discussing the budget concerns.\nPrimarily, this project was focused on cleaning and visualizing the Enrollment, Expenditures and Staffing History reports of the Winona Area Public District (WAPS) available publicly through Minnesota Department of Education, Data Center.\nLink: http://education.state.mn.us/MDE/Data/\n\n\n\nWAPS Overview"
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#methods-and-steps-of-project",
+    "href": "posts/winona-area-public-schools/index.html#methods-and-steps-of-project",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "Methods and Steps of Project",
+    "text": "Methods and Steps of Project\n\n1. Data Inspection/Acquisition\nPublic data was collected by Alison Quam (Representative from WAPS District). The data were made available in different PDF/Excel files. Also, the information were scattered in different files.\n\n\n2. Data Cleaning and Formatting\nFirst, most of the PDF files were converted to Excel by Tabula and online tool (pdftoexcel.com). Then, they were cleaned up in proper format and stacked using Python (Pandas).\n\n\n3. Data Exploration and Visualization\nThis part of the project is focused on addressing the questions provided by representative of WAPS (Alison Quam). Tableau was used extensively to explore the data and visualize it.\nPrimarily, I focused on answering following questions:\n\nI was curious about, how does the enrollment and capture rate (rate of new born enrolling to Kindergarten) is changing in WAPS district?\n\nAfter few meetings with representative, I realized she was more curious about how schools spend across different programs.\n\nHow the expenditure per average daily membership (count of student daily served in schools) and spending on various category is changing?"
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#interactive-tableau-dashboard",
+    "href": "posts/winona-area-public-schools/index.html#interactive-tableau-dashboard",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "Interactive Tableau Dashboard",
+    "text": "Interactive Tableau Dashboard\nThe link to the tableau file and the data is here."
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#visual-story",
+    "href": "posts/winona-area-public-schools/index.html#visual-story",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "Visual Story",
+    "text": "Visual Story\nNow, the visual story begins…\n\n\n\n\n\n\nNoteDashboard Screenshots\n\n\n\nThe following images show the key insights from the Tableau dashboard:\n\n\n\n\n\nEnrollment and Capture Rate Analysis\n\n\n\n\n\nExpenditure Analysis\n\n\n\n\n\nComprehensive Overview"
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#impact-and-conclusion",
+    "href": "posts/winona-area-public-schools/index.html#impact-and-conclusion",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "Impact and Conclusion",
+    "text": "Impact and Conclusion\nThis project actually helped inform the decision makers at local level. Thus, I was able to contribute to something meaningful with my Python and Tableau skills.\nThe visualization provided clear insights into: - Enrollment trends and capture rates over time - Expenditure patterns across different programs - Resource allocation efficiency - Budget planning considerations"
+  },
+  {
+    "objectID": "posts/winona-area-public-schools/index.html#acknowledgements",
+    "href": "posts/winona-area-public-schools/index.html#acknowledgements",
+    "title": "Winona Area Public Schools: Community Contribution",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nI would like to thank: - Alison Quam (WAPS representative) for providing the data and guidance - Prof. Silas Bergen for helping and guiding me to understand the terms and calculations already done in the reports - Prof. Todd Iverson for help figuring out Python code for cleaning the data\nThis project demonstrates how data science skills can be applied to serve the community and support informed decision-making in public education."
+  },
+  {
+    "objectID": "posts/joining-glencore-quant-research/index.html",
+    "href": "posts/joining-glencore-quant-research/index.html",
+    "title": "Joined Glencore as a Quantitative Researcher",
+    "section": "",
+    "text": "In December 2025 I successfully defended my Ph.D. dissertation at Cornell University — Multidisciplinary Design Optimization of Novel Offshore Systems: From Conventional to Differentiable Design Methodologies — and in January 2026 I joined Glencore in Houston as a Quantitative Researcher on the North American Natural Gas team."
+  },
+  {
+    "objectID": "posts/joining-glencore-quant-research/index.html#a-new-chapter",
+    "href": "posts/joining-glencore-quant-research/index.html#a-new-chapter",
+    "title": "Joined Glencore as a Quantitative Researcher",
+    "section": "",
+    "text": "In December 2025 I successfully defended my Ph.D. dissertation at Cornell University — Multidisciplinary Design Optimization of Novel Offshore Systems: From Conventional to Differentiable Design Methodologies — and in January 2026 I joined Glencore in Houston as a Quantitative Researcher on the North American Natural Gas team."
+  },
+  {
+    "objectID": "posts/joining-glencore-quant-research/index.html#what-im-working-on",
+    "href": "posts/joining-glencore-quant-research/index.html#what-im-working-on",
+    "title": "Joined Glencore as a Quantitative Researcher",
+    "section": "What I’m working on",
+    "text": "What I’m working on\nDay-to-day, my work spans the full research stack of a commodities trading desk:\n\nForecasting. Building autoregressive and supervised ML models for demand, supply, and storage build/draw balances across the 66 U.S. Balancing Authorities, incorporating weather signals, fundamentals, and basis structure between Henry Hub and regional delivery points.\nStorage valuation & dispatch. LP-based injection/withdrawal optimization for natural gas storage, used both for asset valuation and for generating dispatch signals.\nBacktesting infrastructure. Walk-forward validation pipelines for ML and statistical models to evaluate strategies under realistic look-ahead constraints.\nHierarchical reconciliation. Coherent forecast aggregation across regional desks and time horizons.\n\nThe transition from differentiable physics to commodity research has been smoother than I expected — at the core, both come down to building good models of complex coupled systems, fitting them to data, and using gradients (or LPs) to make decisions under uncertainty."
+  },
+  {
+    "objectID": "posts/joining-glencore-quant-research/index.html#whats-next",
+    "href": "posts/joining-glencore-quant-research/index.html#whats-next",
+    "title": "Joined Glencore as a Quantitative Researcher",
+    "section": "What’s next",
+    "text": "What’s next\nI’m continuing to publish and stay connected to the academic community on MDO, differentiable simulation, and control co-design. Two journal articles from my dissertation are in the pipeline, including the Polynomial Chaos Expansion UQ paper for wave energy converter farms.\nIf you’re working at the intersection of optimization, machine learning, and energy markets — or just want to talk shop about gas storage, basis trading, or differentiable BEM solvers — feel free to reach out."
+  },
+  {
+    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
+    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
+    "title": "Derivatives are Cheap and Expensive",
+    "section": "",
+    "text": "“In machine learning, derivatives are cheap. In design optimization, they can be very expensive. Why?”"
+  },
+  {
+    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#introduction",
+    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#introduction",
+    "title": "Derivatives are Cheap and Expensive",
+    "section": "Introduction",
+    "text": "Introduction\nGradient-based optimization methods are everywhere, and they are the secret sauce behind intelligent software systems like ChatGPT to the optimal design of physical systems such as satellites, rockets, and airplanes. Very few people know the parallels between these two systems and how the engineering decision making is similar. This post reviews the methodologies for computing gradients in complex systems, drawing on insights from both machine learning and engineering literature.\nDifferentiation of modular systems composed of many simple subsystem is cheap and very straight forward to compute using chain rule but what if the complex system is composed of many subsystems that are handled by different sub-contractors and the dataflow is complicated? The subsystems probably have their own ‘constraints’ to be solved and thus each subsystem could be implicit function of the system design variables. This is not really a problem for neural networks but it is a problem for physical systems. How many contractors were there in the Apollo 11 mission? I don’t really know, see this article on the Apollo Program and Private Companies.\nGradients are essential for sensitivity calculations and optimization of objective (loss) functions. But while gradients are cheap for neural network training, they are often expensive for PDEs and coupled simulations in physical system design."
+  },
+  {
+    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#why-are-gradients-cheap-for-neural-networks",
+    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#why-are-gradients-cheap-for-neural-networks",
+    "title": "Derivatives are Cheap and Expensive",
+    "section": "Why Are Gradients Cheap for Neural Networks?",
+    "text": "Why Are Gradients Cheap for Neural Networks?\n\nNeural networks are composed of simple, differentiable operations (dot products, matrix multiplications, simple activation functions).\nAutomatic differentiation (AD) frameworks (e.g., PyTorch, TensorFlow) efficiently apply the chain rule via backpropagation.\nThe computational graph can be traversed efficiently, making gradient computation nearly as fast as the forward pass.\nAnalytical gradients are available for many neural network layers so your AD framework gets to cheat and use them."
+  },
+  {
+    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#why-are-gradients-expensive-for-physical-systems",
+    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#why-are-gradients-expensive-for-physical-systems",
+    "title": "Derivatives are Cheap and Expensive",
+    "section": "Why Are Gradients Expensive for Physical Systems?",
+    "text": "Why Are Gradients Expensive for Physical Systems?\n\nPhysical systems often involve PDEs, legacy code, or black-box simulations.\nSimulations may be modular, with neural networks chained to empirical calculations, surrogate models, and numerical solvers.\nGradients may require finite differences (expensive and noisy), symbolic methods (rarely feasible), or custom adjoint/automatic differentiation implementations.\nCoupled systems (e.g., multidisciplinary design optimization) require careful management of data flow and execution order.\nAdhoc heterogenous assembly of components and simulations."
+  },
+  {
+    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#methods-for-gradient-computation",
+    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#methods-for-gradient-computation",
+    "title": "Derivatives are Cheap and Expensive",
+    "section": "Methods for Gradient Computation",
+    "text": "Methods for Gradient Computation\n\nFinite Differences: Simple but expensive and prone to numerical error.\nSymbolic Differentiation: Exact but rarely practical for complex or legacy code.\nAutomatic Differentiation: Powerful, but requires code to be written in a compatible way.\nAdjoint/Linear System Methods: Set up a global sensitivity equation and solve a linear system—especially useful when the chain rule is unwieldy.\n\n\n\n\n\n\n\n\n\nMethod\nPros\nCons\n\n\n\n\nFinite Differences\nEasy to implement\nExpensive, noisy, scales poorly\n\n\nSymbolic\nExact\nImpractical for large/legacy code\n\n\nAutomatic Diff (AD)\nEfficient, general\nNeeds compatible code, memory usage\n\n\nAdjoint/Linear System\nScales for many inputs\nComplex to implement, setup required"
+  },
+  {
+    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#forward-vs.-adjoint-backward-mode-vs-mixed-mode",
+    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#forward-vs.-adjoint-backward-mode-vs-mixed-mode",
+    "title": "Derivatives are Cheap and Expensive",
+    "section": "Forward vs. Adjoint (Backward) Mode vs Mixed Mode",
+    "text": "Forward vs. Adjoint (Backward) Mode vs Mixed Mode\n\nForward mode: Efficient when there are few inputs (design variables).\nAdjoint (backward) mode: Efficient when there are few outputs (objectives/constraints).\nBoth are applications of the chain rule, but their efficiency depends on the problem structure.\nSometime mixed mode are efficient combining forward and adjoint mode. This depends on the dataflow and the structure of the system."
+  },
+  {
+    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#modular-systems-mixing-and-matching",
+    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#modular-systems-mixing-and-matching",
+    "title": "Derivatives are Cheap and Expensive",
+    "section": "Modular Systems: Mixing and Matching",
+    "text": "Modular Systems: Mixing and Matching\nIn real-world modeling, systems are often modular: a neural network, an empirical formula, and a numerical simulation may be chained together. The chain rule applies, but the optimal way to compute derivatives may not be a simple sequential application. A different interpretation of the chain rule is needed. Additionally, in complex multidisciplinary systems, managing the execution order and data flow for derivatives is non-trivial. Frameworks like OpenMDAO use graph algorithms (e.g., NetworkX) to determine the correct order and avoid unnecessary computations so that forward and adjoint computation is scalable.\n\nMost automatic differentiation techniques, including backpropagation, can be traced back to constrained optimization and the vast literature on optimal controls. The method of Lagrange multipliers transforms constrained problems into unconstrained ones, providing the foundation for adjoint methods and modern AD frameworks."
+  },
+  {
+    "objectID": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#conclusion",
+    "href": "posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html#conclusion",
+    "title": "Derivatives are Cheap and Expensive",
+    "section": "Conclusion",
+    "text": "Conclusion\nAlthough gradients are necessary for scalable optimization, but their cost varies dramatically between fields. It requires understanding the structure of your system—and choosing the right differentiation method, this can make the difference between tractable and intractable optimization. As systems become more modular and complex, hybrid approaches and careful management of forward computation and adjoint derivative computation are increasingly important.\nSystem of systems are becoming more common in the design of systems such as ChatGPT, rockets, airplanes, buildings etc and the only way to scale the ‘training’/ ‘tuning’ / optimization is to use right tools to compute them gradients."
+  },
+  {
+    "objectID": "posts/sales-impact-analysis-clustering/index.html",
+    "href": "posts/sales-impact-analysis-clustering/index.html",
+    "title": "Sales Impact Analysis with Clustering and Causal Effects",
+    "section": "",
+    "text": "This project examines how the introduction of discounts during holidays affects the total sales of different customer groups within a timeframe of a year. By combining customer segmentation with causal impact analysis, we can understand not just what happened to sales, but why it happened and which customer segments were most responsive to promotional campaigns."
+  },
+  {
+    "objectID": "posts/sales-impact-analysis-clustering/index.html#overview",
+    "href": "posts/sales-impact-analysis-clustering/index.html#overview",
+    "title": "Sales Impact Analysis with Clustering and Causal Effects",
+    "section": "",
+    "text": "This project examines how the introduction of discounts during holidays affects the total sales of different customer groups within a timeframe of a year. By combining customer segmentation with causal impact analysis, we can understand not just what happened to sales, but why it happened and which customer segments were most responsive to promotional campaigns."
+  },
+  {
+    "objectID": "posts/sales-impact-analysis-clustering/index.html#methodology",
+    "href": "posts/sales-impact-analysis-clustering/index.html#methodology",
+    "title": "Sales Impact Analysis with Clustering and Causal Effects",
+    "section": "Methodology",
+    "text": "Methodology\nThe analysis employs three key statistical techniques to provide comprehensive insights into customer behavior and promotional effectiveness:\n\n1. RFM Analysis (Recency, Frequency, Monetary)\nRFM analysis is a proven method for analyzing customer behavior by examining their transaction history across three critical dimensions:\n\nRecency: How recently a customer has made a purchase\nFrequency: How often they make purchases\n\nMonetary: How much the customer typically spends\n\n\n\n\n\n\n\nNoteWhy RFM Analysis?\n\n\n\nRFM helps us identify customers who are more likely to respond to promotions by understanding their engagement patterns and value to the business.\n\n\nKey Benefits: - Identifies high-value customers worth targeting with premium offers - Segments customers based on engagement level and purchase behavior - Provides actionable insights for personalized marketing strategies\n\n\n2. K-Means Clustering for Customer Segmentation\nUsing the RFM scores as features, we apply K-means clustering to segment customers into distinct groups with similar behavioral patterns.\nClustering Process: 1. Feature Engineering: Transform RFM metrics into standardized scores 2. Optimal Cluster Selection: Use elbow method and silhouette analysis to determine optimal number of clusters 3. Segment Profiling: Analyze each cluster’s characteristics and business value\nTypical Customer Segments: - Champions: High recency, frequency, and monetary scores - Loyal Customers: High frequency and monetary, moderate recency - Potential Loyalists: Recent customers with good frequency - At Risk: Previously valuable customers showing declining engagement - Lost Customers: Low scores across all dimensions\n\n\n3. Causal Impact Analysis\nFor each customer segment identified through clustering, we perform causal impact analysis to measure the true effect of discount campaigns.\nMethodology: - Bayesian Structural Time Series: Models the counterfactual scenario (what would have happened without the intervention) - Pre/Post Comparison: Analyzes sales patterns before and after discount implementation - Statistical Significance: Determines whether observed changes are statistically meaningful"
+  },
+  {
+    "objectID": "posts/sales-impact-analysis-clustering/index.html#technical-implementation",
+    "href": "posts/sales-impact-analysis-clustering/index.html#technical-implementation",
+    "title": "Sales Impact Analysis with Clustering and Causal Effects",
+    "section": "Technical Implementation",
+    "text": "Technical Implementation\n\nData Processing Pipeline\n# Pseudocode for RFM Analysis\ndef calculate_rfm_scores(transactions):\n    # Calculate recency, frequency, monetary metrics\n    # Assign quintile scores (1-5) for each dimension\n    # Return RFM dataframe\n    \ndef perform_clustering(rfm_data):\n    # Standardize RFM scores\n    # Apply K-means clustering\n    # Return cluster assignments\n    \ndef causal_impact_analysis(sales_data, intervention_date):\n    # Fit Bayesian structural time series model\n    # Estimate counterfactual predictions\n    # Calculate causal effect and confidence intervals\n\n\nKey Performance Indicators\nThe analysis tracks several important metrics:\n\nLift in Sales: Percentage increase in sales attributable to discounts\nCustomer Acquisition: New customers gained during promotional periods\n\nCustomer Retention: Retention rates across different segments\nRevenue per Customer: Changes in average customer value\nStatistical Significance: Confidence intervals and p-values for all effects"
+  },
+  {
+    "objectID": "posts/sales-impact-analysis-clustering/index.html#results-and-business-impact",
+    "href": "posts/sales-impact-analysis-clustering/index.html#results-and-business-impact",
+    "title": "Sales Impact Analysis with Clustering and Causal Effects",
+    "section": "Results and Business Impact",
+    "text": "Results and Business Impact\n\nCustomer Segmentation Insights\nThe clustering analysis revealed distinct customer segments with varying responsiveness to promotional campaigns:\n\nHigh-Value Segments showed strong positive response to targeted discounts\nPrice-Sensitive Segments demonstrated significant sales lift during promotional periods\nAt-Risk Segments could be re-engaged through strategic discount timing\n\n\n\nCausal Impact Findings\nThe causal impact analysis provided clear evidence of promotional effectiveness:\n\nQuantified ROI: Measured the true incremental impact of discount campaigns\nSegment-Specific Effects: Identified which customer groups benefited most from promotions\nOptimal Timing: Determined the most effective periods for promotional activities"
+  },
+  {
+    "objectID": "posts/sales-impact-analysis-clustering/index.html#interactive-data-product",
+    "href": "posts/sales-impact-analysis-clustering/index.html#interactive-data-product",
+    "title": "Sales Impact Analysis with Clustering and Causal Effects",
+    "section": "Interactive Data Product",
+    "text": "Interactive Data Product\nTo make these insights accessible to business stakeholders, I developed an interactive web application that allows users to:\n\nExplore customer segments visually\nAnalyze the impact of different promotional strategies\nGenerate actionable recommendations for future campaigns\n\nLive Application: Sales Impact Dashboard"
+  },
+  {
+    "objectID": "posts/sales-impact-analysis-clustering/index.html#technical-resources",
+    "href": "posts/sales-impact-analysis-clustering/index.html#technical-resources",
+    "title": "Sales Impact Analysis with Clustering and Causal Effects",
+    "section": "Technical Resources",
+    "text": "Technical Resources\n\nCode Repository\nThe complete analysis code, including data preprocessing, clustering algorithms, and causal impact models, is available on GitHub:\nSales Impact Analysis Repository\n\n\nKey Technologies Used\n\nPython: Primary analysis language\nScikit-learn: K-means clustering implementation\nCausalImpact: Bayesian causal inference\nPandas/NumPy: Data manipulation and analysis\nPlotly/Dash: Interactive visualization and web app\nHeroku: Application deployment"
+  },
+  {
+    "objectID": "posts/sales-impact-analysis-clustering/index.html#business-applications",
+    "href": "posts/sales-impact-analysis-clustering/index.html#business-applications",
+    "title": "Sales Impact Analysis with Clustering and Causal Effects",
+    "section": "Business Applications",
+    "text": "Business Applications\nThis methodology can be applied across various business contexts:\n\nRetail & E-commerce\n\nOptimize promotional timing and targeting\nImprove customer lifetime value through segmentation\nReduce churn through predictive analytics\n\n\n\nMarketing Strategy\n\nMeasure true ROI of marketing campaigns\nPersonalize offers based on customer segments\nAllocate marketing budget more effectively\n\n\n\nRevenue Optimization\n\nIdentify high-value customer segments\nOptimize pricing strategies by segment\nImprove inventory management through demand forecasting"
+  },
+  {
+    "objectID": "posts/sales-impact-analysis-clustering/index.html#conclusion",
+    "href": "posts/sales-impact-analysis-clustering/index.html#conclusion",
+    "title": "Sales Impact Analysis with Clustering and Causal Effects",
+    "section": "Conclusion",
+    "text": "Conclusion\nBy combining RFM analysis, K-means clustering, and causal impact analysis, this project demonstrates how advanced analytics can provide actionable insights for business decision-making. The methodology not only identifies what happened during promotional periods but also quantifies why it happened and provides guidance for future strategic decisions.\nThe interactive dashboard makes these complex analyses accessible to business stakeholders, enabling data-driven decision making across the organization."
+  },
+  {
+    "objectID": "posts/sales-impact-analysis-clustering/index.html#future-enhancements",
+    "href": "posts/sales-impact-analysis-clustering/index.html#future-enhancements",
+    "title": "Sales Impact Analysis with Clustering and Causal Effects",
+    "section": "Future Enhancements",
+    "text": "Future Enhancements\nPotential extensions to this analysis include:\n\nReal-time Segmentation: Dynamic customer segment updates\nPredictive Modeling: Forecast customer behavior and campaign effectiveness\nMulti-channel Analysis: Extend analysis across different marketing channels\nAdvanced Causal Methods: Implement more sophisticated causal inference techniques"
+  },
+  {
+    "objectID": "posts/differentiable-hydrodynamics-framework/index.html",
+    "href": "posts/differentiable-hydrodynamics-framework/index.html",
+    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
+    "section": "",
+    "text": "Optimizing the levelized cost of electricity for floating offshore wind turbines (FOWTs) and wave energy parks involves analyzing multiple coupled subsystems including geometry, aerodynamics, and hydrodynamics. In complex engineered systems, the solution of governing equations in one subsystem changes the input for another subsystem. As the saying goes in engineering: “everything influences everything else” (Sobieszczanski-Sobieski and Haftka 1993). This creates design tradeoffs between several subsystems, necessitating an integrated multidisciplinary analysis approach.\nMultidisciplinary Design Optimization (MDO) is a field of engineering that focuses on using numerical optimization and solvers for designing systems involving multiple coupled disciplines or subsystems (Martins and Lambe 2013). Research has shown that sequential optimization of coupled subsystems usually results in sub-optimal designs, while an MDO approach leads to system-optimal solutions (Sobieszczanski-Sobieski and Haftka 1993)."
+  },
+  {
+    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#introduction",
+    "href": "posts/differentiable-hydrodynamics-framework/index.html#introduction",
+    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
+    "section": "",
+    "text": "Optimizing the levelized cost of electricity for floating offshore wind turbines (FOWTs) and wave energy parks involves analyzing multiple coupled subsystems including geometry, aerodynamics, and hydrodynamics. In complex engineered systems, the solution of governing equations in one subsystem changes the input for another subsystem. As the saying goes in engineering: “everything influences everything else” (Sobieszczanski-Sobieski and Haftka 1993). This creates design tradeoffs between several subsystems, necessitating an integrated multidisciplinary analysis approach.\nMultidisciplinary Design Optimization (MDO) is a field of engineering that focuses on using numerical optimization and solvers for designing systems involving multiple coupled disciplines or subsystems (Martins and Lambe 2013). Research has shown that sequential optimization of coupled subsystems usually results in sub-optimal designs, while an MDO approach leads to system-optimal solutions (Sobieszczanski-Sobieski and Haftka 1993)."
+  },
+  {
+    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#motivation-for-a-differentiable-framework",
+    "href": "posts/differentiable-hydrodynamics-framework/index.html#motivation-for-a-differentiable-framework",
+    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
+    "section": "Motivation for a Differentiable Framework",
+    "text": "Motivation for a Differentiable Framework\nOffshore and marine energy systems are inherently complex coupled systems. Currently, no integrated framework exists for offshore structures that supports both hydrodynamic simulation and shape optimization. This represents a significant bottleneck for design studies and optimization efforts. The adoption of MDO-based approaches should be encouraged to increase accessibility for further research (Musial et al. 2020).\nIn multidisciplinary design optimization, changes in one subsystem propagate across other subsystems. For example, a change in the mean position of a floating body alters the waterline and waterplane area, requiring recalculation of hydrodynamic coefficients. Similarly, research on novel multipurpose platforms (Perez-Collazo et al. 2015) would benefit from such a framework.\nThe framework I’m developing is intended to serve as: - A tool for early design studies in the conceptual phase - A plugin for other MDO applications where hydrodynamics analysis is coupled"
+  },
+  {
+    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#multidisciplinary-design-optimization",
+    "href": "posts/differentiable-hydrodynamics-framework/index.html#multidisciplinary-design-optimization",
+    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
+    "section": "Multidisciplinary Design Optimization",
+    "text": "Multidisciplinary Design Optimization\n\nHydrodynamic Shape Optimization\nMDO of offshore structures involves shape perturbation and optimization. Different underwater shapes of floating bodies respond differently to incoming ocean waves, making shape optimization crucial for offshore platform design.\nOffshore structures like spar buoys (vertical cylindrical structures) can be reasonably modeled using analytical approximations (Haghi et al. 2014; Morison et al. 1950). However, these analytical approaches are not feasible for non-standard geometries—those obtained after perturbing a base shape, usually described using splines. Efficient shape parameterization and numerical solvers explore the design space much better (Martins and Lambe 2013). In MDO, shapes are typically perturbed to be compatible with other subsystems, with B-splines (CAD geometry) being preferred (Samareh 2001).\nThe response motion of offshore structures is calculated using hydrodynamic coefficients such as added mass and damping. These coefficients characterize the geometry of floating structures. A transfer function called the Response Amplitude Operator (RAO) linearly relates sea motion to floating body motion."
+  },
+  {
+    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#boundary-element-method",
+    "href": "posts/differentiable-hydrodynamics-framework/index.html#boundary-element-method",
+    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
+    "section": "Boundary Element Method",
+    "text": "Boundary Element Method\nBoundary Element Methods (BEM) are used to calculate hydrodynamic coefficients, relying on linear potential flow theory where the exact Green’s function and its derivative are known (Babarit and Delhommeau 2011). BEM-based PDE solvers (Babarit 2015) are typically accurate for most geometries and can be coupled for shape optimization within a design framework. Depending on system requirements, we may want to minimize or maximize body response to waves—minimizing motion for wind turbines while maximizing motion for wave energy converters.\nHydrodynamics of floating bodies is typically modeled using linear potential flow theory. Since the domain is unbounded, boundary element methods are used, requiring only boundary discretization—the surface geometry is meshed with quadrilateral panels.\nFor each frequency of ocean waves the structure encounters, diffraction and radiation problems are solved to calculate hydrodynamic coefficients. The solution of velocity potential and radiation/diffraction forces is computed in the frequency domain.\nComputational cost increases with geometry discretization and the number of wave frequencies and headings. Typically, numerical complexity of BEM codes is proportional to \\(O(N^2)\\) or \\(O(N^3)\\) with \\(N\\) as the number of mesh panels. The Green function is computed \\(O(N^2)\\) times to set up the linear system, which is solved either by iterative methods with \\(O(N^2)\\) complexity or Gauss elimination with \\(O(N^3)\\) complexity (Babarit and Delhommeau 2011).\nThis limits integration within optimization loops, especially for large-scale optimization based on heuristic methods. The solution is to minimize function evaluations in optimization. Gradient-based optimization explores design space more efficiently (fewer evaluations) to reach locally optimal points\n\nDifferentiable Hydrodynamics\nCoupling numerical solvers within optimization is computationally costly. Shape optimization with many design variables requires an efficient way to calculate both the response and its gradient. Researchers often rely on reduced-order models to approximate hydrodynamic response and heuristic methods for optimization. However, heuristic methods don’t scale well for large-scale optimization, and reduced-order models lack the accuracy of full simulations.\nGradient-based optimization is preferred for large-scale optimization with many design variables and costly function evaluations. Coupling numerical solvers in gradient-based optimization requires gradients of solver output with respect to all inputs. While this has been implemented for CFD (He et al. 2020), no implementation of differentiable hydrodynamics (differentiable BEM) exists.\nAmong various gradient calculation methods, adjoint-based methods are accurate and efficient for inverse design problems. Adjoint methods are widely used in optimal control and aerodynamic shape optimization (Jameson 1988) as well as design optimization (Giles and Pierce 2000), but haven’t been applied to BEM-based hydrodynamics shape optimization.\n\n\nCoupled Derivatives\nFor multidisciplinary design optimization, Modular Analysis and Unified Derivatives (MAUD) architecture couples derivatives from several subsystems. MAUD formulates the multidisciplinary model as a nonlinear system of equations, leading to a linear equation that unifies all derivative computation methods (Hwang and Martins 2018). Each subsystem can provide numerical or analytical gradients.\nOpenMDAO (Gray et al. 2019), a tool developed by NASA, implements this framework. I plan to integrate newly developed BEM adjoints into this framework. Currently, I integrate BEM in OpenMDAO using numerical derivatives approximated through finite differences (Khanal and Haji 2023). Since this scales linearly with the number of design variables and accuracy deteriorates for nonlinear problems, it’s not appropriate for multidisciplinary analysis and optimization. My thesis aims to solve this problem.\n\nUnderstanding Adjoint Methods\nAdjoint methods provide an elegant way to compute gradients of objective functions with respect to many design variables at a computational cost that is essentially independent of the number of design variables. This is particularly valuable for shape optimization problems where we may have hundreds or thousands of design variables.\nThe key insight of adjoint methods is that instead of computing \\(\\frac{\\partial x}{\\partial \\theta}\\) directly (which would require solving the system for each design variable), we solve a single adjoint equation to obtain the sensitivity of the objective function.\nFor our BEM optimization problem:\n\\[\\begin{aligned}\n\\min_{\\theta,x} \\quad & J(S(\\theta), x(\\theta); \\theta ) \\\\\n\\textrm{s.t.} \\quad R(\\theta)=  & K(\\theta)\\times x(\\theta) - B(\\theta) = 0 \\\\\n\\end{aligned}\\]\nThe total derivative of the objective function with respect to design variables is:\n\\[\\frac{dJ}{d\\theta} = \\frac{\\partial J}{\\partial \\theta} + \\frac{\\partial J}{\\partial x}\\frac{\\partial x}{\\partial \\theta}\\]\nUsing the constraint equation \\(R(\\theta) = K(\\theta)x(\\theta) - B(\\theta) = 0\\), we can derive:\n\\[\\frac{\\partial R}{\\partial \\theta} = \\frac{\\partial K}{\\partial \\theta}x + K\\frac{\\partial x}{\\partial \\theta} - \\frac{\\partial B}{\\partial \\theta} = 0\\]\nSolving for \\(\\frac{\\partial x}{\\partial \\theta}\\):\n\\[\\frac{\\partial x}{\\partial \\theta} = K^{-1}\\left(\\frac{\\partial B}{\\partial \\theta} - \\frac{\\partial K}{\\partial \\theta}x\\right)\\]\nSubstituting back into the total derivative:\n\\[\\frac{dJ}{d\\theta} = \\frac{\\partial J}{\\partial \\theta} + \\frac{\\partial J}{\\partial x}K^{-1}\\left(\\frac{\\partial B}{\\partial \\theta} - \\frac{\\partial K}{\\partial \\theta}x\\right)\\]\nThe adjoint variable \\(\\lambda\\) is defined as the solution to:\n\\[K^T\\lambda = \\left(\\frac{\\partial J}{\\partial x}\\right)^T\\]\nThis leads to the elegant expression:\n\\[\\frac{dJ}{d\\theta} = \\frac{\\partial J}{\\partial \\theta} + \\lambda^T\\left(\\frac{\\partial B}{\\partial \\theta} - \\frac{\\partial K}{\\partial \\theta}x\\right)\\]\nComputational advantage: Instead of solving \\(N\\) forward problems (one for each design variable), we solve: 1. One forward problem: \\(Kx = B\\) 2. One adjoint problem: \\(K^T\\lambda = \\left(\\frac{\\partial J}{\\partial x}\\right)^T\\)\nThis gives us gradients with respect to all design variables at the cost of just two linear system solves, regardless of the number of design variables.\n\n\nAutomatic Differentiation in Practice\nAutomatic Differentiation (AD) is a technique that automatically computes derivatives of functions implemented in computer code. Unlike symbolic differentiation (which manipulates mathematical expressions) or finite differences (which approximates derivatives), AD computes exact derivatives by applying the chain rule systematically through the computational graph.\nTwo main modes of AD:\n\nForward Mode AD: Computes directional derivatives by propagating derivatives forward through the computation. For a function \\(f: \\mathbb{R}^n \\rightarrow \\mathbb{R}^m\\), forward mode computes \\(J \\cdot v\\) where \\(J\\) is the Jacobian and \\(v\\) is a direction vector.\nReverse Mode AD: Computes gradients by propagating adjoints backward through the computation. For a scalar function \\(f: \\mathbb{R}^n \\rightarrow \\mathbb{R}\\), reverse mode computes \\(\\nabla f\\) at the cost of approximately 2-4 function evaluations, regardless of \\(n\\).\n\nFor our BEM solver, reverse mode AD is particularly attractive because: - We typically have many design variables (shape parameters) but few objectives - The computational cost is independent of the number of design variables - It naturally computes the adjoint variables needed for our optimization\nImplementation considerations:\n\nLanguage choice: Julia and JAX are excellent choices because they:\n\nSupport automatic differentiation natively\nProvide high-performance numerical computing\nEnable just-in-time compilation for efficiency\nOffer parallel computing capabilities\n\nComputational graph: The BEM solver must be implemented in a way that maintains a differentiable computational graph:\n\nAll operations must be differentiable\nControl flow must be handled carefully\nLinear solvers must be differentiable (or replaced with differentiable alternatives)\n\nMemory considerations: Reverse mode AD requires storing intermediate values for the backward pass, which can be memory-intensive for large problems.\n\n\n\nDiscrete vs. Continuous Adjoint\nContinuous adjoint methods derive adjoint equations from the continuous governing equations (PDEs) before discretization. This approach: - Provides analytical expressions for adjoint equations - May be more efficient for certain problems - Requires careful treatment of boundary conditions - Is problem-specific and requires manual derivation\nDiscrete adjoint methods work with the discretized equations and use automatic differentiation to compute the required derivatives. This approach: - Is more general and applicable to many problems - Automatically handles complex discretization schemes - Requires less manual derivation - Can be less efficient but is more robust\nFor our BEM solver, discrete adjoint with automatic differentiation is preferred because: - It handles the complex Green’s function evaluations automatically - It works with any objective function without manual derivation - It integrates seamlessly with existing optimization frameworks - It provides exact gradients (up to numerical precision)\n\n\nChallenges and Solutions\nChallenge 1: Dense Linear Systems BEM methods solve dense linear systems, which are computationally expensive. Solutions include: - Using iterative solvers with preconditioning - Implementing matrix-free methods where possible - Leveraging parallel computing for large problems\nChallenge 2: Complex-valued Computations Hydrodynamic problems involve complex numbers (frequency domain analysis). AD frameworks must handle complex differentiation correctly: - Using Wirtinger calculus for complex derivatives - Ensuring proper handling of complex conjugates - Maintaining numerical stability\nChallenge 3: Green’s Function Evaluation The free-surface Green’s function is computationally expensive and involves special functions. - Implementing efficient evaluation algorithms - Using approximation methods for early design iterations - Leveraging GPU acceleration where possible\nChallenge 4: Integration with Optimization Frameworks The differentiable BEM solver must integrate with MDO frameworks like OpenMDAO: - Providing consistent interfaces for gradient computation - Handling the coupling between different subsystems - Ensuring numerical stability across the entire optimization"
+  },
+  {
+    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#optimization-problem-statement",
+    "href": "posts/differentiable-hydrodynamics-framework/index.html#optimization-problem-statement",
+    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
+    "section": "Optimization Problem Statement",
+    "text": "Optimization Problem Statement\nThe hydrodynamic optimization problem can be expressed in general form as:\n\\[\\begin{aligned}\n\\min_{\\theta,x} \\quad & J(S(\\theta), x(\\theta); \\theta ) \\\\\n\\textrm{s.t.} \\quad R(\\theta)=  & K(\\theta)\\times x(\\theta) - B(\\theta) = 0 \\\\\n\\end{aligned}\\]\nWhere: - \\(x\\) is the state variable vector (e.g., source distribution) - \\(\\theta\\) represents mesh parameters (design variables) - \\((K, S)\\) are influence matrices (complex-valued) from free surface Green’s function evaluation and its derivative - \\(J\\) is the objective function (e.g., Response Amplitude Operator)\nIn this optimization, residuals from dense linear systems are driven to zero iteratively using linear solvers:\n\\[R = K x - B\\]\nWhere \\(K\\) is the square influence matrix between mesh panels (\\(N \\times N\\)), \\(B\\) represents boundary conditions for diffraction and radiation problems, and \\(N\\) is the number of mesh panels. \\(K\\), \\(X\\), and \\(B\\) are explicitly related to mesh parameters \\((\\theta)\\). The objective function thus depends both explicitly and implicitly on mesh parameters \\((\\theta)\\).\nFor multidisciplinary design optimization including hydrodynamic optimization, the number of design variables increases further to account for system objectives and subsystem couplings.\nFor inverse design problems like this, calculating the gradient \\(\\frac{d J}{d\\theta}\\) involves computing \\(\\frac{\\partial B}{\\partial \\theta}\\), \\(\\frac{\\partial K}{\\partial \\theta}\\), \\(\\frac{\\partial x}{\\partial \\theta}\\), and \\(\\frac{\\partial J}{\\partial \\theta}\\)—which is only possible through automatic differentiation of the BEM solver."
+  },
+  {
+    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#my-research-contribution",
+    "href": "posts/differentiable-hydrodynamics-framework/index.html#my-research-contribution",
+    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
+    "section": "My Research Contribution",
+    "text": "My Research Contribution\nWhen coupling BEM with other analyses, numerical derivatives such as finite differences can be used (Khanal and Haji 2023). I have already implemented this as the first version of my framework, but it has issues with accuracy and convergence and may not scale well for large numbers of design variables.\nIn contrast, the adjoint method requires only 2 solves of the linear system to obtain accurate gradients with respect to many design variables. A differentiable hydrodynamics solver is required to construct the adjoint equation.\nAdjoint equations to minimize wave resistance of surface ships were derived by Ragab through continuous adjoint formulation (Ragab and Nayfeh 2004). However, this isn’t directly applicable to many offshore structures where different functionals (motions) are optimized. Unlike continuous formulation, discrete adjoint-based derivation using automatic differentiation is applicable to many objectives as long as they’re programmed in a language supporting automatic differentiation (Giles and Pierce 2000).\nMy thesis aims to implement a differentiable multidisciplinary design optimization framework that integrates gradient-based optimization for large-scale offshore systems.\nThe proposed framework will:\n\nImplement a differentiable solver for hydrodynamics analysis\nDerive, implement, and integrate adjoint-based shape optimization for offshore structures\nDemonstrate differentiability and present case studies on optimization of novel offshore systems\n\nCreating a differentiable boundary element method (BEM) solver will enable modern and complex workflows in offshore system design and optimization. Differentiability will allow for novel methods such as adjoint-based multidisciplinary optimization and more accurate data-driven methods such as physics-informed machine learning.\nThese capabilities will significantly reduce the design cycle for early design studies of novel offshore systems."
+  },
+  {
+    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#research-phases",
+    "href": "posts/differentiable-hydrodynamics-framework/index.html#research-phases",
+    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
+    "section": "Research Phases",
+    "text": "Research Phases\n\nPhase 1: Discrete Adjoint Implementation\nThe first phase involves deriving and setting up discrete adjoint equations for BEM. We’ll use automatic differentiation to obtain partial sensitivities required in the equation by implementing the BEM method in either Julia or Jax, as they support automatic differentiation in a discretize-then-optimize scheme.\nThese libraries and programming languages support: - Automatic Differentiation (AD) - Parallelism - Just-in-time (JIT) compilation\nGradient calculations need to be performed through the iterative solver employed to solve dense linear systems in BEM methods.\nThis method relies on known exact expressions of Green’s function. Mathematical expressions and numerical methods for free-surface Green’s function of linearized wave-structure problems in deep water and frequency domain are investigated (Xie and Liu 2020). Other methods, such as approximating free-surface Green’s function using deep learning, can also be explored for early design iterations when speed is more important than accuracy.\n\n\nPhase 2: MDO Framework Integration\nThe second phase integrates differentiable BEM into the MDO framework. Extensions could include supporting more accurate physics-informed machine learning (Raissi et al. 2019).\nBEM methods require solving dense linear systems. The re-implementation will use algorithms best suited for dense matrices. A differentiable solver would provide required gradients for optimization and neural network-based approximation. Simulators implemented with automatic differentiation can be used inside machine learning models to construct more accurate reduced-order models (Brunton et al. 2020).\n\n\nExpected A-Exam Scope\nI plan to take an A-exam in Spring 2024, presenting the differentiable version of the solver that derives discrete adjoints for the hydrodynamic solver using automatic differentiation in Jax or Julia.\nAn optimization study of simple geometry (such as a compound cylinder) with analytical derivation through eigenfunction expansion will be conducted for gradient verification. Gradients will be compared with finite differences for geometries where analytical gradients are unavailable."
+  },
+  {
+    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#tentative-thesis-chapters",
+    "href": "posts/differentiable-hydrodynamics-framework/index.html#tentative-thesis-chapters",
+    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
+    "section": "Tentative Thesis Chapters",
+    "text": "Tentative Thesis Chapters\n\nMultidisciplinary Design Optimization of Offshore Systems - Literature review\nBoundary Element Method for Calculating Hydrodynamic Coefficients\nAdjoint and Automatic Differentiation of BEM Solver\nCase Studies and Applications of a Differentiable Solver"
+  },
+  {
+    "objectID": "posts/differentiable-hydrodynamics-framework/index.html#keywords",
+    "href": "posts/differentiable-hydrodynamics-framework/index.html#keywords",
+    "title": "A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems",
+    "section": "Keywords",
+    "text": "Keywords\nDifferentiable Hydrodynamics, Multidisciplinary Design Optimization, Automatic Differentiation, Discrete Adjoint Method, Boundary Element Method, Potential Flow, Panel Code\n\nThis research is conducted as part of my PhD in Systems Engineering at Cornell University, under the supervision of Dr. Maha Haji in the Symbiotic Engineering and Analysis Lab."
+  },
+  {
+    "objectID": "posts/idetc-2025-submission/index.html",
+    "href": "posts/idetc-2025-submission/index.html",
+    "title": "Differentiable Wave-to-Wire Model for Wave Energy Converter Optimization",
+    "section": "",
+    "text": "I recently submitted a paper to the ASME 2025 International Design Engineering Technical Conferences & Computers and Information in Engineering Conference (IDETC/CIE), to be held in Anahiem, California, from August 17-20, 2025.\nBelow is the abstract for the submission.\n\n\nAbstract\nWave energy conversion requires optimal design and control strategies to maximize energy extraction. Optimization approaches such as control co-design optimize plant design and the control strategies together. Several existing approaches use heuristic methods that do not scale well with high-dimensional design spaces. A gradient-based approach scales better than the heuristic method, for which the integrated model should be able to provide not just the output but its sensitivity with respect to the inputs. Currently, these different numerical solvers are used in isolation, thus making heuristic optimizers a natural choice.\nThis study develops a differentiable model integrating boundary element methods (BEM) for hydrodynamic modeling with pseudo-spectral optimal control techniques to optimize power take-off (PTO) forces under dynamic constraints for maximizing electrical power per volume of a point absorber wave energy converter (WEC). This model is useful for the large-scale gradient-based optimization of the electrical power.\nDiscussion and derivation of the semi-analytic adjoint for the hydrodynamics solver, non-linear parametric sensitivity for the trajectory optimization, and the calculation of the coupled derivative using unified derivative equations is presented. A nested formulation of the control co-design approach within a multidisciplinary design optimization architecture is created for the differentiable wave-to-wire model. Preliminary numerical experiment and verification of the sensitivities is conducted for the differentiable wave-to-wire model for a heaving point absorber WEC."
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html",
+    "href": "posts/aiaa-scitech-2026-submission/index.html",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "",
+    "text": "2026 AIAA SciTech Forum\n12–16 January 2026\nHyatt Regency Orlando\nOrlando, Florida"
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#conference-information",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#conference-information",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "",
+    "text": "2026 AIAA SciTech Forum\n12–16 January 2026\nHyatt Regency Orlando\nOrlando, Florida"
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#abstract",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#abstract",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "Abstract",
+    "text": "Abstract\nIn many practical settings, mathematically optimal system designs are often set aside in favor of similarly performing alternatives that better accommodate real-world constraints and evolving requirements. In such cases, it is desirable to identify alternative design vectors that maintain acceptable levels of system performance. This can be achieved using isoperformance method, which construct sets of performance-invariant solutions, or through multiobjective optimization. However, traditional isoperformance approaches typically ignore the feasibility constraints that arise in coupled systems governed by multidisciplinary analysis (MDA). These systems require convergence of nonlinear solvers, and the resulting computational burden increases when newly generated designs do not satisfy such feasibility inherently. Isoperformance analysis is an inverse design technique used to identify a set of feasible design vectors that yield a specified vector of system performance metrics. This performance-invariant set provides a space for subsequent decision-making based on secondary criteria like cost, risk, or implementation ease. However, applying isoperformance methods to complex coupled systems is challenging, as these systems often require a multidisciplinary analysis (MDA) to resolve interdependencies among components. The resulting nonlinear solver demands increase computational cost when infeasible designs are evaluated.\nIn this paper, we propose two contributions to improve the robustness and scalability of isoperformance methods in such settings. First, we extend the isoperformance method to support arbitrarily large design spaces using reverse-mode automatic differentiation and adjoint sensitivity analysis. Second, we introduce a regularized isoperformance approach that incorporates the feasibility constraints arising from MDA directly into the Jacobian, improving the likelihood of convergence and solution quality. We demonstrate the method on a benchmark coupled problem involving three objectives, showcasing its ability to generate feasible isoperformant designs. decision-making in complex engineered systems requires balancing conflicting objectives among various subsystems and stakeholders. In many cases, a numerically optimal solution is not the final adopted design due to constraints, trade-offs, or the infeasibility of implementation. This motivates the search for alternative design solutions that achieve target performance levels without requiring complete re-optimization.\nTo address this, we enhance the isoperformance approach to explicitly consider MDA feasibility during inverse design. This is critical for large systems where convergence, sensitivity, and robustness all play significant roles in engineering decision-making."
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#authors",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#authors",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "Authors",
+    "text": "Authors\n\nKapil Khanal (PhD Candidate, Systems Engineering)\nMaha N. Haji (Assistant Professor, Sibley School of Mechanical Engineering)\n\nAffiliation: Cornell University, Ithaca, NY"
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#research-context",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#research-context",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "Research Context",
+    "text": "Research Context\nThis work addresses a fundamental challenge in multidisciplinary design optimization (MDO): the gap between mathematically optimal solutions and practically implementable designs. While optimization algorithms can find the “best” solution according to mathematical criteria, real-world engineering often requires flexibility in design choices to accommodate:\n\nManufacturing constraints\nSupply chain limitations\n\nRegulatory requirements\nFuture design modifications\nRisk mitigation strategies\n\nThe isoperformance method offers a systematic approach to explore the design space for alternatives that maintain acceptable performance levels while providing the flexibility needed for practical implementation."
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#key-contributions",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#key-contributions",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "Key Contributions",
+    "text": "Key Contributions\n\n1. Scalable Isoperformance with Automatic Differentiation\nTraditional isoperformance methods often struggle with high-dimensional design spaces due to computational limitations in gradient computation. Our approach leverages:\n\nReverse-mode automatic differentiation for efficient gradient computation.\n\nThis enables the method to scale to arbitrarily large design spaces while maintaining computational efficiency.\n\n\n2. Regularized Isoperformance for Coupled Systems\nCoupled multidisciplinary systems introduce unique challenges through:\n\nNonlinear coupling constraints between disciplines\nFeasibility requirements that must be satisfied simultaneously\nConvergence dependencies of numerical solvers"
+  },
+  {
+    "objectID": "posts/aiaa-scitech-2026-submission/index.html#applications",
+    "href": "posts/aiaa-scitech-2026-submission/index.html#applications",
+    "title": "Coupled Multidisciplinary Multiobjective Systems: Searching for Similarly Performing System Designs",
+    "section": "Applications",
+    "text": "Applications\nThis work has broad applications across engineering disciplines, including:\n\nAerospace Systems: Aircraft design with multiple performance objectives\nMarine Engineering: Offshore structure optimization under environmental constraints\nEnergy Systems: Renewable energy device design and optimization\nTransportation: Vehicle design balancing performance, efficiency, and safety\n\nThis work represents a significant step forward in making optimization methods more practical and accessible for complex engineering systems, bridging the gap between mathematical optimality and engineering feasibility."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
   }
 ]

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,6 +12,9 @@
 
 <title>A Differentiable Framework for Multidisciplinary Design Optimization of Novel Offshore Systems – Kapil Khanal</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -27,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -55,15 +57,14 @@ div.csl-indent {
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-575fc91de65260b003f24fef061fe66a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-eac63afcf1e3327b8589317cc3df48f4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -123,7 +124,7 @@ https://badge.dimensions.ai/
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -170,8 +171,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kapil Khanal</span>
     </a>
@@ -358,7 +357,7 @@ window.Quarto = {
 <section id="motivation-for-a-differentiable-framework" class="level2">
 <h2 class="anchored" data-anchor-id="motivation-for-a-differentiable-framework">Motivation for a Differentiable Framework</h2>
 <p>Offshore and marine energy systems are inherently complex coupled systems. Currently, no integrated framework exists for offshore structures that supports both hydrodynamic simulation and shape optimization. This represents a significant bottleneck for design studies and optimization efforts. The adoption of MDO-based approaches should be encouraged to increase accessibility for further research <span class="citation" data-cites="roadmapNREL">(<a href="#ref-roadmapNREL" role="doc-biblioref">Musial et al. 2020</a>)</span>.</p>
-<p>In multidisciplinary design optimization, changes in one subsystem propagate across other subsystems. For example, a change in the mean position of a floating body alters the waterline and waterplane area, requiring recalculation of hydrodynamic coefficients. Similarly, research on novel multipurpose platforms <span class="citation" data-cites="Multipurpose">(<a href="#ref-Multipurpose" role="doc-biblioref">Perez-Collazo, Greaves, and Iglesias 2015</a>)</span> would benefit from such a framework.</p>
+<p>In multidisciplinary design optimization, changes in one subsystem propagate across other subsystems. For example, a change in the mean position of a floating body alters the waterline and waterplane area, requiring recalculation of hydrodynamic coefficients. Similarly, research on novel multipurpose platforms <span class="citation" data-cites="Multipurpose">(<a href="#ref-Multipurpose" role="doc-biblioref">Perez-Collazo et al. 2015</a>)</span> would benefit from such a framework.</p>
 <p>The framework I’m developing is intended to serve as: - A tool for early design studies in the conceptual phase - A plugin for other MDO applications where hydrodynamics analysis is coupled</p>
 </section>
 <section id="multidisciplinary-design-optimization" class="level2">
@@ -366,7 +365,7 @@ window.Quarto = {
 <section id="hydrodynamic-shape-optimization" class="level3">
 <h3 class="anchored" data-anchor-id="hydrodynamic-shape-optimization">Hydrodynamic Shape Optimization</h3>
 <p>MDO of offshore structures involves shape perturbation and optimization. Different underwater shapes of floating bodies respond differently to incoming ocean waves, making shape optimization crucial for offshore platform design.</p>
-<p>Offshore structures like spar buoys (vertical cylindrical structures) can be reasonably modeled using analytical approximations <span class="citation" data-cites="Haghi_2014 morison_force_1950">(<a href="#ref-Haghi_2014" role="doc-biblioref">Haghi, Sabbagh-Yazdi, and Ghalandari 2014</a>; <a href="#ref-morison_force_1950" role="doc-biblioref">Morison, Johnson, and Schaaf 1950</a>)</span>. However, these analytical approaches are not feasible for non-standard geometries—those obtained after perturbing a base shape, usually described using splines. Efficient shape parameterization and numerical solvers explore the design space much better <span class="citation" data-cites="mdobook">(<a href="#ref-mdobook" role="doc-biblioref">Martins and Lambe 2013</a>)</span>. In MDO, shapes are typically perturbed to be compatible with other subsystems, with B-splines (CAD geometry) being preferred <span class="citation" data-cites="Samareh_2001">(<a href="#ref-Samareh_2001" role="doc-biblioref">Samareh 2001</a>)</span>.</p>
+<p>Offshore structures like spar buoys (vertical cylindrical structures) can be reasonably modeled using analytical approximations <span class="citation" data-cites="Haghi_2014 morison_force_1950">(<a href="#ref-Haghi_2014" role="doc-biblioref">Haghi et al. 2014</a>; <a href="#ref-morison_force_1950" role="doc-biblioref">Morison et al. 1950</a>)</span>. However, these analytical approaches are not feasible for non-standard geometries—those obtained after perturbing a base shape, usually described using splines. Efficient shape parameterization and numerical solvers explore the design space much better <span class="citation" data-cites="mdobook">(<a href="#ref-mdobook" role="doc-biblioref">Martins and Lambe 2013</a>)</span>. In MDO, shapes are typically perturbed to be compatible with other subsystems, with B-splines (CAD geometry) being preferred <span class="citation" data-cites="Samareh_2001">(<a href="#ref-Samareh_2001" role="doc-biblioref">Samareh 2001</a>)</span>.</p>
 <p>The response motion of offshore structures is calculated using hydrodynamic coefficients such as added mass and damping. These coefficients characterize the geometry of floating structures. A transfer function called the <strong>Response Amplitude Operator (RAO)</strong> linearly relates sea motion to floating body motion.</p>
 </section>
 </section>
@@ -493,8 +492,8 @@ window.Quarto = {
 </section>
 <section id="phase-2-mdo-framework-integration" class="level3">
 <h3 class="anchored" data-anchor-id="phase-2-mdo-framework-integration">Phase 2: MDO Framework Integration</h3>
-<p>The <strong>second phase</strong> integrates differentiable BEM into the MDO framework. Extensions could include supporting more accurate <strong>physics-informed machine learning</strong> <span class="citation" data-cites="three_NN_PDEs">(<a href="#ref-three_NN_PDEs" role="doc-biblioref">Raissi, Perdikaris, and Karniadakis 2019</a>)</span>.</p>
-<p>BEM methods require solving dense linear systems. The re-implementation will use algorithms best suited for dense matrices. A <strong>differentiable solver</strong> would provide required gradients for optimization and neural network-based approximation. Simulators implemented with automatic differentiation can be used inside machine learning models to construct more accurate reduced-order models <span class="citation" data-cites="solver_in_loop">(<a href="#ref-solver_in_loop" role="doc-biblioref">Brunton, Proctor, and Kutz 2020</a>)</span>.</p>
+<p>The <strong>second phase</strong> integrates differentiable BEM into the MDO framework. Extensions could include supporting more accurate <strong>physics-informed machine learning</strong> <span class="citation" data-cites="three_NN_PDEs">(<a href="#ref-three_NN_PDEs" role="doc-biblioref">Raissi et al. 2019</a>)</span>.</p>
+<p>BEM methods require solving dense linear systems. The re-implementation will use algorithms best suited for dense matrices. A <strong>differentiable solver</strong> would provide required gradients for optimization and neural network-based approximation. Simulators implemented with automatic differentiation can be used inside machine learning models to construct more accurate reduced-order models <span class="citation" data-cites="solver_in_loop">(<a href="#ref-solver_in_loop" role="doc-biblioref">Brunton et al. 2020</a>)</span>.</p>
 </section>
 <section id="expected-a-exam-scope" class="level3">
 <h3 class="anchored" data-anchor-id="expected-a-exam-scope">Expected A-Exam Scope</h3>
@@ -521,7 +520,7 @@ window.Quarto = {
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-babarit_theoretical_2015" class="csl-entry" role="listitem">
 Babarit, Aurélien. 2015. <span>“Theoretical and Numerical Aspects of the Open Source BEM Solver NEMOH.”</span> <em>Proceedings of the 11th European Wave and Tidal Energy Conference</em>.
 </div>
@@ -535,7 +534,7 @@ Brunton, Steven L, Joshua L Proctor, and J Nathan Kutz. 2020. <span>“Neural Ne
 Giles, Michael B, and Niles A Pierce. 2000. <span>“An Introduction to the Adjoint Approach to Design.”</span> <em>Flow, Turbulence and Combustion</em> 65 (3): 393–415.
 </div>
 <div id="ref-Gray2019a" class="csl-entry" role="listitem">
-Gray, Justin S, John T Hwang, Joaquim RR Martins, Kenneth T Moore, and Bret A Naylor. 2019. <span>“OpenMDAO: An Open-Source Framework for Multidisciplinary Design, Analysis, and Optimization.”</span> <em>Structural and Multidisciplinary Optimization</em> 59 (4): 1075–1104.
+Gray, Justin S, John T Hwang, Joaquim RR Martins, Kenneth T Moore, and Bret A Naylor. 2019. <span>“OpenMDAO: An Open-Source Framework for Multidisciplinary Design, Analysis, and Optimization.”</span> <em>Structural and Multidisciplinary Optimization</em> 59 (4): 1075–104.
 </div>
 <div id="ref-Haghi_2014" class="csl-entry" role="listitem">
 Haghi, Reza, Saeed-Reza Sabbagh-Yazdi, and Mohammad Ghalandari. 2014. <span>“Hydrodynamic Analysis of Spar-Type Floating Offshore Wind Turbines.”</span> <em>Ocean Engineering</em> 89: 1–10.
@@ -544,7 +543,7 @@ Haghi, Reza, Saeed-Reza Sabbagh-Yazdi, and Mohammad Ghalandari. 2014. <span>“H
 He, Ping, Charles A Mader, Joaquim RR Martins, and Kevin J Maki. 2020. <span>“DAFoam: An Open-Source Adjoint Framework for Multidisciplinary Design Optimization with OpenFOAM.”</span> <em>AIAA Journal</em> 58 (3): 1304–19.
 </div>
 <div id="ref-maud" class="csl-entry" role="listitem">
-Hwang, John T, and Joaquim RR Martins. 2018. <span>“Modular Analysis and Unified Derivatives.”</span> <em>Structural and Multidisciplinary Optimization</em> 57 (3): 1079–1107.
+Hwang, John T, and Joaquim RR Martins. 2018. <span>“Modular Analysis and Unified Derivatives.”</span> <em>Structural and Multidisciplinary Optimization</em> 57 (3): 1079–107.
 </div>
 <div id="ref-jameson" class="csl-entry" role="listitem">
 Jameson, Antony. 1988. <span>“Aerodynamic Design via Control Theory.”</span> <em>Journal of Scientific Computing</em> 3 (3): 233–60.

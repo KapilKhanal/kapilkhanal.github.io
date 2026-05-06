@@ -14,8 +14,49 @@
 <title>Kapil Khanal</title>
 <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts.html</link>
 </image>
-<generator>quarto-1.8.25</generator>
-<lastBuildDate>Sun, 27 Jul 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Thu, 15 Jan 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Joined Glencore as a Quantitative Researcher</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/joining-glencore-quant-research/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="a-new-chapter" class="level2">
+<h2 class="anchored" data-anchor-id="a-new-chapter">A new chapter</h2>
+<p>In December 2025 I successfully defended my Ph.D.&nbsp;dissertation at <strong>Cornell University</strong> — <em>Multidisciplinary Design Optimization of Novel Offshore Systems: From Conventional to Differentiable Design Methodologies</em> — and in January 2026 I joined <strong>Glencore</strong> in Houston as a <strong>Quantitative Researcher</strong> on the North American Natural Gas team.</p>
+</section>
+<section id="what-im-working-on" class="level2">
+<h2 class="anchored" data-anchor-id="what-im-working-on">What I’m working on</h2>
+<p>Day-to-day, my work spans the full research stack of a commodities trading desk:</p>
+<ul>
+<li><strong>Forecasting.</strong> Building autoregressive and supervised ML models for demand, supply, and storage build/draw balances across the 66 U.S. Balancing Authorities, incorporating weather signals, fundamentals, and basis structure between Henry Hub and regional delivery points.</li>
+<li><strong>Storage valuation &amp; dispatch.</strong> LP-based injection/withdrawal optimization for natural gas storage, used both for asset valuation and for generating dispatch signals.</li>
+<li><strong>Backtesting infrastructure.</strong> Walk-forward validation pipelines for ML and statistical models to evaluate strategies under realistic look-ahead constraints.</li>
+<li><strong>Hierarchical reconciliation.</strong> Coherent forecast aggregation across regional desks and time horizons.</li>
+</ul>
+<p>The transition from differentiable physics to commodity research has been smoother than I expected — at the core, both come down to building good models of complex coupled systems, fitting them to data, and using gradients (or LPs) to make decisions under uncertainty.</p>
+</section>
+<section id="whats-next" class="level2">
+<h2 class="anchored" data-anchor-id="whats-next">What’s next</h2>
+<p>I’m continuing to publish and stay connected to the academic community on <strong>MDO</strong>, <strong>differentiable simulation</strong>, and <strong>control co-design</strong>. Two journal articles from my dissertation are in the pipeline, including the <strong>Polynomial Chaos Expansion</strong> UQ paper for wave energy converter farms.</p>
+<p>If you’re working at the intersection of <strong>optimization, machine learning, and energy markets</strong> — or just want to talk shop about gas storage, basis trading, or differentiable BEM solvers — feel free to <a href="../../contact.html">reach out</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>career</category>
+  <category>energy</category>
+  <category>quant</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/joining-glencore-quant-research/</guid>
+  <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder2.JPG" medium="image"/>
+</item>
 <item>
   <title>Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl</title>
   <dc:creator>Kapil Khanal</dc:creator>
@@ -900,7 +941,7 @@ A comparison between monolithic and distributed optimization architectures is pe
 <section id="motivation-for-a-differentiable-framework" class="level2">
 <h2 class="anchored" data-anchor-id="motivation-for-a-differentiable-framework">Motivation for a Differentiable Framework</h2>
 <p>Offshore and marine energy systems are inherently complex coupled systems. Currently, no integrated framework exists for offshore structures that supports both hydrodynamic simulation and shape optimization. This represents a significant bottleneck for design studies and optimization efforts. The adoption of MDO-based approaches should be encouraged to increase accessibility for further research <span class="citation" data-cites="roadmapNREL">(Musial et al. 2020)</span>.</p>
-<p>In multidisciplinary design optimization, changes in one subsystem propagate across other subsystems. For example, a change in the mean position of a floating body alters the waterline and waterplane area, requiring recalculation of hydrodynamic coefficients. Similarly, research on novel multipurpose platforms <span class="citation" data-cites="Multipurpose">(Perez-Collazo, Greaves, and Iglesias 2015)</span> would benefit from such a framework.</p>
+<p>In multidisciplinary design optimization, changes in one subsystem propagate across other subsystems. For example, a change in the mean position of a floating body alters the waterline and waterplane area, requiring recalculation of hydrodynamic coefficients. Similarly, research on novel multipurpose platforms <span class="citation" data-cites="Multipurpose">(Perez-Collazo et al. 2015)</span> would benefit from such a framework.</p>
 <p>The framework I’m developing is intended to serve as: - A tool for early design studies in the conceptual phase - A plugin for other MDO applications where hydrodynamics analysis is coupled</p>
 </section>
 <section id="multidisciplinary-design-optimization" class="level2">
@@ -908,7 +949,7 @@ A comparison between monolithic and distributed optimization architectures is pe
 <section id="hydrodynamic-shape-optimization" class="level3">
 <h3 class="anchored" data-anchor-id="hydrodynamic-shape-optimization">Hydrodynamic Shape Optimization</h3>
 <p>MDO of offshore structures involves shape perturbation and optimization. Different underwater shapes of floating bodies respond differently to incoming ocean waves, making shape optimization crucial for offshore platform design.</p>
-<p>Offshore structures like spar buoys (vertical cylindrical structures) can be reasonably modeled using analytical approximations <span class="citation" data-cites="Haghi_2014 morison_force_1950">(Haghi, Sabbagh-Yazdi, and Ghalandari 2014; Morison, Johnson, and Schaaf 1950)</span>. However, these analytical approaches are not feasible for non-standard geometries—those obtained after perturbing a base shape, usually described using splines. Efficient shape parameterization and numerical solvers explore the design space much better <span class="citation" data-cites="mdobook">(Martins and Lambe 2013)</span>. In MDO, shapes are typically perturbed to be compatible with other subsystems, with B-splines (CAD geometry) being preferred <span class="citation" data-cites="Samareh_2001">(Samareh 2001)</span>.</p>
+<p>Offshore structures like spar buoys (vertical cylindrical structures) can be reasonably modeled using analytical approximations <span class="citation" data-cites="Haghi_2014 morison_force_1950">(Haghi et al. 2014; Morison et al. 1950)</span>. However, these analytical approaches are not feasible for non-standard geometries—those obtained after perturbing a base shape, usually described using splines. Efficient shape parameterization and numerical solvers explore the design space much better <span class="citation" data-cites="mdobook">(Martins and Lambe 2013)</span>. In MDO, shapes are typically perturbed to be compatible with other subsystems, with B-splines (CAD geometry) being preferred <span class="citation" data-cites="Samareh_2001">(Samareh 2001)</span>.</p>
 <p>The response motion of offshore structures is calculated using hydrodynamic coefficients such as added mass and damping. These coefficients characterize the geometry of floating structures. A transfer function called the <strong>Response Amplitude Operator (RAO)</strong> linearly relates sea motion to floating body motion.</p>
 </section>
 </section>
@@ -1029,8 +1070,8 @@ A comparison between monolithic and distributed optimization architectures is pe
 </section>
 <section id="phase-2-mdo-framework-integration" class="level3">
 <h3 class="anchored" data-anchor-id="phase-2-mdo-framework-integration">Phase 2: MDO Framework Integration</h3>
-<p>The <strong>second phase</strong> integrates differentiable BEM into the MDO framework. Extensions could include supporting more accurate <strong>physics-informed machine learning</strong> <span class="citation" data-cites="three_NN_PDEs">(Raissi, Perdikaris, and Karniadakis 2019)</span>.</p>
-<p>BEM methods require solving dense linear systems. The re-implementation will use algorithms best suited for dense matrices. A <strong>differentiable solver</strong> would provide required gradients for optimization and neural network-based approximation. Simulators implemented with automatic differentiation can be used inside machine learning models to construct more accurate reduced-order models <span class="citation" data-cites="solver_in_loop">(Brunton, Proctor, and Kutz 2020)</span>.</p>
+<p>The <strong>second phase</strong> integrates differentiable BEM into the MDO framework. Extensions could include supporting more accurate <strong>physics-informed machine learning</strong> <span class="citation" data-cites="three_NN_PDEs">(Raissi et al. 2019)</span>.</p>
+<p>BEM methods require solving dense linear systems. The re-implementation will use algorithms best suited for dense matrices. A <strong>differentiable solver</strong> would provide required gradients for optimization and neural network-based approximation. Simulators implemented with automatic differentiation can be used inside machine learning models to construct more accurate reduced-order models <span class="citation" data-cites="solver_in_loop">(Brunton et al. 2020)</span>.</p>
 </section>
 <section id="expected-a-exam-scope" class="level3">
 <h3 class="anchored" data-anchor-id="expected-a-exam-scope">Expected A-Exam Scope</h3>
@@ -1057,7 +1098,7 @@ A comparison between monolithic and distributed optimization architectures is pe
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-babarit_theoretical_2015" class="csl-entry">
 Babarit, Aurélien. 2015. <span>“Theoretical and Numerical Aspects of the Open Source BEM Solver NEMOH.”</span> <em>Proceedings of the 11th European Wave and Tidal Energy Conference</em>.
 </div>
@@ -1071,7 +1112,7 @@ Brunton, Steven L, Joshua L Proctor, and J Nathan Kutz. 2020. <span>“Neural Ne
 Giles, Michael B, and Niles A Pierce. 2000. <span>“An Introduction to the Adjoint Approach to Design.”</span> <em>Flow, Turbulence and Combustion</em> 65 (3): 393–415.
 </div>
 <div id="ref-Gray2019a" class="csl-entry">
-Gray, Justin S, John T Hwang, Joaquim RR Martins, Kenneth T Moore, and Bret A Naylor. 2019. <span>“OpenMDAO: An Open-Source Framework for Multidisciplinary Design, Analysis, and Optimization.”</span> <em>Structural and Multidisciplinary Optimization</em> 59 (4): 1075–1104.
+Gray, Justin S, John T Hwang, Joaquim RR Martins, Kenneth T Moore, and Bret A Naylor. 2019. <span>“OpenMDAO: An Open-Source Framework for Multidisciplinary Design, Analysis, and Optimization.”</span> <em>Structural and Multidisciplinary Optimization</em> 59 (4): 1075–104.
 </div>
 <div id="ref-Haghi_2014" class="csl-entry">
 Haghi, Reza, Saeed-Reza Sabbagh-Yazdi, and Mohammad Ghalandari. 2014. <span>“Hydrodynamic Analysis of Spar-Type Floating Offshore Wind Turbines.”</span> <em>Ocean Engineering</em> 89: 1–10.
@@ -1080,7 +1121,7 @@ Haghi, Reza, Saeed-Reza Sabbagh-Yazdi, and Mohammad Ghalandari. 2014. <span>“H
 He, Ping, Charles A Mader, Joaquim RR Martins, and Kevin J Maki. 2020. <span>“DAFoam: An Open-Source Adjoint Framework for Multidisciplinary Design Optimization with OpenFOAM.”</span> <em>AIAA Journal</em> 58 (3): 1304–19.
 </div>
 <div id="ref-maud" class="csl-entry">
-Hwang, John T, and Joaquim RR Martins. 2018. <span>“Modular Analysis and Unified Derivatives.”</span> <em>Structural and Multidisciplinary Optimization</em> 57 (3): 1079–1107.
+Hwang, John T, and Joaquim RR Martins. 2018. <span>“Modular Analysis and Unified Derivatives.”</span> <em>Structural and Multidisciplinary Optimization</em> 57 (3): 1079–107.
 </div>
 <div id="ref-jameson" class="csl-entry">
 Jameson, Antony. 1988. <span>“Aerodynamic Design via Control Theory.”</span> <em>Journal of Scientific Computing</em> 3 (3): 233–60.
@@ -1271,6 +1312,224 @@ Xie, Zhiming, and Yuming Liu. 2020. <span>“Mathematical Expressions and Numeri
   <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/evtol-ems-system-architecture/</guid>
   <pubDate>Tue, 19 Dec 2023 00:00:00 GMT</pubDate>
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/evtol-ems-system-architecture/evtol.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>Sales Impact Analysis with Clustering and Causal Effects</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/sales-impact-analysis-clustering/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This project examines how the introduction of discounts during holidays affects the total sales of different customer groups within a timeframe of a year. By combining customer segmentation with causal impact analysis, we can understand not just <em>what</em> happened to sales, but <em>why</em> it happened and which customer segments were most responsive to promotional campaigns.</p>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>The analysis employs three key statistical techniques to provide comprehensive insights into customer behavior and promotional effectiveness:</p>
+<section id="rfm-analysis-recency-frequency-monetary" class="level3">
+<h3 class="anchored" data-anchor-id="rfm-analysis-recency-frequency-monetary">1. RFM Analysis (Recency, Frequency, Monetary)</h3>
+<p>RFM analysis is a proven method for analyzing customer behavior by examining their transaction history across three critical dimensions:</p>
+<ul>
+<li><strong>Recency</strong>: How recently a customer has made a purchase</li>
+<li><strong>Frequency</strong>: How often they make purchases<br>
+</li>
+<li><strong>Monetary</strong>: How much the customer typically spends</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Why RFM Analysis?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>RFM helps us identify customers who are more likely to respond to promotions by understanding their engagement patterns and value to the business.</p>
+</div>
+</div>
+<p><strong>Key Benefits:</strong> - Identifies high-value customers worth targeting with premium offers - Segments customers based on engagement level and purchase behavior - Provides actionable insights for personalized marketing strategies</p>
+</section>
+<section id="k-means-clustering-for-customer-segmentation" class="level3">
+<h3 class="anchored" data-anchor-id="k-means-clustering-for-customer-segmentation">2. K-Means Clustering for Customer Segmentation</h3>
+<p>Using the RFM scores as features, we apply K-means clustering to segment customers into distinct groups with similar behavioral patterns.</p>
+<p><strong>Clustering Process:</strong> 1. <strong>Feature Engineering</strong>: Transform RFM metrics into standardized scores 2. <strong>Optimal Cluster Selection</strong>: Use elbow method and silhouette analysis to determine optimal number of clusters 3. <strong>Segment Profiling</strong>: Analyze each cluster’s characteristics and business value</p>
+<p><strong>Typical Customer Segments:</strong> - <strong>Champions</strong>: High recency, frequency, and monetary scores - <strong>Loyal Customers</strong>: High frequency and monetary, moderate recency - <strong>Potential Loyalists</strong>: Recent customers with good frequency - <strong>At Risk</strong>: Previously valuable customers showing declining engagement - <strong>Lost Customers</strong>: Low scores across all dimensions</p>
+</section>
+<section id="causal-impact-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="causal-impact-analysis">3. Causal Impact Analysis</h3>
+<p>For each customer segment identified through clustering, we perform causal impact analysis to measure the true effect of discount campaigns.</p>
+<p><strong>Methodology:</strong> - <strong>Bayesian Structural Time Series</strong>: Models the counterfactual scenario (what would have happened without the intervention) - <strong>Pre/Post Comparison</strong>: Analyzes sales patterns before and after discount implementation - <strong>Statistical Significance</strong>: Determines whether observed changes are statistically meaningful</p>
+</section>
+</section>
+<section id="technical-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="technical-implementation">Technical Implementation</h2>
+<section id="data-processing-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="data-processing-pipeline">Data Processing Pipeline</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Pseudocode for RFM Analysis</span></span>
+<span id="cb1-2"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> calculate_rfm_scores(transactions):</span>
+<span id="cb1-3">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate recency, frequency, monetary metrics</span></span>
+<span id="cb1-4">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Assign quintile scores (1-5) for each dimension</span></span>
+<span id="cb1-5">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Return RFM dataframe</span></span>
+<span id="cb1-6">    </span>
+<span id="cb1-7"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> perform_clustering(rfm_data):</span>
+<span id="cb1-8">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Standardize RFM scores</span></span>
+<span id="cb1-9">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Apply K-means clustering</span></span>
+<span id="cb1-10">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Return cluster assignments</span></span>
+<span id="cb1-11">    </span>
+<span id="cb1-12"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> causal_impact_analysis(sales_data, intervention_date):</span>
+<span id="cb1-13">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fit Bayesian structural time series model</span></span>
+<span id="cb1-14">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Estimate counterfactual predictions</span></span>
+<span id="cb1-15">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate causal effect and confidence intervals</span></span></code></pre></div></div>
+</section>
+<section id="key-performance-indicators" class="level3">
+<h3 class="anchored" data-anchor-id="key-performance-indicators">Key Performance Indicators</h3>
+<p>The analysis tracks several important metrics:</p>
+<ul>
+<li><strong>Lift in Sales</strong>: Percentage increase in sales attributable to discounts</li>
+<li><strong>Customer Acquisition</strong>: New customers gained during promotional periods<br>
+</li>
+<li><strong>Customer Retention</strong>: Retention rates across different segments</li>
+<li><strong>Revenue per Customer</strong>: Changes in average customer value</li>
+<li><strong>Statistical Significance</strong>: Confidence intervals and p-values for all effects</li>
+</ul>
+</section>
+</section>
+<section id="results-and-business-impact" class="level2">
+<h2 class="anchored" data-anchor-id="results-and-business-impact">Results and Business Impact</h2>
+<section id="customer-segmentation-insights" class="level3">
+<h3 class="anchored" data-anchor-id="customer-segmentation-insights">Customer Segmentation Insights</h3>
+<p>The clustering analysis revealed distinct customer segments with varying responsiveness to promotional campaigns:</p>
+<ol type="1">
+<li><strong>High-Value Segments</strong> showed strong positive response to targeted discounts</li>
+<li><strong>Price-Sensitive Segments</strong> demonstrated significant sales lift during promotional periods</li>
+<li><strong>At-Risk Segments</strong> could be re-engaged through strategic discount timing</li>
+</ol>
+</section>
+<section id="causal-impact-findings" class="level3">
+<h3 class="anchored" data-anchor-id="causal-impact-findings">Causal Impact Findings</h3>
+<p>The causal impact analysis provided clear evidence of promotional effectiveness:</p>
+<ul>
+<li><strong>Quantified ROI</strong>: Measured the true incremental impact of discount campaigns</li>
+<li><strong>Segment-Specific Effects</strong>: Identified which customer groups benefited most from promotions</li>
+<li><strong>Optimal Timing</strong>: Determined the most effective periods for promotional activities</li>
+</ul>
+</section>
+</section>
+<section id="interactive-data-product" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-data-product">Interactive Data Product</h2>
+<p>To make these insights accessible to business stakeholders, I developed an interactive web application that allows users to:</p>
+<ul>
+<li>Explore customer segments visually</li>
+<li>Analyze the impact of different promotional strategies</li>
+<li>Generate actionable recommendations for future campaigns</li>
+</ul>
+<p><strong>Live Application</strong>: <a href="https://salesimpact.herokuapp.com/">Sales Impact Dashboard</a></p>
+</section>
+<section id="technical-resources" class="level2">
+<h2 class="anchored" data-anchor-id="technical-resources">Technical Resources</h2>
+<section id="code-repository" class="level3">
+<h3 class="anchored" data-anchor-id="code-repository">Code Repository</h3>
+<p>The complete analysis code, including data preprocessing, clustering algorithms, and causal impact models, is available on GitHub:</p>
+<p><a href="https://github.com/KapilKhanal/Sales_Impact"><strong>Sales Impact Analysis Repository</strong></a></p>
+</section>
+<section id="key-technologies-used" class="level3">
+<h3 class="anchored" data-anchor-id="key-technologies-used">Key Technologies Used</h3>
+<ul>
+<li><strong>Python</strong>: Primary analysis language</li>
+<li><strong>Scikit-learn</strong>: K-means clustering implementation</li>
+<li><strong>CausalImpact</strong>: Bayesian causal inference</li>
+<li><strong>Pandas/NumPy</strong>: Data manipulation and analysis</li>
+<li><strong>Plotly/Dash</strong>: Interactive visualization and web app</li>
+<li><strong>Heroku</strong>: Application deployment</li>
+</ul>
+</section>
+</section>
+<section id="business-applications" class="level2">
+<h2 class="anchored" data-anchor-id="business-applications">Business Applications</h2>
+<p>This methodology can be applied across various business contexts:</p>
+<section id="retail-e-commerce" class="level3">
+<h3 class="anchored" data-anchor-id="retail-e-commerce">Retail &amp; E-commerce</h3>
+<ul>
+<li>Optimize promotional timing and targeting</li>
+<li>Improve customer lifetime value through segmentation</li>
+<li>Reduce churn through predictive analytics</li>
+</ul>
+</section>
+<section id="marketing-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="marketing-strategy">Marketing Strategy</h3>
+<ul>
+<li>Measure true ROI of marketing campaigns</li>
+<li>Personalize offers based on customer segments</li>
+<li>Allocate marketing budget more effectively</li>
+</ul>
+</section>
+<section id="revenue-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="revenue-optimization">Revenue Optimization</h3>
+<ul>
+<li>Identify high-value customer segments</li>
+<li>Optimize pricing strategies by segment</li>
+<li>Improve inventory management through demand forecasting</li>
+</ul>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>By combining RFM analysis, K-means clustering, and causal impact analysis, this project demonstrates how advanced analytics can provide actionable insights for business decision-making. The methodology not only identifies <em>what</em> happened during promotional periods but also quantifies <em>why</em> it happened and provides guidance for future strategic decisions.</p>
+<p>The interactive dashboard makes these complex analyses accessible to business stakeholders, enabling data-driven decision making across the organization.</p>
+</section>
+<section id="future-enhancements" class="level2">
+<h2 class="anchored" data-anchor-id="future-enhancements">Future Enhancements</h2>
+<p>Potential extensions to this analysis include:</p>
+<ul>
+<li><strong>Real-time Segmentation</strong>: Dynamic customer segment updates</li>
+<li><strong>Predictive Modeling</strong>: Forecast customer behavior and campaign effectiveness</li>
+<li><strong>Multi-channel Analysis</strong>: Extend analysis across different marketing channels</li>
+<li><strong>Advanced Causal Methods</strong>: Implement more sophisticated causal inference techniques</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>data science</category>
+  <category>analytics</category>
+  <category>business intelligence</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/sales-impact-analysis-clustering/</guid>
+  <pubDate>Mon, 30 Mar 2020 00:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/sales-impact-analysis-clustering/sales_analysis.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 <item>
   <title>Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)</title>
