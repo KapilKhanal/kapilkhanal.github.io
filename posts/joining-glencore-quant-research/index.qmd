@@ -1,0 +1,30 @@
+---
+title: "Joined Glencore as a Quantitative Researcher"
+subtitle: "Defended my Ph.D. at Cornell and started in Houston on the Natural Gas research desk"
+author: "Kapil Khanal"
+date: "2026-01-15"
+categories: [news, career, energy, quant]
+tags: [glencore, quant research, natural gas, forecasting, optimization, storage]
+image: "/files/images/placeholder2.JPG"
+---
+
+## A new chapter
+
+In December 2025 I successfully defended my Ph.D. dissertation at **Cornell University** — *Multidisciplinary Design Optimization of Novel Offshore Systems: From Conventional to Differentiable Design Methodologies* — and in January 2026 I joined **Glencore** in Houston as a **Quantitative Researcher** on the North American Natural Gas team.
+
+## What I'm working on
+
+Day-to-day, my work spans the full research stack of a commodities trading desk:
+
+- **Forecasting.** Building autoregressive and supervised ML models for demand, supply, and storage build/draw balances across the 66 U.S. Balancing Authorities, incorporating weather signals, fundamentals, and basis structure between Henry Hub and regional delivery points.
+- **Storage valuation & dispatch.** LP-based injection/withdrawal optimization for natural gas storage, used both for asset valuation and for generating dispatch signals.
+- **Backtesting infrastructure.** Walk-forward validation pipelines for ML and statistical models to evaluate strategies under realistic look-ahead constraints.
+- **Hierarchical reconciliation.** Coherent forecast aggregation across regional desks and time horizons.
+
+The transition from differentiable physics to commodity research has been smoother than I expected — at the core, both come down to building good models of complex coupled systems, fitting them to data, and using gradients (or LPs) to make decisions under uncertainty.
+
+## What's next
+
+I'm continuing to publish and stay connected to the academic community on **MDO**, **differentiable simulation**, and **control co-design**. Two journal articles from my dissertation are in the pipeline, including the **Polynomial Chaos Expansion** UQ paper for wave energy converter farms.
+
+If you're working at the intersection of **optimization, machine learning, and energy markets** — or just want to talk shop about gas storage, basis trading, or differentiable BEM solvers — feel free to [reach out](/contact.qmd).

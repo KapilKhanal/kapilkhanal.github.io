@@ -15,7 +15,48 @@
 <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts.html</link>
 </image>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Sun, 27 Jul 2025 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 15 Jan 2026 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Joined Glencore as a Quantitative Researcher</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/joining-glencore-quant-research/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="a-new-chapter" class="level2">
+<h2 class="anchored" data-anchor-id="a-new-chapter">A new chapter</h2>
+<p>In December 2025 I successfully defended my Ph.D.&nbsp;dissertation at <strong>Cornell University</strong> — <em>Multidisciplinary Design Optimization of Novel Offshore Systems: From Conventional to Differentiable Design Methodologies</em> — and in January 2026 I joined <strong>Glencore</strong> in Houston as a <strong>Quantitative Researcher</strong> on the North American Natural Gas team.</p>
+</section>
+<section id="what-im-working-on" class="level2">
+<h2 class="anchored" data-anchor-id="what-im-working-on">What I’m working on</h2>
+<p>Day-to-day, my work spans the full research stack of a commodities trading desk:</p>
+<ul>
+<li><strong>Forecasting.</strong> Building autoregressive and supervised ML models for demand, supply, and storage build/draw balances across the 66 U.S. Balancing Authorities, incorporating weather signals, fundamentals, and basis structure between Henry Hub and regional delivery points.</li>
+<li><strong>Storage valuation &amp; dispatch.</strong> LP-based injection/withdrawal optimization for natural gas storage, used both for asset valuation and for generating dispatch signals.</li>
+<li><strong>Backtesting infrastructure.</strong> Walk-forward validation pipelines for ML and statistical models to evaluate strategies under realistic look-ahead constraints.</li>
+<li><strong>Hierarchical reconciliation.</strong> Coherent forecast aggregation across regional desks and time horizons.</li>
+</ul>
+<p>The transition from differentiable physics to commodity research has been smoother than I expected — at the core, both come down to building good models of complex coupled systems, fitting them to data, and using gradients (or LPs) to make decisions under uncertainty.</p>
+</section>
+<section id="whats-next" class="level2">
+<h2 class="anchored" data-anchor-id="whats-next">What’s next</h2>
+<p>I’m continuing to publish and stay connected to the academic community on <strong>MDO</strong>, <strong>differentiable simulation</strong>, and <strong>control co-design</strong>. Two journal articles from my dissertation are in the pipeline, including the <strong>Polynomial Chaos Expansion</strong> UQ paper for wave energy converter farms.</p>
+<p>If you’re working at the intersection of <strong>optimization, machine learning, and energy markets</strong> — or just want to talk shop about gas storage, basis trading, or differentiable BEM solvers — feel free to <a href="../../contact.html">reach out</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>career</category>
+  <category>energy</category>
+  <category>quant</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/joining-glencore-quant-research/</guid>
+  <pubDate>Thu, 15 Jan 2026 06:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/files/images/placeholder2.JPG" medium="image"/>
+</item>
 <item>
   <title>Workshop on Differentiable Marine Hydrodynamics Simulations and its Applications using MarineHydro.jl</title>
   <dc:creator>Kapil Khanal</dc:creator>
@@ -1273,6 +1314,224 @@ Alternative Viewing Options
   <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/evtol-ems-system-architecture/evtol.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
+  <title>Sales Impact Analysis with Clustering and Causal Effects</title>
+  <dc:creator>Kapil Khanal</dc:creator>
+  <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/sales-impact-analysis-clustering/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This project examines how the introduction of discounts during holidays affects the total sales of different customer groups within a timeframe of a year. By combining customer segmentation with causal impact analysis, we can understand not just <em>what</em> happened to sales, but <em>why</em> it happened and which customer segments were most responsive to promotional campaigns.</p>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>The analysis employs three key statistical techniques to provide comprehensive insights into customer behavior and promotional effectiveness:</p>
+<section id="rfm-analysis-recency-frequency-monetary" class="level3">
+<h3 class="anchored" data-anchor-id="rfm-analysis-recency-frequency-monetary">1. RFM Analysis (Recency, Frequency, Monetary)</h3>
+<p>RFM analysis is a proven method for analyzing customer behavior by examining their transaction history across three critical dimensions:</p>
+<ul>
+<li><strong>Recency</strong>: How recently a customer has made a purchase</li>
+<li><strong>Frequency</strong>: How often they make purchases<br>
+</li>
+<li><strong>Monetary</strong>: How much the customer typically spends</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Why RFM Analysis?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>RFM helps us identify customers who are more likely to respond to promotions by understanding their engagement patterns and value to the business.</p>
+</div>
+</div>
+<p><strong>Key Benefits:</strong> - Identifies high-value customers worth targeting with premium offers - Segments customers based on engagement level and purchase behavior - Provides actionable insights for personalized marketing strategies</p>
+</section>
+<section id="k-means-clustering-for-customer-segmentation" class="level3">
+<h3 class="anchored" data-anchor-id="k-means-clustering-for-customer-segmentation">2. K-Means Clustering for Customer Segmentation</h3>
+<p>Using the RFM scores as features, we apply K-means clustering to segment customers into distinct groups with similar behavioral patterns.</p>
+<p><strong>Clustering Process:</strong> 1. <strong>Feature Engineering</strong>: Transform RFM metrics into standardized scores 2. <strong>Optimal Cluster Selection</strong>: Use elbow method and silhouette analysis to determine optimal number of clusters 3. <strong>Segment Profiling</strong>: Analyze each cluster’s characteristics and business value</p>
+<p><strong>Typical Customer Segments:</strong> - <strong>Champions</strong>: High recency, frequency, and monetary scores - <strong>Loyal Customers</strong>: High frequency and monetary, moderate recency - <strong>Potential Loyalists</strong>: Recent customers with good frequency - <strong>At Risk</strong>: Previously valuable customers showing declining engagement - <strong>Lost Customers</strong>: Low scores across all dimensions</p>
+</section>
+<section id="causal-impact-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="causal-impact-analysis">3. Causal Impact Analysis</h3>
+<p>For each customer segment identified through clustering, we perform causal impact analysis to measure the true effect of discount campaigns.</p>
+<p><strong>Methodology:</strong> - <strong>Bayesian Structural Time Series</strong>: Models the counterfactual scenario (what would have happened without the intervention) - <strong>Pre/Post Comparison</strong>: Analyzes sales patterns before and after discount implementation - <strong>Statistical Significance</strong>: Determines whether observed changes are statistically meaningful</p>
+</section>
+</section>
+<section id="technical-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="technical-implementation">Technical Implementation</h2>
+<section id="data-processing-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="data-processing-pipeline">Data Processing Pipeline</h3>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Pseudocode for RFM Analysis</span></span>
+<span id="cb1-2"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> calculate_rfm_scores(transactions):</span>
+<span id="cb1-3">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate recency, frequency, monetary metrics</span></span>
+<span id="cb1-4">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Assign quintile scores (1-5) for each dimension</span></span>
+<span id="cb1-5">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Return RFM dataframe</span></span>
+<span id="cb1-6">    </span>
+<span id="cb1-7"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> perform_clustering(rfm_data):</span>
+<span id="cb1-8">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Standardize RFM scores</span></span>
+<span id="cb1-9">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Apply K-means clustering</span></span>
+<span id="cb1-10">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Return cluster assignments</span></span>
+<span id="cb1-11">    </span>
+<span id="cb1-12"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> causal_impact_analysis(sales_data, intervention_date):</span>
+<span id="cb1-13">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fit Bayesian structural time series model</span></span>
+<span id="cb1-14">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Estimate counterfactual predictions</span></span>
+<span id="cb1-15">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate causal effect and confidence intervals</span></span></code></pre></div>
+</section>
+<section id="key-performance-indicators" class="level3">
+<h3 class="anchored" data-anchor-id="key-performance-indicators">Key Performance Indicators</h3>
+<p>The analysis tracks several important metrics:</p>
+<ul>
+<li><strong>Lift in Sales</strong>: Percentage increase in sales attributable to discounts</li>
+<li><strong>Customer Acquisition</strong>: New customers gained during promotional periods<br>
+</li>
+<li><strong>Customer Retention</strong>: Retention rates across different segments</li>
+<li><strong>Revenue per Customer</strong>: Changes in average customer value</li>
+<li><strong>Statistical Significance</strong>: Confidence intervals and p-values for all effects</li>
+</ul>
+</section>
+</section>
+<section id="results-and-business-impact" class="level2">
+<h2 class="anchored" data-anchor-id="results-and-business-impact">Results and Business Impact</h2>
+<section id="customer-segmentation-insights" class="level3">
+<h3 class="anchored" data-anchor-id="customer-segmentation-insights">Customer Segmentation Insights</h3>
+<p>The clustering analysis revealed distinct customer segments with varying responsiveness to promotional campaigns:</p>
+<ol type="1">
+<li><strong>High-Value Segments</strong> showed strong positive response to targeted discounts</li>
+<li><strong>Price-Sensitive Segments</strong> demonstrated significant sales lift during promotional periods</li>
+<li><strong>At-Risk Segments</strong> could be re-engaged through strategic discount timing</li>
+</ol>
+</section>
+<section id="causal-impact-findings" class="level3">
+<h3 class="anchored" data-anchor-id="causal-impact-findings">Causal Impact Findings</h3>
+<p>The causal impact analysis provided clear evidence of promotional effectiveness:</p>
+<ul>
+<li><strong>Quantified ROI</strong>: Measured the true incremental impact of discount campaigns</li>
+<li><strong>Segment-Specific Effects</strong>: Identified which customer groups benefited most from promotions</li>
+<li><strong>Optimal Timing</strong>: Determined the most effective periods for promotional activities</li>
+</ul>
+</section>
+</section>
+<section id="interactive-data-product" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-data-product">Interactive Data Product</h2>
+<p>To make these insights accessible to business stakeholders, I developed an interactive web application that allows users to:</p>
+<ul>
+<li>Explore customer segments visually</li>
+<li>Analyze the impact of different promotional strategies</li>
+<li>Generate actionable recommendations for future campaigns</li>
+</ul>
+<p><strong>Live Application</strong>: <a href="https://salesimpact.herokuapp.com/">Sales Impact Dashboard</a></p>
+</section>
+<section id="technical-resources" class="level2">
+<h2 class="anchored" data-anchor-id="technical-resources">Technical Resources</h2>
+<section id="code-repository" class="level3">
+<h3 class="anchored" data-anchor-id="code-repository">Code Repository</h3>
+<p>The complete analysis code, including data preprocessing, clustering algorithms, and causal impact models, is available on GitHub:</p>
+<p><a href="https://github.com/KapilKhanal/Sales_Impact"><strong>Sales Impact Analysis Repository</strong></a></p>
+</section>
+<section id="key-technologies-used" class="level3">
+<h3 class="anchored" data-anchor-id="key-technologies-used">Key Technologies Used</h3>
+<ul>
+<li><strong>Python</strong>: Primary analysis language</li>
+<li><strong>Scikit-learn</strong>: K-means clustering implementation</li>
+<li><strong>CausalImpact</strong>: Bayesian causal inference</li>
+<li><strong>Pandas/NumPy</strong>: Data manipulation and analysis</li>
+<li><strong>Plotly/Dash</strong>: Interactive visualization and web app</li>
+<li><strong>Heroku</strong>: Application deployment</li>
+</ul>
+</section>
+</section>
+<section id="business-applications" class="level2">
+<h2 class="anchored" data-anchor-id="business-applications">Business Applications</h2>
+<p>This methodology can be applied across various business contexts:</p>
+<section id="retail-e-commerce" class="level3">
+<h3 class="anchored" data-anchor-id="retail-e-commerce">Retail &amp; E-commerce</h3>
+<ul>
+<li>Optimize promotional timing and targeting</li>
+<li>Improve customer lifetime value through segmentation</li>
+<li>Reduce churn through predictive analytics</li>
+</ul>
+</section>
+<section id="marketing-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="marketing-strategy">Marketing Strategy</h3>
+<ul>
+<li>Measure true ROI of marketing campaigns</li>
+<li>Personalize offers based on customer segments</li>
+<li>Allocate marketing budget more effectively</li>
+</ul>
+</section>
+<section id="revenue-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="revenue-optimization">Revenue Optimization</h3>
+<ul>
+<li>Identify high-value customer segments</li>
+<li>Optimize pricing strategies by segment</li>
+<li>Improve inventory management through demand forecasting</li>
+</ul>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>By combining RFM analysis, K-means clustering, and causal impact analysis, this project demonstrates how advanced analytics can provide actionable insights for business decision-making. The methodology not only identifies <em>what</em> happened during promotional periods but also quantifies <em>why</em> it happened and provides guidance for future strategic decisions.</p>
+<p>The interactive dashboard makes these complex analyses accessible to business stakeholders, enabling data-driven decision making across the organization.</p>
+</section>
+<section id="future-enhancements" class="level2">
+<h2 class="anchored" data-anchor-id="future-enhancements">Future Enhancements</h2>
+<p>Potential extensions to this analysis include:</p>
+<ul>
+<li><strong>Real-time Segmentation</strong>: Dynamic customer segment updates</li>
+<li><strong>Predictive Modeling</strong>: Forecast customer behavior and campaign effectiveness</li>
+<li><strong>Multi-channel Analysis</strong>: Extend analysis across different marketing channels</li>
+<li><strong>Advanced Causal Methods</strong>: Implement more sophisticated causal inference techniques</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>data science</category>
+  <category>analytics</category>
+  <category>business intelligence</category>
+  <guid>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/sales-impact-analysis-clustering/</guid>
+  <pubDate>Mon, 30 Mar 2020 05:00:00 GMT</pubDate>
+  <media:content url="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/sales-impact-analysis-clustering/sales_analysis.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
+<item>
   <title>Giving Passes Due Credit: A Data-Driven Framework to Calculate Expected Goals Per Pass (xG/pass)</title>
   <dc:creator>Kapil Khanal</dc:creator>
   <link>https://github.com/KapilKhanal/kapilkhanal.github.io/posts/xg-pass-soccer-analytics/</link>
@@ -1443,24 +1702,24 @@ Placeholder for Figure 4 &amp; 5: Network and Feature Importance
 
 
 <section id="stockx-data-contest-2019" class="level2">
-<h2>Stock<strong>X</strong> Data Contest 2019</h2>
+<h2 class="anchored" data-anchor-id="stockx-data-contest-2019">Stock<strong>X</strong> Data Contest 2019</h2>
 <p>The <a href="https://stockx.com/news/the-2019-data-contest/">StockX Challenge</a> is a call for data and sneakers nerds to have fun.</p>
 <p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/stockx-data-contest-2019/sneaker.jpg" class="img-fluid" alt="Sneaker Culture"> <em>Source: StockX</em></p>
 <p>The basic idea is this: they give you a bunch of original StockX sneaker data, then you crunch the numbers and come up with the coolest, smartest, most compelling story you can tell. It can be literally anything you want. A theory, an insight, even just a really original data visualization. It could be a novel hypothesis about resale prices you’ve always wanted to test. Or maybe it’s just a beautiful chart to visualize the data. It can be on any subject – sneakers, brands, buyers, or even StockX itself. Whatever you find interesting, just follow your bliss.</p>
 <p>I also gave a shot at trying to come up with something useful. Below is my finished data dashboard.</p>
 </section>
 <section id="my-data-dashboard-for-stockx" class="level2">
-<h2>My Data Dashboard for Stock<strong>X</strong></h2>
+<h2 class="anchored" data-anchor-id="my-data-dashboard-for-stockx">My Data Dashboard for Stock<strong>X</strong></h2>
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/stockx-data-contest-2019/stockX.png" class="img-fluid"></p>
+<figure class="figure">
+<p><img src="https://github.com/KapilKhanal/kapilkhanal.github.io/posts/stockx-data-contest-2019/stockX.png" class="img-fluid figure-img"></p>
 <figcaption>StockX Dashboard</figcaption>
 </figure>
 </div>
 <p>The link for the Tableau worksheet is <a href="https://public.tableau.com/views/StockX_0/Dashboard1?:embed=y&amp;:display_count=yes&amp;:origin=viz_share_link"><strong>here</strong></a>.</p>
 </section>
 <section id="dashboard-calculations" class="level2">
-<h2>Dashboard Calculations</h2>
+<h2 class="anchored" data-anchor-id="dashboard-calculations">Dashboard Calculations</h2>
 <p><strong>Key Metrics Defined:</strong></p>
 <ul>
 <li><strong>Price Ratio</strong>: Ratio of Sales to Retail Price for Each Sneaker</li>
@@ -1470,9 +1729,9 @@ Placeholder for Figure 4 &amp; 5: Network and Feature Importance
 </ul>
 </section>
 <section id="key-insights-from-the-dashboard" class="level2">
-<h2>Key Insights from the Dashboard</h2>
+<h2 class="anchored" data-anchor-id="key-insights-from-the-dashboard">Key Insights from the Dashboard</h2>
 <section id="order-volume-by-brand-over-time" class="level3">
-<h3>1. Order Volume by Brand Over Time</h3>
+<h3 class="anchored" data-anchor-id="order-volume-by-brand-over-time">1. Order Volume by Brand Over Time</h3>
 <p><strong>Orders of Sneakers by brand for weeks from Release Date</strong></p>
 <p>This plot shows the total count of orders for different sneakers of two brands. Both brands are ordered before the release date. Off-White has more orders than Yeezy in the dataset.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1490,51 +1749,37 @@ Interesting Finding
 </div>
 </section>
 <section id="price-premium-analysis" class="level3">
-<h3>2. Price Premium Analysis</h3>
+<h3 class="anchored" data-anchor-id="price-premium-analysis">2. Price Premium Analysis</h3>
 <p><strong>Ratio of Sales Price to Retail Price For each Brand by Weeks</strong></p>
 <p>This plot examines the relationship between the ratio of sale price to retail price for each brand and weeks after release date.</p>
 <p><strong>Key Findings:</strong> - Both brands’ sale prices are consistently higher than retail prices - Off-White’s price ratio increases generally regardless of individual sneakers - Yeezy’s price ratio is somewhat noisy but follows a similar trend to Off-White - Both brands’ price ratios increase after the release date</p>
 </section>
 <section id="premium-distribution-analysis" class="level3">
-<h3>3. Premium Distribution Analysis</h3>
+<h3 class="anchored" data-anchor-id="premium-distribution-analysis">3. Premium Distribution Analysis</h3>
 <p><strong>Distribution of Median Sales Price Given the Retail Price for Each Brand</strong></p>
 <p>This plot provides detailed insight into how median sale price is distributed for each sneaker. The distribution shows median sale prices for the top 28 sneakers that were sold at least 5 times over retail price.</p>
 </section>
 <section id="geographic-market-analysis" class="level3">
-<h3>4. Geographic Market Analysis</h3>
+<h3 class="anchored" data-anchor-id="geographic-market-analysis">4. Geographic Market Analysis</h3>
 <p><strong>Median Price and States</strong></p>
 <p>This visualization examines the median price ratio across all states, with color scale representing the ratio and bubble size indicating total sales volume.</p>
 <p><strong>Geographic Insights:</strong> - <strong>High Premium States</strong>: Delaware, Vermont, and Utah had sales with high price ratios - <strong>High Volume Markets</strong>: California and New York show significant sales volumes (represented by larger bubble sizes) - <strong>Market Calculation</strong>: Relative size calculated using logarithm of total sales in each state - <strong>Low Activity Markets</strong>: States like Wyoming show both lower sales volume and lower price ratios</p>
 </section>
 </section>
 <section id="data-methodology" class="level2">
-<h2>Data Methodology</h2>
+<h2 class="anchored" data-anchor-id="data-methodology">Data Methodology</h2>
 <p>The analysis focuses on understanding: - <strong>Temporal patterns</strong> in sneaker demand and pricing - <strong>Brand comparison</strong> between Off-White and Yeezy - <strong>Geographic variations</strong> in market behavior - <strong>Price premium evolution</strong> over time</p>
 </section>
 <section id="interactive-dashboard" class="level2">
-<h2>Interactive Dashboard</h2>
+<h2 class="anchored" data-anchor-id="interactive-dashboard">Interactive Dashboard</h2>
 <p>Explore the full interactive dashboard with filters and detailed breakdowns: <a href="https://public.tableau.com/views/StockX_0/Dashboard1?:embed=y&amp;:display_count=yes&amp;:origin=viz_share_link"><strong>StockX Data Contest Dashboard</strong></a></p>
 </section>
 <section id="conclusion" class="level2">
-<h2>Conclusion</h2>
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>This analysis reveals the complex dynamics of the sneaker resale market, showing how brand prestige, time since release, and geographic location all influence pricing patterns. The data demonstrates the significant premiums that collectors are willing to pay, particularly for limited releases from premium brands like Off-White and Yeezy.</p>
 <p>The StockX contest provided an excellent opportunity to apply data visualization skills to an interesting and culturally relevant dataset, uncovering insights about consumer behavior in the luxury streetwear market.</p>
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">Kapil Khanal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">Kapil Khanal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6QWJvdXQ=">About</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6TmV3cw==">News</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Bvc3RzLnFtZCNjYXRlZ29yeT1uZXdz">/posts.qmd#category=news</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RXZlbnRz">Events</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Bvc3RzLnFtZCNjYXRlZ29yeT1ldmVudA==">/posts.qmd#category=event</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Q29udGFjdA==">Contact</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2NvbnRhY3QuaHRtbA==">/contact.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6UmVzZWFyY2g=">Research</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6TGlzdCBvZiBQdWJsaWNhdGlvbg==">List of Publication</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3B1YmxpY2F0aW9ucy5odG1s">/publications.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6U2VsZWN0ZWQgUGFwZXJz">Selected Papers</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Bvc3RzLnFtZCNjYXRlZ29yeT1wYXBlcg==">/posts.qmd#category=paper</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6R3JhbnRz">Grants</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Byb2plY3RzLmh0bWw=">/projects.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6VGVhY2hpbmc=">Teaching</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3RlYWNoaW5nLmh0bWw=">/teaching.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6T3V0cmVhY2g=">Outreach</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6UHJlc2VudGF0aW9ucw==">Presentations</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Bvc3RzLnFtZCNjYXRlZ29yeT1wcmVzZW50YXRpb24=">/posts.qmd#category=presentation</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6U29mdHdhcmU=">Software</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NvZnR3YXJlLmh0bWw=">/software.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Q1Y=">CV</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2ZpbGVzL2thcGlsX3Jlc3VtZS5wZGY=">/files/kapil_resume.pdf</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6aHR0cHM6Ly9naXRodWIuY29tL0thcGlsS2hhbmFsL2thcGlsa2hhbmFsLmdpdGh1Yi5pbw==">https://github.com/KapilKhanal/kapilkhanal.github.io</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6e3s8IGZhIGJyYW5kcyBibHVlc2t5ID59fQ=="><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6aHR0cHM6Ly9ic2t5LmFwcA==">https://bsky.app</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Bvc3RzLnhtbA==">/posts.xml</span></p>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWxlZnQ=">
-<a href="http://www.github.com">Kapil Khanal</a> ©
-<script>document.write(new Date().getFullYear())</script>
-</div>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWNlbnRlcg==">
-<p>Build on <a href="https://github.com/KapilKhanal/kapilkhanal.github.io">Quart Academic Website Template</a></p>
-</div>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLXJpZ2h0LWh0dHBzOi8vYnNreS5hcHA=">
-<p><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></p>
-</div>
-</div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Data Dashboard for StockX Contest – Kapil Khanal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Data Dashboard for StockX Contest – Kapil Khanal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Data Dashboard for StockX Contest – Kapil Khanal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Kapil Khanal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Personal Portfolio of Kapil Khanal</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Personal Portfolio of Kapil Khanal</span></p>
-</div>
+
+
 </section>
 
  ]]></description>

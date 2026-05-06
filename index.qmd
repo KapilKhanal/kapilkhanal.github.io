@@ -99,13 +99,13 @@ listing:
 :::{.g-col-12 .g-col-md-8}
 ## About Me
 
-I am a <span style="color: #B31B1B;">**doctoral candidate at Cornell University**</span>, specializing in systems design, engineering, and optimization. My work focuses on leveraging modeling, optimization, and computational techniques to advance sustainable technologies. As a member of the **Symbiotic Engineering and Analysis (SEA) Lab**, I collaborate on modeling and optimizing novel offshore systems such as wave energy converters.
+I am a <span style="color: #0B2545;">**Quantitative Researcher at Glencore**</span> in Houston, where I build forecasting, optimization, and valuation models for North American natural gas and power markets. My work spans demand and supply forecasting across balancing authorities, LP-based storage dispatch and valuation, and walk-forward backtesting infrastructure for systematic trading strategies.
 
-With a Master's degree in **Systems Engineering** and ongoing PhD work, I am to bridge theory and applications for large-scale systems. I did my undergraduate in **Mathematics and Data Science** from Winona State University, Minnesota.
+I recently completed my <span style="color: #B31B1B;">**Ph.D. in Systems Engineering at Cornell University**</span> (Applied Mathematics minor), where I was a member of the **Symbiotic Engineering and Analysis (SEA) Lab**. My dissertation developed differentiable simulation and gradient-based methods for the multidisciplinary design optimization of novel offshore systems. Before Cornell, I earned my B.S. in **Mathematics and Data Science** from Winona State University, Minnesota.
 
 :::{.callout-note icon=false style="margin-top: 25px;"}
-### 💼 Bridging Research and Industry
-Upon completing my PhD, I am **seeking full-time industry roles** where I can apply my expertise in data science, multiphysics simulation and design optimization to solve challenging hard-tech engineering problems.
+### 💼 What I'm Working On
+At Glencore, I focus on **price forecasting, statistical arbitrage, and storage optimization** in natural gas markets — combining time-series models, supervised ML, convex optimization, and large-scale fundamental data pipelines to inform discretionary and systematic trading.
 
 <div style="margin-top: 15px;">
 [View My CV](files/kapil_resume.pdf){.btn .btn-primary} &nbsp; [Connect on LinkedIn](https://www.linkedin.com/in/kapilkhanal/){.btn .btn-secondary} &nbsp; [Explore My GitHub](https://github.com/KapilKhanal){.btn .btn-dark}
@@ -123,13 +123,13 @@ Upon completing my PhD, I am **seeking full-time industry roles** where I can ap
 
 ---
 
-## Research Focus
+## Research & Applied Interests
 
-I am interested in applying computational methods to solve real-world problems. Currently, I focus on **multidisciplinary design optimization (MDO)**, **control co-design**, **machine learning** and **physical simulations** to design and operate large-scale systems.  Through the powerful, gradient-based techniques, I tackle critical design challenges in domains ranging from renewable energy systems to aerospace structures. Broadly, I am interested in **bridging the gap between theory and practice** in engineering and science.
+I apply computational methods to design and operate large-scale systems — from offshore renewables to wholesale energy markets. My interests sit at the intersection of **optimization**, **machine learning**, and **physical/economic simulation**. In academia, I focused on **multidisciplinary design optimization (MDO)**, **control co-design**, and **differentiable programming** for complex engineered systems. In industry, I bring those same tools to **commodity trading research**: forecasting, valuation of physical assets (storage, generation), and systematic strategy development in natural gas and power markets.
 
 ![Research Interests](files/my%20reseach%20interests.png){.img-fluid style="width: 100%; max-width: 1200px; height: auto; display: block; margin: 20px auto;"}
 
-Keywords: Optimization, Optimal Controls, Differentiable Programming, Reinforcement Learning, System Architecture, System of System Optimization, Numerical simulations (boundary element method, finite difference method, finite element method, etc.), Data Science, Data Engineering.
+Keywords: Time-Series Forecasting, Convex & Stochastic Optimization, Optimal Control, Differentiable Programming, Reinforcement Learning, System Architecture, Numerical Simulation (BEM, FDM, FEM), Data Science, Data Engineering, Energy & Commodity Markets.
 
 ---
 

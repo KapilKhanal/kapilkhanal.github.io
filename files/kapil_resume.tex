@@ -1,0 +1,265 @@
+\documentclass[letterpaper,11pt]{article}
+
+%-------------------------------------------------------------------
+%  PACKAGES
+%-------------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}                       % Bitstream Charter — transitional serif (Citadel-like)
+\usepackage[scaled=0.92]{helvet}           % crisp sans for accents
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{calc}
+\usepackage{setspace}
+\usepackage{etoolbox}
+\input{glyphtounicode}
+
+%-------------------------------------------------------------------
+%  CITADEL-INSPIRED PALETTE
+%-------------------------------------------------------------------
+\definecolor{citadel}{HTML}{0B2545}        % deep institutional navy
+\definecolor{citadelaccent}{HTML}{13315C}  % secondary navy for rules
+\definecolor{darkgray}{HTML}{1F2937}       % near-black slate
+\definecolor{medgray}{HTML}{4B5563}        % muted body grey
+\definecolor{rule}{HTML}{8DA9C4}           % soft rule accent
+
+%-------------------------------------------------------------------
+%  PAGE GEOMETRY (generous, breathing layout)
+%-------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\evensidemargin}{-0.45in}
+\addtolength{\textwidth}{0.9in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\setstretch{1.04}
+
+%-------------------------------------------------------------------
+%  TYPOGRAPHY — microtype refinements
+%-------------------------------------------------------------------
+\microtypesetup{protrusion=true,expansion=true,tracking=true,kerning=true,spacing=true}
+\SetTracking{encoding=*,shape=sc}{40}      % open up small caps in section heads
+
+%-------------------------------------------------------------------
+%  SECTION FORMATTING
+%-------------------------------------------------------------------
+\titleformat{\section}{%
+  \vspace{4pt}\scshape\raggedright\Large\color{citadel}%
+}{}{0em}{}[{\color{rule}\titlerule[0.7pt]}\vspace{2pt}]
+
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\pdfgentounicode=1
+
+%-------------------------------------------------------------------
+%  CUSTOM COMMANDS
+%-------------------------------------------------------------------
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1\vspace{1pt}}%
+}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\color{darkgray}\normalsize #1} & \small\textit{\color{medgray}#2} \\[1pt]
+      \textit{\small\color{medgray}#3} & \textit{\small\color{medgray}#4} \\
+    \end{tabular*}\vspace{-3pt}%
+}
+
+\newcommand{\resumeSubSubheading}[2]{%
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-4pt}%
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small\textit{\color{medgray}#2} \\
+    \end{tabular*}\vspace{-2pt}%
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-1pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.22in,topsep=3pt,itemsep=2pt,parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------------------------------
+\begin{document}
+
+%---------- HEADER ---------------------------------------------------
+\begin{center}
+  {\fontsize{30}{34}\selectfont\rmfamily\bfseries\color{citadel}%
+   \scshape Kapil\ \ Khanal}\\[8pt]
+  {\color{rule}\rule{0.32\textwidth}{0.6pt}}\\[6pt]
+  \normalsize\color{medgray}
+  \href{tel:5074910407}{507\,$\cdot$\,491\,$\cdot$\,0407}
+  \quad\textcolor{rule}{|}\quad
+  \href{mailto:kk733@cornell.edu}{kk733@cornell.edu}
+  \quad\textcolor{rule}{|}\quad
+  \href{https://kapilkhanal.github.io}{kapilkhanal.github.io}
+\end{center}
+
+\vspace{2pt}
+
+%---------- EDUCATION ------------------------------------------------
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Cornell University}{Ithaca, NY}
+    {Ph.D., Systems Engineering (Applied Mathematics)}{Aug.\ 2021 -- Dec.\ 2025}
+
+  \resumeSubheading
+    {Winona State University}{Winona, MN}
+    {B.S., Data Science and Mathematics (Computer Science, Statistics)}{Aug.\ 2016 -- May 2020}
+
+\resumeSubHeadingListEnd
+
+%---------- EXPERIENCE -----------------------------------------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Glencore}{Houston, TX}
+    {Quantitative Researcher}{Jan.\ 2026 -- Present}
+  \resumeItemListStart
+    \resumeItem{Build forecasting models (autoregressive and supervised ML) for demand, supply, and build balances across 66 Balancing Authorities, incorporating storage fundamentals, weather signals, and basis structure across Henry Hub and regional delivery points.}
+    \resumeItem{Implement LP-based injection/withdrawal optimization for natural gas storage valuation and dispatch.}
+    \resumeItem{Develop walk-forward validation (backtesting) infrastructure for machine learning models.}
+    \resumeItem{Temporal and hierarchical reconciliation across forecasts from regional trading desks.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Sandia National Laboratories}{Albuquerque, NM}
+    {R\&D Intern --- Differentiable Simulation}{June 2024 -- Aug.\ 2024}
+  \resumeItemListStart
+    \resumeItem{Derived and implemented adjoint-based sensitivities for a boundary element method (BEM) hydrodynamic solver, enabling gradient flow through implicit PDE systems for optimal control.}
+    \resumeItem{Performed second-order sensitivity and uncertainty quantification of wave-structure interaction models under stochastic ocean waves.}
+    \resumeItem{Implemented automatic differentiation for numerical simulations in Julia; validated against finite-difference benchmarks.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Argonne National Laboratory}{Chicago, IL}
+    {High Performance Computing Trainee}{July 2024 -- Aug.\ 2024}
+  \resumeItemListStart
+    \resumeItem{CUDA programming in Julia for parallel training of neural networks and numerical PDE solvers on GPU clusters.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Symbiotic Engineering and Analysis Lab, Cornell University}{Ithaca, NY}
+    {Graduate Researcher}{Nov.\ 2021 -- Dec.\ 2025}
+  \resumeItemListStart
+    \resumeItem{Developed a fully differentiable BEM solver for hydrodynamic sensitivity analysis; published in \textit{Applied Ocean Research}.}
+    \resumeItem{Applied KKT/IFT post-optimality analysis (Fiacco--McCormick) to extract parametric NLP sensitivities and active-set derivatives in constrained optimal control problems.}
+    \resumeItem{Designed multi-objective Pareto optimization for wave energy converter array layout and controls; handled conflicting objectives via weighted-sum and $\varepsilon$-constraint scalarizations.}
+    \resumeItem{Quantified system response uncertainty under random wave spectra; conducted design-of-experiments and Monte Carlo sensitivity sweeps.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Fastenal Company}{Winona, MN}
+    {Data Analyst}{June 2020 -- July 2021}
+  \resumeItemListStart
+    \resumeItem{Built ARIMA and regression-based forecasting models for supply chain time series.}
+    \resumeItem{Engineered temporal and calendar features (Fourier terms, lag structures, holiday indicators) to capture demand seasonality; deployed via automated retraining pipeline.}
+    \resumeItem{Integrated multi-source data pipelines using Python, Pandas, and PySpark for enterprise-scale analytics.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Carnegie Mellon University}{Pittsburgh, PA}
+    {Undergraduate Research}{June 2019 -- Aug.\ 2019}
+  \resumeItemListStart
+    \resumeItem{Built a network performance estimator combining graph-theoretic metrics with statistical regression on spatio-temporal soccer tracking data.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS -----------------------------------------
+\section{Technical Skills}
+\newlength{\skilllabelw}
+\setlength{\skilllabelw}{1.55in}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular*}{\textwidth}{@{}p{\skilllabelw}@{\hspace{8pt}}p{\dimexpr\textwidth-\skilllabelw-8pt\relax}@{}}
+  \small\textbf{\color{citadel}Languages}     & \small Python (8+ yrs), Julia (5+ yrs), R (8+ yrs), SQL (8+ yrs), MATLAB (3 yrs) \\
+  \small\textbf{\color{citadel}Quant Methods} & \small Time series modeling, deep learning, convex optimization (LP/QP/MILP/SOCP), adjoint methods, Monte Carlo simulation, robust optimization \\
+  \small\textbf{\color{citadel}Tools}         & \small PyTorch, JAX, scikit-learn, CVXPY, Gurobi, Pandas, PySpark, Snowflake, AWS (S3, Lambda), TimescaleDB, Airflow, GitHub Actions \\
+\end{tabular*}
+\renewcommand{\arraystretch}{1.0}
+
+%---------- PUBLICATIONS ---------------------------------------------
+\section{Publications}
+
+{\color{citadel}\textbf{\normalsize Dissertation}}
+\resumeItemListStart
+  \resumeItem{Khanal K. \textit{Multidisciplinary Design Optimization of Novel Offshore Systems: From Conventional to Differentiable Design Methodologies}. Ph.D.\ Dissertation, Cornell University, Dec.\ 2025.}
+\resumeItemListEnd
+
+\vspace{4pt}
+{\color{citadel}\textbf{\normalsize Journal Articles}}
+\resumeItemListStart
+  \resumeItem{Khanal K., Mich\'{e}l\'{e}n Str\"{o}fer C.A., Ancellin M., Haji M.N. Fully Differentiable Boundary Element Solver for Hydrodynamic Sensitivity Analysis of Wave--Structure Interactions. \textit{Applied Ocean Research}, Vol.~163, 104707, 2025. \href{https://doi.org/10.1016/j.apor.2025.104707}{\color{citadel}doi:10.1016/j.apor.2025.104707}}
+  \resumeItem{Khanal K., DeGoede N., Haji M.N. Multidisciplinary Design Optimization of Wave Energy Converter Farms Considering Uncertainty through Polynomial Chaos Expansion. \textit{In preparation, Renewable Energy}.}
+  \resumeItem{Khanal K., DeGoede N., Vitale O., Haji M.N. Multi-Objective Multidisciplinary Optimization of Wave Energy Converter Array Layout and Controls. arXiv:2410.11089; SSRN 4891821.}
+\resumeItemListEnd
+
+\vspace{4pt}
+{\color{citadel}\textbf{\normalsize Conference Papers}}
+\resumeItemListStart
+  \resumeItem{Khanal K., Haji M.N. Differentiable Wave2Wire: Gradient-Based Control Co-Design Method to Optimize Wave Energy Converter Systems. \textit{ASME IDETC}, Aug.\ 2025.}
+  \resumeItem{Lalisani S., Diaz I., Chan H., Khanal K., Haji M., Royer F. Multidisciplinary Design Optimization of Shape Programmable Space Structures. \textit{AIAA SciTech Forum 2026}, Washington, D.C., Jan.\ 2026.}
+  \resumeItem{McCabe R., Khanal K., Haji M. Open-Source Toolbox for Semi-Analytical Hydrodynamic Coefficients via the Matched Eigenfunction Expansion Method. \textit{UMERC}, Duluth, MN, Aug.\ 2023.}
+  \resumeItem{Khanal K., McCabe R., Haji M.N. Gradient-Based Design Optimization of Concentric Cylindrical Offshore Structures. \textit{SIAM OP23}, Seattle, WA, May 2023.}
+  \resumeItem{Khanal K., Vitale O., DeGoede N., Haji M. Multi-Objective MDO of Wave Energy Converter Array Configurations and Controls. \textit{UMERC 2023}, Durham, NH, Oct.\ 2023.}
+  \resumeItem{Khanal K., Haji M.N. Multidisciplinary Design Optimization for Novel Offshore Systems. \textit{openMDAO Workshop}, NASA Glenn Research Center, Cleveland, OH, Oct.\ 2022.}
+  \resumeItem{Kumdokrub F., Hegeman M., Khanal K. ``Unit Commitment Problem.'' \textit{Cornell CBE Computational Optimization Online Textbook}. \url{https://optimization.cbe.cornell.edu}}
+\resumeItemListEnd
+
+%---------- HONORS & AWARDS ------------------------------------------
+\section{Honors \& Awards}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{\textbf{\color{darkgray}Seedling Grant (Phase I \& II)}, Sandia National Laboratories}{2023, 2024}
+  \resumeItemListStart
+    \resumeItem{Funded development of a differentiable BEM numerical method for systems engineering applications.}
+  \resumeItemListEnd
+  \resumeProjectHeading{\textbf{\color{darkgray}Compute Credits Award}, Amazon Web Services}{2023, 2024}
+  \resumeProjectHeading{\textbf{\color{darkgray}Systems Graduate Fellowship}, Cornell University}{2022}
+  \resumeProjectHeading{\textbf{\color{darkgray}Outstanding Student Award}, WSU Mathematics \& Statistics}{2020}
+  \resumeProjectHeading{\textbf{\color{darkgray}Presidential Honor Scholarship}; \textbf{\color{darkgray}MinneAnalytics Scholarship}}{2020}
+  \resumeProjectHeading{\textbf{\color{darkgray}Best Overall Analysis}, Police Data Challenge (ASA --- nationwide)}{2017}
+\resumeSubHeadingListEnd
+
+%---------- PROFESSIONAL ASSOCIATIONS --------------------------------
+\section{Professional Associations}
+\vspace{2pt}
+\small\color{medgray}
+SIAM \ \ \textcolor{rule}{|}\ \ ASME \ \ \textcolor{rule}{|}\ \ INCOSE \ \ \textcolor{rule}{|}\ \ American Statistical Association \ \ \textcolor{rule}{|}\ \ MinneAnalytics
+
+\end{document}

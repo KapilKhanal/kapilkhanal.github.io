@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/joining-glencore-quant-research/index.html",
       "/posts/marinehydro-workshop/index.html",
       "/posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
       "/posts/marinehydro-julia-package/index.html",
@@ -11,6 +12,7 @@
       "/posts/gradient-based-optimization/index.html",
       "/posts/differentiable-hydrodynamics-framework/index.html",
       "/posts/evtol-ems-system-architecture/index.html",
+      "/posts/sales-impact-analysis-clustering/index.html",
       "/posts/xg-pass-soccer-analytics/index.html",
       "/posts/stockx-data-contest-2019/index.html",
       "/posts/winona-area-public-schools/index.html"
@@ -19,6 +21,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/joining-glencore-quant-research/index.html",
       "/posts/marinehydro-workshop/index.html",
       "/posts/gradient-based-optimization/derivatives-are-cheap-and-expensive.html",
       "/posts/marinehydro-julia-package/index.html",
@@ -28,7 +31,9 @@
       "/posts/gradient-based-optimization/index.html",
       "/posts/differentiable-hydrodynamics-framework/index.html",
       "/posts/evtol-ems-system-architecture/index.html",
+      "/posts/sales-impact-analysis-clustering/index.html",
       "/posts/xg-pass-soccer-analytics/index.html",
+      "/posts/stockx-data-contest-2019/index.html",
       "/posts/winona-area-public-schools/index.html"
     ]
   },
